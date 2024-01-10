@@ -35,13 +35,12 @@ Sólo puede haber un atributo identificativo en cada entidad, si existe algún o
 
 Tipos de entidades:
 + Entidades débiles: Su existencia depende de otra entidad.
-+ Entidades fuertes
++ Entidades fuertes: Tienen existencia 
 
 Los atributos pueden ser:
 + Simples o compuestos
 + Monovaluados o multivaluados
 + Almacenados o variados
 Los dominios del atributo son los valores que puede coger
-
 
 ***Relación***: Asociación entre varias entidades (También pueden tener atributos). Son verbos y se representan con un rombo :large_orange_diamond:
