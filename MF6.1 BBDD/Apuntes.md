@@ -6,4 +6,18 @@ Los usuarios através de aplicaciones se comunicacn con el SGBD (Sistema Gestor 
 
 El SGBD nos proporciona:
 + Acceso controlado a los datos
-+ Lenguajes de gestión
+  + Control de seguridad
+  + Control de integridad
+  + Control de concurrencia (actualización simultánea de datos)
+  + Control de recuperación (mecanismos de recuperación de datos contra fallos lógicos/físicos)
+  + Diccionario de datos
++ Lenguajes de gestión (el lenguaje estándar es el SQL):
+  + Lenguaje de definición de datos (LDD)
+  + Lenguaje de manejo de datos (LMC)
+  + Lenguaje de control de datos (LCD)
+
+#### Visión de los datos
+| | |
+| Nivel físico | Nivel más bajo de abstracción (como se almacenan los datos) |
+| Nivel lógico/conceptual | |
+| Nivel externo | |
