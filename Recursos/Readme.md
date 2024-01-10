@@ -1,3 +1,3 @@
-Recursos de los apuntes de las asignaturas.
+# Recursos de los apuntes de las asignaturas.
 
 Nada que ver aqui...
