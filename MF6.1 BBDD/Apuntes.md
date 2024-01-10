@@ -20,18 +20,27 @@ El SGBD nos proporciona:
 | Nivel | Descripción |
 | --- | --- |
 | Nivel físico | Nivel más bajo de abstracción (como se almacenan los datos) |
-| Nivel lógico/conceptual | |
-| Nivel externo | |
+| Nivel lógico/conceptual | Descibe que datos serán almacenados y como se relacionan |
+| Nivel externo | Nivel de abtracción más alto, es lo que el usuario visualizará |
 
 ## 2. Modelos conceptuales
+La base de datos se definirá en forma de descripción de texto, el llamado **Universo de discurso**
 
 ### Modelo entidad/relación
 
 ***Entidad***: Objeto que existe y puede distinguirse de otros a través de un conjunto de atributos ( :exclamation: **Tiene que tener características**) Se representa con un recángulo :orange_square:
 
->Existen atributos _descriptivos_ e _identificativos_ (los segundos son únicos, inequívocos y tienen que rellenarse siempre, los descriptivos si que pueden ser null).
+>Existen atributos _descriptivos_ e _identificativos_ o _claves_ (los identificativos/claves son únicos, inequívocos y tienen que rellenarse siempre, los descriptivos si que pueden ser null).
 Sólo puede haber un atributo identificativo en cada entidad, si existe algún otro valor que identifica de manera única se tratará de una _clave candidata_ (p.ej: matrícula y número de bastidor).
 
-***Relación***: Asociación entre varias entidades. Son verbos y se representan con un rombo :large_orange_diamond:
+Tipos de entidades:
++ Entidades débiles: Su existencia depende de otra entidad.
++ Entidades fuertes
 
+Los atributos pueden ser:
++ Simples o compuestos
++ Monovaluados o multivaluados
++ Almacenados o variados
+Los dominios del atributo son los valores que puede coger
 
+***Relación***: Asociación entre varias entidades (También pueden tener atributos). Son verbos y se representan con un rombo :large_orange_diamond:
