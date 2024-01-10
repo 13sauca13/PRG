@@ -23,4 +23,14 @@ El SGBD nos proporciona:
 | Nivel lógico/conceptual | |
 | Nivel externo | |
 
+## 2. Modelos conceptuales
+
+### Modelo entidad/relación
+
+***Entidad***: Objeto que existe y puede distinguirse de otros a través de un conjunto de atributos (:bangbang: **Tiene que tener características**)
+
+Existen atributos descriptivos e identificativos (los segundos son únicos, inequívocos y tienen que rellenarse siempre, los descriptivos si que pueden ser null)
+
+***Relación***: Asociación entre varias entidades
+
 
