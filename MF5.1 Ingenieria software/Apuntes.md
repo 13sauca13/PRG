@@ -7,4 +7,13 @@
 ## 1. Pre-operación
 En esta fase generamos la incubación; inventamos, pensamos, conocemos...
 Se realiza un levantamiento informativo y una adquisición de todo lo relevante.
+
 Es responsabilidad del gestor del proyecto adquirir un amplio conocimiento.
+
+>[!TIP]
+>>Responderemos a:
+>>+ Cómo?
+>>+ Con qué?
+>>+ Cuánto?
+>>+ Cuándo?
+>>+ Verificado?
