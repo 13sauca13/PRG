@@ -1,3 +1,3 @@
 # PRG
 
-- [ ]Trabajo de investigación Python
+- [ ] Trabajo de investigación Python
