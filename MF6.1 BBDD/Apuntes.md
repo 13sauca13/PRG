@@ -17,7 +17,10 @@ El SGBD nos proporciona:
   + Lenguaje de control de datos (LCD)
 
 #### Visión de los datos
-| | |
+| Nivel | Descripción |
+| --- | --- |
 | Nivel físico | Nivel más bajo de abstracción (como se almacenan los datos) |
 | Nivel lógico/conceptual | |
 | Nivel externo | |
+
+
