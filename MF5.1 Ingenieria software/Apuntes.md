@@ -22,7 +22,7 @@ Es responsabilidad del gestor del proyecto adquirir un amplio conocimiento.
 + Diseño
   + Observación: Se plantea el porqué del proyecto. Es el origen de la idea que genera la necesidad, el objetivo y como cubrirla.
   + Preinforme: La observación culmina con informe de primeras hipótesis con un inventario de  medios, recursos, herramientas y formación necesaria de los participantes.
-  + Reflexión: 
-  + Análisis
+  + Reflexión: Definir las mejoras para el diseño del proyecto. _(Qué tenemos? Qué queremos?, Qué podemos mejorar?)_
+  + Análisis: Análisis de toda la info previa. Usaremos DAFO.
 + Desarrollo
 + Evaluación
