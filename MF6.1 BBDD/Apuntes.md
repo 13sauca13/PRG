@@ -29,8 +29,7 @@ El SGBD nos proporciona:
 
 ***Entidad***: Objeto que existe y puede distinguirse de otros a través de un conjunto de atributos ( :exclamation: **Tiene que tener características**) Se representa con un recángulo :orange_square:
 
->[!TIP]
->>Existen atributos _descriptivos_ e _identificativos_ (los segundos son únicos, inequívocos y tienen que rellenarse siempre, los descriptivos si que pueden ser null).
+>Existen atributos _descriptivos_ e _identificativos_ (los segundos son únicos, inequívocos y tienen que rellenarse siempre, los descriptivos si que pueden ser null).
 Sólo puede haber un atributo identificativo en cada entidad, si existe algún otro valor que identifica de manera única se tratará de una _clave candidata_ (p.ej: matrícula y número de bastidor).
 
 ***Relación***: Asociación entre varias entidades. Son verbos y se representan con un rombo :large_orange_diamond:
