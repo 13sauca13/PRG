@@ -10,7 +10,7 @@ Se realiza un levantamiento informativo y una adquisición de todo lo relevante.
 
 Es responsabilidad del gestor del proyecto adquirir un amplio conocimiento.
 
->[!TI]
+>[!TIP]
 >>Responderemos a:
 >>+ Cómo?
 >>+ Con qué?
