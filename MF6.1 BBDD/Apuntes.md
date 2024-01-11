@@ -52,6 +52,16 @@ Cada entidad desempeña una función en una relación que se denomina ***rol***,
 
 La asociación entre conjuntos de entidades se denomina ***participación***.
 
+##### Cardinalidad
+Es la cantidad de relaciones que pueden establecerse entre entidades o la expresión del número de entidades a las que otra entidad se puede asociar mediante un conjunto de relaciones.
++ Ralaciones uno a uno (1:1) (p.ej. los matrimonios)
++ Relaciones uno a varios (1:N) (p.ej. un tutor y varios alumnos)
++ Relación varios a varios (M:N)
+
+Existen restricciones de participación u obligatoriedades en la cardinalidad:
++ Total: Si todas se relacionan con todas (Obligatoriedad 1)
++ Parcial: No todas se relacionan con todas (Obligatoriedad 0)
+
 Existen diferentes perfiles involucrados en un sistema de base de datos:
 + Administradores
 + Usuarios
