@@ -33,3 +33,22 @@ Tipos de licencias:
 > 
 > ```slmgr -dli```
 
+## 1.3 Instalación
+El método más habitual es con un fichero ISO.
+
+Proceso de instalación:
+1. La BIOS reconoce el dispositivo de arranque y lanza el O.S. que encuentra en él.
+2. En la carpeta /Sources:
+   + Boot.wim: Contiene el Windows PE y configurará idioma, drivers y discos y las rutas de los drivers no incluidos en este fichero.
+   + Install.wim o Install.esd (según el O.S. vendrá un archivo u otro): Contiene el sistema de ficheros del propio O.S.
+3. OOBE (Out Of Box Experience): Experiencia rápida que se ejecuta la primera vez que un usuario inicia un equipo.
+   + Nombre del PC
+   + Nombre del primer usuario y contraseña (este será el Admin)
+   + Configuración de red
+   + Instalación de actualizaciones
+   + Cortana y privacidad
+   + ***En un servidor sólo se pedirá la contraseña de Admin***
+![Instalación de Windows](https://github.com/13sauca13/PRG/blob/master/Recursos/Instalcion%20Windows.png)
+
+#### WDS y SYSPREP
++ WDS (Windows Deployement Service): Herramienta software que permite la instalación de sistemas operativos a través de red (Equipos con tarjeta PXE). El problema es que todos los equipos tendrán el mismo nombre y el mismo SID, la solución es ejecutar el SYSPREP.
