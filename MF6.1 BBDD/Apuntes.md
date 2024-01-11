@@ -23,10 +23,10 @@ El SGBD nos proporciona:
 | Nivel lógico/conceptual | Descibe que datos serán almacenados y como se relacionan |
 | Nivel externo | Nivel de abtracción más alto, es lo que el usuario visualizará |
 
-## 2. Modelos conceptuales
-La base de datos se definirá en forma de descripción de texto, el llamado **Universo de discurso**
+![SGBD](https://github.com/13sauca13/PRG/blob/master/Recursos/Esquema%20SGBD.PNG)
 
-### Modelo entidad/relación
+## 2. Modelo conceptual Entidad/Relación
+La base de datos se definirá en forma de descripción de texto, el llamado **Universo de discurso**
 
 ***Entidad***: Objeto que existe y puede distinguirse de otros a través de un conjunto de atributos ( :exclamation: **Tiene que tener características**) Se representa con un recángulo :orange_square:
 
@@ -34,8 +34,8 @@ La base de datos se definirá en forma de descripción de texto, el llamado **Un
 Sólo puede haber un atributo identificativo en cada entidad, si existe algún otro valor que identifica de manera única se tratará de una _clave candidata_ (p.ej: matrícula y número de bastidor).
 
 Tipos de entidades:
-+ Entidades débiles: Su existencia depende de otra entidad.
-+ Entidades fuertes: Tienen existencia 
++ Entidades débiles: Su existencia depende de otra entidad o no tienen atributo identificativo y tienen que cogerlo de otra.
++ Entidades fuertes: Tienen existencia por si mismas y tienen atributo identificativo. 
 
 Los atributos pueden ser:
 + Simples o compuestos
@@ -44,3 +44,18 @@ Los atributos pueden ser:
 Los dominios del atributo son los valores que puede coger
 
 ***Relación***: Asociación entre varias entidades (También pueden tener atributos). Son verbos y se representan con un rombo :large_orange_diamond:
+
+******************** AÑADIR
+
+Existen diferentes perfiles involucrados en un sistema de base de datos:
++ Administradores
++ Usuarios
+
+Los diseñadores de la base de datos deben interactuar con los expertos y usuarios del dominio para llevar a cabo la tarea. El diseñador escoge un modelo de datos y traduce esos requisitos en un esquema conceptual de la base de datos.
+
+El diseño de la base de datos se denomina ***esquema de la base de datos***.
+>**El esquema se modifica rara vez**
+
+La información almacenada en un momento dado en la base de datos es el ***ejemplar de la base de datos***.
+
+
