@@ -48,7 +48,7 @@ Proceso de instalación:
    + Instalación de actualizaciones
    + Cortana y privacidad
    + ***En un servidor sólo se pedirá la contraseña de Admin***
-![Instalación de Windows](Recursos/Instalcion Windows.png)
+![Instalación de Windows](./Recursos/Instalcion Windows.png)
 
 #### WDS y SYSPREP
 + WDS (Windows Deployement Service): Herramienta software que permite la instalación de sistemas operativos a través de red (Equipos con tarjeta PXE). El problema es que todos los equipos tendrán el mismo nombre y el mismo SID, la solución es ejecutar el SYSPREP.
