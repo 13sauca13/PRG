@@ -30,4 +30,5 @@ Tipos de licencias:
   + KMS (Key Management System): Sistema de Administración de Claves. Es necesario un Servidor KMS que da la clave a los equipos, periódicamente los equipos tienen que renovarla, si no se puede coonceder esa clave a otro equipo.
 
 > Para saber el tipo de licencia:
-> SLMGR -DLI
+> ```slmgr -dli```
+
