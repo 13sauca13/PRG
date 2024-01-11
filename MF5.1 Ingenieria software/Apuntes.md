@@ -26,3 +26,44 @@ Es responsabilidad del gestor del proyecto adquirir un amplio conocimiento.
   + Análisis: Análisis de toda la info previa. Usaremos DAFO.
 + Desarrollo
 + Evaluación
+
+## 2. Etapas operativas
+Controlaremos el inicio y la evaluación del proyecto, detectaremos problemas que puedan surgit y encontraremos maneras de resolverlos y conduciremos hacia la finalización del proyecto.
+
+Para la gestión de proyectos digitales tenemos dos enfoques necesarios y paralelos, en ambas _planificamos_ y _monitrizamos_:
++ Gestión del alcance del proyecto
+  + Gestión del cambio
++ Gestión de la ejecución/gestión del proyecto
+  + Ejecución
+  + Control
+  + Cierre
+
+Hay que tener calramente definidos los aspectos del proyecto y documentar, los pilares de la gestión son:
++ Temporal
+  + Inicio y fin
+  + Pequeño, mediano o grande
++ Singular
+  + Producto
+  + Servicio
++ Incremental
+  + Evolución gradual
+ 
+Para gestionar el proyecto hay que conocer los frameworks y elegir la mejor metodología.
+
+Una vez pasada la fase de análisis y captación de conocimiento y diseño pasamos a la fase de ejecución y gestión del proyecto, en ella podemos encontrar las siguientes tareas principales:
++ Ejecución del proyecto
+  + Levantar acta del inicio
+  + Establecer el entorno de trabajo (grupos y flujos de trabajo)
+  + Asignar las tareas a los recursos
+  + Ejecutar las tareas
+  + Gestionar las peticiones de cambio
++ Seguimiento y control
+  + Seguimiento de tareas e hitos planificados
+  + Gestión de entregables (incluido control de calidad)
+  + Gestión de incidencias que han surgido
++ Cierre
+  + Cierre formal
+  + Realización de backup
+  + Análisis de resultados con respecto a las estimaciones
+  + Actualización de la base de conocimiento con todo lo aprendido
+
