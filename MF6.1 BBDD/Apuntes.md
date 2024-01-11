@@ -45,8 +45,6 @@ Los dominios del atributo son los valores que puede coger
 
 ***Relación***: Asociación entre varias entidades (También pueden tener atributos). Son verbos y se representan con un rombo :large_orange_diamond:
 
-******************** AÑADIR
-
 Existen diferentes perfiles involucrados en un sistema de base de datos:
 + Administradores
 + Usuarios
