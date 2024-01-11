@@ -67,3 +67,7 @@ Una vez pasada la fase de análisis y captación de conocimiento y diseño pasam
   + Análisis de resultados con respecto a las estimaciones
   + Actualización de la base de conocimiento con todo lo aprendido
 
+### 2.1 Etapa: Ejecución del proyecto
+Se despliega todo lo planificado en la etapa pre-operativa.
+
+Aquí se demuestran las capacidades de planificación y conocimiento de los flujos de trabajo.
