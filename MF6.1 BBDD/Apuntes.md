@@ -48,6 +48,10 @@ Los dominios del atributo son los valores que puede coger
 #### Relación
 Asociación entre varias entidades (También pueden tener atributos). Son verbos y se representan con un rombo :large_orange_diamond:
 
+Cada entidad desempeña una función en una relación que se denomina ***rol***, y en cada relación pueden participar dos o más entidades, esto es el grado de relación (binaria, ternaria, si hay dos relaciones entre las mismas entidades es doble...)
+
+La asociación entre conjuntos de entidades se denomina ***participación***.
+
 Existen diferentes perfiles involucrados en un sistema de base de datos:
 + Administradores
 + Usuarios
