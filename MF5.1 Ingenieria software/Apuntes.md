@@ -51,23 +51,30 @@ Hay que tener calramente definidos los aspectos del proyecto y documentar, los p
 Para gestionar el proyecto hay que conocer los frameworks y elegir la mejor metodología.
 
 Una vez pasada la fase de análisis y captación de conocimiento y diseño pasamos a la fase de ejecución y gestión del proyecto, en ella podemos encontrar las siguientes tareas principales:
-+ Ejecución del proyecto
-  + Levantar acta del inicio
-  + Establecer el entorno de trabajo (grupos y flujos de trabajo)
-  + Asignar las tareas a los recursos
-  + Ejecutar las tareas
-  + Gestionar las peticiones de cambio
-+ Seguimiento y control
-  + Seguimiento de tareas e hitos planificados
-  + Gestión de entregables (incluido control de calidad)
-  + Gestión de incidencias que han surgido
-+ Cierre
-  + Cierre formal
-  + Realización de backup
-  + Análisis de resultados con respecto a las estimaciones
-  + Actualización de la base de conocimiento con todo lo aprendido
++ **Ejecución del proyecto**
++ **Seguimiento y control**
++ **Cierre**
 
 ### 2.1 Etapa: Ejecución del proyecto
 Se despliega todo lo planificado en la etapa pre-operativa.
 
 Aquí se demuestran las capacidades de planificación y conocimiento de los flujos de trabajo.
++ Levantar acta del inicio
++ Establecer el entorno de trabajo (grupos y flujos de trabajo)
++ Asignar las tareas a los recursos
++ Estimar la duración de las actividades (***Incluir reservas de tiempo para contingencias***)
++ Ejecutar las tareas
++ Gestionar las peticiones de cambio
+
+### 2.2 Etapa: Seguimiento y control
+Se debe vigila que el proceso esté desarrollando los resultados apuntados en la fase de pre-operacion y en base a ello se podrán modificar estrategias, corregir y redirigir el proyecto. Es necesario vigilar el triángulo ALCANCE-TIEMPO-COSTES.
++ Seguimiento de tareas e hitos planificados (La ruta crítica es la ruta más larga para terminar el proyecto)
++ Gestión de entregables (incluido control de calidad)
++ Gestión de incidencias que han surgidoç
+
+### 2.3 Etapa: Cierre del proyecto
+En esta etapa se evalúa e proceso completo con retrosectiva, anotando fallos e imprevistos, generando un informe que mejore la planificación y ejecución de proyectos futuros (Informe Postmortem)
++ Cierre formal
++ Realización de backup
++ Análisis de resultados con respecto a las estimaciones
++ Actualización de la base de conocimiento con todo lo aprendido
