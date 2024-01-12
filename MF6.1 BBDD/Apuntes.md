@@ -35,7 +35,7 @@ Objeto que existe y puede distinguirse de otros a través de un conjunto de atri
 Sólo puede haber un atributo identificativo en cada entidad, si existe algún otro valor que identifica de manera única se tratará de una _clave candidata_ (p.ej: matrícula y número de bastidor).
 
 Tipos de entidades:
-+ Entidades débiles: Su existencia depende de otra entidad o no tienen atributo identificativo y tienen que cogerlo de otra.
++ Entidades débiles: Su existencia depende de otra entidad o no tienen atributo identificativo y tienen que cogerlo de otra. (Se representan con dos rectángulos concéntricos :white_square_button:)
 + Entidades fuertes: Tienen existencia por si mismas y tienen atributo identificativo. 
 
 Los atributos pueden ser:
@@ -51,6 +51,12 @@ Asociación entre varias entidades (También pueden tener atributos). Son verbos
 Cada entidad desempeña una función en una relación que se denomina ***rol***, y en cada relación pueden participar dos o más entidades, esto es el grado de relación (binaria, ternaria, si hay dos relaciones entre las mismas entidades es doble...)
 
 La asociación entre conjuntos de entidades se denomina ***participación***.
+
+Tipos de relaciones:
++ **Relación de matrimonio**
++ **Relación cursiva o reflexiva**: Cuando una entidad se relaciona consigo misma
++ **Relación de generalización**: Varios conjuntos de entidades se sintetizan en un conjunto de entidades de nivel superior basado en características comunes.
++ **Relación de agregación**: En el modelo Entidad-Relación no se pueden expresar relaciones entre relaciones, la agrupación consiste en agrupar en un rectángulo a la relación y las entidades y atributos involucrados para formar una entidad nueva. (La cardinalidad tiene que ser M:N)
 
 ##### Cardinalidad
 Es la cantidad de relaciones que pueden establecerse entre entidades o la expresión del número de entidades a las que otra entidad se puede asociar mediante un conjunto de relaciones.
