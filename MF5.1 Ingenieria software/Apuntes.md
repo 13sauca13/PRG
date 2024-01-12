@@ -95,4 +95,9 @@ Una vez analizado tenemos cuatro estrategias:
 + Estrategia DO: Sirve para crear un plan de reorientación o refuerzo para cambiar el trayecto. Su objetivo es superar debilidades internas al aprovechar oportunidades externas.
 + Estrategia FA: Se conoce como estrategia defensiva. Crea un plan aprovechando las fortalezas internas para combatir los peligros del exterior.
 
+#### Gestión del cambio
+Nos encontraremos dos vertientes  distintas:
++ Rechazo a cambiar las cosas (desde fuera del proyecto): Todos nos encontramos en la **ZONA DE CONFORT** pero al salir de ella ampliamos nuestra visión y llegamos a la **ZONA DE APRENDIZAJE**. Si nos negamos a salir de la zona de confort y tomamos actitud de "no experiencia" acabaremos en la **ZONA DE PÁNICO**
+![Rechazo al cambio](https://github.com/13sauca13/PRG/blob/master/Recursos/Rechazo%20al%20cambio.png)
++ Cambios al alcance de un proyecto (desde dentro del proyecto).
 
