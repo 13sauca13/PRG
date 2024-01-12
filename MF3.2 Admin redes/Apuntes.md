@@ -66,4 +66,13 @@ Proceso de instalación:
     + Dominio
     + Trabajo
     + Pública
+> Para cambiar el perfil de red:
+> ```Get-NetConnectionProfile``` Permite ver el tipo de conexión
+> ```Set-NetConnectionProfile``` Modifica el tipo de conexión
 
+  + Firewall de Windows
+    + La configuración del Firewall se puede hacer en local (desde Panel de Control o desde MMC), en remoto o mediante GPO
+    + Ahora está integrado en la configuracion del Ipsec (Internet Protocol Security)
+    + Modos del Firewall
+      + Modo Transporte: Sólo se cifra la carga útil (no modifica la cabexera IP, sólo funciona de PC a PC, no atraviesa NAT)
+      + Modo túnel: ******************************** AÑADIR
