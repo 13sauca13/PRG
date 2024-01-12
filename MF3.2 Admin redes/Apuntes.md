@@ -52,3 +52,18 @@ Proceso de instalación:
 
 #### WDS y SYSPREP
 + WDS (Windows Deployement Service): Herramienta software que permite la instalación de sistemas operativos a través de red (Equipos con tarjeta PXE). El problema es que todos los equipos tendrán el mismo nombre y el mismo SID, la solución es ejecutar el SYSPREP.
+
+## 1.4 Características de seguridad de Windows
++ **Control de cuentas de usuario (UAC)**
+  + Funcion que ayuda a prevenir cambios sin autorización en el equipo.
+  + Si se inicia como Administrador pide permiso
+  + Si se inicia como usuario solicita la contraseña de Administrador. (los usuarios pueden instalar actualizaciones, controladores de windows update, ver las configuraciones, conectar bluetooth...)
++ **Opciones de red**
+  + Detección de redes activa
+    + Permite ver otras redes y dispositivos y será visible por los demás
+    + Permite compartir archivos, carpetas e impresoras
+  + Tipos de red
+    + Dominio
+    + Trabajo
+    + Pública
+
