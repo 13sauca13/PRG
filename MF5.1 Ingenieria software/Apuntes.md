@@ -103,6 +103,7 @@ Para cambiar necesitamos un proceso de aprendizaje de 4 fases:
   + Cambio
   + Reaprendizaje
   + Institucionalización
+
 ![Rechazo al cambio](https://github.com/13sauca13/PRG/blob/master/Recursos/Rechazo%20al%20cambio.png)
 + Cambios al alcance de un proyecto (desde dentro del proyecto): Esto es adelantarse a los problemas y darles una solución adecuada. Los proyectos ocasionan cambios que generan valor. Existen 4 estrategias para adaptarnos a los distintos cambios dentro del proyecto (AIRE).
   + Anticipatorio: Planificar los cambios antes de la situación esperada.
