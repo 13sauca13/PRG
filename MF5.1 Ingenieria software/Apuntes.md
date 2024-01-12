@@ -82,7 +82,7 @@ En esta etapa se evalúa e proceso completo con retrosectiva, anotando fallos e 
 ## 3. DAFO y Gestión del cambio
 DAFO viene de el inglés SWOT (Strengths, Weaknesses, Opportubities and Threats).
 
-:eyes: [Análisis DAFO](htps://aulacm.com/analisis-dafo-ejemplo-plantilla/)
+:eyes: [Análisis DAFO](https://aulacm.com/analisis-dafo-ejemplo-plantilla/#C%C3%B3mo%20hacer%20Un%20Dafo,%20Algunos%20Tips)
 
 Se observan y definen todas las debilidades, amenazas, fortalezas y oportunidades de nuestro proyecto, tanto en la fase de diseño (evaluando desde el exterior) como en la fase de ejecución/operación (evaluando desde el interior del proyecto).
 
