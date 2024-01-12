@@ -78,3 +78,21 @@ En esta etapa se evalúa e proceso completo con retrosectiva, anotando fallos e 
 + Realización de backup
 + Análisis de resultados con respecto a las estimaciones
 + Actualización de la base de conocimiento con todo lo aprendido
+
+## 3. DAFO y Gestión del cambio
+DAFO viene de el inglés SWOT (Strengths, Weaknesses, Opportubities and Threats).
+
+:eyes:[Análisis DAFO](htps://aulacm.com/analisis-dafo-ejemplo-plantilla/)
+
+Se observan y definen todas las debilidades, amenazas, fortalezas y oportunidades de nuestro proyecto, tanto en la fase de diseño (evaluando desde el exterior) como en la fase de ejecución/operación (evaluando desde el interior del proyecto).
+
++ Fortalezas y Debilidades: Son factores internos donde nos referimos a todo lo que ya está dentro del proyecto. Todo lo que impacta de modo tanto positivo como negativo en relación a la gestión interna.
++ Amenazas y Opertinidades: Son factores externos que afectan al proyecto desde fuera. Su control es más complicado.
+
+Una vez analizado tenemos cuatro estrategias:
++ Estrategia DA: Utiliza un modo de supervivencia o retirada. Emplea tácticas que pretenden disminuit las debilidades internas y evitar amenazas externas.
++ Estrategia FO: Es la estrategia ofensiva porque aprovecha ventajas tanto internas como externas.
++ Estrategia DO: Sirve para crear un plan de reorientación o refuerzo para cambiar el trayecto. Su objetivo es superar debilidades internas al aprovechar oportunidades externas.
++ Estrategia FA: Se conoce como estrategia defensiva. Crea un plan aprovechando las fortalezas internas para combatir los peligros del exterior.
+
+
