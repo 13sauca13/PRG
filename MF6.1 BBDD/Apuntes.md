@@ -98,8 +98,8 @@ El nombre de los atributos no tienen por qué llamarse igual.
 + **UNIQUE**: El valor debe ser único.
 + **NO NULL**: Restricción de obligatoriedad
 + **CASCADE**: Borrado en cascada. Si se modifica o borra en la tabla padre se modifican o borran las tuplas de las tablas hijas
-+ **CHECK**: 
-+ **ASSERTION**:
++ **CHECK**: Comprueba una condición que deben cumplir los valores de determinados atributos
++ **ASSERTION**: Lo mismo que una restricción “check” pero no solo tienen ámbito en una sola tabla. Afecta a varias tablas
 
 #### Migración del modelo E/R al modelo relacional
 Reglas:
