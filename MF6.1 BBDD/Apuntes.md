@@ -79,4 +79,39 @@ El diseño de la base de datos se denomina ***esquema de la base de datos***.
 
 La información almacenada en un momento dado en la base de datos es el ***ejemplar de la base de datos***.
 
+## 3. Modelo conceptual relacional
+El elemento central del modelo relacional es la relación:
++ **Entidades**: Cada entidad del equema E/R da lugar a una nueva relación (tabla). Esta relación tiene sus características:
+  + La tabla es bidimensional, con filas (tuplas) y columnas
+  + Es implementable en el SGBD
+  + El número de atributos de una relación es el ***grado***
+  + El número de tuplas en un momento dado es las ***extensión o cardinalidad***
+  + Cada relacuón tiene un nombre distinto
+  + El valor de los atributos es atómico (NO hay atributos multivaluados)
+  + Pueden existir valores vacíos o nulos
+  + Cada atributio de la misma relación tiene distinto nombre
+  + No existen dos tuplas exactamente iguales
+  + ***No puede haber  atributos que formen parte de la clave primaria que tengan valor nulo***
 
+Los valores del atributo clave de una relación pasarán a la otra como FK(Foreign Key). La restricción de clave ajena, más conocida como ***integridad  referencial***, nos indica que los valores de clave ajena en la relación “hijo” deben corresponderse con los valores de la clave primaria “padre”. 
+El nombre de los atributos no tienen por qué llamarse igual.
++ **UNIQUE**: El valor debe ser único.
++ **NO NULL**: Restricción de obligatoriedad
++ **CASCADE**: Borrado en cascada. Si se modifica o borra en la tabla padre se modifican o borran las tuplas de las tablas hijas
++ **CHECK**: 
++ **ASSERTION**:
+
+#### Migración del modelo E/R al modelo relacional
+Reglas:
++ Cada entidad es una tabla
++ En las entidades bébiles se añade la clave primaria de la entidad de la que dependen
++ Relaciones:
+  + 1:1 En una de las entidades se introduce como FK la clave primaria de la otra entidad
+  + 1:N En la entidad B (parte N) se introduce ***************************************** AÑADIR
+  + M:N ******************************************************************************** AÑADIR
++ Atributos:
+  + Compuestos: Dan lugar a varios atributos
+  + Multivaluados: Dan lugar a varios atributos y una nueva tabla con ralación 1:N o M:N
++ Las entidades agregadas no se traducen en tablas
+  + Relación de agregación 1:N, adquiere como parte de su clave la clave primaria de la relación interna de agregación
+  + Relación de agregación M:N, Genera una nueva tabla que incluye la clave primaria de la relación interna de la agregación y la clave primaria de la otra entidad.
