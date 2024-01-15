@@ -98,10 +98,8 @@ Una vez analizado tenemos cuatro estrategias:
 #### Gestión del cambio
 Nos encontraremos dos vertientes  distintas:
 + Rechazo a cambiar las cosas (desde fuera del proyecto): Todos nos encontramos en la **ZONA DE CONFORT** pero al salir de ella ampliamos nuestra visión y llegamos a la **ZONA DE APRENDIZAJE**. Si nos negamos a salir de la zona de confort y tomamos actitud de "no experiencia" acabaremos en la **ZONA DE PÁNICO**.
-
 Para cambiar necesitamos un proceso de aprendizaje de 4 fases:
-
-Desaprendizaje :arrow_right: Cambio :arrow_right: Reaprendizaje :arrow_right: Institucionalización
+  + Desaprendizaje :arrow_right: Cambio :arrow_right: Reaprendizaje :arrow_right: Institucionalización
 
 ![Rechazo al cambio](https://github.com/13sauca13/PRG/blob/master/Recursos/Rechazo%20al%20cambio.png)
 
