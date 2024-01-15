@@ -119,8 +119,23 @@ El proceso de solicitud y aprobacion de cambios debe seguir los siguientes pasos
 ## 4. Modelos de gestión
 Los marcos de trabajo (frameworks) nos aportan las pautas para aplicar los modelos de gestión.
 
+A la hora de elegir un modelo habrá que tener en cuenta:
++ En que sector opera nuestro proyecto
++ El enfoque del proyecto (teniendo en cuenta los objetivos)
++ Complejidad del proyecto
++ El grado de especialización de los roles
++ El tamaño de la empresa
+
 ### 4.1 CASACADA (Metodología secuencial tradicional)
 Está basada en la ejecución de etapas secuenciales de modo que se debe terminar una fase para comenzar la siguiente. Los más conocidos son: Waterfall, Lean, Prince2, SixSigma...
 
 ### 4.2 AGILE (Metodología ágil)
 Se basa en el desarrollo incremental e iterativo. El concepto de subtarea, entregables rápidos... da la idea de que se trata de ejecutar proyectos con mucha capacidad de cambio durante el mismo. Los más conocidos son: :eyes: [Kanban](https://es.wikipedia.org/wiki/Kanban_(desarrollo)) y :eyes: [SCRUM](https://es.wikipedia.org/wiki/Scrum_(desarrollo_de_software))
+
+El objetivo es tener un conjunto de requerimientos que voy a abordar en proyectos más pequeños llamador ***iteraciones***., con ello se pretende conseguir más información para abordar las sucesivas iteraciones. También influye la rapidez con la que se llega al producto o desarrollo. Existe el concepto de ***producto mínimo viable***, que son pequeños subproductos que se van generando para entregar al cliente, monitorizar el proceso y autoevaluarnos.
+
+Dentro del enfoque agil está cada vez más extendido el uso de la filosofía LEAN: Desprendernos de lo superfluo.
+
+### 4.3 Otras metodologías
+Existen más metodologías que por descomposición de proyectos no cuadran con los dos modelos anteriores.
++ Critical Path Method
