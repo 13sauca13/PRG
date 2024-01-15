@@ -116,3 +116,11 @@ Cuando planifiquemos tenemos que contemplar los cambios y estos deben ser tratad
 El proceso de solicitud y aprobacion de cambios debe seguir los siguientes pasos:
 ![Solicitud y aprobación de cambios](https://github.com/13sauca13/PRG/blob/master/Recursos/Solicitud%20aprobacion%20cambios.png)
 
+## 4. Modelos de gestión
+Los marcos de trabajo (frameworks) nos aportan las pautas para aplicar los modelos de gestión.
+
+### 4.1 CASACADA (Metodología secuencial tradicional)
+Está basada en la ejecución de etapas secuenciales de modo que se debe terminar una fase para comenzar la siguiente. Los más conocidos son: Waterfall, Lean, Prince2, SixSigma...
+
+### 4.2 AGILE (Metodología ágil)
+Se basa en el desarrollo incremental e iterativo. El concepto de subtarea, entregables rápidos... da la idea de que se trata de ejecutar proyectos con mucha capacidad de cambio durante el mismo. Los más conocidos son: :eyes: [Kanban](https://es.wikipedia.org/wiki/Kanban_(desarrollo)) y :eyes: [SCRUM](https://es.wikipedia.org/wiki/Scrum_(desarrollo_de_software))
