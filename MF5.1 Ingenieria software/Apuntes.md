@@ -157,7 +157,7 @@ En general la forma en la que funciona la entrega de un proyecto Agil se puede r
 + VISUALIZAR :arrow_right: ESPECULAR :arrow_right: EXPLORAR :arrow_right: ADAPTARSE :arrow_right: CIERRE
 ![Fases AGILE](https://github.com/13sauca13/PRG/blob/master/Recursos/Fases%20AGILE.png)
 
-#### Kanban vs SCRUM
+### Kanban vs SCRUM
 Pueden llegar a mezclarse para hacer SCRUMBAN. De todas formas las diferencias son:
 | SCRUM | KANBAN |
 | --- | ---|
@@ -178,3 +178,14 @@ Fases:
 + Ejecución del sprint: Ejecución en bloques cortes y fijos de tiempo (2 semanas máx.)
 + Resvisión del sprint (Sprint review): Se presenta al cliente con los requisitos completados en la iteración en forma de incremento del producto preparado para ser entregado.
 + Retrospectiva del sprint (Sprint retrospective): Se revisa enfocado a la mejora continua del proceso.
+
+##### SCRUMBAN
+Recoge la filosofía y prácticas de Kanban y las coloca por encima de Scrum eliminando algunas reglas.
+
+| | SCRUM | KANBAN |
+| --- | --- | --- |
+| Origen | Desarrollo de software | Producción LEAN|
+| Ideología | Aprender por experiencias, organizarse por si mismo y reflexionar para mejorar | Elementos visuales para mejorar en el trabajo en curso |
+| Cadencia | Sprints de longitud fija | Flujo contunuo |
+| Prácticas | Planificacion de sprints, sprints, scrum diario, revision de sprint, retrospectiva de sprint | Visualizar y gestionar el flujo de trabajo en curso e incorporar ciclos de feedback |
+| Funciones | Product owner, Scrum master, Developer team | No hay funciones |
