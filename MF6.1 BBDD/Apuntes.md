@@ -108,7 +108,7 @@ Reglas:
 + Relaciones:
   + 1:1 En una de las entidades se introduce como FK la clave primaria de la otra entidad
   + 1:N En la entidad B (parte N) se introduce como FK la clave primaria de la entidad A (parte 1)
-  + M:N: Se crea una nueva entidad que tiene las claves de cada una de las otras dos entidades.
+  + M:N: Se crea una nueva entidad (tabla) que tiene las claves de cada una de las otras dos entidades.
 + Atributos:
   + Compuestos: Dan lugar a varios atributos
   + Multivaluados: Dan lugar a varios atributos y una nueva tabla con ralación 1:N o M:N
