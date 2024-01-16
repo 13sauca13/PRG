@@ -86,6 +86,7 @@ Usa un protocolo de canal de fibra (FCP) que permite comandos SCSI. Su topologí
 + Point to point (P2P-FC): Los dispositivos están conectados uno a otro
 + Arbitrated loop (FC-AL): Todos los dispositivos están conectados a un anillo
 + Switched fabric (FC-SW): Todos los dispositivos están conectados a conmutadres de canal de fibra. Los conmutadores administran el estado de los fabric para optimizar (los medios de comunicación no se comparten, cualquier dispositivo que se comunica con otro lo hace a la velocidad del bus completo
+
 Cada dispositivo incluido en el controlador de hosts de bus se le llama nodo. Al igual que una MAC address 
 utilizada en tarjetas de interfaz de red, cada nodo tiene un arreglo de 64 bits de nombre a nivel mundial 
 (WWNN: World Wide Node Name) asignado por el fabricante y registrado en la IEEE.
