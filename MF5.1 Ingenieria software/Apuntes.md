@@ -156,3 +156,12 @@ Por tanto existen 5 pilares:
 En general la forma en la que funciona la entrega de un proyecto Agil se puede resumir en las siguientes fases:
 + VISUALIZAR :arrow_right: ESPECULAR :arrow_right: EXPLORAR :arrow_right: ADAPTARSE :arrow_right: CIERRE
 ![Fases AGILE](https://github.com/13sauca13/PRG/blob/master/Recursos/Fases%20AGILE.png)
+
+#### Kanban vs SCRUM
+Pueden llegar a mezclarse para hacer SCRUMBAN. De todas formas las diferencias son:
+| SCRUM | KANBAN |
+| --- | ---|
+| Maximizar el valor entregado en el desarrollo de un producto complejo | Optimizar el flujo de trabajo |
+| Existen roles (Scrum master, product owner...) | No existen roles |
+
+
