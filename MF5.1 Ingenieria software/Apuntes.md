@@ -164,4 +164,17 @@ Pueden llegar a mezclarse para hacer SCRUMBAN. De todas formas las diferencias s
 | Maximizar el valor entregado en el desarrollo de un producto complejo | Optimizar el flujo de trabajo |
 | Existen roles (Scrum master, product owner...) | No existen roles |
 
+##### Kanban
+Se focaliza en el cambio evolutivo y continuas mejoras de procesos
 
+##### SCRUM
+Utiliza intervalos de tiempo y divide los proyectos en periodos fijos llamados ***Sprint***
+
+Los proyectos sse inician como cualquier proyecto con la recogida de requisitos. Esta lista actúa como plan de proyecto y será creada por el cliente con la ayuda del líder del proceso (***Scrum master***). Esta etapa sería la "planificación" en un marco de un proyecto No-AGILE.
+
+Todos los datos se introducen en nuestro sistema de ***Gestión de backlog***, que es el conjunto de tareas a realizar. Para cada objetivo se indica el valor que aporta al cliente y el costo de completarlo.
+
+Fases:
++ Ejecución del sprint: Ejecución en bloques cortes y fijos de tiempo (2 semanas máx.)
++ Resvisión del sprint (Sprint review): Se presenta al cliente con los requisitos completados en la iteración en forma de incremento del producto preparado para ser entregado.
++ Retrospectiva del sprint (Sprint retrospective): Se revisa enfocado a la mejora continua del proceso.
