@@ -67,7 +67,9 @@ Proceso de instalación:
     + Trabajo
     + Pública
 > Para cambiar el perfil de red:
+> 
 > ```Get-NetConnectionProfile``` Permite ver el tipo de conexión
+> 
 > ```Set-NetConnectionProfile``` Modifica el tipo de conexión
 
   + Firewall de Windows
