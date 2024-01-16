@@ -1,4 +1,4 @@
-# PRG
+# Técnicas de apoyo CIS/TIC
 ### Apuntes
 :globe_with_meridians: [Administración de redes](https://github.com/13sauca13/PRG/blob/master/MF3.2%20Admin%20redes/Apuntes.md)
 
