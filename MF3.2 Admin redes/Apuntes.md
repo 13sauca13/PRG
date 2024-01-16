@@ -92,3 +92,20 @@ utilizada en tarjetas de interfaz de red, cada nodo tiene un arreglo de 64 bits 
 (WWNN: World Wide Node Name) asignado por el fabricante y registrado en la IEEE.
 
 Para hacer más manejable el almacenamiento, el canal de fibra utiliza zonificación y zonificación LUN.
++ Zona: Indica que equipos pueden conectasrse entre si
++ Alias: Nombre asociado a un WWNN o puerto
++ Zoneset: Conjunto de zonas, pueden existir varios definidos, pero sólo uno activo (el zoneset activo es el que está en uso y es el mismo para todos los switches del fabric)
+
+#### iSCSI
+Internet Small Computing Interface, es un protocolo de internet para el almacenamiento en red basado en IP. Debe usar un adaptador de red dedicado.
+
+En almacenamiento, una ***Logical Unit Number o LUN*** es una dirección para una unidad de disco duro y por extensión, el disco en sí mismo. Normalmente se refiere a una partición virtual (o volumen) dentro de un conjunto RAID. , iSCSI emula una sesión de un disco duro para que el servidor LUN lo trate como cualquier otro.
+
+iSCSI utiliza la siguiente información para conetarse a la SAN:
++ Nombre del host (o dirección IP)
++ Número de puerto (por defecto 3260)
++ Nombre iSCSI
+  + Nombre calificado iSCSI (IQN)
+  + Identificador único extendido (EUI)
+  + T11 Autoridad de direcciones de red (NAA)
++ Contraseña opcional
