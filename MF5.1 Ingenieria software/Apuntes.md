@@ -137,3 +137,21 @@ Dentro del enfoque agil está cada vez más extendido el uso de la filosofía LE
 ### 4.3 Otras metodologías
 Existen más metodologías que por descomposición de proyectos no cuadran con los dos modelos anteriores.
 + Critical Path Method
+
+## 5. AGILE. Que framework?
+Muchos proyectos comienzan con una fase de diseño muy liviana (sólo un objetivo), sin un estudio de alcance completo, por ello están muy demandados los proyectos ágiles de gestión de proyectos, cuyas bases son:
++ Enfoque interactivo
++ Trabajo por lotes pequeños
++ Visualización de proyectos y transparencia
++ Trabajo colaborativo con el cliente
++ Feedback lo más rápido posible
+
+Por tanto existen 5 pilares:
++ **TRANSPARENCIA**: Los miembros del proyecto comparten sus progresos en muros de información (p.ej. muros Kanban). Esto permite que todos conozcan y entiendan lo que todos están haciendo.
++ **ENFOQUE EN EL CLIENTE**: Asegurarse de que los requisitos del cliente se comprendan correctamente gracias a la constante colaboración con él.
++ **ADAPTABILIDAD**: Proyecto y equipo deben ser capaces de responder a los cambios de manera efectiva y rápida.
++ **SENTIMIENTO DE PERTENENCIA**: Gran parte del proceso de toma de decisiones está en manos del equipo, lo que contribuye a un liderazgo más efectivo.
++ **MEJORA CONTINUA**: A lo largo de los proyectos los equipos participan en continuos ciclos de aprendizaje (al contrario que las sesiones de "lecciones aprendidas" al finalizar)
+
+En general la forma en la que funciona la entrega de un proyecto Agil se puede resumir en las siguientes fases:
++ VISUALIZAR :arrow_right: ESPECULAR :arrow_right: EXPLORAR :arrow_right: ADAPTARSE :arrow_right: CIERRE
