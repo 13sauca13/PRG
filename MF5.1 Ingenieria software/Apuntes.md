@@ -184,8 +184,8 @@ Recoge la filosofía y prácticas de Kanban y las coloca por encima de Scrum eli
 
 | | SCRUM | KANBAN |
 | --- | --- | --- |
-| Origen | Desarrollo de software | Producción LEAN|
-| Ideología | Aprender por experiencias, organizarse por si mismo y reflexionar para mejorar | Elementos visuales para mejorar en el trabajo en curso |
-| Cadencia | Sprints de longitud fija | Flujo contunuo |
-| Prácticas | Planificacion de sprints, sprints, scrum diario, revision de sprint, retrospectiva de sprint | Visualizar y gestionar el flujo de trabajo en curso e incorporar ciclos de feedback |
-| Funciones | Product owner, Scrum master, Developer team | No hay funciones |
+| ***Origen*** | Desarrollo de software | Producción LEAN|
+| ***Ideología*** | Aprender por experiencias, organizarse por si mismo y reflexionar para mejorar | Elementos visuales para mejorar en el trabajo en curso |
+| ***Cadencia*** | Sprints de longitud fija | Flujo contunuo |
+| ***Prácticas*** | Planificacion de sprints, sprints, scrum diario, revision de sprint, retrospectiva de sprint | Visualizar y gestionar el flujo de trabajo en curso e incorporar ciclos de feedback |
+| ***Funciones*** | Product owner, Scrum master, Developer team | No hay funciones |
