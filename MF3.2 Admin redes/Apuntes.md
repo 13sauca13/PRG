@@ -77,4 +77,17 @@ Proceso de instalación:
     + Ahora está integrado en la configuracion del Ipsec (Internet Protocol Security)
     + Modos del Firewall
       + Modo Transporte: Sólo se cifra la carga útil (no modifica la cabexera IP, sólo funciona de PC a PC, no atraviesa NAT)
-      + Modo túnel: ******************************** AÑADIR
+      + Modo túnel: Todo el paquete IP es crifrado y autenticado (se emplea para comunicaciones de Red a Red o PC a PC sobre internet (VPN))
+     
+## 1.5 Almacenamiento
+
+#### Canal de fibra (FC)
+Usa un protocolo de canal de fibra (FCP) que permite comandos SCSI. Su topología de red se denomina ***fabric*** (los dispositivos están conectados entre si por una o más rutas de datos (utilizando conmutadores)). Topologías de conexión:
++ Point to point (P2P-FC): Los dispositivos están conectados uno a otro
++ Arbitrated loop (FC-AL): Todos los dispositivos están conectados a un anillo
++ Switched fabric (FC-SW): Todos los dispositivos están conectados a conmutadres de canal de fibra. Los conmutadores administran el estado de los fabric para optimizar (los medios de comunicación no se comparten, cualquier dispositivo que se comunica con otro lo hace a la velocidad del bus completo
+Cada dispositivo incluido en el controlador de hosts de bus se le llama nodo. Al igual que una MAC address 
+utilizada en tarjetas de interfaz de red, cada nodo tiene un arreglo de 64 bits de nombre a nivel mundial 
+(WWNN: World Wide Node Name) asignado por el fabricante y registrado en la IEEE.
+
+Para hacer más manejable el almacenamiento, el canal de fibra utiliza zonificación y zonificación LUN.
