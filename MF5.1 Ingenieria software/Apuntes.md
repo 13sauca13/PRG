@@ -189,3 +189,18 @@ Recoge la filosofía y prácticas de Kanban y las coloca por encima de Scrum eli
 | ***Cadencia*** | Sprints de longitud fija | Flujo contunuo |
 | ***Prácticas*** | Planificacion de sprints, sprints, scrum diario, revision de sprint, retrospectiva de sprint | Visualizar y gestionar el flujo de trabajo en curso e incorporar ciclos de feedback |
 | ***Funciones*** | Product owner, Scrum master, Developer team | No hay funciones |
+
+## 6. Software como base para la gestión
+El software para la gestión de proyectos aporta beneficios:
++ Mejora la experiencia de coordinación de equipos (y más en equipos remotos)
++ Genera una excelente visión sobre el control y por tanto sobre la calidad
++ Podemos controlar el avence del proyecto en cualquier lugar y momento
+
+Los 5 motivos principales para el uso de software de gestión de proyectos son:
+1. Se puede consultar en cualquier momento y lugar
+2. Disminuye la posiblidad de cometer errores
+3. Control de todos los proyectos, subproyectos y etapas en las que se encuentran
+4. Permite anticiparse a cualquier adversidad
+5. Todos los proyectos en un único sistema de gestión
+
+Existen muchos ejemplos de software para gestión de proyectos: Asana, Jira, Trello, Smartsheet, Monday.com, Microsoft Project
