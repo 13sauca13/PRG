@@ -112,4 +112,4 @@ iSCSI utiliza la siguiente información para conetarse a la SAN:
 
 Para abrir el Iniciador iSCSI se hará desde "Herramientas" dentro de "Administración del servidor" o en ```services.msc```
 
-El iSCSI también se puede administrar por línea de comandos lanzando el iniciador con: ``ìscsicli```
+El iSCSI también se puede administrar por línea de comandos lanzando el iniciador con: ```iscsicli```
