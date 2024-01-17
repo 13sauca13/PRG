@@ -85,7 +85,7 @@ La información almacenada en un momento dado en la base de datos es el ***ejemp
 >
 >Las **ENTIDADES** del E/R pasan a llamarse **RELACIONES**
 >
->Las **RELACIONES** son **INTERRELACIONES**
+>Las **RELACIONES** del E/R son **INTERRELACIONES**
 
 El elemento central del modelo relacional es la relación:
 + **Entidades**: Cada entidad del equema E/R da lugar a una nueva relación (tabla). Esta relación tiene sus características:
