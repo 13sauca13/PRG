@@ -133,9 +133,9 @@ Reglas:
   + M:N independientemente de la obligatoriedad da lugar a una nueva tabla con las claves de ambas partes
 + Los atributos de las interrelaciones por norma general hay que llevar ell atributo a donde migre la FK (hay excepciones, habria que estudiar bien el universo de discurso, podría crearse una nueva tabla)
 + Las relaciones de generalización tiene tres opciones a elegir (preferimos la 2)
-  1. ***********************
+  1. Crear una nueva tabla con los atributos del supertipo y todos los subtipos
   2. Creamos una tabla por cada entidad y la clave del supertipo migra a cada subtipo
-  3. ***********************
+  3. Crear una tabla por cada subtipo incluyendo los atributos comunes en cada una
 + Las interrelaciones reflexivas se convierten en dos tablas, una para la entidad y otra para la interrelación excepto en dos casos:
   + Reflexiva 1:1 se crea un nuevo atributo que es la clave de la otra parte de esa interrelación (igual que se migran las FK pero migra a la misma tabla)
   + Reflexiva 1:N hay que tener en cuenta la cardinalidad del lado N
