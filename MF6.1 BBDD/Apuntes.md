@@ -82,7 +82,9 @@ La información almacenada en un momento dado en la base de datos es el ***ejemp
 ## 3. Modelo conceptual relacional
 >[!CAUTION]
 >En el modelo relacional cambia la nomenclatura:
+>
 >Las **ENTIDADES** del E/R pasan a llamarse **RELACIONES**
+>
 >Las **RELACIONES** son **INTERRELACIONES**
 
 El elemento central del modelo relacional es la relación:
