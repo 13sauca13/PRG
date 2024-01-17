@@ -55,7 +55,9 @@ La asociación entre conjuntos de entidades se denomina ***participación***.
 Tipos de relaciones:
 + **Relación de matrimonio**
 + **Relación cursiva o reflexiva**: Cuando una entidad se relaciona consigo misma
-+ **Relación de generalización**: Varios conjuntos de entidades se sintetizan en un conjunto de entidades de nivel superior basado en características comunes.
++ **Relación de generalización**: Varios conjuntos de entidades se sintetizan en un conjunto de entidades de nivel superior basado en características comunes (la entidad superior es el ***supertipo*** y las inferiores ***subtipo***).
+  + Si todas las entidades tienen todos los atributos del supertipo se llema ******** AÑADIR
+  + Si una misma entrada del supertipo puede ser más de un subtipo se llama ***solapamiento***, si sólo puede ser uno se llama ******* AÑADIR
 + **Relación de agregación**: En el modelo Entidad-Relación no se pueden expresar relaciones entre relaciones, la agrupación consiste en agrupar en un rectángulo a la relación y las entidades y atributos involucrados para formar una entidad nueva. (La cardinalidad tiene que ser M:N)
 
 ##### Cardinalidad
@@ -130,7 +132,12 @@ Reglas:
   + 1:N opcional-opcional: La clave de la parte N migra a la parte 1 como NO UNIQUE y NULL
   + M:N independientemente de la obligatoriedad da lugar a una nueva tabla con las claves de ambas partes
 + Los atributos de las interrelaciones por norma general hay que llevar ell atributo a donde migre la FK (hay excepciones, habria que estudiar bien el universo de discurso, podría crearse una nueva tabla)
-+ Las relaciones de generalización******************AÑADIR
++ Las relaciones de generalización tiene tres opciones a elegir (preferimos la 2)
+  1. ***********************
+  2. Creamos una tabla por cada entidad y la clave del supertipo migra a cada subtipo
+  3. ***********************
++ Las interrelaciones reflexivas se convierten en dos tablas, una para la entidad y otra para la interrelación excepto en dos casos:
+  + Reflexiva 1:1 se crea un nuevo atributo que es la clave de la otra parte de esa interrelación (igual que se migran las FK pero migra a la misma tabla)
 
 Para poder enlazar una clave con otra tiene que cumplir unas condiciones:
 1. ***Integridad referencial*** (restricción de clave ajena): El valor de la FK en la relación hijo debe corresponder con los valores de la clave primaria padre
