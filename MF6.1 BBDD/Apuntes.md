@@ -56,8 +56,8 @@ Tipos de relaciones:
 + **Relación de matrimonio**
 + **Relación cursiva o reflexiva**: Cuando una entidad se relaciona consigo misma
 + **Relación de generalización**: Varios conjuntos de entidades se sintetizan en un conjunto de entidades de nivel superior basado en características comunes (la entidad superior es el ***supertipo*** y las inferiores ***subtipo***).
-  + Si todas las entidades tienen todos los atributos del supertipo se llema ******** AÑADIR
-  + Si una misma entrada del supertipo puede ser más de un subtipo se llama ***solapamiento***, si sólo puede ser uno se llama ******* AÑADIR
+  + Si todas las entidades tienen todos los atributos del supertipo se llama ***total*** (si no es ***parcial***)
+  + Si una misma entrada del supertipo puede ser más de un subtipo se llama ***solapamiento***, si sólo puede ser uno se llama ***exclusividad***
 + **Relación de agregación**: En el modelo Entidad-Relación no se pueden expresar relaciones entre relaciones, la agrupación consiste en agrupar en un rectángulo a la relación y las entidades y atributos involucrados para formar una entidad nueva. (La cardinalidad tiene que ser M:N)
 
 ##### Cardinalidad
@@ -138,6 +138,10 @@ Reglas:
   3. ***********************
 + Las interrelaciones reflexivas se convierten en dos tablas, una para la entidad y otra para la interrelación excepto en dos casos:
   + Reflexiva 1:1 se crea un nuevo atributo que es la clave de la otra parte de esa interrelación (igual que se migran las FK pero migra a la misma tabla)
+  + Reflexiva 1:N hay que tener en cuenta la cardinalidad del lado N
+    + Si no es obligatoria se crea una nueva tabla cuya clave será la del lado muchos y se propaga la clave a la nueva tabla como FK
+    + Si es obligatoria no se crea una nueva tabla
+  + Reflexiva M:N crea una nueva tabla a la que migran dos veces las claves (por cada emparejamiento) y la clave será la unión de ambas claves
 
 Para poder enlazar una clave con otra tiene que cumplir unas condiciones:
 1. ***Integridad referencial*** (restricción de clave ajena): El valor de la FK en la relación hijo debe corresponder con los valores de la clave primaria padre
