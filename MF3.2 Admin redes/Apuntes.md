@@ -109,3 +109,7 @@ iSCSI utiliza la siguiente información para conetarse a la SAN:
   + Identificador único extendido (EUI)
   + T11 Autoridad de direcciones de red (NAA)
 + Contraseña opcional
+
+Para abrir el Iniciador iSCSI se hará desde "Herramientas" dentro de "Administración del servidor" o en ```services.msc```
+
+El iSCSI también se puede administrar por línea de comandos lanzando el iniciador con: ``ìscsicli```
