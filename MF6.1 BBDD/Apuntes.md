@@ -115,10 +115,21 @@ Reglas:
 + Relaciones:
   + 1:1 En una de las entidades se introduce como FK la clave primaria de la otra entidad
   + 1:N En la entidad B (parte N) se introduce como FK la clave primaria de la entidad A (parte 1)
-  + M:N: Se crea una nueva entidad (tabla) que tiene las claves de cada una de las otras dos entidades.
+  + M:N: Se crea una nueva entidad (tabla) en donde la clave primaria estará formada por las claves primarias que participan en la relación
 + Atributos:
   + Compuestos: Dan lugar a varios atributos
-  + Multivaluados: Dan lugar a varios atributos y una nueva tabla con ralación 1:N o M:N
+  + Multivaluados: Dan lugar a varios atributos y una nueva tabla con ralación 1:N o M:N (la clave serán el valor del atributo y la clave primaria de la entidad original)
 + Las entidades agregadas no se traducen en tablas
   + Relación de agregación 1:N, adquiere como parte de su clave la clave primaria de la relación interna de agregación
   + Relación de agregación M:N, Genera una nueva tabla que incluye la clave primaria de la relación interna de la agregación y la clave primaria de la otra entidad.
+
+Para poder enlazar una clave con otra tiene que cumplir unas condiciones:
+1. ***Integridad referencial*** (restricción de clave ajena): El valor de la FK en la relación hijo debe corresponder con los valores de la clave primaria padre
+2. Las claves candidatas deben tratarse como UNIQUE
+3. Restricción de obligatoriedad (NOT NULL)
+4. Opcion de borrado en cascada (CASCADE): Si borro en una tabla padre deben borrarse las tuplas de la tabla hijo
+5. Modificación en cascada (como borrado en cascada pero modificando, no borrando)
+6. Restricción de verificación (CHECK): cuando es necesario cumplir una condición en los valores
+7. ASSERTION: Es restricción de verificación que afecta a varias tablas
+
+**ESTOS 7 CONCEPTOS SE IMPLEMENTAN EN EL SGBD**
