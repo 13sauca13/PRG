@@ -80,6 +80,11 @@ El diseño de la base de datos se denomina ***esquema de la base de datos***.
 La información almacenada en un momento dado en la base de datos es el ***ejemplar de la base de datos***.
 
 ## 3. Modelo conceptual relacional
+>[!CAUTION]
+>En el modelo relacional cambia la nomenclatura:
+>Las **ENTIDADES** del E/R pasan a llamarse **RELACIONES**
+>Las **RELACIONES** son **INTERRELACIONES**
+
 El elemento central del modelo relacional es la relación:
 + **Entidades**: Cada entidad del equema E/R da lugar a una nueva relación (tabla). Esta relación tiene sus características:
   + La tabla es bidimensional, con filas (tuplas) y columnas
