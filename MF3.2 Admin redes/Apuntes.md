@@ -113,3 +113,24 @@ iSCSI utiliza la siguiente información para conetarse a la SAN:
 Para abrir el Iniciador iSCSI se hará desde "Herramientas" dentro de "Administración del servidor" o en ```services.msc```
 
 El iSCSI también se puede administrar por línea de comandos lanzando el iniciador con: ```iscsicli```
+
+
+### Particiones de Windows
+#### MBR
++ Existe desde DOS
++ Soporta particiones de hasta 2Tb y permite hasta 4 particiones (3 primarias + 1 extendida y la extendida puede tener infinitas unidades lógicas)
++ Cada partición puede contener un sistema operativo booteable
+
+#### GPT (GUID Partition Table)
++ Soporta hasta 18Eb (18 mil millones de Gb)
++ Hasta 128 particiones por disco
++ Almacena un duplicado de las tablas de particiones
+
+### Tipos de discos
++ **Discos básicos**: Contiene las particiones primarias, particiones extendidas y las unidades lógicas (es la configuración al inicializar un disco duro en el ordenador, sea MBR o GPT)
++ **Discos dinámicos**: Tienes una sola partición (LDM), no permite particiones extendidas y hay una a mayores, oculta, al final del disco para la base de datos (Logical Disk Manager, LDM). Se pueden crear hasta 2000 volúmenes y puede compartir datos entre varios discos dinámicos. Permite crear 5 tipos de volúmenes:
+  + Simple: Un espacio en un disco
+  + Distribuido:  Combinar varios espacios de varios discos en un solo volumen lógico
+  + RAID 0 (Volumen seleccionado)
+  + RAID 1 (Volumen reflejado)
+  + RAID 5: Requiere mínimo 3 discos
