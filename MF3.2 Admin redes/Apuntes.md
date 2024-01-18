@@ -134,3 +134,32 @@ El iSCSI también se puede administrar por línea de comandos lanzando el inicia
   + RAID 0 (Volumen seleccionado)
   + RAID 1 (Volumen reflejado)
   + RAID 5: Requiere mínimo 3 discos
+
+## 1.6 Directorio activo
+El Active Directory Domain Services (AD DS) es el nombre que .recibe el conjunto de elementos que globalmente constituyen el servicio directorio en dominios Windows.
+Utiliza los siguientes protocolos:
++ **SNTP** Simple Network Time Protocol
++ **LDAP** Lightweight Access Protocol
++ **Kerberos**
++ **Certificados X.509**
+
+### DNS
+Cada dominio va a ser un espacio de nombres. DNS es el sistema de nombres para redes basadas en el protocolo TCP/IP y además, es el servicio de nombres que se usa para localizar computadores en Internet.
+
+El Directorio Activo utiliza DNS para tres funciones principales:
++ Resolición de nombres
++ Definición del espacio de nombres
++ Búsqueda de los componentes físicos de AD
+
+### Dominio
+El dominio es la unidad principal de la estructura lógica del Directorio Activo, es un conjunto de ordenadores, o equipos, que comparten una base de datos de directorio común. El uso de dominios permite conseguir los siguientes objetivos:
++ Delimitar la seguridad: Un dominio Windows Server define un límite de seguridad. Aunque en una organización pueden existir múltiples dominios interrelacionados, cada uno presenta una configuración de seguridad 
+independiente.
++ Replicar informacion: Active Directory utiliza un modelo de replicación multimaestro, lo cual significa que cualquier DC admite cambios en la información de su partición, y es capaz de replicarlos luego al resto de DCs que constituyen su unidad de replicación.
++ Aplicar Politicas (o Directivas) de Grupo: 
++ Delegar permisos administrativos
+
+### Autenticación y autorización
+Directorio activo se encarga de proporcionar autenticación y autorización a los clientes (tanto equipos como usuarios y aplicaciones).
+El proceso de ***autenticación*** es el proceso de verificar la identidad de un usuario en la red, tanto para el acceso al equipo local como el acceso a los recursos de la red.
+El proceso de ***autorización*** es la verificación de que el solicitante tiene permisos de acceso a los recursos que está solicitando.
