@@ -138,10 +138,10 @@ El iSCSI también se puede administrar por línea de comandos lanzando el inicia
 ## 1.6 Directorio activo
 El Active Directory Domain Services (AD DS) es el nombre que .recibe el conjunto de elementos que globalmente constituyen el servicio directorio en dominios Windows.
 Utiliza los siguientes protocolos:
-+ **SNTP** Simple Network Time Protocol
-+ **LDAP** Lightweight Access Protocol
-+ **Kerberos**
-+ **Certificados X.509**
++ **SNTP** Simple Network Time Protocol: Permite disponer de un servicio de sincronización de tiempo entre sistemas conectados por red.
++ **LDAP** Lightweight Access Protocol: Protocolo mediante el cual las aplicaciones acceden para leer o modificar la información existente en la base de datos del directorio.
++ **Kerberos**: Protocolo utilizado para la autenticación de usuarios y máquinas.
++ **Certificados X.509**: Estándar que permite distribuir información a través de la red de una forma segura.
 
 ### DNS
 Cada dominio va a ser un espacio de nombres. DNS es el sistema de nombres para redes basadas en el protocolo TCP/IP y además, es el servicio de nombres que se usa para localizar computadores en Internet.
@@ -161,5 +161,7 @@ independiente.
 
 ### Autenticación y autorización
 Directorio activo se encarga de proporcionar autenticación y autorización a los clientes (tanto equipos como usuarios y aplicaciones).
+
 El proceso de ***autenticación*** es el proceso de verificar la identidad de un usuario en la red, tanto para el acceso al equipo local como el acceso a los recursos de la red.
+
 El proceso de ***autorización*** es la verificación de que el solicitante tiene permisos de acceso a los recursos que está solicitando.
