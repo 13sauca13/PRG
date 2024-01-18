@@ -165,3 +165,10 @@ Directorio activo se encarga de proporcionar autenticación y autorización a lo
 El proceso de ***autenticación*** es el proceso de verificar la identidad de un usuario en la red, tanto para el acceso al equipo local como el acceso a los recursos de la red.
 
 El proceso de ***autorización*** es la verificación de que el solicitante tiene permisos de acceso a los recursos que está solicitando.
+
+### Múltiples dominios en la misma organización
+Un árbol es un conjunto de uno o más dominios dentro de un bosque que comparten un espacio de nombres contiguo, es decir, comparten un sufijo de DNS común.
+
+Los dominios que forman un árbol se vinculan mediante relaciones de confianza bidireccional y transitiva. La relación padre-hijo entre dominios en un árbol de dominio es simplemente una relación de confianza. 
+
+![Multiples dominios](https://github.com/13sauca13/PRG/blob/master/Recursos/Multiples%20dominios.PNG)
