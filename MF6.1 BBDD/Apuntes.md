@@ -153,7 +153,7 @@ Para poder enlazar una clave con otra tiene que cumplir unas condiciones:
 6. Restricción de verificación (CHECK): cuando es necesario cumplir una condición en los valores
 7. ASSERTION: Es restricción de verificación que afecta a varias tablas
 
-**ESTOS 7 CONCEPTOS SE IMPLEMENTAN EN EL SGBD**
+Estos 7 conceptos se implementan en el SGBD
 
 ##### Normas formales
 Las normas formales (NF) proporcionan criterios para determinar el grado de vulnerabilidad de una tabla a inconsistencias y anomalías lógicas. Son aplicables a tablas individuales.
