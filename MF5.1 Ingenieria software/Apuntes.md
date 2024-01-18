@@ -204,3 +204,25 @@ Los 5 motivos principales para el uso de software de gestión de proyectos son:
 5. Todos los proyectos en un único sistema de gestión
 
 Existen muchos ejemplos de software para gestión de proyectos: Asana, Jira, Trello, Smartsheet, Monday.com, Microsoft Project
+
+## 7. UML (Lenguaje de Modelado Unificado)
+Es un sistema de espacificación, visualización, desarrollo y documentación de sistemas de software. Sirve para facilitar el intercambio de información entre el personal involucrado en el desarrollo de un software independientemente del idioma que hable.
+
+Los beneficios del uso de estos diagramas son: claridad y comunicación, proporciona una representación visual del sistema, es un estándar de la industria ampliamente aceptado, ayuda en la fase de análisis y diseño.
+
+Los elementos principales del UML son 2:
++ **Diagramas**
+  + Diagramas estructurales
+  + Diagramas de comportamiento
++ **Elementos**
+  + Clases
+  + Relaciones
+  + Interfaces
+
+Diagramas más usados:
++ Diagramas de clase: Describe la estructura de un sistema mostrando las clases del sistema, sus atributos, operaciones (o métodos), y las relaciones entre los objetos.
++ Diagramas de secuencia: Se usan mucho en web y representan los pasos que da un usuario en el tiempo.
++ Diagramas de casos de uso: Modela para cada actor del sistema lo que hace cada uno.
++ Diagramas de actividad: Modela las actividades en si y las opciones. La actividad del sistema como tal.
++ Diagramas de estado: En que estado queda el sistema cada vez que se va ejecutando alguna acción. Cada estado que puede tener el sistema.
++ Diagramas de componente y despliegue: Define la infraestructura de harware.
