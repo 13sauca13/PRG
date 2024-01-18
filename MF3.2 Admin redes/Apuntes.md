@@ -169,6 +169,13 @@ El proceso de ***autorización*** es la verificación de que el solicitante tien
 ### Múltiples dominios en la misma organización
 Un árbol es un conjunto de uno o más dominios dentro de un bosque que comparten un espacio de nombres contiguo, es decir, comparten un sufijo de DNS común.
 
-Los dominios que forman un árbol se vinculan mediante relaciones de confianza bidireccional y transitiva. La relación padre-hijo entre dominios en un árbol de dominio es simplemente una relación de confianza. 
+Los dominios que forman un árbol se vinculan mediante relaciones de confianza bidireccional y transitiva. La relación padre-hijo entre dominios en un árbol de dominio es simplemente una relación de confianza.
+
+Un bosque se define como un grupo de árboles que no comparten un espacio de nombres contiguo, y que se conectan mediante relaciones de confianza bidireccional y transitiva.
 
 ![Multiples dominios](https://github.com/13sauca13/PRG/blob/master/Recursos/Multiples%20dominios.PNG)
+
+Sin embargo, los dominios siguen siendo independientes entre sí: los administradores de un dominio padre no son automáticamente administradores del dominio hijo y el conjunto de políticas de un dominio padre no se aplican automáticamente a los dominios hijo.
+
+##### Relaciones de confianza entre dominios
+Una relación de confianza es una relación establecida entre dos dominios de forma que permite a los usuarios de un dominio ser reconocidos por los Controladores de Dominio de otro dominio. Windows Server soporta varios tipos de relaciones de confianza.
