@@ -142,6 +142,7 @@ Reglas:
     + Si no es obligatoria se crea una nueva tabla cuya clave será la del lado muchos y se propaga la clave a la nueva tabla como FK
     + Si es obligatoria no se crea una nueva tabla
   + Reflexiva M:N crea una nueva tabla a la que migran dos veces las claves (por cada emparejamiento) y la clave será la unión de ambas claves
++ Las relaciones ternarias crean una nueva tabla con el nombre de la interrelación con las claves de las partes "muchos"
 
 Para poder enlazar una clave con otra tiene que cumplir unas condiciones:
 1. ***Integridad referencial*** (restricción de clave ajena): El valor de la FK en la relación hijo debe corresponder con los valores de la clave primaria padre
@@ -153,3 +154,9 @@ Para poder enlazar una clave con otra tiene que cumplir unas condiciones:
 7. ASSERTION: Es restricción de verificación que afecta a varias tablas
 
 **ESTOS 7 CONCEPTOS SE IMPLEMENTAN EN EL SGBD**
+
+##### Normas formales
+Las normas formales (NF) proporcionan criterios para determinar el grado de vulnerabilidad de una tabla a inconsistencias y anomalías lógicas. Son aplicables a tablas individuales.
+1. Todos los valores asociados a un atributo deben ser un valor único y atómico
+2. Tiene que estar en 1ªNF. Todos los atributos que no formen parte de la clave tienen que depender completamente de la clave
+3. Tiene que estar en 1ªNF y 2ªNF. El valor de los atributos que NO son clave primaria no puede depender de atributos que no sean clave primaria.
