@@ -179,3 +179,19 @@ Sin embargo, los dominios siguen siendo independientes entre sí: los administra
 
 ##### Relaciones de confianza entre dominios
 Una relación de confianza es una relación establecida entre dos dominios de forma que permite a los usuarios de un dominio ser reconocidos por los Controladores de Dominio de otro dominio. Windows Server soporta varios tipos de relaciones de confianza.
+
+***Sitios***: Se trata de una o más subredes IP que están conectadas y típicamente definidas por un área geográfica.
+
+### Controladores de dominio
+Un controlador de dominio es un servidor Windows que guarda y replica una cuenta, la información de seguridad del dominio y define los límites de este.
+
+Después de que haya promovido una computadora en el controlador de dominio, debe utilizar varios complementos de las consolas MMC para manejar el Directorio activo. Estas consolas son las siguientes:
++ **Active Directory Users and Computers**
++ **Active Directory Domains and Trusts**
++ **Active Directory Sites and Services**
++ **Active Directory Administrative Center**
++ **Group Policy Management Console (GPMC)**
+
+Aunque estas herramientas son instaladas en controladores de dominio, también pueden instalarse en equipos clientes para que pueda administrar Directorio activo.
+
+********************************** AÑADIR
