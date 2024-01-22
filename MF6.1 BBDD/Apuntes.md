@@ -144,7 +144,7 @@ Reglas:
   + Reflexiva M:N crea una nueva tabla a la que migran dos veces las claves (por cada emparejamiento) y la clave será la unión de ambas claves
 + Las relaciones ternarias crean una nueva tabla con el nombre de la interrelación con las claves de las partes "muchos"
 
-Para poder enlazar una clave con otra tiene que cumplir unas condiciones:
+Para poder enlazar una clave con otra tiene que cumplir unas condiciones (Estos 7 conceptos se implementan en el SGBD):
 1. ***Integridad referencial*** (restricción de clave ajena): El valor de la FK en la relación hijo debe corresponder con los valores de la clave primaria padre
 2. Las claves candidatas deben tratarse como UNIQUE
 3. Restricción de obligatoriedad (NOT NULL)
@@ -152,8 +152,6 @@ Para poder enlazar una clave con otra tiene que cumplir unas condiciones:
 5. Modificación en cascada (como borrado en cascada pero modificando, no borrando)
 6. Restricción de verificación (CHECK): cuando es necesario cumplir una condición en los valores
 7. ASSERTION: Es restricción de verificación que afecta a varias tablas
-
-Estos 7 conceptos se implementan en el SGBD
 
 >[!IMPORTANT]
 >Cuando dos tablas están relacionadas existen 4 opciones y cada una de ellas se aplica por separado a la modificación (***UPDATE***), al borrado (***DELETE***) o a las dos cosas:
