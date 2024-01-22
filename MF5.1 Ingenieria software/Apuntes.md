@@ -226,3 +226,31 @@ Diagramas más usados:
 + Diagramas de actividad: Modela las actividades en si y las opciones. La actividad del sistema como tal.
 + Diagramas de estado: En que estado queda el sistema cada vez que se va ejecutando alguna acción. Cada estado que puede tener el sistema.
 + Diagramas de componente y despliegue: Define la infraestructura de harware.
+
+## 8. Diagramas de flujo
+Se tratan de la representación gráfica de un proceso, es una manera estructurada de mostrar las decisiones y acciones que componen una situación así como los pasos que se dan durante un proceso o en el desarrollo de un problema desde su inicio hasta su solución.
+
+Dado su propósito general suelen emprearse para diferentes usos:
++ Tecnología: Como elemento principal de la programación para dar estructura a los algoritmos.
++ Gestión de proyectos: Para ayudar a organizar grupos y equipos de trabajo.
++ Sector financiero: Para determinar la viabilidad de decisiones y proyectos de índole económico.
++ Educativo: Como herramienta de apoyo pedagógico en distintas áreas del conocimiento.
+
+Los diagramas de flujo pueden usarse al momento de realizar decisiones importantes, para organizar tareas, para organizar equipos de trabajo, para plantear soluciones de tareas, para plantear situaciones con diferentes procesos o finales, etc.
+
+Tipos de diagramas:
++ **Flujograma de decisiones**:
++ **Diagramas de flojo lógicos**: Identifican un problema y buscan las solución
++ **Flujograma de trabajo**: Presenta las decisiones a la hora de realizar una labor específica o proyecto (influyen los colores, determinan la herramienta a usar en cada paso)
++ **Flujo de producto**: Se utilizan durante el proceso de creación de un producto
++ **Flujograma de procesos**: Se muestran los resultados de un producto creado
++ **Flujo de sistema**: Construcción de algoritmos describiendo la interacción y respuesta de programas
++ **Flujogramas de casos de uso**: Interacción del cliente con una empresa teniendo en cuenta las decisiones del cliente y acciones posibles
+
+| | Símbolo | Función |
+| --- | --- | --- |
+| Líneas de flujo |  | Conectan los pasos, etapas, decisiones y otros elementos que intervienen en  los diagramas |
+| Decisión | | Indican las elecciones y decisiones realizadas |
+| Datos | | Ofrecen información nueva, de interés o de gran valor para el desarrollo |
+| Actividad | | Acciones que se transforman en datos que dan continuidad al proceso |
+| Inicio/final | | Inicio/final del problema |
