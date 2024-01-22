@@ -155,11 +155,12 @@ Para poder enlazar una clave con otra tiene que cumplir unas condiciones:
 
 Estos 7 conceptos se implementan en el SGBD
 
-Cuando dos tablas están relacionadas existen 4 opciones y cada una de ellas se aplica por separado a la modificación (***UPDATE***), al borrado (***DELETE***) o a las dos cosas:
-+ **CASCADE**: Actualiza y/o borra las tuplas de la otra tabla
-+ **SET NULL**: Deja en null el valor de la otra tabla
-+ **SET DEFAULT**: Pone un valor por defecto en la otra tabla
-+ **NOT ACTION** o **RESTRICT**: No hace nada
+>[!IMPORTANT]
+>Cuando dos tablas están relacionadas existen 4 opciones y cada una de ellas se aplica por separado a la modificación (***UPDATE***), al borrado (***DELETE***) o a las dos cosas:
+>+ **CASCADE**: Actualiza y/o borra las tuplas de la otra tabla
+>+ **SET NULL**: Deja en null el valor de la otra tabla
+>+ **SET DEFAULT**: Pone un valor por defecto en la otra tabla
+>+ **NOT ACTION** o **RESTRICT**: No hace nada
 
 ##### Normas formales
 Las normas formales (NF) proporcionan criterios para determinar el grado de vulnerabilidad de una tabla a inconsistencias y anomalías lógicas. Son aplicables a tablas individuales.
