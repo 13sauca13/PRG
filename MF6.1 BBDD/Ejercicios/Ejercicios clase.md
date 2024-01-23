@@ -17,4 +17,4 @@
 | --- | --- |
 | **CAMINO** | (***Nombre***, Tiempo, Km) |
 | **PEREGRINO** | (***Id***, Nombre, Dirección) |
-| **ETAPAS** | (***Nº***,
+| **ETAPAS** | (***Nº***, Km, Tiempo
