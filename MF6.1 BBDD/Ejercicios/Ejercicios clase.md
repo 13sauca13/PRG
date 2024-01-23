@@ -17,4 +17,9 @@
 | --- | --- |
 | **CAMINO** | (***Nombre***, Tiempo, Km) |
 | **PEREGRINO** | (***Id***, Nombre, Dirección) |
-| **ETAPAS** | (***Nº***, Km, Tiempo
+| **ETAPAS** | (***Nº***, Km, Tiempo, Loc_salida, Loc_llegada, ***FK_Camino***) |
+| **LOCALIDADES** | (***Nombre***, C.P, C.A) |
+| **ALBERGUES** | (***Nombre***, Precio, Capacidad, FK_Localidades) |
+| **REALIZA** | (***FK_Peregrino***, ***FK_Camino***) |
+| **VISITAN** | (***FK_Peregrino***, ***FK_Localidades***, Fecha) |
+| **PASAN** | (***FK_Etapas***, ***FK_Localidades***) |
