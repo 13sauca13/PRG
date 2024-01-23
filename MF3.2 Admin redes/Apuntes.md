@@ -1,6 +1,7 @@
 # Administracion de redes
 
-:computer: [Scripts de los laboratorios](https://github.com/13sauca13/PRG/tree/master/MF3.2%20Admin%20redes/Scripts%20laboratorios)
+>[!TIP]
+>:computer: [Scripts de los laboratorios](https://github.com/13sauca13/PRG/tree/master/MF3.2%20Admin%20redes/Scripts%20laboratorios)
 
 ## 1. Windows Server
 ### 1.1 Versiones
