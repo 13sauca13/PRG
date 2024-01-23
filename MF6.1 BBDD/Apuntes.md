@@ -1,7 +1,7 @@
 # Bases de datos
 
 >[!TIP]
->:man_teacher: [Ejercicios de clase](https://github.com/13sauca13/PRG/blob/master/MF6.1%20BBDD/Ejercicios/1.%20Ejercicios%20clase.md)
+>:man_teacher: [Ejercicios de clase](https://github.com/13sauca13/PRG/blob/master/MF6.1%20BBDD/Ejercicios/0.%20Ejercicios%20clase.md)
 
 :bulb: ***Dato: mínima unidad de la que vamos a obtener info. (son "atómicos", no pueden ser divididos en menos)***
 
