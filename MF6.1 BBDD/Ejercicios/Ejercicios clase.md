@@ -1,3 +1,4 @@
+## Ejercicio corrupción
 ![Ejercicio corrupcion](https://github.com/13sauca13/PRG/blob/master/Recursos/Ejercicio%20corrupcion.png)
 
 | ENTIDAD | ATRIBUTOS (PK en negrita, * = NULL) |
@@ -9,3 +10,11 @@
 | **PERIÓDICO** | (***Nombre***, Dirección*, Tirada*, FK_Partido*) |
 | **PARTIDO** | (***Nombre***, Dirección*, Teléfono) |
 | **TELÉFONOs** | (***FK_Partido***, ***Teléfono***) |
+
+## Ejercicio camino de Santigo
+![Ejercicio camino de Santigo](https://github.com/13sauca13/PRG/blob/master/Recursos/Ejercicio%20camino%20de%20santiago.png)
+| ENTIDAD | ATRIBUTOS (PK en negrita, * = NULL) |
+| --- | --- |
+| **CAMINO** | (***Nombre***, Tiempo, Km) |
+| **PEREGRINO** | (***Id***, Nombre, Dirección) |
+| **ETAPAS** | (***Nº***,
