@@ -247,10 +247,31 @@ Tipos de diagramas:
 + **Flujo de sistema**: Construcción de algoritmos describiendo la interacción y respuesta de programas
 + **Flujogramas de casos de uso**: Interacción del cliente con una empresa teniendo en cuenta las decisiones del cliente y acciones posibles
 
-| | Símbolo | Función |
-| --- | --- | --- |
-| Líneas de flujo |  | Conectan los pasos, etapas, decisiones y otros elementos que intervienen en  los diagramas |
-| Decisión | | Indican las elecciones y decisiones realizadas |
-| Datos | | Ofrecen información nueva, de interés o de gran valor para el desarrollo |
-| Actividad | | Acciones que se transforman en datos que dan continuidad al proceso |
-| Inicio/final | | Inicio/final del problema |
+![Simbolos diagramas de flujo](https://github.com/13sauca13/PRG/blob/master/Recursos/Simbolos%20diagramas%20de%20flujo.PNG)
+
+## 9. Evolución de la documentación en la historia del sofware
+Desde la antigua metodología en cascada hasta las metodologías ágiles, la documentación ha sufrido muchos cambios a lo largo de la historia.
+
+La antigua metodología en casacada genera una extensa documentación a menudo no leída y que presentaba desafíos para reflejar con precisión el resultado final. La llegada de las metodologías ágiles cambió hacia iteraciones más pequeñas y la documentación pasó a un segundo plano.
+
+##### Qué es la documentación del software?
+Se trata de un informe que guía a los interesado proporcionando información sobre instalación, uso y mantenimiento.
+
+Es importante para reducir la curva de aprendizaje, facilitar la colaboración y a largo plazo minimiza los problemas de mantenimiento.
+
+La documentación debe evolucionar con el software, debe estar bien organizada y ser fácil de entender. Debe ser clara, concisa y es preferible el uso de diagramas sobre el uso de textos.
+
+Existen varios tipos de documentación:
++ Documentación del proceso de desarrollo
++ Requisitado, planificación, reportes, backlog de tareas
++ Documentación del código
++ Documentación del producto
++ Descripción del sistema, guías de uso, arquitectura, API
+
+Existen múltiples desafíos a la hora de documentar:
++ Mantener la documentación actualizada
++ Organización y comprensión uniforme de los diagramas
++ Claridad en el lenguaje escrito
++ El empleo de recursos en la tarea de documentar
+
+Herramientas para documentación: [Trello](https://trello.com/es), Javadoc, PhpDocumentor, OpenAPI, Swagger
