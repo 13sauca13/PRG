@@ -22,8 +22,8 @@ Existen dos tipos de enlaces:
 + Enlace duro: crea un nuevo archivo que apunta a la dirección de memoria (borrar el archivo original ya no afectaría al archivo porque hay otro enlace, habría que borrar TODOS los enlaces duros para borrar el archivo :eyes: [Consultar info sobre los Inodos](https://es.wikipedia.org/wiki/Inodo))
 + Enlace blando: Apunta al archivo original, no es un nuevo archivo, si se borra el original se rompe el enlace
 
-**Enlace duro** ```ln [origen] [destino]```
+```ln [origen] [destino]``` *Enlace duro*
 
-**Enlace blando** ```ln -s [origen] [destino]```
+```ln -s [origen] [destino]``` *Enlace blando*
 
 El destino es opcional, si no se introduce el enlace se creará en la unicación actual en la que se está.
