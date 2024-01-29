@@ -12,12 +12,12 @@
 | ```adduser [username] [groupname]``` | Añadir usuarios a un grupo |
 | ```deluser [username] [groupname]``` | Eliminar usuarios de un grupo |
 
-### ```passwd```
+## ```passwd```
 Se utiliza para moodificar la contraseña de un usuario.
 
 ```passwd [username]```
 
-### ```ln```
+## ```ln```
 Existen dos tipos de enlaces:
 + Enlace duro: crea un nuevo archivo que apunta a la dirección de memoria (borrar el archivo original ya no afectaría al archivo porque hay otro enlace, habría que borrar TODOS los enlaces duros para borrar el archivo :eyes: [Consultar info sobre los Inodos](https://es.wikipedia.org/wiki/Inodo))
 + Enlace blando: Apunta al archivo original, no es un nuevo archivo, si se borra el original se rompe el enlace
