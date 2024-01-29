@@ -1,6 +1,6 @@
 # UNIX
 
-#### Administración de usuarios y grupos
+## Administración de usuarios y grupos
 | Comando | Uso |
 | --- | --- |
 | ```useradd -g [grupo] -m [username]``` | Creación de usuarios *(el -m crea el directorio del usuario en la carpeta /home)*|
