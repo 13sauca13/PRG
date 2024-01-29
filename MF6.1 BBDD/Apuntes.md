@@ -127,7 +127,7 @@ Reglas:
 + Las entidades agregadas no se traducen en tablas
   + Relación de agregación 1:N, adquiere como parte de su clave la clave primaria de la relación interna de agregación
   + Relación de agregación M:N, Genera una nueva tabla que incluye la clave primaria de la relación interna de la agregación y la clave primaria de la otra entidad.
->!CAUTION
+>[!CAUTION]
 >+ Conversión con valores opcionales:
 >  + 1:1 obligatoria-opcional: La entidad con participación opcional migrará como FK a la otra tabla  como NO NULL y UNIQUE
 >  + 1:1 opcional-opcional: Se crea una tabla nueva que recibe las claves de las dos entidades para evitar valores nulos (la clave de esta tabla serán las dos claves)
