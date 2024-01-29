@@ -4,7 +4,7 @@
 | Comando | Uso |
 | --- | --- |
 | ```useradd -g [grupo] -m [username]``` | Creación de usuarios *(el -m crea el directorio del usuario en la carpeta /home)*|
-| ```usermod``` | Modificación de usuarios |
+| ```usermod``` | Modificación de usuarios *(el parámetro ```-r``` elimina también la carpeta de /home del usuario)* |
 | ```userdel``` | Eliminación de usuarios |
 | ```groupadd``` | Creación de grupos |
 | ```groupmod``` | Modificación de grupos |
