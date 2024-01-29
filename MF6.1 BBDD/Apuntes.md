@@ -15,9 +15,9 @@ El SGBD nos proporciona:
   + Control de recuperación (mecanismos de recuperación de datos contra fallos lógicos/físicos)
   + Diccionario de datos
 + Lenguajes de gestión (el lenguaje estándar es el SQL):
-  + Lenguaje de definición de datos (LDD)
-  + Lenguaje de manejo de datos (LMC)
-  + Lenguaje de control de datos (LCD)
+  + Lenguaje de definición de datos (DDL)
+  + Lenguaje de manejo de datos (DML)
+  + Lenguaje de control de datos (DCL)
 
 #### Visión de los datos
 | Nivel | Descripción |
