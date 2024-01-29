@@ -32,7 +32,7 @@ El SGBD nos proporciona:
 La base de datos se definirá en forma de descripción de texto, el llamado **Universo de discurso**
 
 #### Entidad
-Objeto que existe y puede distinguirse de otros a través de un conjunto de atributos ( :exclamation: **Tiene que tener características**) Se representa con un recángulo :orange_square:
+Objeto que existe y puede distinguirse de otros a través de un conjunto de atributos ( :exclamation: **Tiene que tener características**) Se representa con un rectángulo :orange_square:
 
 >Existen atributos _descriptivos_ e _identificativos_ o _claves_ (los identificativos/claves son únicos, inequívocos y tienen que rellenarse siempre, los descriptivos si que pueden ser null).
 Sólo puede haber un atributo identificativo en cada entidad, si existe algún otro valor que identifica de manera única se tratará de una _clave candidata_ (p.ej: matrícula y número de bastidor).
