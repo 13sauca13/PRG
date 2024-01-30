@@ -1,5 +1,5 @@
 # SQL
-
+## 1. Componentes del SQL
 ##### Lenguaje DDL
 Se usa para crear y definir nuevas bases de  datos
 + ```create```: crear tablas
@@ -25,7 +25,7 @@ Seguridad de la base de datos, en todo lo referente al control de accesos y priv
 + ```savepoint```: crear un punto de recuperación
 
 
-#### Bases de datos del sistema
+## 2.Bases de datos del sistema
 ![Bases de datos del sistema](https://github.com/13sauca13/PRG/blob/master/Recursos/Bases%20de%20datos%20del%20sistema.PNG)
 
 + **master**: guarda todos los permisos e inicios de sesión
