@@ -35,7 +35,7 @@ Seguridad de la base de datos, en todo lo referente al control de accesos y priv
   + **inserted**
   + **deleted**
 
-Sólo los usuarios con rol sysadmin (normalmente será sólo uno, "sa") pueden crear usuarios
+:exclamation: ***Sólo los usuarios con rol sysadmin (normalmente será sólo uno, "sa") pueden crear usuarios***
 
 >Crear un usuario:
 >```
