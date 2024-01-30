@@ -1,18 +1,21 @@
 # SQL
 
 ##### Lenguaje DDL
+Se usa para crear y definir nuevas bases de  datos
 + ```create```: crear tablas
 + ```alter```: modificar tablas
 + ```drop```: borrar tablas
 + ```truncate```: borrar tablas
 
 ##### Lenguaje DML
-+ ```select```: seleccionar datos
+Utilizado para generar consultas para ordenar, filtrar y extraer datos de la base de datos.
++ ```select```: consultar datos
 + ```insert```: introducir datos
 + ```update```: modificar datos
 + ```delete```: borrar datos
 
 ##### Lenguaje DCL
+Seguridad de la base de datos, en todo lo referente al control de accesos y privilegios entre los usuarios.
 + ```revoke```: quitar permisos
 + ```grant```: dar permisos
 
@@ -33,3 +36,12 @@
   + **deleted**
 
 Sólo los usuarios con rol sysadmin (normalmente será sólo uno, "sa") pueden crear usuarios
+
+>Crear un usuario:
+>```
+>create login username
+>wiht password='contraseña'[must_changed],
+>default_database=[database],
+>check_expiration=on,
+>check_policy=on;
+>```
