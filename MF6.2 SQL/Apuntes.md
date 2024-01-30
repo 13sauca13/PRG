@@ -28,10 +28,10 @@ Seguridad de la base de datos, en todo lo referente al control de accesos y priv
 ## 2.Bases de datos del sistema
 ![Bases de datos del sistema](https://github.com/13sauca13/PRG/blob/master/Recursos/Bases%20de%20datos%20del%20sistema.PNG)
 
-+ **master**: guarda todos los permisos e inicios de sesión
-+ **model**: Cada vez que toco una tabla se crea una copia de esa tabla aqui
-+ **msdb**: aqui se guarda la programación de copias de seguridad
-+ **tempdb**: aqui se guardan las tablas temporales, cada vez que se hace una transacción se crea tabla. Existen sólo dos tablas:
++ **master**: En esta BD se encuentra la información sobre las cuentas de los usuarios y la configuración del sistema. Asimismo, tiene información sobre dónde localizar las BD que creamos.
++ **model**: Siempre que se crea una base de datos, SQL SERVER inicia una copia de MODEL. Plantilla para las base de datos nuevas
++ **msdb**: Aqui se guarda la programación de copias de seguridad e información que se necesita para procesar trabajos y alertas.
++ **tempdb**: En ella se almacenan todas las tablas temporales que se generan durante la ejecución de los procesos. Cada vez que se hace una transacción se crea tabla. Existen sólo dos tablas:
   + **inserted**
   + **deleted**
 
@@ -40,8 +40,8 @@ Sólo los usuarios con rol sysadmin (normalmente será sólo uno, "sa") pueden c
 >Crear un usuario:
 >```
 >create login username
->wiht password='contraseña'[must_changed],
+>wiht password='contraseña',
 >default_database=[database],
->check_expiration=on,
->check_policy=on;
+>check_expiration=off,
+>check_policy=off;
 >```
