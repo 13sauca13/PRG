@@ -47,7 +47,7 @@ Sólo los usuarios con rol sysadmin (normalmente será sólo uno, "sa") pueden c
 >```
 >La default_database tiene que ser ```master``` porque es donde tienen que estar las cuentas de usuario.
 >```check_expiration``` es para la expiración de la cuenta
->```check_policy``` es la política de complejidad de contraseñas
+>```check_policy``` es la política de complejidad de contraseñas (min. 8 caracteres y max. 12)
 >
 >Borrar usuario:
 >```
