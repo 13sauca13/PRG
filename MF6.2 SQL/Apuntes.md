@@ -41,7 +41,15 @@ Sólo los usuarios con rol sysadmin (normalmente será sólo uno, "sa") pueden c
 >```
 >create login username
 >wiht password='contraseña',
->default_database=[database],
+>default_database=master,
 >check_expiration=off,
 >check_policy=off;
+>```
+>La default_database tiene que ser ```master``` porque es donde tienen que estar las cuentas de usuario.
+>```check_expiration``` es para la expiración de la cuenta
+>```check_policy``` es la política de complejidad de contraseñas
+>
+>Borrar usuario:
+>```
+>drop login username;
 >```
