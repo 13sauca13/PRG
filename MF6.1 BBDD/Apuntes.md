@@ -127,14 +127,13 @@ Reglas:
 + Las entidades agregadas no se traducen en tablas
   + Relación de agregación 1:N, adquiere como parte de su clave la clave primaria de la relación interna de agregación
   + Relación de agregación M:N, Genera una nueva tabla que incluye la clave primaria de la relación interna de la agregación y la clave primaria de la otra entidad.
->[!CAUTION]
->### + Conversión con valores opcionales:
->  + 1:1 obligatoria-opcional: La entidad con participación opcional migrará como FK a la otra tabla  como NO NULL y UNIQUE
->  + 1:1 opcional-opcional: Se crea una tabla nueva que recibe las claves de las dos entidades para evitar valores nulos (la clave de esta tabla serán las dos claves)
->  + 1:N obligatoria-opcional: La clave de la parte 1 migra al lado N como NO UNIQUE y NULL
->  + 1:N opcional-obligatoria: La clave de la parte 1 migra al lado N como NO UNIQUE y NO NULL
->  + 1:N opcional-opcional: La clave de la parte 1 migra a la parte N como NO UNIQUE y NULL
->  + M:N independientemente de la obligatoriedad da lugar a una nueva tabla con las claves de ambas partes
++ Conversión con valores opcionales:
+  + 1:1 obligatoria-opcional: La entidad con participación opcional migrará como FK a la otra tabla  como NO NULL y UNIQUE
+  + 1:1 opcional-opcional: Se crea una tabla nueva que recibe las claves de las dos entidades para evitar valores nulos (la clave de esta tabla serán las dos claves)
+  + 1:N obligatoria-opcional: La clave de la parte 1 migra al lado N como NO UNIQUE y NULL
+  + 1:N opcional-obligatoria: La clave de la parte 1 migra al lado N como NO UNIQUE y NO NULL
+  + 1:N opcional-opcional: La clave de la parte 1 migra a la parte N como NO UNIQUE y NULL
+  + M:N independientemente de la obligatoriedad da lugar a una nueva tabla con las claves de ambas partes
 + Los atributos de las interrelaciones por norma general hay que llevar ell atributo a donde migre la FK (hay excepciones, habria que estudiar bien el universo de discurso, podría crearse una nueva tabla)
 + Las relaciones de generalización tiene tres opciones a elegir (preferimos la 2)
   1. Crear una nueva tabla con los atributos del supertipo y todos los subtipos
