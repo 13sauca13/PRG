@@ -27,3 +27,18 @@ Existen dos tipos de enlaces:
 **Enlace blando**: ```ln -s [origen] [destino]```
 
 El destino es opcional, si no se introduce el enlace se creará en la unicación actual en la que se está.
+
+## ```chmod```
+Modifica los permisos de un archivo o directorio.
+
+Los permisos se representan con 9 letras. Son 3 grupos de tres:
++ 3 primeras: Permisos para propietario
++ 3 centrales: Permisos para el grupo
++ 3 últimas: Permisos para el resto
+
+Las letras indican el permiso concedido (r=read, w=write, x=execute) y están en ese orden: ```rwxrwxtwx```
+
+Uno de los modos de modificar los permisos es usando un número (de 0 a 7) por cada trío de letras, que al pasar a binario se convertiría en 3 ceros y/o unos, indicando el 1 que ese permiso se concede y el 0 que no.
+```
+chmod XXX [archivo]
+```
