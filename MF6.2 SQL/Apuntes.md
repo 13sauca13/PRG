@@ -46,7 +46,9 @@ Seguridad de la base de datos, en todo lo referente al control de accesos y priv
 >check_policy=off;
 >```
 >La default_database tiene que ser ```master``` porque es donde tienen que estar las cuentas de usuario. Al crear un usuario en realidad se crea el login y la conexión ambos con el mismo nombre. Si creasemos el login en una base que no es la master se crearía sólo la conexión para esa base, pero no el login.
+>
 >```check_expiration``` es para la expiración de la cuenta
+>
 >```check_policy``` es la política de complejidad de contraseñas (min. 8 caracteres y max. 12)
 >
 >Borrar usuario:
