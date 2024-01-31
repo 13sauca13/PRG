@@ -55,3 +55,10 @@ Seguridad de la base de datos, en todo lo referente al control de accesos y priv
 >```
 >drop login username;
 >```
+
+>[!TIP]
+>Para que el código ejecutado sea en una base de datos se comienza la query con:
+>```
+>use nombre_db
+>go
+>```
