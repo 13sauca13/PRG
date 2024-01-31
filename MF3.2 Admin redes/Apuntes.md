@@ -198,3 +198,34 @@ Después de que haya promovido una computadora en el controlador de dominio, deb
 Aunque estas herramientas son instaladas en controladores de dominio, también pueden instalarse en equipos clientes para que pueda administrar Directorio activo.
 
 ********************************** AÑADIR
+
+## 1.7 Resolución de nombres
+Se trata del proceso de traducción de nombres a IP, siendo el protocolo más utilizado el Domain Name System (DNS).
+
+En C:\Windows\System32\drivers\etc es la ubicación en la que se encuentran los archivos:
++ hosts: Contiene lista de los nombres e IP ya traducidos
++ lmhosts: igual que hosts pero con equipos de la red local
+
+#### DNS
+Es un sistema jerárquico. Los dominios de primer nivel son .com, .es, .org, dominios de países... El segundo nivel de nombres es el que puede ser registrado por distribuidores autorizados.
+
+Las empresas grandes puedes subdividir si espacio DNS en subdominios.
+
+**FQDN** (Fully Qualified Domain Name): Describe la posición exacta de un host en una jerarquía DNS. (p.ej. technet.microsoft.com)
+
+Registro de recursos (RR) dentro de la zona DNS:
++ SOA (Start Of Authority) ************************************ AÑADIR TODOS
++ NS (Name Server)
++ A (Host Address): En IPv4
++ AAAA (Host Address): En IPv6
++ PTR (PoinTeR)
++ CNAME (Canonical Name)
++ MX (Mail Exchanger)
++ SRV (Service)
+
+Existen tres zonas de búsqueda en los DNS: ********************************* AÑADIR
++ Zona de búsqueda directa para traducir nombres a IP
++ Zona inversa para traducir IP a nombres.
++ Sugerencias raiz (Root Hint)
+
+El método para compartir y distribuir cargas dentro de los DNS es Round Robin
