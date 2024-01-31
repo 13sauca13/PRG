@@ -1,4 +1,7 @@
 # SQL
+
+:mag: [Scripts SQL](https://github.com/13sauca13/PRG/tree/master/MF6.2%20SQL/Codigo)
+
 ## 1. Componentes del SQL
 ##### Lenguaje DDL
 Se usa para crear y definir nuevas bases de  datos
