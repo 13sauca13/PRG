@@ -81,7 +81,7 @@ campo2 tipo_dato,
 ```
 
 Tipos de datos en las tablas (resaltados los principales):
-| Dato | Esplicación |
+| Dato | Explicación |
 | --- | --- |
 | bigint | |
 | binary(x) | |
