@@ -7,8 +7,8 @@
 Se usa para crear y definir nuevas bases de  datos
 + ```create```: crear tablas
 + ```alter```: modificar tablas
-+ ```drop```: borrar tablas
-+ ```truncate```: borrar tablas
++ ```drop```: borrar tablas enteras
++ ```truncate```: borrar el contenido de tablas (no la tabla en si misma)
 
 ##### Lenguaje DML
 Utilizado para generar consultas para ordenar, filtrar y extraer datos de la base de datos.
