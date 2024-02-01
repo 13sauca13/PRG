@@ -67,7 +67,7 @@ Seguridad de la base de datos, en todo lo referente al control de accesos y priv
 >```
 
 Tipos de datos en las tablas (resaltados los principales):
-| | |
+| Dato | Esplicación |
 | --- | --- |
 | bigint | |
 | binary(x) | |
