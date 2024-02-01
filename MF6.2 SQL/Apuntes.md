@@ -67,40 +67,41 @@ Seguridad de la base de datos, en todo lo referente al control de accesos y priv
 >```
 
 Tipos de datos en las tablas (resaltados los principales):
+| | |
 | --- | --- |
 | bigint | |
-+ binary(x)
-+ bit: es un booleano (true o false)
-+ char(x): x caracteres, que aunque no se usen todos, los huecos se rellenan igualmente en memoria
-+ date: fechas
-+ datetime
-+ datetime2(x)
-+ datetimeoffset(x)
-+ decimal(x,q): número decimal con x a la izquierda de la coma y q a la derecha
-+ float
-+ geography
-+ geometry
-+ hierarchyid
-+ image
-+ ***int***: numero entero
-+ money: dinero
-+ nchar(x): texto con caracteres especiales
-+ ntext
-+ ***numeric(x,q)***: número decimal con x a la izquierda de la coma y q a la derecha
-+ ***nvarchar(x)***: **************************************REVISAR
-+ nvarchar(MAX)
-+ real
-+ smalldatetime
-+ smallint
-+ smallmoney
-+ sql_variant
-+ text
-+ time(x)
-+ timestamp
-+ tinyint
-+ uniqueidentifier
-+ varbinary(x)
-+ varbinary(MAX)
-+ varchar(x)
-+ varchar(MAX)
-+ xml
+| binary(x) | |
+| bit | es un booleano (true o false) |
+| char(x) | x caracteres, que aunque no se usen todos, los huecos se rellenan igualmente en memoria |
+| date | fechas |
+| datetime | |
+| datetime2(x) | |
+| datetimeoffset(x) | |
+| decimal(x,q) | número decimal con x a la izquierda de la coma y q a la derecha |
+| float | |
+| geography | |
+| geometry | |
+| hierarchyid | |
+| image | |
+| ***int*** | numero entero |
+| money | dinero |
+| nchar(x) | texto con caracteres especiales |
+| ntext | |
+| ***numeric(x,q)*** | número decimal con x a la izquierda de la coma y q a la derecha |
+| ***nvarchar(x)*** | **************************************REVISAR |
+| nvarchar(MAX) | |
+| real | |
+| smalldatetime | |
+| smallint | |
+| smallmoney | |
+| sql_variant | |
+| text | |
+| time(x) | |
+| timestamp | |
+| tinyint | |
+| uniqueidentifier | |
+| varbinary(x) | |
+| varbinary(MAX) | |
+| varchar(x) | |
+| varchar(MAX) | |
+| xml | |
