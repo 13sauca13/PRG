@@ -67,7 +67,8 @@ Seguridad de la base de datos, en todo lo referente al control de accesos y priv
 >```
 
 Tipos de datos en las tablas (resaltados los principales):
-+ bigint
+| --- | --- |
+| bigint | |
 + binary(x)
 + bit: es un booleano (true o false)
 + char(x): x caracteres, que aunque no se usen todos, los huecos se rellenan igualmente en memoria
