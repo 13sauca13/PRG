@@ -101,7 +101,7 @@ Tipos de datos en las tablas (resaltados los principales):
 | money | dinero |
 | nchar(x) | texto con caracteres especiales |
 | ntext | |
-| **numeric(x,q)** | **número decimal con x a la izquierda de la coma y q a la derecha** |
+| **numeric(x,q)** | **número decimal con x dígitos TOTALES, de los cuales q serán decimales** |
 | **nvarchar(x)** | **************************************REVISAR |
 | nvarchar(MAX) | |
 | real | |
