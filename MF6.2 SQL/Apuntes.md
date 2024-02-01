@@ -83,11 +83,11 @@ Tipos de datos en las tablas (resaltados los principales):
 | geometry | |
 | hierarchyid | |
 | image | |
-| **int** | numero entero |
+| **int** | **numero entero** |
 | money | dinero |
 | nchar(x) | texto con caracteres especiales |
 | ntext | |
-| **numeric(x,q)** | número decimal con x a la izquierda de la coma y q a la derecha |
+| **numeric(x,q)** | **número decimal con x a la izquierda de la coma y q a la derecha** |
 | **nvarchar(x)** | **************************************REVISAR |
 | nvarchar(MAX) | |
 | real | |
