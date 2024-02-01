@@ -1,3 +1,8 @@
+/*
+###########             El diagrama de este ejercicio se encuentra en la suguiente dirección:             ###########
+########### https://github.com/13sauca13/PRG/blob/master/Recursos/Relacional%20Camino%20de%20Santiago.PNG ###########
+/*
+
 --- Nos aseguramos de que se va a ejecutar en la base de datos que queremos
 USE sauca
 GO
