@@ -9,7 +9,7 @@
 | ```groupadd``` | Creación de grupos |
 | ```groupmod -n [new_name] [old_name]``` | Modificación de grupos |
 | ```groupdel``` | Eliminación de grupos |
-| ```adduser [username] [groupname]``` | Añadir usuarios a un grupo |
+| ```adduser [username] [groupname]``` | Añadir usuarios a un grupo (también sirve para crear usuarios) |
 | ```deluser [username] [groupname]``` | Eliminar usuarios de un grupo |
 
 ## ```passwd```
