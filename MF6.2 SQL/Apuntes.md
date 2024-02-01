@@ -67,6 +67,16 @@ Seguridad de la base de datos, en todo lo referente al control de accesos y priv
 >go
 >```
 
+#### Crear una tabla
+```
+CREATE TABLE nombre_tabla
+(
+campo1 tipo_dato,
+campo2 tipo_dato,
+ …
+);
+```
+
 Tipos de datos en las tablas (resaltados los principales):
 | Dato | Esplicación |
 | --- | --- |
