@@ -59,6 +59,7 @@ Seguridad de la base de datos, en todo lo referente al control de accesos y priv
 >drop login username;
 >```
 
+## 2. Manejo de SQL
 >[!TIP]
 >Para que el código ejecutado sea en una base de datos se comienza la query con:
 >```
