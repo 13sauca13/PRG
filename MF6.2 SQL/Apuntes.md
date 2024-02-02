@@ -92,7 +92,7 @@ Tipos de datos en las tablas (resaltados los principales):
 | date | Fechas (formato AAAA-MM-DD) |
 | datetime | Fechas (formato AAAA-MM-DD hh:mm:ss) |
 | datetime2(x) | Fechas (formato AAAA-MM-DD hh:mm:ss.nnnnnnn) |
-| datetimeoffset(x) | Fechas (formato AAAA-MM-DD hh:mm:ss.nnnnnnn [+|-]hh:mm) |
+| datetimeoffset(x) | Fechas (formato AAAA-MM-DD hh:mm:ss.nnnnnnn [+|-] hh:mm) |
 | decimal(x,q) | Número decimal con x dígitos TOTALES, de los cuales q serán decimales (sinónimo de ```numeric(x,q)``` |
 | float(x) | Datos numéricos aproximados de coma flotante ( siendo x los bits de la parte decimal) |
 | geography | Para almacenar datos espaciales elipsoidales como coordenadas de latitud y longitud GPS |
