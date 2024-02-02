@@ -229,3 +229,26 @@ Existen tres zonas de búsqueda en los DNS: ********************************* A�
 + Sugerencias raiz (Root Hint)
 
 El método para compartir y distribuir cargas dentro de los DNS es Round Robin
+
+## 1.8 DHCP
+Dynamic Host Configuration Protocol. Es un protocolo estándar para cualquier sistema conectado a una red TCP/IP.
+
+Se encarga de la configuración TCP/IP de cada equipo cliente (Dirección IP, Máscara, Puerta de enlace, Sufijo del dominio DNS y Dirección IP del DNS).
+
+El modo de funcionamiento es el siguiente:
+1. El cliente manda un DHCP DISCOVERY al broadcast (origen 0.0.0.0 y destino 255.255.255.255)
+2. El servidor escucha la pregunta y envía un DHCP OFFER con una configuración propuesta
+3. El cliente responde a ese servidor con un DHCP REQUEST para confirmar que acepta la configuración propuesta
+4. El servidor responde al request con un DHCP ACKNOWLEDGE para completar el ciclo
+
+Existen ciertas configuraciones que podemos hacer en nuestro DHCP:
++ Intervalos de exclusión: IP excluidas del DHCP para equipos configurados estáticamente (p.ej. Servidores)
++ Reservas: Reservas de IP para equipos que van a tener siempre la misma IP (p.ej. impresoras)
+
+Opciones del DHCP:
++ **Opciones globales predeterminadas**: Se aplican globalmente a todos los ámbitos, clases y clientes.
++ **Opciones de ámbito**: Se aplican a cualquier cliente que obtenga una concesión de dicho ámbito.
++ **Opciones de clase**: Se aplican a cualquier cliente que especifique el valor concreto de identificador de clase DHCP cuando obtiene una concesión del ámbito.
++ **Opciones de cliente reservado**: Se aplican a cualquier equipo que tenga una reserva en el ámbito para su dirección IP
+
+Al tener DHCP y DNS en una red DHCP se actualizan automáticamente los registros PTR con las direcciones IP asignadas a los equipos cliente. Esta característica reduce considerablemente el trabajo administrativo necesario para mantener los servidores DNS. 
