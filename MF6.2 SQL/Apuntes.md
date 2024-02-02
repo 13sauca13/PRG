@@ -5,6 +5,7 @@
 ## 1. Componentes del SQL
 
 :eyes: [**SQL Keywords**](https://www.w3schools.com/SQL/sql_ref_keywords.asp)
+:eyes: [**SQL Cheat Sheet** Hoja guia de SQL en pdf](https://learnsql.com/blog/sql-basics-cheat-sheet/sql-basics-cheat-sheet-a4.pdf)
 
 ##### Lenguaje DDL
 Se usa para crear y definir nuevas bases de  datos
