@@ -113,7 +113,7 @@ Tipos de datos en las tablas (resaltados los principales):
 | sql_variant | Para almacenar valores de varios tipos de datos admitidos en SQL Server |
 | text | Caracteres alfanuméricos No Unicode |
 | time(x) | Hora (formato hh:mm:ss.nnnnnnn) |
-| timestamp | EN DESUSO. Tipo de datos binarios únicos generados automáticamente en una base de datos para las versiones de las filas de una tabla |
+| timestamp | EN DESUSO. Tipo de datos binarios únicos generados automáticamente para las versiones de las filas de una tabla |
 | tinyint | Numero entero (max. 1 byte) |
 | uniqueidentifier | Para almacenar identificadores únicos globales (GUID) |
 | varbinary(x) | Datos binarios (max. x bytes) |
