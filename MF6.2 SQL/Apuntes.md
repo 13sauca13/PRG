@@ -89,33 +89,33 @@ Tipos de datos en las tablas (resaltados los principales):
 | char(x) | x bytes caracteres alfanuméricos (ocupa los x bytes de memoria) No Unicode |
 | date | Fechas (formato AAAA-MM-DD) |
 | datetime | Fechas (formato AAAA-MM-DD hh:mm:ss) |
-| datetime2(x) | Fechas (formato AAAA-MM-DD hh:mm:ss[nnnnnnn]) |
-| datetimeoffset(x) | |
+| datetime2(x) | Fechas (formato AAAA-MM-DD hh:mm:ss.nnnnnnn) |
+| datetimeoffset(x) | Fechas (formato AAAA-MM-DD hh:mm:ss.nnnnnnn [+|-]hh:mm) |
 | decimal(x,q) | Número decimal con x dígitos TOTALES, de los cuales q serán decimales (sinónimo de ```numeric(x,q)``` |
-| float |  |
-| geography | |
-| geometry | |
-| hierarchyid | |
+| float(x) | Datos numéricos aproximados de coma flotante ( siendo x los bits de la parte decimal) |
+| geography | Para almacenar datos espaciales elipsoidales como coordenadas de latitud y longitud GPS |
+| geometry | Para almacenar datos espaciales planares en un sistema de coordenadas euclídeo |
+| hierarchyid | Para representar la posición en una jerarquía de árbol |
 | image | Datos binarios de longitud variable |
-| **int** | **Numero entero (max. 4 bytes)** |
+| :exclamation: **int** | **Numero entero (max. 4 bytes)** |
 | money | Dato para valores monetarios (max. 8 bytes) |
 | nchar(x) | x bytes de caracteres Unicode (ocupa los x bytes) |
 | ntext | Caracteres alfanuméricos Unicode |
-| **numeric(x,q)** | **Número decimal con x dígitos TOTALES, de los cuales q serán decimales** |
-| **nvarchar(x)** | **Caracteres Unicode (max. x bytes)** |
+| :exclamation: **numeric(x,q)** | **Número decimal con x dígitos TOTALES, de los cuales q serán decimales** |
+| :exclamation: **nvarchar(x)** | **Caracteres Unicode (max. x bytes)** |
 | nvarchar(MAX) | |
-| real | |
+| real | Datos numéricos de coma flotante (sinónimo de ```float(24)```|
 | smalldatetime | Fechas (formato AAAA-MM-DD hh:mm:ss) |
 | smallint | Numero entero (max. 2 bytes) |
 | smallmoney | Dato para valores monetarios (max. 4 bytes) |
-| sql_variant | |
+| sql_variant | Para almacenar valores de varios tipos de datos admitidos en SQL Server |
 | text | Caracteres alfanuméricos No Unicode |
-| time(x) | |
+| time(x) | Hora (formato hh:mm:ss.nnnnnnn) |
 | timestamp | |
 | tinyint | Numero entero (max. 1 byte) |
-| uniqueidentifier | |
-| varbinary(x) | |
+| uniqueidentifier | Para almacenar identificadores únicos globales (GUID) |
+| varbinary(x) | Datos binarios (max. x bytes) |
 | varbinary(MAX) | |
-| **varchar(x)** | **Caracteres alfanuméricos (max. x bytes) No Unicode** |
-| varchar(MAX) | |
-| xml | |
+| :exclamation: **varchar(x)** | **Caracteres alfanuméricos (max. x bytes) No Unicode** |
+| varchar(MAX) | Caracteres alfanuméricos (max. x bytes) No Unicode |
+| xml | Para almacenar datos XML |
