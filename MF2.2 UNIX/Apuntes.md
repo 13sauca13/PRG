@@ -1,4 +1,37 @@
 # UNIX
+## 1. Estructura de directorios en Linux
+El estándar de jerarquía del sistema de archivos, también conocido como FHS (File Hierarchy System), es la norma que define los directorios y sus contenidos en los sistemas Unix.
+Proporciona una serie de ventajas:
++ El software sae en todo momento las carpetas y permisos del ordenador
++ Los usuarios conocen en todo momento el contenido de las carpetas
++ Ayuda a la hora de realizar mantenimiento en el ordenador
++ Ayuda a otorgar permisos a las diferentes carpetas
+
+El FHS es flexible y existe cierta libertad para aplicar sus normas.
+Existen varios tipos de tipos de directorios:
++ Compartibles: pueden ser compartidos dentre distintos equipos
++ No compartibles: No se pueden compartir y sus uso y modificación están limitados al administrador del sistema
++ Variables: Contienen archivos que pueden ser modificados
++ No variables: Contienen archivos que solo pueden ser modificados con ayuda del administrador del sistema
+
+Partiendo del directorio raíz ```/``` están todas las carpetas y estructura del sistema operativo:
+
+| Carpeta | Descripción |
+| --- | --- |
+| /bin | Estático y compartido, contiene archivos binarios ejecutables necesarios para el funcionamiento del SO. Estos archivos los pueden usar todos los usuarios. NO PUEDE CONTENER SUBDIRECTORIOS |
+| /boot | Estático y no compartible, contiene todos los archivos necesarios para el arranque del ordenador excepto los archivos de configuración |
+| /dev | Aqui estarán los dispositivos, a los que unix trata como un archivo |
+| /etc | Directorio estatico con archivos de configuración del sistema operativo y diversos programas |
+| /home | Variable y compartible donde se encuentran los ficheros de todos los usuarios salvo root. Cada usuario tendrá su carpeta en /home |
+| /lib | Estático y compartible. Contiene bibliotecas necesarias para ejecutar los ejecutables de /bin y /sbin. Tambien contiene módulos kernel y controladores necesarios durante el arranque y funcionamiento del SO |
+| /mnt | Alberga los puntos de montaje de los diferentes dispositivos |
+| /opt |  |
+| /proc | |
+| /root | |
+| /sbin | |
+| /tmp | |
+| /usr | |
+| /var | |
 
 ## Administración de usuarios y grupos
 | Comando | Uso |
