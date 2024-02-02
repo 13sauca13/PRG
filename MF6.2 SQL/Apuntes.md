@@ -83,39 +83,39 @@ campo2 tipo_dato,
 Tipos de datos en las tablas (resaltados los principales):
 | Dato | Explicación |
 | --- | --- |
-| bigint | |
-| binary(x) | |
-| bit | es un booleano (true o false) |
-| char(x) | x caracteres, que aunque no se usen todos, los huecos se rellenan igualmente en memoria |
-| date | fechas |
-| datetime | |
-| datetime2(x) | |
+| bigint | Numero entero (max. 8 bytes) |
+| binary(x) | x bytes de datos binarios |
+| bit | Un bit que funciona como booleano (true=1 o false=0) |
+| char(x) | x bytes caracteres alfanuméricos (ocupa los x bytes de memoria) No Unicode |
+| date | Fechas (formato AAAA-MM-DD) |
+| datetime | Fechas (formato AAAA-MM-DD hh:mm:ss) |
+| datetime2(x) | Fechas (formato AAAA-MM-DD hh:mm:ss[nnnnnnn]) |
 | datetimeoffset(x) | |
-| decimal(x,q) | número decimal con x a la izquierda de la coma y q a la derecha |
-| float | |
+| decimal(x,q) | Número decimal con x dígitos TOTALES, de los cuales q serán decimales (sinónimo de ```numeric(x,q)``` |
+| float |  |
 | geography | |
 | geometry | |
 | hierarchyid | |
-| image | |
-| **int** | **numero entero** |
-| money | dinero |
-| nchar(x) | texto con caracteres especiales |
-| ntext | |
-| **numeric(x,q)** | **número decimal con x dígitos TOTALES, de los cuales q serán decimales** |
-| **nvarchar(x)** | **************************************REVISAR |
+| image | Datos binarios de longitud variable |
+| **int** | **Numero entero (max. 4 bytes)** |
+| money | Dato para valores monetarios (max. 8 bytes) |
+| nchar(x) | x bytes de caracteres Unicode (ocupa los x bytes) |
+| ntext | Caracteres alfanuméricos Unicode |
+| **numeric(x,q)** | **Número decimal con x dígitos TOTALES, de los cuales q serán decimales** |
+| **nvarchar(x)** | **Caracteres Unicode (max. x bytes)** |
 | nvarchar(MAX) | |
 | real | |
-| smalldatetime | |
-| smallint | |
-| smallmoney | |
+| smalldatetime | Fechas (formato AAAA-MM-DD hh:mm:ss) |
+| smallint | Numero entero (max. 2 bytes) |
+| smallmoney | Dato para valores monetarios (max. 4 bytes) |
 | sql_variant | |
-| text | |
+| text | Caracteres alfanuméricos No Unicode |
 | time(x) | |
 | timestamp | |
-| tinyint | |
+| tinyint | Numero entero (max. 1 byte) |
 | uniqueidentifier | |
 | varbinary(x) | |
 | varbinary(MAX) | |
-| varchar(x) | |
+| **varchar(x)** | **Caracteres alfanuméricos (max. x bytes) No Unicode** |
 | varchar(MAX) | |
 | xml | |
