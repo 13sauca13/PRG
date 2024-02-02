@@ -105,7 +105,7 @@ Tipos de datos en las tablas (resaltados los principales):
 | ntext | Caracteres alfanuméricos Unicode |
 | :exclamation: **numeric(x,q)** | **Número decimal con x dígitos TOTALES, de los cuales q serán decimales** |
 | :exclamation: **nvarchar(x)** | **Caracteres Unicode (max. x bytes)** |
-| nvarchar(MAX) | |
+| nvarchar(MAX) | Caracteres Unicode de más de 8000 bytes (max. 2^31 bytes) |
 | real | Datos numéricos de coma flotante (sinónimo de ```float(24)```|
 | smalldatetime | Fechas (formato AAAA-MM-DD hh:mm:ss) |
 | smallint | Numero entero (max. 2 bytes) |
@@ -113,11 +113,11 @@ Tipos de datos en las tablas (resaltados los principales):
 | sql_variant | Para almacenar valores de varios tipos de datos admitidos en SQL Server |
 | text | Caracteres alfanuméricos No Unicode |
 | time(x) | Hora (formato hh:mm:ss.nnnnnnn) |
-| timestamp | |
+| timestamp | EN DESUSO. Tipo de datos binarios únicos generados automáticamente en una base de datos para las versiones de las filas de una tabla |
 | tinyint | Numero entero (max. 1 byte) |
 | uniqueidentifier | Para almacenar identificadores únicos globales (GUID) |
 | varbinary(x) | Datos binarios (max. x bytes) |
-| varbinary(MAX) | |
+| varbinary(MAX) | Datos binarios de más de 8000 bytes (max. 2^31 bytes) |
 | :exclamation: **varchar(x)** | **Caracteres alfanuméricos (max. x bytes) No Unicode** |
 | varchar(MAX) | Caracteres alfanuméricos (max. x bytes) No Unicode |
 | xml | Para almacenar datos XML |
