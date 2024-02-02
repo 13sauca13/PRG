@@ -1,6 +1,6 @@
 # SQL
 
-:mag: [Scripts SQL](https://github.com/13sauca13/PRG/tree/master/MF6.2%20SQL/Codigo)
+:mag: [Scripts SQL de clase](https://github.com/13sauca13/PRG/tree/master/MF6.2%20SQL/Codigo)
 
 ## 1. Componentes del SQL
 
