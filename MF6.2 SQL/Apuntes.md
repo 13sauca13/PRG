@@ -3,7 +3,9 @@
 :mag: [Scripts SQL de clase](https://github.com/13sauca13/PRG/tree/master/MF6.2%20SQL/Codigo)
 
 > Ampliatorio:
+> 
 > :top: [Select Star SQL](https://selectstarsql.com/) - Libro/guía interactivo
+> 
 > :video_game: [SQL Murder Mistery](https://mystery.knightlab.com/) - Juego de investigación de un asesinato con SQL
 
 ## 1. Componentes del SQL
