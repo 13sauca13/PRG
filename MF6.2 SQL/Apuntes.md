@@ -64,7 +64,7 @@ Seguridad de la base de datos, en todo lo referente al control de accesos y priv
 >drop login username;
 >```
 
-## 3. Manejo de SQL
+## 3. Data Definition Lenguage (DDL - Creación de tablas)
 >[!TIP]
 >Para que el código ejecutado sea en una base de datos se comienza la query con:
 >```
@@ -149,4 +149,12 @@ ALTER TABLE nombre_tabla
 ALTER COLUMN campo TIPO_DATO:
 ```
 
+## 4. Data Manipulation Language (DML - Consultas y trabajo con las tablas)
+Las consultas se realizarán con ```SELECT```:
 
+```
+SELECT campo FROM nombre_tabla
+WHERE valor
+```
+
+En el valor del campo podemos usar tambié * para seleccionar todo
