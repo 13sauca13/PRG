@@ -25,13 +25,23 @@ Partiendo del directorio raíz ```/``` están todas las carpetas y estructura de
 | /home | Variable y compartible donde se encuentran los ficheros de todos los usuarios salvo root. Cada usuario tendrá su carpeta en /home |
 | /lib | Estático y compartible. Contiene bibliotecas necesarias para ejecutar los ejecutables de /bin y /sbin. Tambien contiene módulos kernel y controladores necesarios durante el arranque y funcionamiento del SO |
 | /mnt | Alberga los puntos de montaje de los diferentes dispositivos |
-| /opt |  |
-| /proc | |
-| /root | |
-| /sbin | |
-| /tmp | |
-| /usr | |
-| /var | |
+| /media | Similar a /mnt. Punto de montaje de medios extraibles |
+| /opt | Estático y compartible. Almacena programas que no vienen con nuestro SO y no siguen estándares para almacenar en /usr |
+| /proc | Sistema de archivos virtual que proporciona info de procesos y aplicaciones por cada proceso existe un subdirectorio. Esta carpeta está en la RAM |
+| /root | Variable y no compartible. Es el /home del usuario root |
+| /sbin | Estático y compartible. Similar a /bin pero su contenido sólo puede ser usado por root |
+| /srv | Almacena datos y directorios que usan los servidores instalados en el equipo (p.ej. ftp, servidor web...|
+| /tmp | Aqui se crean y almacenan los archivos temporales. Se vacía con cada reinicio |
+| /usr | Compartido y estático. Contiene la mayoría de los programas instalados en el equipo. Accesible solo de lectura para todos los usuarios |
+| /var | Archivos de datos variables y temporales como logs, cache, etc. |
+| /sys | Similar a /proc. Información sobre el kernel, particiones,sistemas de archivo... |
+| /lost+found | Se crea después de ejecutar herramioentas para restaurar y recuperar (p.ej. ```fsch```) |
+
+## 2. Comandos básicos
+| Comando | Estructura | Explicación |
+| --- | --- | --- |
+| ```cal``` | ```cal [opciones][[mes]año] | Muesta el calendario (sin opciones, mes actual, ```-y```, año en curso) |
+| ```clear``` | ```clear``` | 
 
 ## Administración de usuarios y grupos
 | Comando | Uso |
