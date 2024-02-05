@@ -64,7 +64,7 @@ Seguridad de la base de datos, en todo lo referente al control de accesos y priv
 >drop login username;
 >```
 
-## 2. Manejo de SQL
+## 3. Manejo de SQL
 >[!TIP]
 >Para que el código ejecutado sea en una base de datos se comienza la query con:
 >```
@@ -72,12 +72,12 @@ Seguridad de la base de datos, en todo lo referente al control de accesos y priv
 >go
 >```
 
-#### Crear una tabla
+### 3.1 Crear una tabla
 ```
 CREATE TABLE nombre_tabla
 (
-campo1 tipo_dato,
-campo2 tipo_dato,
+campo1 TIPO_DATO,
+campo2 TIPO_DATO,
  …
 );
 ```
@@ -128,9 +128,17 @@ Tipos de datos en las tablas (resaltados los principales):
 > ``` atributo int IDENTITY (num_inicio, valor_incremento) ```
 > 
 
-#### Introducción de datos
+### 3.2 Introducción de datos
 Se introducen los datos por el orden en el que se decrararon los atributos en la tabla:
 
 ```INSERT INTO nombre_tabla VALUES (valor_campo1, valor_campo2,...);```
 
 ***Ojo a los tipos de datos y el formato en el que se deben introducir*** (p.ej. strings entre comillas simples ``` 'string' ``` )
+
+### 3.3 Modificar los campos de una tabla
+```
+ALTER TABLE nombre_tabla
+ALTER COLUMN campo TIPO_DATO:
+```
+
+
