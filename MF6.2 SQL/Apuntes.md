@@ -131,7 +131,7 @@ Tipos de datos en las tablas (resaltados los principales):
 >
 > El valor de un identidad se rellena automáticamente y es NOT NULL. Para modificarlo o introducirlo manualmente hay que cambiar el ```IDENTITY_INSERT``` a ON y utilizar lista de columnas para declarar el valor (NO vale hacerlo sólo con el orden de los valores, hay que usar primero el listado de campos):
 > ```
-> SET IDENTITY_INSERT nombre_tabla ON```
+> SET IDENTITY_INSERT nombre_tabla ON
 > INSERT INTO nombre_tabla (campo1, campo2,...) VALUES (valor_campo1, valor_campo2,...);
 > ```
 
