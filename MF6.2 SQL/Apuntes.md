@@ -82,6 +82,8 @@ campo2 TIPO_DATO,
 );
 ```
 
+Después del tipo de dato podremos indicar también si es NULL o NOT NULL, y también si es UNIQUE.
+
 Tipos de datos en las tablas (resaltados los principales):
 | Dato | Explicación |
 | --- | --- |
@@ -126,7 +128,13 @@ Tipos de datos en las tablas (resaltados los principales):
 > Podemos utilizar números autoincrementables utilizando el tipo ```int``` y añadiendole "identidad":
 >
 > ``` atributo int IDENTITY (num_inicio, valor_incremento) ```
-> 
+>
+> El valor de un identidad se rellena automáticamente y es NOT NULL. Para modificarlo o introducirlo manualmente hay que cambiar el ```IDENTITY_INSERT``` a ON y utilizar lista de columnas para declarar el valor (NO vale hacerlo sólo con el orden de los valores, hay que usar primero el listado de campos):
+> ```
+> SET IDENTITY_INSERT nombre_tabla ON```
+> INSERT INTO nombre_tabla (campo1, campo2,...) VALUES (valor_campo1, valor_campo2,...);
+> ```
+
 
 ### 3.2 Introducción de datos
 Se introducen los datos por el orden en el que se decrararon los atributos en la tabla:
