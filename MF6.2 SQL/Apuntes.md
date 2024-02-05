@@ -121,3 +121,10 @@ Tipos de datos en las tablas (resaltados los principales):
 | :exclamation: **varchar(x)** | **Caracteres alfanuméricos (max. x bytes) No Unicode** |
 | varchar(MAX) | Caracteres alfanuméricos (max. x bytes) No Unicode |
 | xml | Para almacenar datos XML |
+
+#### Introducción de datos
+Se introducen los datos por el orden en el que se decrararon los atributos en la tabla:
+
+```INSERT INTO nombre_tabla VALUES (valor_campo1, valor_campo2,...);```
+
+***Ojo a los tipos de datos y el formato en el que se deben introducir*** (strings entre comillas simples ''' ' ''' )
