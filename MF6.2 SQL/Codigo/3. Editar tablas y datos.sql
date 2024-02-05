@@ -12,3 +12,7 @@ ADD numero int IDENTITY(10,2);
 --- Modificar el tipo de dato de un atributo ya existente de una tabla
 ALTER TABLE camino
 ALTER COLUMN nº_km_total int NOT NULL;
+
+--- Introducir datos forzando un valor en un campo identidad
+SET IDENTITY_INSERT camino ON
+INSERT INTO camino (nombre,nº_km_total,tiempo_total,numero) VALUES ('chino',25,'12:12:12',11);
