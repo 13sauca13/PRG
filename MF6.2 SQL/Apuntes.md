@@ -122,6 +122,12 @@ Tipos de datos en las tablas (resaltados los principales):
 | varchar(MAX) | Caracteres alfanuméricos (max. x bytes) No Unicode |
 | xml | Para almacenar datos XML |
 
+> [!TIP]
+> Podemos utilizar números autoincrementables utilizando el tipo ```int``` y añadiendole "identidad":
+>
+> ``` atributo int IDENTITY (num_inicio, valor_incremento) ```
+> 
+
 #### Introducción de datos
 Se introducen los datos por el orden en el que se decrararon los atributos en la tabla:
 
