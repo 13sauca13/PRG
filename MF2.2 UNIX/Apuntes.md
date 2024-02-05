@@ -40,8 +40,44 @@ Partiendo del directorio raíz ```/``` están todas las carpetas y estructura de
 ## 2. Comandos básicos
 | Comando | Estructura | Explicación |
 | --- | --- | --- |
-| ```cal``` | ```cal [opciones][[mes]año] | Muesta el calendario (sin opciones, mes actual, ```-y```, año en curso) |
-| ```clear``` | ```clear``` | 
+| ```cal``` | ```cal [opciones][[mes]año]``` | Muesta el calendario (sin opciones, mes actual, ```-y```, año en curso) |
+| ```clear``` | ```clear``` | Borra la pantalla del terminal |
+| ```hostname``` | ```hostname [nombre]``` | Sin opciones devuelve el nombre de la máquina, con [nombre] cambia el nombre. (```-f``` da el FQDN, ```-d``` da el nombre del dominio) |
+| ```id``` | ```id [opciones][username] | Muestra info del usuario (UID, GID, grupos...) |
+| ```info``` | ```info [nombre] | Informacion sobre UNIX |
+| ```man``` | ```man [opciones][seccion] nombre | Muestra el manual en línea |
+| ```pwd``` | ```pwd``` | *Print Working Directory*. Muestra la ruta en la que nos encontramos |
+| ```uname``` | ```uname [opciones] | Muestra info sobre la máquina y el SO |
+| ```who``` | ```who [opciones] [am i]``` | Muestra informacion sobre quien está en el sistema (```am i``` muestra sobre el usuario actual) |
+| ```whoami``` | ```whoami``` | Identificador del usuario actual |
+
+## 3. Comandos del sistema de ficheros
+Todos los ficheros pertenecen suempre a algún usuario que es quien controla su visibilidad para el resto de usuarios y grupos.
+
+Los ficheros se encuentran en directorios:
++ ```.``` : Directorio actual
++ ```..``` : Directorio superior
++ ```/``` : Directorio raiz
++ ```~``` : Directorio de usuario (/home/%username%)
+
+Existen 3 tipos de acceso a los directorios y ficheros: User, Group y Other (se explica más adelante)
+
+Para cada uno hay 3 tipos de permiso:
++ R (Lectura)
+  + Ficheros: Se puede examinar el contenido
+  + Directorios: Se puede ver el contenido
++ W (Escritura)
+  +  Ficheros: Se pueden modificar contenidos
+  +  Directorios: Se pueden modificar contenidos
++  X (Ejecución)
+  +  Ficheros: El contenido se puede emplear como comando
+  +  Directorios: Se puede emplear como directorio de trabajo
+
+El acceso es dependiente de si se puede entrar a un fichero o directorio. La denegación de escritura no protege contra el borrado.
+
+| Comando | Estructura | Explicación |
+| --- | --- | --- |
+************************EN PROCESO
 
 ## Administración de usuarios y grupos
 | Comando | Uso |
