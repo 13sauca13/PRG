@@ -154,7 +154,7 @@ Las consultas se realizarán con ```SELECT```:
 
 ```
 SELECT campo FROM nombre_tabla
-WHERE valor
+WHERE campo=valor
 ```
 
-En el valor del campo podemos usar tambié * para seleccionar todo
+En el valor del campo podemos usar también * para seleccionar todo
