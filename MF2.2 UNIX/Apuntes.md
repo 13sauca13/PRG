@@ -93,7 +93,7 @@ El acceso es dependiente de si se puede entrar a un fichero o directorio. La den
 | ```rm``` | ```rm [opciones] nombre``` | Elimina archivos (```-r``` elimina directorios y contenido) |
 | ```ln``` | ```ln [opciones] origen destino``` | Crear enlaces (duros si es sin opciones, blandos si es con ```-s```) (ver más adelante) |
 
-### ```ln```
+#### ```ln```
 Existen dos tipos de enlaces:
 + Enlace duro: crea un nuevo archivo que apunta a la dirección de memoria (borrar el archivo original ya no afectaría al archivo porque hay otro enlace, habría que borrar TODOS los enlaces duros para borrar el archivo :eyes: [Consultar info sobre los Inodos](https://es.wikipedia.org/wiki/Inodo))
 + Enlace blando: Apunta al archivo original, no es un nuevo archivo, si se borra el original se rompe el enlace
@@ -117,8 +117,17 @@ El destino es opcional, si no se introduce el enlace se creará en la unicación
 | ```adduser [username] [groupname]``` | Añadir usuarios a un grupo (también sirve para crear usuarios) |
 | ```deluser [username] [groupname]``` | Eliminar usuarios de un grupo |
 
-### ```passwd```
+#### ```passwd```
 Se utiliza para moodificar la contraseña de un usuario.
 
 ```passwd [username]```
 
+## 5. Editor de textos "VI"
+Editor de textos en todas las versiones de UNIX y accesible desde cualquier terminal.
+
+```vi [nombre_archivo]```
+
+El editor VI cuenta con 3 modos:
++ Modo comando: Las teclas ejecutan acciones (es el modo inicial)
++ Modo texto (o modo inserción): Las teclas ingresan el caracter que representan
++ Modo última línea (o modo ex): Las teclas se usan para escribir comandos en la última línea
