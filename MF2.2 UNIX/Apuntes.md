@@ -83,20 +83,29 @@ El acceso es dependiente de si se puede entrar a un fichero o directorio. La den
 | ```ls``` | ```ls -[opciones]``` | Lista el contenido del directorio actual (```-l```con detalles, ```-a``` muestra ocultos) |
 | ```dir``` | ```dir``` | Igual que ```ls``` sin colores |
 | ```vdir``` | ```vdir``` | Igual que ```ls -l``` |
-| ```chmod``` | ```chmod XXX [archivo]``` | Las X serán los números que en binario indicarán los permisos[^1] (*hay más formas de usarlo... a mi me gusta esta*)
+| ```chmod``` | ```chmod XXX [archivo]``` | Las X serán los números que en binario indicarán los permisos :eyes: [CHMOD UNIX](https://ayudalinux.com/comando-chmod-que-es-como-usarlo/#:~:text=Comando%20chmod%3A%20%C2%BFQu%C3%A9%20es%3F%20y%20%C2%BFC%C3%B3mo%20usarlo%3F%201,Cambia%20la%20propiedad%20de%20archivos%20o%20directorios.%20) (*hay más formas de usarlo... a mi me gusta esta*) |
+| ```chown``` | ```chown [user[:group]] [filename] | Cambia el propietario de un archivo (sólo el propietario original y/o root pueden hacerlo) |
+| ```chgrp``` | ```chgrp [group] [filename]``` | Cambia el grupo de un fichero (sólo el propietario original y/o root pueden hacerlo) |
+| ```mkdir``` | ```mkdir [opciones] [-m modo] directorio``` | Crea un directorio |
+| ```nano``` | ```nano [archivo]``` | Editor de textos por shell |
+| ```rmdir``` | ```rmdir [opciones] directorio``` | Elimina directorios vacíos (```-p``` elimina directorios padre si quedan vacíos)|
+| ```mv``` | ```mv [opciones] arch_origen arch_destino``` | Cambia el nombre de un archivo |
+| ```rm``` | ```rm [opciones] nombre``` | Elimina archivos (```-r``` elimina directorios y contenido) |
+| ```ln``` | ```ln [opciones] origen destino``` | Crear enlaces (duros si es sin opciones, blandos si es con ```-s```) (ver más adelante) |
 
-[^1] Modifica los permisos de un archivo o directorio.
-  Los permisos se representan con 9 letras. Son 3 grupos de tres:
-  + 3 primeras: Permisos para propietario
-  + 3 centrales: Permisos para el grupo
-  + 3 últimas: Permisos para el resto
+### ```ln```
+Existen dos tipos de enlaces:
++ Enlace duro: crea un nuevo archivo que apunta a la dirección de memoria (borrar el archivo original ya no afectaría al archivo porque hay otro enlace, habría que borrar TODOS los enlaces duros para borrar el archivo :eyes: [Consultar info sobre los Inodos](https://es.wikipedia.org/wiki/Inodo))
++ Enlace blando: Apunta al archivo original, no es un nuevo archivo, si se borra el original se rompe el enlace
 
-  Las letras indican el permiso concedido (r=read, w=write, x=execute) y están en ese orden: ```rwxrwxtwx```
+**Enlace duro**: ```ln [origen] [destino]```
 
-  Uno de los modos de modificar los permisos es usando un número (de 0 a 7) por cada trío de letras, que al pasar a binario se convertiría en 3 ceros y/o unos, indicando el 1 que ese permiso se concede y el 0 que no.
+**Enlace blando**: ```ln -s [origen] [destino]```
 
+El destino es opcional, si no se introduce el enlace se creará en la unicación actual en la que se está.
 
-## Administración de usuarios y grupos
+## 4. Administración de usuarios
+
 | Comando | Uso |
 | --- | --- |
 | ```useradd -g [grupo] -m [username]``` | Creación de usuarios *(el -m crea el directorio del usuario en la carpeta /home)*|
@@ -108,18 +117,8 @@ El acceso es dependiente de si se puede entrar a un fichero o directorio. La den
 | ```adduser [username] [groupname]``` | Añadir usuarios a un grupo (también sirve para crear usuarios) |
 | ```deluser [username] [groupname]``` | Eliminar usuarios de un grupo |
 
-## ```passwd```
+### ```passwd```
 Se utiliza para moodificar la contraseña de un usuario.
 
 ```passwd [username]```
 
-## ```ln```
-Existen dos tipos de enlaces:
-+ Enlace duro: crea un nuevo archivo que apunta a la dirección de memoria (borrar el archivo original ya no afectaría al archivo porque hay otro enlace, habría que borrar TODOS los enlaces duros para borrar el archivo :eyes: [Consultar info sobre los Inodos](https://es.wikipedia.org/wiki/Inodo))
-+ Enlace blando: Apunta al archivo original, no es un nuevo archivo, si se borra el original se rompe el enlace
-
-**Enlace duro**: ```ln [origen] [destino]```
-
-**Enlace blando**: ```ln -s [origen] [destino]```
-
-El destino es opcional, si no se introduce el enlace se creará en la unicación actual en la que se está.
