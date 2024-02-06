@@ -83,7 +83,7 @@ El acceso es dependiente de si se puede entrar a un fichero o directorio. La den
 | ```ls``` | ```ls -[opciones]``` | Lista el contenido del directorio actual (```-l```con detalles, ```-a``` muestra ocultos) |
 | ```dir``` | ```dir``` | Igual que ```ls``` sin colores |
 | ```vdir``` | ```vdir``` | Igual que ```ls -l``` |
-| ```chmod``` | ```chmod XXX [archivo]``` | Las X serán los números que en binario indicarán los permisos [^1] (*hay más formas de usarlo... a mi me gusta esta*)
+| ```chmod``` | ```chmod XXX [archivo]``` | Las X serán los números que en binario indicarán los permisos[^1] (*hay más formas de usarlo... a mi me gusta esta*)
 
 ## Administración de usuarios y grupos
 | Comando | Uso |
