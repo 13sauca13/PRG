@@ -19,3 +19,8 @@ WHERE sección='deportes' and paísdeorigen='usa';
 --- Seleccionar el nombre del articulo, el precio y el precio con 21% de IVA redondeado a 2 decimales y debe llamarse precio con iva, de los productos de Taiwan
 SELECT nombreartículo, precio,convert(decimal(6,2),round(precio*1.21,2)) AS precio_con_IVA FROM productos
 WHERE paísdeorigen='taiwán'
+
+--- Media de los artículos de deporte y cerámica
+SELECT AVG(precio) AS media_precio, sección FROM productos
+GROUP BY sección
+HAVING sección='deportes' or sección='cerámica'
