@@ -166,14 +166,6 @@ SELECT campo FROM nombre_tabla
 WHERE campo=valor
 ```
 
-En caso de querer agrupar los resultados de la consulta no se usará ```WHERE``` si no ```HAVING```:
-
-```
-SELECT campo FROM nombre_tabla
-GROUP BY campo
-HAVING campo=valor
-```
-
 En el valor del campo podemos usar ```*``` para seleccionar todo y también pueden ser usados operadores en los valores (lógicos, de comparación...):
 | Operador | Significado |
 | --- | --- |
@@ -232,3 +224,11 @@ Todas las funciones de agregado expuestas desprecian el NULL salvo el ```COUNT``
 | ```STDEV``` | Desviación típica |
 | ```VAR``` | Varianza |
 | ```COUNT_BIG``` | Se utiliza para conteo con bigint |
+
+Con las funciones ```AVG```, ```COUNT```, ```MAX```, ```MIN``` y ```SUM``` se suele utilizar ```GROUP BY``` para dividir las filas de resultados en grupos en funcion de sus valores en una o varias columnas:
+
+```
+SELECT función(campo) FROM nombre_tabla
+GROUP BY campo
+HAVING campo=valor
+```
