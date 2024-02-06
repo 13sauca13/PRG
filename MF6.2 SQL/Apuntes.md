@@ -163,4 +163,26 @@ SELECT campo FROM nombre_tabla
 WHERE campo=valor
 ```
 
-En el valor del campo podemos usar también * para seleccionar todo
+En el valor del campo podemos usar también * para seleccionar todo y también pueden ser usados operadores en los valores (lógicos, de comparación...):
+| Operador | Significado |
+| --- | --- |
+| ```=``` |	Igual a |
+| ```>``` | Mayor que |
+| ```<``` |	Menor que |
+| ```>=``` | Mayor o igual que |
+| ```<=``` | Menor o igual que |
+| ```<>``` |	No es igual a |
+| ```!=``` |	No es igual a |
+| ```!<``` |	No es menor que |
+| ```!>``` |	No es mayor que |
+| ```ALL``` |	TRUE si el conjunto completo de comparaciones es TRUE. |
+| ```AND``` |	TRUE si ambas expresiones booleanas son TRUE. |
+| ```ANY``` |	TRUE si cualquier miembro del conjunto de comparaciones es TRUE. |
+| ```BETWEEN``` |	TRUE si el operando está dentro de un intervalo. |
+| ```EXISTS``` |	TRUE si una subconsulta contiene cualquiera de las filas. |
+| ```IN``` |	TRUE si el operando es igual a uno de la lista de expresiones. |
+| ```LIKE``` |	TRUE si el operando coincide con un patrón. |
+| ```NOT``` |	Invierte el valor de cualquier otro operador booleano. |
+| ```OR``` |	TRUE si cualquiera de las dos expresiones booleanas es TRUE. |
+| ```SOME``` |	TRUE si alguna de las comparaciones de un conjunto es TRUE. |
+
