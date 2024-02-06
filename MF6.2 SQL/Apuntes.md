@@ -156,6 +156,9 @@ ALTER COLUMN campo TIPO_DATO:
 ```
 
 ## 4. Data Manipulation Language (DML - Consultas y trabajo con las tablas)
+>[!CAUTION]
+>Las búsquedas NO son "case sensitive" (no diferencian mayúsculas de minúsculas) pero SI afectan los acentos y caracteres especiales
+
 Las consultas se realizarán con ```SELECT```:
 
 ```
