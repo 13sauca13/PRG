@@ -84,7 +84,7 @@ El acceso es dependiente de si se puede entrar a un fichero o directorio. La den
 | ```dir``` | ```dir``` | Igual que ```ls``` sin colores |
 | ```vdir``` | ```vdir``` | Igual que ```ls -l``` |
 | ```chmod``` | ```chmod XXX [archivo]``` | Las X serán los números que en binario indicarán los permisos :eyes: [CHMOD UNIX](https://ayudalinux.com/comando-chmod-que-es-como-usarlo/#:~:text=Comando%20chmod%3A%20%C2%BFQu%C3%A9%20es%3F%20y%20%C2%BFC%C3%B3mo%20usarlo%3F%201,Cambia%20la%20propiedad%20de%20archivos%20o%20directorios.%20) (*hay más formas de usarlo... a mi me gusta esta*) |
-| ```chown``` | ```chown [user[:group]] [filename] | Cambia el propietario de un archivo (sólo el propietario original y/o root pueden hacerlo) |
+| ```chown``` | ```chown [user[:group]] [filename]``` | Cambia el propietario de un archivo (sólo el propietario original y/o root pueden hacerlo) |
 | ```chgrp``` | ```chgrp [group] [filename]``` | Cambia el grupo de un fichero (sólo el propietario original y/o root pueden hacerlo) |
 | ```mkdir``` | ```mkdir [opciones] [-m modo] directorio``` | Crea un directorio |
 | ```nano``` | ```nano [archivo]``` | Editor de textos por shell |
