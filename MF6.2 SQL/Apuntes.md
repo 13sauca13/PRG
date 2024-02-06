@@ -228,7 +228,7 @@ Todas las funciones de agregado expuestas desprecian el NULL salvo el ```COUNT``
 Con las funciones ```AVG```, ```COUNT```, ```MAX```, ```MIN``` y ```SUM``` se suele utilizar ```GROUP BY``` para dividir las filas de resultados en grupos en funcion de sus valores en una o varias columnas:
 
 ```
-SELECT función(campo) FROM nombre_tabla
+SELECT funcion(campo) FROM nombre_tabla
 GROUP BY campo
 HAVING campo=valor
 ```
