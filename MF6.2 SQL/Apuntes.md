@@ -199,7 +199,7 @@ ORDER BY campo [ASC/DESC], campo [ASC/DESC],...
 
 ### Funciones
 SQL tiene funciones incluídas para conversiones y funciones avanzadas:
-+ ```DATEDIFF(intervalo, fecha1, fecha2)```: Calcula la diferencia entre dos fechas
++ ```DATEDIFF(intervalo, fecha1, fecha2)```: Calcula la diferencia entre dos fechas (el intervalo es MM para meses, YYYY años,... :eyes:[SQL DATEDIFF](https://www.w3schools.com/sql/func_sqlserver_datediff.asp)
 + ```GETDATE``` : Devuelve la fecha actual
 + ```CONVERT(tipo_dato(longitud),expresion_a_convertir,estilo)```: Convierte datos de un formato a otro (los estilos tienen un código numérico :eyes:[SQL CONVERT](https://www.w3schools.com/sql/func_sqlserver_convert.asp))
 + ```ROUND(numero,decimales)```: Redondea un número
