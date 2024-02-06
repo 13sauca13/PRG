@@ -77,7 +77,13 @@ El acceso es dependiente de si se puede entrar a un fichero o directorio. La den
 
 | Comando | Estructura | Explicación |
 | --- | --- | --- |
-************************EN PROCESO
+| ```cd``` | ```cd [directorio]``` | *Change Directory* Cambiar el directorio de trabajo |
+| ```pwd``` | ```pwd``` | *Print Working Directory*. Muestra la ruta en la que nos encontramos |
+| ```su``` | ```su [usuario]``` | *Switch User* Cambiar de usuario, si no se especifica a cual se cambiará a root |
+| ```ls``` | ```ls -[opciones]``` | Lista el contenido del directorio actual (```-l```con detalles, ```-a``` muestra ocultos) |
+| ```dir``` | ```dir``` | Igual que ```ls``` sin colores |
+| ```vdir``` | ```vdir``` | Igual que ```ls -l``` |
+| ```chmod``` | ```chmod XXX [archivo]``` | Las X serán los números que en binario indicarán los permisos [^1] (*hay más formas de usarlo... a mi me gusta esta*)
 
 ## Administración de usuarios y grupos
 | Comando | Uso |
@@ -107,17 +113,12 @@ Existen dos tipos de enlaces:
 
 El destino es opcional, si no se introduce el enlace se creará en la unicación actual en la que se está.
 
-## ```chmod```
-Modifica los permisos de un archivo o directorio.
+[^1]Modifica los permisos de un archivo o directorio.
+  Los permisos se representan con 9 letras. Son 3 grupos de tres:
+  + 3 primeras: Permisos para propietario
+  + 3 centrales: Permisos para el grupo
+  + 3 últimas: Permisos para el resto
 
-Los permisos se representan con 9 letras. Son 3 grupos de tres:
-+ 3 primeras: Permisos para propietario
-+ 3 centrales: Permisos para el grupo
-+ 3 últimas: Permisos para el resto
+  Las letras indican el permiso concedido (r=read, w=write, x=execute) y están en ese orden: ```rwxrwxtwx```
 
-Las letras indican el permiso concedido (r=read, w=write, x=execute) y están en ese orden: ```rwxrwxtwx```
-
-Uno de los modos de modificar los permisos es usando un número (de 0 a 7) por cada trío de letras, que al pasar a binario se convertiría en 3 ceros y/o unos, indicando el 1 que ese permiso se concede y el 0 que no.
-```
-chmod XXX [archivo]
-```
+  Uno de los modos de modificar los permisos es usando un número (de 0 a 7) por cada trío de letras, que al pasar a binario se convertiría en 3 ceros y/o unos, indicando el 1 que ese permiso se concede y el 0 que no.
