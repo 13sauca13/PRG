@@ -196,3 +196,9 @@ SELECT campo FROM nombre_tabla
 WHERE campo=valor
 ORDER BY campo [ASC/DESC], campo [ASC/DESC],...
 ```
+
+### Funciones
+SQL tiene funciones incluídas para conversiones y funciones avanzadas:
++ ```DATEDIFF(intervalo, fecha1, fecha2)```: Calcula la diferencia entre dos fechas
++ ```GETDATE``` : Devuelve la fecha actual
++ ```CONVERT(tipo_dato(longitud),expresion_a_convertir,estilo)```: Convierte datos de un formato a otro (los estilos tienen un código numérico :eyes:[SQL CONVERT](https://www.w3schools.com/sql/func_sqlserver_convert.asp))
