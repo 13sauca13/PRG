@@ -166,6 +166,14 @@ SELECT campo FROM nombre_tabla
 WHERE campo=valor
 ```
 
+En caso de querer agrupar los resultados de la consulta no se usará ```WHERE``` si no ```HAVING```:
+
+```
+SELECT campo FROM nombre_tabla
+GROUP BY campo
+HAVING campo=valor
+```
+
 En el valor del campo podemos usar ```*``` para seleccionar todo y también pueden ser usados operadores en los valores (lógicos, de comparación...):
 | Operador | Significado |
 | --- | --- |
@@ -197,7 +205,7 @@ WHERE campo=valor
 ORDER BY campo [ASC/DESC], campo [ASC/DESC],...
 ```
 
-### Funciones
+### 4.1 Funciones
 SQL tiene funciones incluídas para conversiones y funciones avanzadas:
 + ```DATEDIFF(intervalo, fecha1, fecha2)```: Calcula la diferencia entre dos fechas (el intervalo es MM para meses, YYYY años,... :eyes:[SQL DATEDIFF](https://www.w3schools.com/sql/func_sqlserver_datediff.asp)
 + ```GETDATE``` : Devuelve la fecha actual
@@ -210,3 +218,17 @@ Al utilizar estas funciones "creo" columnas que no existen ni están metidas en 
 SELECT funcion AS alias FROM nombre_tabla
 WHERE campo=valor...
 ```
+
+#### Funciones de agregado
+Todas las funciones de agregado expuestas desprecian el NULL salvo el ```COUNT```
+
+| Función | Descripción |
+| --- | --- |
+| ```AVG``` | "Average", media aritmética |
+| ```COUNT``` | Cuenta el número de valores |
+| ```MAX``` | Valor máximo |
+| ```MIN``` | Valor mínimo |
+| ```SUM``` | Sumatorio |
+| ```STDEV``` | Desviación típica |
+| ```VAR``` | Varianza |
+| ```COUNT_BIG``` | Se utiliza para conteo con bigint |
