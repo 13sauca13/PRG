@@ -163,7 +163,7 @@ SELECT campo FROM nombre_tabla
 WHERE campo=valor
 ```
 
-En el valor del campo podemos usar también * para seleccionar todo y también pueden ser usados operadores en los valores (lógicos, de comparación...):
+En el valor del campo podemos usar ```*``` para seleccionar todo y también pueden ser usados operadores en los valores (lógicos, de comparación...):
 | Operador | Significado |
 | --- | --- |
 | ```=``` |	Igual a |
