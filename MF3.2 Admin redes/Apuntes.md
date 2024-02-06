@@ -252,3 +252,61 @@ Opciones del DHCP:
 + **Opciones de cliente reservado**: Se aplican a cualquier equipo que tenga una reserva en el ámbito para su dirección IP
 
 Al tener DHCP y DNS en una red DHCP se actualizan automáticamente los registros PTR con las direcciones IP asignadas a los equipos cliente. Esta característica reduce considerablemente el trabajo administrativo necesario para mantener los servidores DNS. 
+
+## 1.9 Sistema de ficheros
+Tenemos dos tipos de permisos: SMB y NTFS
+
+### 1.9.1 Permisos NTFS
+Permiten controlar que usuarios y grupos pueden acceder a los archivos y carpetas. Afecta a usuarios locales y de red.
+
+Hay permisos especiales, pero los estándar son:
+  + Control Total
+  + Modificar
+  + Leer y ejecutar
+  + Listar el contenido de la carpeta
+  + Leer
+  + Escribir
+
+Los permisos pueden ser de dos tipos:
++ **Permisos explícitos**: Permisos concedidos directamente a un archivo o carpeta
++ **Permisos heredados**: Permisos concedidos a una carpeta (objeto o contenedor primario) que se transmiten a los objetos secundarios (archivos o subcarpetas) dentro de esa carpeta.
+
+Y todos estos permisos pueden verse en la configuración de la siguiente manera:
++ Verificado: Se han asignado explícitamente los permisos.
++ Desactivados (sin marca): No hay permisos asignados.
++ Sombreados: Se conceden permisos a través de la herencia de una carpeta principal
+
+La jerarquía cuando hay varias opciones es: Denegación Explícita - Permitir Explícito - Denegación Heredada - Permitir Heredado
+
+##### Copiar y mover archivos
+Al copiar y mover archivos existen tres escenarios:
++ Si copia un archivo o carpeta, el nuevo adquirirá automáticamente los mismos permisos que la unidad o carpeta a donde se está copiando.
++ Si un archivo o carpeta se mueve dentro del mismo volumen, conservará los mismos permisos que ya le fueron asignados.
++ Si un archivo o carpeta se mueve desde un volumen a otro volumen, ese archivo o carpeta adquirirá automáticamente los permisos de la unidad o carpeta a donde se está copiando
+
+##### Carpetas compartidas
+Para tener acceso a un recurso compartido de red se usa la UNC (Unified Name Convention): ```\\nombredelservidor\nombrecompartido```
+
+Para los recursos compartidos los permisos son los siguientes:
++ Control total
++ Cambiar
++ Leer
+
+### 1.9.2 Permisos SMB
+Los permisos SMB son los permisos de red del servidor de ficheros y son:
++ Control total
++ Cambiar
++ Leer
+
+![Permisos SMB y NTFS](https://github.com/13sauca13/PRG/blob/master/Recursos/Permisos%20SMB%20y%20NTFS.PNG)
+
+### 1.9.3 Servidor de recursos
+El Administrador de recursos del servidor de archivos es un conjunto de herramientas que permite a los administradores entender, controlar y administrar la cantidad y el tipo de datos almacenados en los servidores.
+
+Mediante el Administrador de recursos del servidor de archivos se pueden acometer las siguientes tareas:
++ Crear cuotas para limitar el espacio asignado a un volumen o carpeta
+  + Cuota máxima
+  + Cuota de advertencia
++ Crear filtros de archivos
++ Programar informes de almacenamiento
++ Crear tareas programadas
