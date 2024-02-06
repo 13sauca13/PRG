@@ -186,3 +186,10 @@ En el valor del campo podemos usar ```*``` para seleccionar todo y también pued
 | ```OR``` |	TRUE si cualquiera de las dos expresiones booleanas es TRUE. |
 | ```SOME``` |	TRUE si alguna de las comparaciones de un conjunto es TRUE. |
 
+Después de la consulta podemos hacer un ordenamiento de los datos devueltos, el ordenamiento por defecto será ascendente, pero se puede introducir ```ASC``` ó ```DESC``` tras el campo:
+
+```
+SELECT campo FROM nombre_tabla
+WHERE campo=valor
+ORDER BY campo [ASC/DESC], campo [ASC/DESC],...
+```
