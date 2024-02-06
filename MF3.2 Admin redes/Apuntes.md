@@ -221,19 +221,19 @@ Las empresas grandes puedes subdividir si espacio DNS en subdominios.
 **FQDN** (Fully Qualified Domain Name): Describe la posición exacta de un host en una jerarquía DNS. (p.ej. technet.microsoft.com)
 
 Registro de recursos (RR) dentro de la zona DNS:
-+ SOA (Start Of Authority) ************************************ AÑADIR TODOS
-+ NS (Name Server)
-+ A (Host Address): En IPv4
-+ AAAA (Host Address): En IPv6
-+ PTR (PoinTeR)
-+ CNAME (Canonical Name)
-+ MX (Mail Exchanger)
-+ SRV (Service)
++ SOA (Start Of Authority): Nombre del servidor que es un recurso de autoridad de la información
++ NS (Name Server): El registro de recursos NS (Name Server) indica los servidores de nombres autorizados para la zona.
++ A (Host Address): FQDN en IPv4
++ AAAA (Host Address): FQDN en IPv6
++ PTR (PoinTeR): Realiza la acción contraria al registro de tipo A, es decir, asigna un nombre de dominio completamente cualificado a una dirección IP
++ CNAME (Canonical Name): Crea un alias o nombre de dominio DNS alternativo de un nombre de host
++ MX (Mail Exchanger): Especifica un servidor de intercambio de correo para un nombre de dominio. 
++ SRV (Service): Permite especificar de forma genérica la ubicación de los servidores para un servicio, protocolo y dominio DNS determinados.
 
-Existen tres zonas de búsqueda en los DNS: ********************************* AÑADIR
+Existen tres zonas de búsqueda en los DNS:
 + Zona de búsqueda directa para traducir nombres a IP
 + Zona inversa para traducir IP a nombres.
-+ Sugerencias raiz (Root Hint)
++ Sugerencias raiz (Root Hint): Contiene la información de host necesaria para resolver nombres fuera de los dominios en los que el servidor posee autoridad.
 
 El método para compartir y distribuir cargas dentro de los DNS es Round Robin
 
