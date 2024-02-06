@@ -43,11 +43,11 @@ Partiendo del directorio raíz ```/``` están todas las carpetas y estructura de
 | ```cal``` | ```cal [opciones][[mes]año]``` | Muesta el calendario (sin opciones, mes actual, ```-y```, año en curso) |
 | ```clear``` | ```clear``` | Borra la pantalla del terminal |
 | ```hostname``` | ```hostname [nombre]``` | Sin opciones devuelve el nombre de la máquina, con [nombre] cambia el nombre. (```-f``` da el FQDN, ```-d``` da el nombre del dominio) |
-| ```id``` | ```id [opciones][username] | Muestra info del usuario (UID, GID, grupos...) |
-| ```info``` | ```info [nombre] | Informacion sobre UNIX |
-| ```man``` | ```man [opciones][seccion] nombre | Muestra el manual en línea |
+| ```id``` | ```id [opciones][username]``` | Muestra info del usuario (UID, GID, grupos...) |
+| ```info``` | ```info [nombre]``` | Informacion sobre UNIX |
+| ```man``` | ```man [opciones][seccion]``` nombre | Muestra el manual en línea |
 | ```pwd``` | ```pwd``` | *Print Working Directory*. Muestra la ruta en la que nos encontramos |
-| ```uname``` | ```uname [opciones] | Muestra info sobre la máquina y el SO |
+| ```uname``` | ```uname [opciones]``` | Muestra info sobre la máquina y el SO |
 | ```who``` | ```who [opciones] [am i]``` | Muestra informacion sobre quien está en el sistema (```am i``` muestra sobre el usuario actual) |
 | ```whoami``` | ```whoami``` | Identificador del usuario actual |
 
