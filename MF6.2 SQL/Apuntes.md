@@ -204,9 +204,9 @@ SQL tiene funciones incluídas para conversiones y funciones avanzadas:
 + ```CONVERT(tipo_dato(longitud),expresion_a_convertir,estilo)```: Convierte datos de un formato a otro (los estilos tienen un código numérico :eyes:[SQL CONVERT](https://www.w3schools.com/sql/func_sqlserver_convert.asp))
 + ```ROUND(numero,decimales)```: Redondea un número
 
-Al utilizar estas funciones "creo" columnas que no existen ni están metidas en ninguna tabla de manera que no tienen nombre, puede utilizarse un alias para esta columna recién creada:
+Al utilizar estas funciones "creo" columnas que no existen ni están metidas en ninguna tabla de manera que no tienen nombre, puede utilizarse un ***alias*** para esta columna recién creada:
 
 ```
-SELECT funcion AS nombre_nueva_columna FROM nombre_tabla
+SELECT funcion AS alias FROM nombre_tabla
 WHERE campo=valor...
 ```
