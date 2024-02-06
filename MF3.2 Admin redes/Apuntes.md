@@ -197,7 +197,14 @@ Después de que haya promovido una computadora en el controlador de dominio, deb
 
 Aunque estas herramientas son instaladas en controladores de dominio, también pueden instalarse en equipos clientes para que pueda administrar Directorio activo.
 
-********************************** AÑADIR
+El Directorio activo utiliza replicaciones multi-maestras, esto significa que no hay controladores de dominio maestro, esto se llama **FSMO** (Flexible Single Master Operations) y son los siguientes:
+| Rol | Alcance | Descripción |
+| --- | --- | --- |
+| Maestro de esquema | 1 por bosque | Controla y gestiona las actualizaciones o modificaciones al esquema del Directorio activo. |
+| Maestro de nombres de dominio | 1 por bosque | Controla la adición y la eliminación de los dominios del bosque |
+| Emulador de PDC | 1 por dominio | PDC es la abreviatura de controlador de dominio principal, este era el controlador de dominio principal que se utilizaba con Windows NT (actúa como servidor principal de los ambios de contraseña y como el servidor de tiempo maestro dentro del dominio) |
+| Maestro RID | 1 por dominio | Asigna pools de identificadores únicos a los controladores de dominio para poder utilizarse al crear objetos. |
+| Maestro de infraestructura | 1 por dominio | Sincroniza entre dominios cambios de configuración entre grupos de miembros |
 
 ## 1.7 Resolución de nombres
 Se trata del proceso de traducción de nombres a IP, siendo el protocolo más utilizado el Domain Name System (DNS).
