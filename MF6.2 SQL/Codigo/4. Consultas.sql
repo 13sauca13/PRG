@@ -33,3 +33,7 @@ GROUP BY población
 SELECT max(precio) AS [precio maximo], sección FROM productos
 GROUP BY sección
 HAVING sección='confección'
+
+--- Todos los datos de los clientes de Madrid que hayan hecho pedidos
+SELECT códigocliente,empresa,dirección,población,teléfono,responsable,historial FROM clientes INNER JOIN pedidos
+ON clientes.códigocliente=pedidos.[código cliente]
