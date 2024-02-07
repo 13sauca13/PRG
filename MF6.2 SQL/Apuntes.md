@@ -232,3 +232,5 @@ SELECT funcion(campo) FROM nombre_tabla
 GROUP BY campo
 HAVING campo=valor
 ```
+
+:exclamation: ***Todo lo que esté fuera de la función de agregado tiene que estar en ```GROUP BY```***
