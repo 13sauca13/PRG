@@ -247,5 +247,8 @@ WHERE campo=valor
 ```
 
 Existen también:
-+ ```LEFT JOIN```:
-+ ```RIGHT JOIN```
++ ```LEFT JOIN```: Devuelve todos los datos de la tabla1 y los coincidentes de la tabla2
++ ```RIGHT JOIN```: Devuelve todos los datos de la tabla2 y los coincidentes de la tabla1
++ Existen también ```FULL JOIN```y ```SELF JOIN```...
+
+![Inner Join](https://github.com/13sauca13/PRG/blob/master/Recursos/inner_join.png) ![Left Join](https://github.com/13sauca13/PRG/blob/master/Recursos/left_join.png) ![Right Join](https://github.com/13sauca13/PRG/blob/master/Recursos/right_join.png)
