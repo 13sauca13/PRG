@@ -28,3 +28,8 @@ HAVING sección='deportes' or sección='cerámica'
 --- Cuantos clientes hay en cada población
 SELECT count(códigocliente) AS número_clientes, población FROM clientes
 GROUP BY población
+
+--- Precio maximo de la seccion de confeccion
+SELECT max(precio) AS [precio maximo], sección FROM productos
+GROUP BY sección
+HAVING sección='confección'
