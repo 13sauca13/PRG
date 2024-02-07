@@ -243,6 +243,9 @@ Existen diferentes tipos de combinaciones, siendo la más simple ```INNER JOIN``
 ```
 SELECT campos FROM tabla1 INNER JOIN tabla2 
 ON tabla1.campo = tabla2.campo
-INNER JOIN tabla3 
 WHERE campo=valor
 ```
+
+Existen también:
++ ```LEFT JOIN```:
++ ```RIGHT JOIN```
