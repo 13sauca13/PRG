@@ -24,3 +24,7 @@ WHERE paísdeorigen='taiwán'
 SELECT AVG(precio) AS media_precio, sección FROM productos
 GROUP BY sección
 HAVING sección='deportes' or sección='cerámica'
+
+--- Cuantos clientes hay en cada población
+SELECT count(códigocliente) AS número_clientes, población FROM clientes
+GROUP BY población
