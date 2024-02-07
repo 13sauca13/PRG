@@ -45,7 +45,7 @@ Partiendo del directorio raíz ```/``` están todas las carpetas y estructura de
 | ```hostname``` | ```hostname [nombre]``` | Sin opciones devuelve el nombre de la máquina, con [nombre] cambia el nombre. (```-f``` da el FQDN, ```-d``` da el nombre del dominio) |
 | ```id``` | ```id [opciones][username]``` | Muestra info del usuario (UID, GID, grupos...) |
 | ```info``` | ```info [nombre]``` | Informacion sobre UNIX |
-| ```man``` | ```man [opciones][seccion]``` nombre | Muestra el manual en línea |
+| ```man``` | ```man [opciones][seccion] nombre``` | Muestra el manual en línea |
 | ```pwd``` | ```pwd``` | *Print Working Directory*. Muestra la ruta en la que nos encontramos |
 | ```uname``` | ```uname [opciones]``` | Muestra info sobre la máquina y el SO |
 | ```who``` | ```who [opciones] [am i]``` | Muestra informacion sobre quien está en el sistema (```am i``` muestra sobre el usuario actual) |
