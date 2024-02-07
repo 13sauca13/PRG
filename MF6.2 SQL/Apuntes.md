@@ -234,3 +234,15 @@ HAVING campo=valor
 ```
 
 :exclamation: ***Todo lo que esté fuera de la función de agregado tiene que estar en ```GROUP BY```***
+
+## 4.2 Joins
+Las clausulas ```JOIN```se utilizan para combinar filas de dos o más tablas basado en una columna relacionada entre ellas (normalmente FK y PK)
+
+Existen diferentes tipos de combinaciones, siendo la más simple ```INNER JOIN```
+
+```
+SELECT campos FROM tabla1 INNER JOIN tabla2 
+ON tabla1.campo = tabla2.campo
+INNER JOIN tabla3 
+WHERE campo=valor
+```
