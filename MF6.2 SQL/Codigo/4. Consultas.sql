@@ -37,3 +37,12 @@ HAVING sección='confección'
 --- Todos los datos de los clientes de Madrid que hayan hecho pedidos
 SELECT códigocliente,empresa,dirección,población,teléfono,responsable,historial FROM clientes INNER JOIN pedidos
 ON clientes.códigocliente=pedidos.[código cliente]
+
+--- Que persona ha pedido la muñeca andadora y en que fecha
+SELECT responsable, pedidos.[fecha de pedido] FROM clientes INNER JOIN pedidos
+ON clientes.códigocliente=pedidos.[código cliente]
+INNER JOIN [productos- pedidos]
+ON pedidos.[número de pedido]=[productos- pedidos].[número de pedido]
+INNER JOIN productos
+ON productos.códigoartículo=[productos- pedidos].[código artículo]
+WHERE nombreartículo='muñeca andadora'
