@@ -147,6 +147,10 @@ Se introducen los datos por el orden en el que se decrararon los atributos en la
 
 ```INSERT INTO nombre_tabla VALUES (valor_campo1, valor_campo2,...);```
 
+O podemos declara los campos que vamos a rellenar si no vamos a introducir datos en todos los campos:
+
+```INSERT INTO nombre_tabla(campo1, campo2,...) VALUES (valor_campo1, valor_campo2,...);```
+
 ***Ojo a los tipos de datos y el formato en el que se deben introducir*** (p.ej. strings entre comillas simples ``` 'string' ``` )
 
 ### 3.3 Modificar los campos de una tabla
