@@ -16,3 +16,12 @@ ALTER COLUMN nº_km_total int NOT NULL;
 --- Introducir datos forzando un valor en un campo identidad
 SET IDENTITY_INSERT camino ON
 INSERT INTO camino (nombre,nº_km_total,tiempo_total,numero) VALUES ('chino',25,'12:12:12',11);
+
+--- Crea una nueva tabla con los datos de los clientes de Madrid
+SELECT * INTO clientes_madrid FROM clientes
+WHERE población='Madrid'
+
+--- Introduce en una nueva tupla datos de otra tabla, de la empresa de la calle Corrida forzando el CÓDIGOCLIENTE como ct50
+INSERT INTO clientes_madrid
+SELECT 'ct50', empresa, dirección, población, teléfono, responsable, historial FROM clientes
+WHERE dirección like 'corrida%'
