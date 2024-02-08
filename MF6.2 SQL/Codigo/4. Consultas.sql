@@ -63,3 +63,7 @@ INNER JOIN clientes
 ON pedidos.[código cliente]=clientes.códigocliente
 WHERE responsable='Angel Martínez'
 GROUP BY productos.nombreartículo
+
+--- Cuantos meses hace que esta en la base de datos el correpasillos
+SELECT datediff(MM, productos.fecha, getdate()) FROM productos
+WHERE nombreartículo='correpasillos'
