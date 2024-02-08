@@ -197,6 +197,11 @@ WHERE campo=valor
 ORDER BY campo [ASC/DESC], campo [ASC/DESC],...
 ```
 
+También se pueden utilizar operadores en las consultas:
++ ```like```: Busca coincidencia con un patrón (el patrón es una cadena que puede incluir uno o más caracteres comodines). Existen dos [wildcards](https://www.w3schools.com/sql/sql_wildcards.asp) para el ```like```
+  + ```%```: Respresenta un número indeterminado de caracteres (cero, uno o muchos)
+  + ```_```: Representa un único caracter
+
 ### 4.1 Funciones
 SQL tiene funciones incluídas para conversiones y funciones avanzadas:
 + ```DATEDIFF(intervalo, fecha1, fecha2)```: Calcula la diferencia entre dos fechas (el intervalo es MM para meses, YYYY años,... :eyes:[SQL DATEDIFF](https://www.w3schools.com/sql/func_sqlserver_datediff.asp)
