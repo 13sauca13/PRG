@@ -141,19 +141,7 @@ Tipos de datos en las tablas (resaltados los principales):
 > INSERT INTO nombre_tabla (campo1, campo2,...) VALUES (valor_campo1, valor_campo2,...);
 > ```
 
-
-### 3.2 Introducción de datos
-Se introducen los datos por el orden en el que se decrararon los atributos en la tabla:
-
-```INSERT INTO nombre_tabla VALUES (valor_campo1, valor_campo2,...);```
-
-O podemos declara los campos que vamos a rellenar si no vamos a introducir datos en todos los campos:
-
-```INSERT INTO nombre_tabla(campo1, campo2,...) VALUES (valor_campo1, valor_campo2,...);```
-
-***Ojo a los tipos de datos y el formato en el que se deben introducir*** (p.ej. strings entre comillas simples ``` 'string' ``` )
-
-### 3.3 Modificar los campos de una tabla
+### 3.2 Modificar los campos de una tabla
 ```
 ALTER TABLE nombre_tabla
 ALTER COLUMN campo TIPO_DATO:
@@ -281,4 +269,25 @@ Se utiliza para combinar los resultados de dos o más consultas en un único res
 SELECT campo FROM tabla
 UNION
 SELECT campo FROM tabla2
+```
+
+## 4.4 Introducción de datos
+### ```INSERT```
+Se introducen los datos por el orden en el que se decrararon los atributos en la tabla:
+
+```INSERT INTO nombre_tabla VALUES (valor_campo1, valor_campo2,...);```
+
+O podemos declara los campos que vamos a rellenar si no vamos a introducir datos en todos los campos:
+
+```INSERT INTO nombre_tabla(campo1, campo2,...) VALUES (valor_campo1, valor_campo2,...);```
+
+***Ojo a los tipos de datos y el formato en el que se deben introducir*** (p.ej. strings entre comillas simples ``` 'string' ``` )
+
+### ```UPDATE```
+Se utiliza el comando update para modificar filas, grupos de filas o todas las filas de una tabla.
+
+```
+update tabla
+set campo = valor
+where <condiciones>
 ```
