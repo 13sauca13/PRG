@@ -264,3 +264,12 @@ Existen también:
 + Existen también ```FULL JOIN```y ```SELF JOIN```...
 
 ![Inner Join](https://github.com/13sauca13/PRG/blob/master/Recursos/inner_join.png) ![Left Join](https://github.com/13sauca13/PRG/blob/master/Recursos/left_join.png) ![Right Join](https://github.com/13sauca13/PRG/blob/master/Recursos/right_join.png)
+
+## 4.3 Unions
+Se utiliza para combinar los resultados de dos o más consultas en un único resultado. (Los campos de las consultas deben coincidir en orden y tipo)
+
+```
+SELECT campo FROM tabla
+UNION
+SELECT campo FROM tabla2
+```
