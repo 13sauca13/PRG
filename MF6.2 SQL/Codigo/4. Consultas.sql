@@ -53,3 +53,13 @@ ON [productos- pedidos].[número de pedido]=pedidos.[número de pedido]
 INNER JOIN clientes
 ON pedidos.[código cliente]=clientes.códigocliente
 WHERE responsable='Elvira Gómez' and pedidos.[fecha de pedido]='2001-05-01'
+
+--- Los articulos y la cantidad de cada uno que ha pedido Angel Martinez
+SELECT sum([productos- pedidos].unidades) AS cantidad, productos.nombreartículo FROM productos INNER JOIN [productos- pedidos]
+ON productos.códigoartículo=[productos- pedidos].[código artículo]
+INNER JOIN pedidos
+ON [productos- pedidos].[número de pedido]=pedidos.[número de pedido]
+INNER JOIN clientes
+ON pedidos.[código cliente]=clientes.códigocliente
+WHERE responsable='Angel Martínez'
+GROUP BY productos.nombreartículo
