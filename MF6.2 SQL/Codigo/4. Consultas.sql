@@ -39,10 +39,17 @@ SELECT códigocliente,empresa,dirección,población,teléfono,responsable,histor
 ON clientes.códigocliente=pedidos.[código cliente]
 
 --- Que persona ha pedido la muñeca andadora y en que fecha
-SELECT responsable, pedidos.[fecha de pedido] FROM clientes INNER JOIN pedidos
+SELECT responsable, convert(date, pedidos.[fecha de pedido]) FROM clientes INNER JOIN pedidos
 ON clientes.códigocliente=pedidos.[código cliente]
 INNER JOIN [productos- pedidos]
 ON pedidos.[número de pedido]=[productos- pedidos].[número de pedido]
 INNER JOIN productos
 ON productos.códigoartículo=[productos- pedidos].[código artículo]
 WHERE nombreartículo='muñeca andadora'
+
+--- Como ha pagado Elvira Gomez y cuantas unidades ha comprado en el pedido del 1 de mayo de 2001
+SELECT pedidos.[forma de pago], unidades, pedidos.[fecha de pedido] FROM [productos- pedidos] INNER JOIN pedidos
+ON [productos- pedidos].[número de pedido]=pedidos.[número de pedido]
+INNER JOIN clientes
+ON pedidos.[código cliente]=clientes.códigocliente
+WHERE responsable='Elvira Gómez' and pedidos.[fecha de pedido]='2001-05-01'
