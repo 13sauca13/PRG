@@ -246,6 +246,18 @@ ON tabla1.campo = tabla2.campo
 WHERE campo=valor
 ```
 
+Se pueden encadenar todos los ```JOIN```necesarios:
+```
+SELECT campos FROM tabla1 INNER JOIN tabla2 
+ON tabla1.campo = tabla2.campo
+INNER JOIN tabla3
+ON tabla2.campo = tabla3.campo
+INNER JOIN tabla4
+ON tabla3.campo = tabla4.campo
+...
+WHERE campo=valor
+```
+
 Existen también:
 + ```LEFT JOIN```: Devuelve todos los datos de la tabla1 y los coincidentes de la tabla2
 + ```RIGHT JOIN```: Devuelve todos los datos de la tabla2 y los coincidentes de la tabla1
