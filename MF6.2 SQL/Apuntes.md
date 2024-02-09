@@ -274,7 +274,15 @@ UNION
 SELECT campo FROM tabla2
 ```
 
-## 4.4 Introducción de datos
+## 4.4 Subconsultas
+Una subconsulta es una instrucción select anidada dentro de otra instrucción select, insert , update o delete, situada normalmente en la cláusula where o having de otra instrucción SQL, con el fin de manipular los resultados hechos por otras consultas.
+
+```
+SELECT campo FROM nombre_tabla
+WHERE operador(SELECT campo FROM nombre_tabla WHERE campo=valor)
+```
+
+## 4.5 Introducción de datos
 ### ```INSERT```
 Se introducen los datos por el orden en el que se decrararon los atributos en la tabla:
 
