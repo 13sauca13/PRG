@@ -70,6 +70,9 @@ Seguridad de la base de datos, en todo lo referente al control de accesos y priv
 >drop login username;
 >```
 
+Para realizar una copia de seguridad de la base de datos en principio bastaría con copiar los archivos .mdf (en la ruta .../sqlserver/data) y .ldf (en la ruta .../sqlserver/log)
+
+
 ## 3. Data Definition Lenguage (DDL - Creación de tablas)
 >[!TIP]
 >Para que el código ejecutado sea en una base de datos se comienza la query con:
