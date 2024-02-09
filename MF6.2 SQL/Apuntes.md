@@ -282,6 +282,11 @@ SELECT campo FROM nombre_tabla
 WHERE operador(SELECT campo FROM nombre_tabla WHERE campo=valor)
 ```
 
+Existen tres tipos de subconsultas:
++ **Escalonada**: Devuelve un solo registro
++ **Lista**: Devuelve una lista de registros
++ **Correlacional** *no la vemos*
+
 ## 4.5 Introducción de datos
 ### ```INSERT```
 Se introducen los datos por el orden en el que se decrararon los atributos en la tabla:
