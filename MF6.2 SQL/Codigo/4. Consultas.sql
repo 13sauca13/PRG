@@ -67,3 +67,20 @@ GROUP BY productos.nombreartículo
 --- Cuantos meses hace que esta en la base de datos el correpasillos
 SELECT datediff(MM, productos.fecha, getdate()) FROM productos
 WHERE nombreartículo='correpasillos'
+
+--- Necesito saber el nombre y la seccion de todos los productos superiores a la media
+SELECT nombreartículo, sección FROM productos
+WHERE precio>(SELECT AVG(precio) FROM productos)
+
+--- Consulta que devuelva los articulos de precio superior a todos los articulos de ceramica
+SELECT nombreartículo FROM productos
+WHERE precio>ALL(SELECT precio FROM productos WHERE sección='cerámica')
+
+--- Nombre y precio de los productos de los que se hayan pedido mas de 20 unidades
+SELECT nombreartículo, precio FROM productos
+WHERE códigoartículo in (SELECT [código artículo] FROM [productos- pedidos] WHERE unidades>20)
+
+--- Que clientes no han pagado con tarjeta o no han realizado pedidos
+SELECT códigocliente, empresa, responsable FROM clientes
+WHERE códigocliente in (SELECT [código cliente] FROM pedidos WHERE [forma de pago]!='tarjeta')
+or códigocliente not in (SELECT [código cliente] FROM pedidos)
