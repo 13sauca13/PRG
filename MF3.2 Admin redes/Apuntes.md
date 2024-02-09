@@ -327,12 +327,12 @@ Se configuran mediante el árbol de políticas:
 
 El árbol está subdividido en su nivel más alto en dos subárboles denominados Configuración de equipo y Configuración de usuario. Internamente, cada uno de esos subárboles se subdivide en:
 + **Directivas** Tanto en el caso de equipos como de usuarios, esta subárbol incluye a su vez tres nodos:
-  + ***Configuración de software*** Contiene opciones de instalación automática de software.
-  + ***Configuraciones de Windows*** incluyendo entre otros aspectos de seguridad, ejecución de scripts y redirección de carpetas (para usuarios).
-  + ***Plantillas Administrativas*** que incluyen aquellas políticas basadas en la modificación de valores del registro de Windows.
-+ **Preferencias** Este subárbol incluye numerosos aspectos de configuración que típicamente se realizaban mediante la ejecución de scripts en versiones previas de Windows. Tanto en el caso de equipos como en el de usuarios, este subárbol contiene a su vez dos nodos:
- + ***Configuración de Windows*** Incluye opciones de configuración como por ejemplo creación de variables de entorno, creación de accesos directos, mapeo de unidades de red, etc.
- + ***Configuración del Panel de Control*** Incluye opciones de configuración como por ejemplo la instalación de dispositivos y de impresoras, la configuración de opciones de energía, de tareas programadas, de servicios, etc.
+  + ***Configuración de software*** Opciones de instalación automática de software.
+  + ***Configuraciones de Windows*** Aspectos de seguridad, ejecución de scripts y redirección de carpetas (para usuarios).
+  + ***Plantillas Administrativas*** Políticas basadas en la modificación de valores del registro de Windows.
++ **Preferencias** Tanto en el caso de equipos como en el de usuarios, este subárbol contiene a su vez dos nodos:
+ + ***Configuración de Windows*** Opciones de configuración como por ejemplo creación de variables de entorno, creación de accesos directos, mapeo de unidades de red, etc.
+ + ***Configuración del Panel de Control*** Opciones de configuración como por ejemplo la instalación de dispositivos y de impresoras, la configuración de opciones de energía, de tareas programadas, de servicios, etc.
 
 Orden de aplicación de las GPO:
 1. Políticas locales del equipo (LGPO - Local GPO)
@@ -341,3 +341,8 @@ Orden de aplicación de las GPO:
 4. GPOs de la OU
 
 ![Aplicacion GPOs](https://github.com/13sauca13/PRG/blob/master/Recursos/Aplicacion%20GPOs.PNG)
+
+El comportamiento respecto a la herencia y prioridad entre GPOs puede ser refinado mediante los siguientes dos parámetros de configuración:
++ Exigido (Enforced): si el vínculo de un GPO a un contenedor tiene este parámetro activado, sus políticas no pueden ser sobrescritas por GPOs que se apliquen posteriormente
++ Bloquear herencia (de directivas) (Block policy inheritance): Desactiva la herencia de las políticas establecidas en contenedores superiores, excepto aquellas que corresponden a GPOs vinculados con el parámetro "Forzado".
+
