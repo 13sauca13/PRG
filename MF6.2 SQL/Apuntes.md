@@ -351,7 +351,18 @@ WHILE (condicion)
 ```
 
 ## 5.3 Funciones
-Las funciones se almacenan en %nombre_db%/Programacion/Funciones...
+Las funciones se almacenan en %nombre_db%/Programacion/Funciones... Aquí hay cuatro carpetas en las que se almacenan los 4 tipos de funciones:
++ ***Funciones con valores de tabla***:
++ ***Funciones escalares***:
+  + ```
+CREATE FUNCTION  nombre(@parametro tipo) RETURNS tipo
+AS
+BEGIN
+  RETURN valor_devuelto
+END
+```
++ ***Funciones de agregado***: Ya vistas anteriormente
++ ***Funciones del sistema***: 
 ```
 CREATE FUNCTION  nombre(@parametro tipo) RETURNS tipo
 AS
