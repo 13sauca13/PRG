@@ -354,15 +354,10 @@ WHILE (condicion)
 Las funciones se almacenan en %nombre_db%/Programacion/Funciones... Aquí hay cuatro carpetas en las que se almacenan los 4 tipos de funciones:
 + ***Funciones con valores de tabla***:
 + ***Funciones escalares***:
-  + ```
-CREATE FUNCTION  nombre(@parametro tipo) RETURNS tipo
-AS
-BEGIN
-  RETURN valor_devuelto
-END
-```
 + ***Funciones de agregado***: Ya vistas anteriormente
-+ ***Funciones del sistema***: 
++ ***Funciones del sistema***:
+
+##### Funciones escalares
 ```
 CREATE FUNCTION  nombre(@parametro tipo) RETURNS tipo
 AS
@@ -373,8 +368,18 @@ END
 
 >[!CAUTION]
 >**El tipo de dato del parámetro y el tipo de dato del ```RETURN``` tienen que ser el mismo**
-
-Después de declararlas deben ser llamadas para utilizarlas:
 ```
 PRINT dbo.nombre_funcion(parametros)
+```
+
+##### Funciones con valores de tabla
+```
+CREATE FUNCTION  nombre(@parametro tipo) RETURNS table
+AS
+RETURN (busqueda_select)
+```
+
+Estas funciones se llaman con un ```SELECT```porque devuelven valores de tabla
+```
+SELECT * FROM dbo.nombre_funcion(parametros)
 ```
