@@ -341,3 +341,11 @@ ELSE
     código
   END
 ```
+
+## 5.2 Bucles ```while```
+```
+WHILE (condicion)
+  BEGIN
+    código
+  END
+```
