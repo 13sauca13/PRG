@@ -307,3 +307,37 @@ update tabla
 set campo = valor
 where <condiciones>
 ```
+
+# 5. Programación
+La declaración de variables se hace utilizando la palabra ```DECLARE``` y el nombre de la variable con ```@``` (las variables del sistema tienen ```@@```). También es necesario definir el tipo de dato que contendrá, y es posible asignar todas las que se quiera en una misma línea.
+
+```
+DECLARE @variable TIPO_DATO, @variable2 TIPO_DATO2,...
+```
+
+Para asignar valor a la variable se utiliza pa palabra ```SET``` o el resultado de una consulta:
+
+```
+SET @variable=VALOR
+```
+
+```
+SELECT @variable=atributo FROM tabla WHERE atributo2='valor'
+```
+
+## 5.1 Condicionales
+```
+IF (condicion)
+  BEGIN
+    código
+  END
+ELSE IF
+  BEGIN
+    código
+  END
+...
+ELSE
+  BEGIN
+    código
+  END
+```
