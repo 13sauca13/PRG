@@ -93,3 +93,9 @@ ON pedidos.[número de pedido]=[productos- pedidos].[número de pedido]
 INNER JOIN productos
 ON [productos- pedidos].[código artículo]=productos.códigoartículo
 WHERE nombreartículo like 'consola %'
+
+--- Saber los clientes de madrid con pedidos y sin pedidos
+SELECT clientes.códigocliente, count([código cliente]) AS pedidos FROM pedidos RIGHT JOIN clientes
+ON pedidos.[código cliente]=clientes.códigocliente
+WHERE población='madrid'
+GROUP BY clientes.códigocliente
