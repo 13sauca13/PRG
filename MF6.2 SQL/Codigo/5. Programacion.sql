@@ -46,5 +46,5 @@ IF (@fecha_s>getdate())
 	END
 ELSE
 	BEGIN
-		PRINT @mensaje1 + ' ' + convert(nvarchar(10),getdate(),105) + ' ' + @cliente + ' no vende nada'
+		PRINT @mensaje1 + convert(nvarchar(10),getdate(),105) + ' ' + @cliente + ' no vende nada'
 	END
