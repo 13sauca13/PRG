@@ -55,3 +55,4 @@ AS
 RETURN (SELECT [forma de pago] FROM pedidos INNER JOIN clientes
 	ON pedidos.[código cliente]=clientes.códigocliente
 	WHERE empresa=@empresa);
+
