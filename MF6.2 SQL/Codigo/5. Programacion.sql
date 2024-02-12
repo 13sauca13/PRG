@@ -48,3 +48,10 @@ ELSE
 	BEGIN
 		PRINT @mensaje1 + convert(nvarchar(10),getdate(),105) + ' ' + @cliente + ' no vende nada'
 	END
+
+--- Hacer una funcion que me de la fomra de pago que hace cualquier cliente
+CREATE FUNCTION forma_pago(@empresa nvarchar(25)) RETURNS TABLE
+AS
+RETURN (SELECT [forma de pago] FROM pedidos INNER JOIN clientes
+	ON pedidos.[código cliente]=clientes.códigocliente
+	WHERE empresa=@empresa);
