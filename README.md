@@ -4,7 +4,7 @@
 
 :trollface: [SQL](https://github.com/13sauca13/PRG/blob/master/MF6.2%20SQL/Apuntes.md)
 
-[Metodología de la programación](https://github.com/13sauca13/PRG/blob/master/MF5.2%20Metodolog%C3%ADas%20de%20la%20programaci%C3%B3n/Apuntes.md)
+:pager: [Metodología de la programación](https://github.com/13sauca13/PRG/blob/master/MF5.2%20Metodolog%C3%ADas%20de%20la%20programaci%C3%B3n/Apuntes.md)
 
 > ##### Acabadas
 > :card_file_box: [Bases de datos](https://github.com/13sauca13/PRG/blob/master/MF6.1%20BBDD/Apuntes.md)
