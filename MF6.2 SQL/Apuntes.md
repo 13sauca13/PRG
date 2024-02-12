@@ -361,7 +361,7 @@ END
 ```
 
 >[!CAUTION]
->El tipo de dato del parámetro y el tipo de dato del ```RETURN``` tienen que ser el mismo
+>**El tipo de dato del parámetro y el tipo de dato del ```RETURN``` tienen que ser el mismo**
 
 Después de declararlas deben ser llamadas para utilizarlas:
 ```
