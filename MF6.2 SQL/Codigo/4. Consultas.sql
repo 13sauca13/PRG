@@ -84,3 +84,12 @@ WHERE códigoartículo in (SELECT [código artículo] FROM [productos- pedidos] 
 SELECT códigocliente, empresa, responsable FROM clientes
 WHERE códigocliente in (SELECT [código cliente] FROM pedidos WHERE [forma de pago]!='tarjeta')
 or códigocliente not in (SELECT [código cliente] FROM pedidos)
+
+--- Necesito saber las empresas que hay pedido la consola de video, el numero de pedido que ha hecho cada empresa y las unidades de la consola que han pedido en cada uno
+SELECT empresa, pedidos.[número de pedido], [productos- pedidos].unidades  FROM clientes INNER JOIN pedidos
+ON clientes.códigocliente=pedidos.[código cliente]
+INNER JOIN [productos- pedidos]
+ON pedidos.[número de pedido]=[productos- pedidos].[número de pedido]
+INNER JOIN productos
+ON [productos- pedidos].[código artículo]=productos.códigoartículo
+WHERE nombreartículo like 'consola %'
