@@ -349,3 +349,21 @@ WHILE (condicion)
     código
   END
 ```
+
+## 5.3 Funciones
+Las funciones se almacenan en %nombre_db%/Programacion/Funciones...
+```
+CREATE FUNCTION  nombre(@parametro tipo) RETURNS tipo
+AS
+BEGIN
+  RETURN valor_devuelto
+END
+```
+
+>[!CAUTION]
+>El tipo de dato del parámetro y el tipo de dato del ```RETURN``` tienen que ser el mismo
+
+Después de declararlas deben ser llamadas para utilizarlas:
+```
+PRINT dbo.nombre_funcion(parametros)
+```
