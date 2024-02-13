@@ -66,3 +66,13 @@ RETURN (SELECT nombreartículo FROM productos INNER JOIN [productos- pedidos]
 	INNER JOIN clientes
 	ON pedidos.[código cliente]=clientes.códigocliente
 	WHERE empresa=@empresa)
+
+--- Saber si la longitud de la cadena de texto "Hay amores" es igual a 10 y que imprima "la cadena de texto tiene 10 caracteres" y si no lo es "es menor de 10"
+IF (len('Hay amores')=10)
+	BEGIN
+		PRINT ('La cadena de texto tiene 10 caracteres')
+	END
+ELSE
+	BEGIN
+		PRINT ('Es menor de 10')
+	END
