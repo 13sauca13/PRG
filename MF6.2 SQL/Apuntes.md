@@ -395,6 +395,6 @@ AS
 codigo...
 ```
 
-Para llamar al procedimiento se hará con ``EXEC```:
+Para llamar al procedimiento se hará con ``EXEC```: :exclamation: ***Los parámetros van sin paréntesis***
 
-```EXEC nombre_procedimiento(parametros)```
+```EXEC nombre_procedimiento parametros```
