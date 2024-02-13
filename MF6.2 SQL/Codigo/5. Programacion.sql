@@ -56,3 +56,13 @@ RETURN (SELECT [forma de pago] FROM pedidos INNER JOIN clientes
 	ON pedidos.[código cliente]=clientes.códigocliente
 	WHERE empresa=@empresa);
 
+--- Crear una funcion para saber todos los articulos que ha pedido cualquier empresa
+CREATE FUNCTION pedidos_empresa(@empresa nvarchar(25)) RETURNS TABLE
+AS
+RETURN (SELECT nombreartículo FROM productos INNER JOIN [productos- pedidos]
+	ON productos.códigoartículo=[productos- pedidos].[código artículo]
+	INNER JOIN pedidos
+	ON [productos- pedidos].[número de pedido]=pedidos.[número de pedido]
+	INNER JOIN clientes
+	ON pedidos.[código cliente]=clientes.códigocliente
+	WHERE empresa=@empresa)
