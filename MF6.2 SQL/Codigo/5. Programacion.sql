@@ -76,3 +76,15 @@ ELSE
 	BEGIN
 		PRINT ('Es menor de 10')
 	END
+
+--- Crear un procedimiento de almacenado que me devuelva el precio y la sección de un artículo cualquiera
+CREATE PROCEDURE precio_seccion(@producto nvarchar(255))
+AS
+SELECT precio, sección FROM productos
+WHERE nombreartículo=@producto
+
+--- Crear un procedimiento para boorar un artículo por el nombre
+CREATE PROCEDURE borrado_art(@articulo nvarchar(255))
+AS
+DELETE FROM productos
+WHERE nombreartículo=@articulo
