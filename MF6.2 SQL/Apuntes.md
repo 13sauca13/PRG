@@ -385,3 +385,16 @@ Estas funciones se llaman con un ```SELECT```porque devuelven valores de tabla
 ```
 SELECT * FROM dbo.nombre_funcion(parametros)
 ```
+
+## 5.4 Procedimientos de almacenado
+Los procedimientos de almacenado son exactamente lo mismo que las funciones, pero pueden ser llamados desde el exterior de SQL (no como las funciones).
+
+```
+CREATE PROCEDURE nombre(@parametro tipo)
+AS
+codigo...
+```
+
+Para llamar al procedimiento se hará con ``EXEC```:
+
+```EXEC nombre_procedimiento(parametros)```
