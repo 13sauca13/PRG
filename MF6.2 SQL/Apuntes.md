@@ -400,3 +400,27 @@ Para llamar al procedimiento se hará con ``EXEC```: :exclamation: ***Los parám
 ```
 EXEC nombre_procedimiento parametros
 ```
+
+## 5.5 Triggers (disparadores)
+Se trata de acciones que se "disparan" al producirse un evento en la base de datos. ***Siempre están relacionados con una sola tabla***.
+
+Un desencadenador son una serie de instrucciones SQL que se parecen mucho a un procedimiento almacenado, con la salvedad que serán llamados no por nosotros de forma implícita, si no cuando se efectúe una nserción, eliminación o modificación de uno o varios registros en una.
+
+Los eventos pueden ser:
++ ```INSERT```
++ ```UPDATE```
++ ```DELETE```
+
+El trigger puede ejecutarse antes (before) de "presionar enter" o después (for).
+
+Los datos que se están insertando y actualizando en realidad se guardan en una tabla temporal llamada **INSERTED**, en donde están hasta que se ejecuta el comando. Los datos borrados por su parte van en la tabla temporal **DELETED** hasta que se ejecuta la orden y son borrados.
+
+La manera de crear un trigger es:
+
+```
+CREATE TRIGGER nombre ON tabla
+[BEFORE/FOR] evento
+AS
+codigo...
+```
+
