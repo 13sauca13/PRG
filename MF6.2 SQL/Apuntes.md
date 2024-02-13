@@ -432,3 +432,7 @@ AS
 codigo...
 ```
 
+Al crear el trigger puede suceder que el disparo es notificado al usuario como que se ha afectado a otra tabla más (a mayores de la que el usuario quería operar), para que eso no suceda y el usuario no sea notificado es necesario meter en el código del trigger:
+```
+SET NOCOUNT ON
+```
