@@ -413,7 +413,15 @@ Los eventos pueden ser:
 
 El trigger puede ejecutarse antes (before) de "presionar enter" o después (for).
 
+Podemos mostrar un mensaje de alerta al usuario que dispara el trigger usando ```RAISERROR```:
+```
+RAISERROR(string,16,1)
+```
+
 Los datos que se están insertando y actualizando en realidad se guardan en una tabla temporal llamada **INSERTED**, en donde están hasta que se ejecuta el comando. Los datos borrados por su parte van en la tabla temporal **DELETED** hasta que se ejecuta la orden y son borrados.
+
+>[!CAUTION]
+>Las consultas dentro del código del trigger se harán contra esas dos tablas temporales (***INSERTED y DELETED***)
 
 La manera de crear un trigger es:
 
