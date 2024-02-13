@@ -99,3 +99,12 @@ SELECT clientes.códigocliente, count([código cliente]) AS pedidos FROM pedidos
 ON pedidos.[código cliente]=clientes.códigocliente
 WHERE población='madrid'
 GROUP BY clientes.códigocliente
+
+--- Crear una tabla llamada "productos escaño" donde estén todos los productos pedidos por el "Bazar La Faraona"
+SELECT nombreartículo INTO [Productos Escaño] FROM productos INNER JOIN [productos- pedidos]
+ON productos.códigoartículo=[productos- pedidos].[código artículo]
+INNER JOIN pedidos
+ON [productos- pedidos].[número de pedido]=pedidos.[número de pedido]
+INNER JOIN clientes
+ON pedidos.[código cliente]=clientes.códigocliente
+WHERE empresa='bazar la faraona'
