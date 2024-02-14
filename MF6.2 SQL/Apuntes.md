@@ -440,3 +440,6 @@ Al crear el trigger puede suceder que el disparo es notificado al usuario como q
 ```
 SET NOCOUNT ON
 ```
+
+## 5.6 Check
+Son condiciones que exige el servidor de base de datos para limitar los posibles valores que los usuarios pueden establecer en determinadas columnas.
