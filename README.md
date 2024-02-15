@@ -3,7 +3,6 @@
 :globe_with_meridians: [Administración de redes](https://github.com/13sauca13/PRG/blob/master/MF3.2%20Admin%20redes/Apuntes.md)
 
 :trollface: [SQL](https://github.com/13sauca13/PRG/blob/master/MF6.2%20SQL/Apuntes.md)
- + :memo: [Ejercicios de clase SIN RESOLVER](https://github.com/13sauca13/PRG/blob/master/MF6.2%20SQL/Codigo/0.%20Ejercicios%20SIN%20RESOLVER.md)
 
 :pager: [Metodología de la programación](https://github.com/13sauca13/PRG/blob/master/MF5.2%20Metodolog%C3%ADas%20de%20la%20programaci%C3%B3n/Apuntes.md)
 
