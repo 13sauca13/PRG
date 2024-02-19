@@ -14,6 +14,6 @@ n=12345
 print(format(n,'b'))
 print(format(n,'x'))
 
-# Cuántos bits ocuparía el número 12345
-n=12345
+# Cuántos bits ocuparía el número 123456
+n=123456
 print(len(format(n,'b')))
