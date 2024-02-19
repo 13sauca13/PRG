@@ -42,3 +42,9 @@ La complejidad es una métrica teórica que nos ayuda a describir el comportamie
 + **O(n<sup>2</sup>)** iteración por todos los elementos
 + **O(2<sup>n</sup>)** funciones que duplican la complejidad con cada elemento añadido
 + **O(n!)** explosión combinatoria
+
+Existen dos formas de guardar bytes en memoria:
++ Big Endian: Los bytes se guardan por orden (normalmente es así como trabajan los equipos)
++ Little Endian
+
+La conversión de 0 y 1 a símbolos se realiza con codificación como puede ser UTF-8, UNICODE, ANSI, ASCII...
