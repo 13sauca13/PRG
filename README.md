@@ -1,4 +1,14 @@
 # Técnicas de apoyo CIS/TIC
+### Horario
+| Horas | Clase |
+| --- | --- |
+| 1ª | Admin. Redes |
+| 2ª | Admin. Redes |
+| 3ª | SQL |
+| 4ª | SQL |
+| 5ª | Metodología prog. |
+| 6ª | Metodología prog. |
+
 ### Apuntes
 :globe_with_meridians: [Administración de redes](https://github.com/13sauca13/PRG/blob/master/MF3.2%20Admin%20redes/Apuntes.md)
 
