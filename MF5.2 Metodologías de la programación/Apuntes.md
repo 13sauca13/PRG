@@ -2,7 +2,7 @@
 
 :link: [JupyterHub](https://bb.eeae.es/hub/login?next=%2Fhub%2F) (Sólo en dominio EEAE. *login e2t_username*)
 
-:mag: [Ejercicios hechos en clase](https://github.com/13sauca13/PRG/blob/master/MF5.2%20Metodolog%C3%ADas%20de%20la%20programaci%C3%B3n/Codigo/1.%20Ejercicios%20clase.py)
+:mag: [Ejercicios](https://github.com/13sauca13/PRG/tree/master/MF5.2%20Metodolog%C3%ADas%20de%20la%20programaci%C3%B3n/Codigo)
 
 ## 1. Lenguajes de programación
 El primer lenguaje (más allá de los 0 y 1) fueron abreviaturas para dar órdenes a la máquina, se llamó **ensamblador**, pero dependía de la máquina en la que se ejecutaba. Los lenguajes fueron avanzando a niveles superiores de manera que fuera posible abstraerse del hardware.
