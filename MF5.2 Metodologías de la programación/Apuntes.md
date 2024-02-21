@@ -78,6 +78,10 @@ Funciones útiles:
 + ```list.copy()```: Hace una copia de la lista. recordar este detalle
 #### Tuplas
 #### Set
+Son varios valores almacenados en una misma variable. No están ordenados, no es modificable y no puede tener elementos repetidos. Se declaran con ```{}```
+```
+nombre_set={valor1,valor2...}
+```
 #### Diccionario
 La manera de crear un diccionario es: ```nombre_diccionario=dict()```
 
