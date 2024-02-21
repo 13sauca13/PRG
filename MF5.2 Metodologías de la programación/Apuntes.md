@@ -81,6 +81,10 @@ Funciones útiles:
 #### Diccionario
 La manera de crear un diccionario es: ```nombre_diccionario=dict()```
 
+Funciones:
++ ```dict.keys()```: Devuelve los valores de las claves del diccionario
++ ```dict.values()```:  Devuelve los nombres de las claves del diccionario
+
 #### Estructuras de seleccón de selección
 
 #### Estructuras de control de iteración
