@@ -50,3 +50,20 @@ Existen dos formas de guardar bytes en memoria:
 + Little Endian
 
 La conversión de 0 y 1 a símbolos se realiza con codificación como puede ser UTF-8, UNICODE, ANSI, ASCII...
+
+## 3. Estructuras de datos
+:interrobang:Revisar magic keywords (if __name__=='__main__': print(__name__))
+
+Existen diferentes estructuras de datos en Python:
++ **Variables**
++ **Copnstantes**
++ **Listas**
++ **Tuplas**
++ **Set**
++ **Diccionario**
+
+#### Estructuras de seleccón de selección
+
+#### Estructuras de control de iteración
++ ```for```
++ ```while```
