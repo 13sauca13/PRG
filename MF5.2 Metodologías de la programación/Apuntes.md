@@ -51,19 +51,38 @@ Existen dos formas de guardar bytes en memoria:
 
 La conversión de 0 y 1 a símbolos se realiza con codificación como puede ser UTF-8, UNICODE, ANSI, ASCII...
 
-## 3. Estructuras de datos
+## 3. Estructuras
 :interrobang:Revisar magic keywords (```if __name__=='__main__': print(__name__)```)
-
-Existen diferentes estructuras de datos en Python:
-+ **Variables**
-+ **Copnstantes**
-+ **Listas**
-+ **Tuplas**
-+ **Set**
-+ **Diccionario**
+### 3.1 Estructuras de datos
+#### Variables
+#### Constantes
+#### Listas
+Se trata de una colección ordenada heterogénea y mutable.
+```
+nombre_lista=[elemento1, elemento2...]
+```
+Funciones útiles:
++ ```list.append(x)```: agrega un elemento al final de la lista.
++ ```list.extend(iterable)```: Extiende una lista agregando todos los items del iterable indicado.
++ ```list.insert(i, x)```: Nos permite insertar un elemento en la posición indicada..
++ ```list.remove(x)```: Elimina el primer elemento de la lista igual a x. Si no consigue el elemento lanza un ValueError.
++ ```list.pop(i)```: Elimina un elemento en la posición indicada. Si no indicamos un elemento, elimina el último elemento de la lista.
++ ```list.clear()```: Elimina los elementos de la lista. Es equivalente a del lista[:]
++ ```list.index(elemento, inicio, fin)```: Nos permite buscar un elemento en la lista. Si no existe el elemento generará un ValueError
+  + elemento - lo que buscamos
+  + inicio (opcional) - Donde queremos que inicie la búsqueda
+  + fin (opcional) - Donde queremos que detenga la búsqueda
++ ```list.count(x)```: Devuelve el número de veces que x aparece en la lista.
++ ```list.sort()```: Ordena los elementos de la lista, si queremos un orden inverso, podemos indicarle reverse=True dentro del paréntesis
++ ```list.reverse()```: Realiza una inversión de la lista.
++ ```list.copy()```: Hace una copia de la lista. recordar este detalle
+#### Tuplas
+#### Set
+#### Diccionario
+La manera de crear un diccionario es: ```nombre=dict()```
 
 #### Estructuras de seleccón de selección
 
 #### Estructuras de control de iteración
 + ```for```
-+ ```while```
++ ```while``` 
