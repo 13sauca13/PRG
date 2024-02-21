@@ -79,7 +79,7 @@ Funciones útiles:
 #### Tuplas
 #### Set
 #### Diccionario
-La manera de crear un diccionario es: ```nombre=dict()```
+La manera de crear un diccionario es: ```nombre_diccionario=dict()```
 
 #### Estructuras de seleccón de selección
 
