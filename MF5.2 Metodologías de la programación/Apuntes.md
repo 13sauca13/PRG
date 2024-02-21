@@ -85,8 +85,17 @@ Funciones:
 + ```dict.keys()```: Devuelve los valores de las claves del diccionario
 + ```dict.values()```:  Devuelve los nombres de las claves del diccionario
 
-#### Estructuras de seleccón de selección
+### Estructuras de control de selección
 
-#### Estructuras de control de iteración
-+ ```for```
-+ ```while``` 
+### Estructuras de control de iteración
+#### ```for```
+Se utiliza normalmente con objetos iterables (listas, tuplas, diccionarios...). Esto nos permite que las iteraciones estén acotadas desde el inicio del mismo, al tamaño del objeto iterable. Su sintáxis básica es:
+```
+for elemento in iterable:
+  código
+```
+El bucle for, se utiliza normalmente con la función ```range```, que nos devuelve un iterable. Su uso básico es:
++ ```range(max)```: Iterable de numeros enteros consecutivos, empieza en 0 y termina en max-1.
++ ```range(min, max)```: Iterable igual que el anterior, pero que comienza en min y finaliza en max-1
++ ```range(min, max, step)```: Iterable igual que el anterior, pero que se incremente según el valor de step. 
+#### ```while``` 
