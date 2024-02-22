@@ -84,6 +84,7 @@ nombre_set={valor1,valor2...}
 ```
 #### Diccionario
 Los diccionarios se utilizan para almacenar valores en pares **clave:valor** (es complejo pero los valores de las claves pueden ser tambiés otro diccionario, una lista, una tupla). Es modificable y no permite duplicados (en los nombres de las claves)
+***El tipo de dato de la clave (int,str...) va a ser el tipo de dato por defecto del valor también***
 Hay dos maneras de crear un diccionario:
 ```
 nombre_diccionario=dict(clave1:valor1,clave2:valor2...)
