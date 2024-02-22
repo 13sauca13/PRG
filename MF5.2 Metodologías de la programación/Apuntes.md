@@ -94,8 +94,8 @@ nombre_diccionario={clave1:valor1,clave2:valor2...}
 :exclamation: ***Las claves de los diccionarios tienen nombres únicos***
 
 Funciones:
-+ ```dict.keys()```: Devuelve los valores de las claves del diccionario
-+ ```dict.values()```:  Devuelve los nombres de las claves del diccionario
++ ```diccionario.keys()```: Devuelve los valores de las claves del diccionario
++ ```diccionario.values()```:  Devuelve los nombres de las claves del diccionario
 
 ### Estructuras de control de selección
 
