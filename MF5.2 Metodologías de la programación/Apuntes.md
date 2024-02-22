@@ -103,3 +103,19 @@ El bucle for, se utiliza normalmente con la función ```range```, que nos devuel
 + ```range(min, max)```: Iterable igual que el anterior, pero que comienza en min y finaliza en max-1
 + ```range(min, max, step)```: Iterable igual que el anterior, pero que se incremente según el valor de step. 
 #### ```while``` 
+
+### Funciones
+Las funciones se declaran con ```def``` y contienen argumentos y código:
+```
+def nombre_funcion(argumento1, argumento2...):
+  código
+```
+No se puede crear una función sin código, en caso de querer crear una función "vacía" se utiliza la palabra reservada ```pass```
+
+Los argumentos pueden ser obligatorios y opcionales, pero los obligatorios deben ir al comienzo, por delante de los opcionales. Hay varias formas de introducir los argumentos:
++ Por posición, escribiendolas en el orden en el que aparecen al declarar la función
++ Declarando a que argumento pasamos el valor (p.ej. ```nombre_funcion(argumentoX=valor...)```)
+
+Esto es lo básico para la declaración y uso de una función pero puede "decorarse", aunque esto es informativo, el programa no comprobará que se cumpla:
++ Especificar el tipo de dato que devolverá una función: ```def nombre_funcion(argumento1, argumento2...)->tipo_dato:```
++ Especificar el tipo de dato que espera un argumento: ```def nombre_funcion(argumento1:tipo_dato, argumento2:tipo_dato...)->tipo_dato:```
