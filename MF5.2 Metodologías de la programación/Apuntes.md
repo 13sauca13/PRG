@@ -83,7 +83,15 @@ Son varios valores almacenados en una misma variable. No están ordenados, no es
 nombre_set={valor1,valor2...}
 ```
 #### Diccionario
-La manera de crear un diccionario es: ```nombre_diccionario=dict()```
+Los diccionarios se utilizan para almacenar valores en pares **clave:valor** (es complejo pero los valores de las claves pueden ser tambiés otro diccionario, una lista, una tupla). Es modificable y no permite duplicados (en los nombres de las claves)
+Hay dos maneras de crear un diccionario:
+```
+nombre_diccionario=dict(clave1:valor1,clave2:valor2...)
+```
+```
+nombre_diccionario={clave1:valor1,clave2:valor2...}
+```
+:exclamation: ***Las claves de los diccionarios tienen nombres únicos***
 
 Funciones:
 + ```dict.keys()```: Devuelve los valores de las claves del diccionario
