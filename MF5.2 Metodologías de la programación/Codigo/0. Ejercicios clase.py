@@ -36,3 +36,14 @@ while respuesta=="n":
     print("Tu número es el",prueba,"?")
     respuesta=input("s/n: ")
 print("Acerté!! Tu número es",prueba)
+
+# Realizar una función que devuelva el número de billetes y monedas que hacen falta para una determinada cantidad de dinero
+def cambio(dinero):
+    billetes={500:0,200:0,100:0,50:0,20:0,10:0,5:0,2:0,1:0,0.5:0,0.2:0,0.1:0,0.05:0,0.02:0,0.01:0}
+    for x in billetes:
+        cambiado=dinero//x
+        billetes[x]=cambiado
+        dinero=dinero-(cambiado*x)
+    return(billetes)
+
+print(cambio(1898.687))
