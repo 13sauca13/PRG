@@ -35,4 +35,22 @@ def sumatorio(lista):
     return(suma)
 
 
-print(sumatorio(generador(18,6,60)))    
+print(sumatorio(generador(18,6,60)))
+
+# Ejercicio:
+# Realiza una función que elimine todos los elementos duplicados de una lista
+
+def elimina_repes(lista):
+    nueva = lista.copy()
+    for i in lista:
+        if nueva.count(i)!=1:
+
+            # list.remove(i)
+            nueva.remove(i)
+    print(nueva)
+
+lista=[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,7]
+print(lista)
+elimina_repes(lista)
+# También se puede resolver con: print(list(set(lista)))
+
