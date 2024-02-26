@@ -2,7 +2,6 @@
 # Opción 1:
 x=pow(2,16)
 print(x)
-
 # Opción 2:
 n=""
 for i in range(16):
@@ -48,3 +47,14 @@ def cambio(dinero):
 
 print(cambio(1898.687))
 
+# Crea un código que capture los errores:
+try:
+    usuario=input("Introduzca un número: ")
+    usuario=int(usuario)
+    division=usuario/0
+except ValueError:
+    print("Eso no era un numero, pusiste:",usuario)
+except ZeroDivisionError:
+    print("No se puede dividir entre cero")
+except:
+    print("Error desconocido")
