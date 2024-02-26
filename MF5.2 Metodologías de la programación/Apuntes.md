@@ -238,7 +238,7 @@ print("string {}".format(variable))
 ## 5. Módulos
 Los módulos son librerías para realizar una serie de funciones. Hay que llamarlos para utilizarlos: ```import nombre_modulo```
 
-### Módulo ```os```
+### ```os```
 El módulo ```os``` sirve para interactuar con el sistema operativo de la máquina.
 
 Tiene muchos [mètodos](https://www.w3schools.com/python/module_os.asp), los más usados:
@@ -248,3 +248,8 @@ Tiene muchos [mètodos](https://www.w3schools.com/python/module_os.asp), los má
 | ```open(fichero, modo)``` | Abre ficheros para trabajar con ellos (el modo será ```r``` para lectura y ```w``` para escritura) |
 | ```fichero.write(contenido)``` | Escribe en ```fichero``` el ```contenido``` |
 | ```os.listdir(directorio)``` | Lista el contenido de un directorio |
+
+### ```random```
+Sirve para generar numeros aleatorios.
+
+[Métodos de ```random```](https://www.w3schools.com/python/module_random.asp)
