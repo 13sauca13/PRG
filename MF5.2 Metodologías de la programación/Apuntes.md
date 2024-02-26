@@ -160,23 +160,32 @@ Esto es lo básico para la declaración y uso de una función pero puede "decora
 | <= | Menor o igual a |
 | != | No igual a |
 | = | Asignador de valor |
-| += | |
-| -= | |
-| *= | |
-| /= | |
-| %= | |
-| **= | |
-| //= | |
-| and | |
-| or | |
-| not | |
-| in | |
-| not in | |
+| += | Asigna a la variable su valor más lo que viene a continuación |
+| -= |  Asigna a la variable su valor menos lo que viene a continuación  |
+| *= |  Asigna a la variable su valor por lo que viene a continuación  |
+| /= |  Asigna a la variable su valor entre lo que viene a continuación  |
+| %= |  Asigna a la variable el módulo de su valor entre lo que viene a continuación  |
+| **= |  Asigna a la variable su valor elevado a lo que viene a continuación  |
+| //= |  Asigna a la variable la división exacta de su valor entre lo que viene a continuación  |
+| and | Operador lógico "and" |
+| or | Operador lógico "or" |
+| not | Operador lógico "not" (niega lo que venga después) |
+| in | Operador de membresía "en" |
+| not in | Operador de membresía "no en" |
 | is | Compara si los objetos son iguales(no sólo los valores) |
-| is not | |
+| is not | Compara si dos objetos no son iguales |
 
 ### Asignación múltiple
-La asignación múltiple es la acción de asignar de una vez varios valores a varias variables.
+La asignación múltiple es la acción de asignar de una vez varios valores a varias variables. Puedo asignar varios valores a varias variables a la vez:
+```
+x, y, z...= valorX, valorY, valorZ...
+```
+
+Y podemos utilizar iterables para asignar esos valores:
+```
+lista=[valor1, valor2, valor3...]
+x, y, z, ...=lista
+```
 
 ### Control de errores
 ```
