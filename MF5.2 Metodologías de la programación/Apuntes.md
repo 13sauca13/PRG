@@ -46,8 +46,8 @@ La complejidad es una métrica teórica que nos ayuda a describir el comportamie
 + **O(n!)** explosión combinatoria
 
 Existen dos formas de guardar bytes en memoria:
-+ Big Endian: Los bytes se guardan por orden (normalmente es así como trabajan los equipos)
-+ Little Endian
++ Big Endian: Los bytes se guardan por orden, el byte más significativo (más peso) se almacena en la dirección de memoria más baja, y los bytes siguientes se colocan en direcciones de memoria ascendentes (normalmente es así como trabajan los equipos)
++ Little Endian: El byte más significativo (más peso) se almacena en la dirección de memoria más baja, y los bytes siguientes se colocan en direcciones de memoria ascendentes.
 
 La conversión de 0 y 1 a símbolos se realiza con codificación como puede ser UTF-8, UNICODE, ANSI, ASCII...
 
@@ -55,9 +55,18 @@ La conversión de 0 y 1 a símbolos se realiza con codificación como puede ser 
 :interrobang:Revisar magic keywords (```if __name__=='__main__': print(__name__)```)
 ### 3.1 Estructuras de datos
 #### Variables
+Las variables son espacios de almacenamiento en la memoria que contienen datos con un nombre asociado y pueden cambiar durante la ejecución del programa.
+
 #### Constantes
-#### Listas
-Se trata de una colección ordenada heterogénea y mutable.
+Son valores que no cambian durante la ejecución del programa, se utilizan para almacenar datos que se consideran inmutables.
+
+#### Recursivas
+Representan estructuras de datos anidadas, comúnmente utilizadas para modelar datos complejos y jerárquicos
+
+#### Valores tipo tabla
+Estructuras que permiten almacenar una colección de elementos bajo un solo nombre, existen varios tipos:
+##### Listas
+Se trata de una colección ordenada, editable, dinámica y no única.
 ```
 nombre_lista=[elemento1, elemento2...]
 ```
@@ -76,15 +85,20 @@ Funciones útiles:
 + ```list.sort()```: Ordena los elementos de la lista, si queremos un orden inverso, podemos indicarle reverse=True dentro del paréntesis
 + ```list.reverse()```: Realiza una inversión de la lista.
 + ```list.copy()```: Hace una copia de la lista. recordar este detalle
-#### Tuplas
-#### Set
-Son varios valores almacenados en una misma variable. No están ordenados, no es modificable y no puede tener elementos repetidos. Se declaran con ```{}```
+##### Tuplas
+Similar a las listas pero inmutables y más rápidas de procesar.
+```
+nombre_tupla=(elemento1, elemento2...)
+```
+##### Set
+Son varios valores almacenados en una misma variable. No están ordenados, no es modificable y no puede tener elementos repetidos (únicos y elementos inmutables). Se declaran con ```{}```
 ```
 nombre_set={valor1,valor2...}
 ```
-#### Diccionario
-Los diccionarios se utilizan para almacenar valores en pares **clave:valor** (es complejo pero los valores de las claves pueden ser tambiés otro diccionario, una lista, una tupla). Es modificable y no permite duplicados (en los nombres de las claves)
+##### Diccionario
+Los diccionarios se utilizan para almacenar valores en pares **clave:valor** (es complejo pero los valores de las claves pueden ser también otro diccionario, una lista, una tupla). Es modificable y no permite duplicados (en los nombres de las claves)
 ***El tipo de dato de la clave (int,str...) va a ser el tipo de dato por defecto del valor también***
+
 Hay dos maneras de crear un diccionario:
 ```
 nombre_diccionario=dict(clave1:valor1,clave2:valor2...)
@@ -99,9 +113,14 @@ Funciones:
 + ```diccionario.values()```:  Devuelve los nombres de las claves del diccionario
 
 ### Estructuras de control de selección
+Permite ejecutar una o varias acciones basadas en condiciones.
+
+Se trata de ```if```, ```elif``` y ```else```.
 
 ### Estructuras de control de iteración
 #### ```for```
+Ejecuta un bloque de código un número específico de veces.
+
 Se utiliza normalmente con objetos iterables (listas, tuplas, diccionarios...). Esto nos permite que las iteraciones estén acotadas desde el inicio del mismo, al tamaño del objeto iterable. Su sintáxis básica es:
 ```
 for elemento in iterable:
@@ -112,6 +131,7 @@ El bucle for, se utiliza normalmente con la función ```range```, que nos devuel
 + ```range(min, max)```: Iterable igual que el anterior, pero que comienza en min y finaliza en max-1
 + ```range(min, max, step)```: Iterable igual que el anterior, pero que se incremente según el valor de step. 
 #### ```while``` 
+ ejecuta un código que se repite hasta cumplir una condición
 
 ## 4.Técnicas fundamentales de programación
 ### Tipos de datos
