@@ -77,3 +77,20 @@ for i in range(1,42):
         extension=random.choice(posibilidades)
         with open("Python/prueba2/"+str(i)+"/"+str(j)+extension, "w") as fichero:
             fichero.write(str(" "))
+# En el ejercicio anterior añade un contador del número de ficheros que hay de cada tipo:
+txt=0
+jpg=0
+doc=0
+csv=0
+for l in os.listdir("Python/prueba2"):
+    for m in os.listdir("Python/prueba2/"+str(l)):
+        ext=m[len(m)-3:]
+        if ext=="txt":
+            txt+=1
+        elif ext=="jpg":
+            jpg+=1
+        elif ext=="doc":
+            doc+=1
+        elif ext=="csv":
+            csv+=1
+print(f"El directorio prueba2 contiene: {txt} documentos de texto, {jpg} imagenes, {doc} archivos de word y {csv} archivos csv.")
