@@ -250,6 +250,6 @@ Tiene muchos [mètodos](https://www.w3schools.com/python/module_os.asp), los má
 | ```os.listdir(directorio)``` | Lista el contenido de un directorio |
 
 ### ```random```
-Sirve para generar numeros aleatorios.
+Sirve para generar numeros aleatorios (o elecciones).
 
 [Métodos de ```random```](https://www.w3schools.com/python/module_random.asp)
