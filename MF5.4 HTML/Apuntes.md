@@ -23,3 +23,8 @@ HTML es un lenguaje de marcado para páginas web. La estructura básica de un fi
   + ```<body>``` Define el cuerpo del documento, contiene todos los elementos visibles como cabeceras, párrafos, imágenes, enlaces, tablas, listas...
 
 Cada etiqueta se abre y posteriormente se cierra con ```</etiqueta>``` (***Excepto ```<br/>```***)
+
+Para introducir comentarios en el código se utiliza:
+```
+<!-- Comentarios -->
+```
