@@ -31,9 +31,9 @@ Para introducir comentarios en el código se utiliza:
 
 ## 1.Formato de contenido
 Para dar fomato al texto podemos utilizar:
-+ Encabezados: ```<hX> Texto </hX>``` siendo x un número del 1 al 6 (tiene jerarquía. 1 es la más alta y 6 la más baja)
-+ Párrafos: ```<p> Texto del párrafo </p>```
-+ Listas: Hay dos tipos:
++ **Encabezados**: ```<hX> Texto </hX>``` siendo x un número del 1 al 6 (tiene jerarquía. 1 es la más alta y 6 la más baja)
++ **Párrafos**: ```<p> Texto del párrafo </p>```
++ **Listas**: Hay dos tipos:
   + Ordenadas: ```<ol> <li>Elemento</li> <li>Elemento2</li>... </ol>``` (cada elemento de la lista va numerado)
   + Desordenadas: ```<ul> <li>Elemento</li> <li>Elemento2</li>... </ul>``` (lista de "puntos")
 
