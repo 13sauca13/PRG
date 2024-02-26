@@ -66,3 +66,14 @@ for i in range(1,42):
     for j in range(1,5):
         with open("prueba/"+str(i)+"/"+str(j)+".txt", "w") as fichero:
             fichero.write(str(" "))
+
+# Crea el directorio "prueba2" con 41 directorios dentro y 4 archivos por directorio con una extensión aleatoria de entre 4 opciones
+import os
+import random
+for i in range(1,42):
+    os.makedirs("Python/prueba2/"+str(i))
+    for j in range(1,5):
+        posibilidades=[".doc",".txt",".pdf",".xml"]
+        extension=random.choice(posibilidades)
+        with open("Python/prueba2/"+str(i)+"/"+str(j)+extension, "w") as fichero:
+            fichero.write(str(" "))
