@@ -128,3 +128,69 @@ Los argumentos pueden ser obligatorios y opcionales, pero los obligatorios deben
 Esto es lo básico para la declaración y uso de una función pero puede "decorarse", aunque esto es informativo, el programa no comprobará que se cumpla:
 + Especificar el tipo de dato que devolverá una función: ```def nombre_funcion(argumento1, argumento2...)->tipo_dato:```
 + Especificar el tipo de dato que espera un argumento: ```def nombre_funcion(argumento1:tipo_dato, argumento2:tipo_dato...)->tipo_dato:```
+
+## 4.Técnicas fundamentales de programación
+### Tipos de datos
++ Enteros: Números enteros sin parte decimal
++ Textos: Strings
++ Decimales
+  + 1.1
+  + 1/3
+  + 1.2E3
++ Booleanos: Sólo admite dos valores (```True``` y ```False```) True también será 1 y False será 0
++ Listas
++ Tuplas
++ Set
++ Diccionario
+
+### Operadores
+| Operador | Funcionamiento |
+| --- | --- |
+| + | Suma |
+| - | Resta |
+| * | Multiplicación |
+| / | División |
+| % | Módulo (resto de la división) |
+| ** | Exponenciación |
+| // | División exacta (Devuelve la división exacta, sin decimales. Sólo la parte entera del resultado) |
+| > | Comparador "mayor que" |
+| < | Comparador "menor que" |
+| == | Comparador de igualdad |
+| >= | Mayor o igual a |
+| <= | Menor o igual a |
+| != | No igual a |
+| = | Asignador de valor |
+| += | |
+| -= | |
+| *= | |
+| /= | |
+| %= | |
+| **= | |
+| //= | |
+| and | |
+| or | |
+| not | |
+| in | |
+| not in | |
+| is | Compara si los objetos son iguales(no sólo los valores) |
+| is not | |
+
+### Asignación múltiple
+La asignación múltiple es la acción de asignar de una vez varios valores a varias variables.
+
+### Control de errores
+```
+try:
+  código
+except tipo_error:
+  código_si_try_falla
+except tipo_error:
+  código_si_try_falla
+...
+except:
+  código_si_try_falla_generico
+```
+
+Los tipos de errores son los siguientes: [https://docs.python.org/3/library/exceptions.html](https://docs.python.org/3/library/exceptions.html)
+
+Además de eso, la palabra ```raise``` me permite levantar un error "personalizado"
