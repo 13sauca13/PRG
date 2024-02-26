@@ -58,3 +58,11 @@ except ZeroDivisionError:
     print("No se puede dividir entre cero")
 except:
     print("Error desconocido")
+
+# Crea el directorio "prueba" con 41 directorios dentro y 4 archivos de texto por directorio
+import os
+for i in range(1,42):
+    os.makedirs("prueba/"+str(i))
+    for j in range(1,5):
+        with open("prueba/"+str(i)+"/"+str(j)+".txt", "w") as fichero:
+            fichero.write(str(" "))
