@@ -73,7 +73,7 @@ import random
 for i in range(1,42):
     os.makedirs("Python/prueba2/"+str(i))
     for j in range(1,5):
-        posibilidades=[".doc",".txt",".pdf",".xml"]
+        posibilidades=[".doc",".jpg",".doc",".csv"]
         extension=random.choice(posibilidades)
         with open("Python/prueba2/"+str(i)+"/"+str(j)+extension, "w") as fichero:
             fichero.write(str(" "))
