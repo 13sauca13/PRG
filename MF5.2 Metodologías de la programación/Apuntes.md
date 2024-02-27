@@ -253,3 +253,33 @@ Tiene muchos [mètodos](https://www.w3schools.com/python/module_os.asp), los má
 Sirve para generar numeros aleatorios (o elecciones).
 
 [Métodos de ```random```](https://www.w3schools.com/python/module_random.asp)
+
+## 6.POO
+Un ***objeto*** es un conjunto de ***atributos*** (variables o datos) y ***métodos*** o funciones relacionados entre sí.
+
+Una ***clase*** equivale a la generalización de un tipo específico de objetos. Una clase es una plantilla que define las variables y los métodos que son comunes para todos los objetos de un cierto tipo. La clase define los atributos (datos) de un objeto y sus operaciones o métodos (comportamiento)
+```
+class Nombre_clase:
+  código
+```
+Una vez definida la clase, se pueden crear objetos a partir de ésta, a dicho proceso se le conoce como crear ejemplares de una clase o instanciar una clase. Una ***instancia*** es un elemento de una clase, es decir, un objeto, cada objeto asigna valores a sus atributos y es totalmente independiente de los demás.
+
+>[!ALERT]
+>Cuando hay dos variables con el mismo nombre prevalece la de la instancia
+
+### Atributos
+Existen dos tipos de atributos:
+### Atributos de clase
+Se trata de atributos que pertenecen a la clase, por lo tanto serán comunes para todos los objetos.
+#### Metodos de clase
+Llevan delante el decorador ```@classmethod``` y utilizan ```cls``` para referenciar las variables)
+
+### Atributos de instancia
+Pertenecen a la instancia de la clase o al objeto. **Son atributos particulares de cada instancia** (se utiliza ```self``` para referenciar las variables del propio objeto)
+#### Metodos de instancia
+Usan ```self```
+
+### Métodos estáticos
+No modifican ni la clase ni la instancia
+```
+@staticmethod
