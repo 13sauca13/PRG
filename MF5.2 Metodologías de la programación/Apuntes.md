@@ -125,7 +125,7 @@ Se trata de ```if```, ```elif``` y ```else```.
 Ejecuta un bloque de código un número específico de veces.
 
 Se utiliza normalmente con objetos iterables (listas, tuplas, diccionarios...). Esto nos permite que las iteraciones estén acotadas desde el inicio del mismo, al tamaño del objeto iterable. Su sintáxis básica es:
-```
+```python
 for elemento in iterable:
   código
 ```
