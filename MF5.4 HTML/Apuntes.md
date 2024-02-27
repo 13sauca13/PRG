@@ -1,8 +1,11 @@
 # HTML
 Los enlaces de los ejercicios de esta asignatura ya están en GitHub:
-:mag:[Ejercicios](https://e2t-sauca.w3spaces.com/)
-Para verlos en formato página web:
-:link:[Ejercicios en vista web]
+
+:mag:[Ejercicios](https://github.com/13sauca13/PRG/tree/master/MF5.4%20HTML/Codigo)
+
+NO pueden verse en formato web desde ahí. Hay otro repositorio con GitHub Pages para visualizar los resultados:
+
+:link:[Ejercicios en vista web](https://13sauca13.github.io/E2T-HTML/)
 
 >[!IMPORTANT]
 >[HTML W3 Schools](https://www.w3schools.com/html/)
