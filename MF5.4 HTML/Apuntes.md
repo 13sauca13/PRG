@@ -62,13 +62,16 @@ Para introducir imágenes se utiliza la etiqueta:
 <img src="ruta_imagen"/>
 ```
 
-### ```style```
-Es un atributo para dar estilo al contenido de otra etiqueta (color, tipo de letra...)
+## 2.CSS
+El CSS se usa para controlar el estilo de las páginas sin tener que usarlo en el propio HTML. CSS se puede usar de tres formas:
+### En linea
+En la propia línea de HTML:
 ```
 <etiqueta style="propiedad:valor";> contenido </etiqueta>
 ```
 
-También pueden crearse clases de estilos para aplicar a lo largo de la página:
+### Interno
+Desde ```<head>``` para aplicar a lo largo de la página:
 ```
 <head>
   <style>
@@ -94,3 +97,11 @@ El nombre del estilo sería ```.nombre_estilo``` para crear una clase de estilo 
 ```
 
 Para aplicar el estilo (de los que no modifican las propias etiquetas): ```<etiqueta class="nombre_estilo"> contenido </etiqueta>```
+
+### Externo
+Desde un archivo externo con la extensión .css. De esta manera podríamos tener una hoja de estilo común para todas las páginas de una web.
+```
+<head>
+    <link href="nombre_archivo.css" rel="stylesheet"/>
+</head>
+```
