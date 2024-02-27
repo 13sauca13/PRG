@@ -300,7 +300,7 @@ def nombre_metodo(cls):
 ```
 ### Métodos estáticos
 No modifican ni la clase ni la instancia
-```
+```pyhon
 @staticmethod
 def nombre_metodo():
   código
