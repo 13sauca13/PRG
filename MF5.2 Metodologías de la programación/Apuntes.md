@@ -70,7 +70,7 @@ Representan estructuras de datos anidadas, comúnmente utilizadas para modelar d
 Estructuras que permiten almacenar una colección de elementos bajo un solo nombre, existen varios tipos:
 ##### Listas
 Se trata de una colección ordenada, editable, dinámica y no única.
-```python
+```python3
 nombre_lista=[elemento1, elemento2...]
 ```
 Funciones útiles:
