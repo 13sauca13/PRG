@@ -55,3 +55,21 @@ Para introducir imágenes se utiliza la etiqueta:
 ```
 <img src="ruta_imagen"/>
 ```
+
+### ```style```
+Es un atributo para dar estilo al contenido de otra etiqueta (color, tipo de letra...)
+```
+<etiqueta style="propiedad:valor";> contenido </etiqueta>
+```
+También pueden crearse clases de estilos para aplicar a lo largo de la página:
+```
+<head>
+  <style>
+    .nombre_estilo {
+        propiedad:valor;
+        propiedad2:valor2;
+        ...
+    }
+  </style>
+</head>
+```
