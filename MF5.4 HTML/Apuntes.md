@@ -80,7 +80,7 @@ También pueden crearse clases de estilos para aplicar a lo largo de la página:
   </style>
 </head>
 ```
-El nombre del estilo sería ```.nombre_estilo``` para crear una clase de estilo o pueden utilizarse sin ```.``` si se va a utilizar una etiqueta existente de HTML (o varias) para modificar su estilo por defecto:
+El nombre del estilo sería ```.nombre_estilo``` para crear una clase de estilo o pueden utilizarse sin ```.``` si se va a utilizar una etiqueta existente de HTML (o varias) o para un id (utilizando ```#nombre_id```) para modificar su estilo por defecto:
 ```
 <head>
   <style>
