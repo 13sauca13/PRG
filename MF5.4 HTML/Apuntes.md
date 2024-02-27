@@ -1,7 +1,8 @@
 # HTML
-Los enlaces de los ejercicios de esta asignatura NO están en GitHub para que puedan ser visializados en el navegador y no sólo sean código:
-
+Los enlaces de los ejercicios de esta asignatura ya están en GitHub:
 :mag:[Ejercicios](https://e2t-sauca.w3spaces.com/)
+Para verlos en formato página web:
+:link:[Ejercicios en vista web]
 
 >[!IMPORTANT]
 >[HTML W3 Schools](https://www.w3schools.com/html/)
