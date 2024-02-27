@@ -32,7 +32,7 @@ HTML es un lenguaje de marcado para páginas web. La estructura básica de un fi
 Cada etiqueta se abre y posteriormente se cierra con ```</etiqueta>``` (***Excepto ```<br/>``` y ```<img ... />***)
 
 Para introducir comentarios en el código se utiliza:
-```
+```html
 <!-- Comentarios -->
 ```
 
@@ -51,7 +51,7 @@ Para dar fomato al texto podemos utilizar:
   + Desordenadas: ```<ul> <li>Elemento</li> <li>Elemento2</li>... </ul>``` (lista de "puntos")
 
 ### Enlaces
-```
+```html
 <a href="ruta_enlace">Texto mostrado</a>
 ```
 A los enlaces se les puede añadir también ```target="atributo"``` para especificar como se abrirá el enlace:
@@ -62,7 +62,7 @@ A los enlaces se les puede añadir también ```target="atributo"``` para especif
 
 ### Imágenes
 Para introducir imágenes se utiliza la etiqueta:
-```
+```html
 <img src="ruta_imagen"/>
 ```
 
@@ -70,13 +70,13 @@ Para introducir imágenes se utiliza la etiqueta:
 El CSS se usa para controlar el estilo de las páginas sin tener que usarlo en el propio HTML. CSS se puede usar de tres formas:
 ### En linea
 En la propia línea de HTML:
-```
+```html
 <etiqueta style="propiedad:valor";> contenido </etiqueta>
 ```
 
 ### Interno
 Desde ```<head>``` para aplicar a lo largo de la página:
-```
+```html
 <head>
   <style>
     .nombre_estilo {
@@ -88,7 +88,7 @@ Desde ```<head>``` para aplicar a lo largo de la página:
 </head>
 ```
 El nombre del estilo sería ```.nombre_estilo``` para crear una clase de estilo o pueden utilizarse sin ```.``` si se va a utilizar una etiqueta existente de HTML (o varias) o para un id (utilizando ```#nombre_id```) para modificar su estilo por defecto:
-```
+```html
 <head>
   <style>
     etiqueta, etiqueta2... {
@@ -104,7 +104,7 @@ Para aplicar el estilo (de los que no modifican las propias etiquetas): ```<etiq
 
 ### Externo
 Desde un archivo externo con la extensión .css. De esta manera podríamos tener una hoja de estilo común para todas las páginas de una web.
-```
+```html
 <head>
     <link href="nombre_archivo.css" rel="stylesheet"/>
 </head>
