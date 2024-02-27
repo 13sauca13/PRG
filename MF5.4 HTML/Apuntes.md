@@ -61,6 +61,7 @@ Es un atributo para dar estilo al contenido de otra etiqueta (color, tipo de let
 ```
 <etiqueta style="propiedad:valor";> contenido </etiqueta>
 ```
+
 También pueden crearse clases de estilos para aplicar a lo largo de la página:
 ```
 <head>
@@ -73,3 +74,17 @@ También pueden crearse clases de estilos para aplicar a lo largo de la página:
   </style>
 </head>
 ```
+El nombre del estilo sería ```.nombre_estilo``` para crear una clase de estilo o pueden utilizarse sin ```.``` si se va a utilizar una etiqueta existente de HTML (o varias) para modificar su estilo por defecto:
+```
+<head>
+  <style>
+    etiqueta, etiqueta2... {
+        propiedad:valor;
+        propiedad2:valor2;
+        ...
+    }
+  </style>
+</head>
+```
+
+Para aplicar el estilo (de los que no modifican las propias etiquetas): ```<etiqueta class="nombre_estilo"> contenido </etiqueta>
