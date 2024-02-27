@@ -32,6 +32,12 @@ Para introducir comentarios en el código se utiliza:
 <!-- Comentarios -->
 ```
 
+>[!TIP]
+>Todas las etiquetas pueden tener un ```id``` para poder referenciarlas en los estilos o en caso de ser necesario pero los is deben ser únicos:
+>```
+><etiqueta id="nombre_id"> contenido </etiqueta>
+>```
+
 ## 1.Formato de contenido
 Para dar fomato al texto podemos utilizar:
 + **Encabezados**: ```<hX> Texto </hX>``` siendo x un número del 1 al 6 (tiene jerarquía. 1 es la más alta y 6 la más baja)
