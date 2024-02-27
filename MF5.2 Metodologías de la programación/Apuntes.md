@@ -70,7 +70,7 @@ Representan estructuras de datos anidadas, comúnmente utilizadas para modelar d
 Estructuras que permiten almacenar una colección de elementos bajo un solo nombre, existen varios tipos:
 ##### Listas
 Se trata de una colección ordenada, editable, dinámica y no única.
-```python3
+```python
 nombre_lista=[elemento1, elemento2...]
 ```
 Funciones útiles:
@@ -90,12 +90,12 @@ Funciones útiles:
 + ```list.copy()```: Hace una copia de la lista. recordar este detalle
 ##### Tuplas
 Similar a las listas pero inmutables y más rápidas de procesar.
-```
+```python
 nombre_tupla=(elemento1, elemento2...)
 ```
 ##### Set
 Son varios valores almacenados en una misma variable. No están ordenados, no es modificable y no puede tener elementos repetidos (únicos y elementos inmutables). Se declaran con ```{}```
-```
+```python
 nombre_set={valor1,valor2...}
 ```
 ##### Diccionario
@@ -103,10 +103,10 @@ Los diccionarios se utilizan para almacenar valores en pares **clave:valor** (es
 ***El tipo de dato de la clave (int,str...) va a ser el tipo de dato por defecto del valor también***
 
 Hay dos maneras de crear un diccionario:
-```
+```python
 nombre_diccionario=dict(clave1:valor1,clave2:valor2...)
 ```
-```
+```python
 nombre_diccionario={clave1:valor1,clave2:valor2...}
 ```
 :exclamation: ***Las claves de los diccionarios tienen nombres únicos***
@@ -184,18 +184,18 @@ El bucle for, se utiliza normalmente con la función ```range```, que nos devuel
 
 ### Asignación múltiple
 La asignación múltiple es la acción de asignar de una vez varios valores a varias variables. Puedo asignar varios valores a varias variables a la vez:
-```
+```python
 x, y, z...= valorX, valorY, valorZ...
 ```
 
 Y podemos utilizar iterables para asignar esos valores:
-```
+```python
 lista=[valor1, valor2, valor3...]
 x, y, z, ...=lista
 ```
 
 ### Control de errores
-```
+```python
 try:
   código
 except tipo_error:
@@ -213,7 +213,7 @@ Además de eso, la palabra ```raise``` me permite levantar un error "personaliza
 
 ### Funciones
 Las funciones se declaran con ```def``` y contienen argumentos y código:
-```
+```python
 def nombre_funcion(argumento1, argumento2...):
   código
 ```
@@ -231,10 +231,10 @@ Esto es lo básico para la declaración y uso de una función pero puede "decora
 
 ### Cadenas formateadas
 El formateo de cadenas permite combinar variables y valores en una cadena. Hayo dos formas de hacerlo:
-```
+```python
 print(f"string {variable}")
 ```
-```
+```python
 print("string {}".format(variable))
 ```
 
@@ -284,7 +284,7 @@ Se utiliza ```self``` para referenciar las variables del propio objeto (lo vemos
 Son los comportamientos de cada instancia de cada clase. Pueden acceder, editar, modificar los atributos de la instancia.
 
 Reciben como argumento ```self```
-```
+```python
 def nombre_metodo(self, argumento1, argumento2,...):
   código
 ```
@@ -293,7 +293,7 @@ def nombre_metodo(self, argumento1, argumento2,...):
 Son comportamientos de la clase en si, NO pueden acceder a los atributos de las instancias pero SI pueden modificarlos.
 
 Reciben como argumento ```cls```
-```
+```python
 @classmethod
 def nombre_metodo(cls):
   código
