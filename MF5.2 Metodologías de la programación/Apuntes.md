@@ -264,7 +264,7 @@ class Nombre_clase:
 ```
 Una vez definida la clase, se pueden crear objetos a partir de ésta, a dicho proceso se le conoce como crear ejemplares de una clase o instanciar una clase. Una ***instancia*** es un elemento de una clase, es decir, un objeto, cada objeto asigna valores a sus atributos y es totalmente independiente de los demás.
 
->[!ALERT]
+>[!WARNING]
 >Cuando hay dos variables con el mismo nombre prevalece la de la instancia
 
 ### Atributos
