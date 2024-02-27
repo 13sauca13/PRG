@@ -87,4 +87,4 @@ El nombre del estilo sería ```.nombre_estilo``` para crear una clase de estilo 
 </head>
 ```
 
-Para aplicar el estilo (de los que no modifican las propias etiquetas): ```<etiqueta class="nombre_estilo"> contenido </etiqueta>
+Para aplicar el estilo (de los que no modifican las propias etiquetas): ```<etiqueta class="nombre_estilo"> contenido </etiqueta>```
