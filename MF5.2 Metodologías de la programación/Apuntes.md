@@ -271,15 +271,34 @@ Una vez definida la clase, se pueden crear objetos a partir de ésta, a dicho pr
 Existen dos tipos de atributos:
 ### Atributos de clase
 Se trata de atributos que pertenecen a la clase, por lo tanto serán comunes para todos los objetos.
-#### Metodos de clase
-Llevan delante el decorador ```@classmethod``` y utilizan ```cls``` para referenciar las variables)
-
 ### Atributos de instancia
-Pertenecen a la instancia de la clase o al objeto. **Son atributos particulares de cada instancia** (se utiliza ```self``` para referenciar las variables del propio objeto)
-#### Metodos de instancia
-Usan ```self```
+Pertenecen a la instancia de la clase o al objeto. **Son atributos particulares de cada instancia** 
 
+Se utiliza ```self``` para referenciar las variables del propio objeto (lo vemos más adelante en detalle)
+
+### Métodos
+#### Metodos de instancia
+Son los comportamientos de cada instancia de cada clase. Pueden acceder, editar, modificar los atributos de la instancia.
+
+Reciben como argumento ```self```
+```
+def nombre_metodo(self, argumento1, argumento2,...):
+  código
+```
+
+#### Métodos de clase
+Son comportamientos de la clase en si, NO pueden acceder a los atributos de las instancias pero SI pueden modificarlos.
+
+Reciben como argumento ```cls```
+```
+@classmethod
+def nombre_metodo(cls):
+  código
+```
 ### Métodos estáticos
 No modifican ni la clase ni la instancia
 ```
 @staticmethod
+def nombre_metodo():
+  código
+```
