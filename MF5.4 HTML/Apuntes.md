@@ -11,7 +11,7 @@ NO pueden verse en formato web desde ahí. Hay otro repositorio con GitHub Pages
 >[HTML W3 Schools](https://www.w3schools.com/html/)
 
 HTML es un lenguaje de marcado para páginas web. La estructura básica de un fichero HTML es la siguiente:
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
