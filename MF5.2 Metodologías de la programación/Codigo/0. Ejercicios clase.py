@@ -94,3 +94,18 @@ for l in os.listdir("Python/prueba2"):
         elif ext=="csv":
             csv+=1
 print(f"El directorio prueba2 contiene: {txt} documentos de texto, {jpg} imagenes, {doc} archivos de word y {csv} archivos csv.")
+
+# Crea una clase llamada Militar que cree militares con una edad por defecto de 18 años, solo pedira nombre y apellido, paro si se le da la edad la modificara.
+#Añadir un metodo de instancia para que cumpla años
+class Militar:
+    def __init__ (self,nombre,apellido,edad=18):
+        self.nombre=nombre
+        self.apellido=apellido
+        self.edad=edad
+        print("Se ha creado el militar", self.nombre, self.apellido,"con edad",self.edad)
+    def cumple(self):
+        self.edad+=1
+        print(self.nombre,self.apellido,"ha cumplido",self.edad,"años")
+sauca=Militar("Antonio","Sauca",34)
+otro=Militar("Perico","Palotes")
+sauca.cumple()
