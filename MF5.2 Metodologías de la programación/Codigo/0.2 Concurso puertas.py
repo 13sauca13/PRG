@@ -8,6 +8,7 @@ Todo el proceso se ejecutará en automático, se introducirán únicamente el n�
 
 class Concurso:
     def __init__(self):
+        # Se crean las variables necesarias para levantar estadísticas en el método "concursar"
         self.cambia_gana=0
         self.cambia_pierde=0
         self.nocambia_gana=0
@@ -26,21 +27,21 @@ class Concurso:
             premios=["Coche","Oveja","Nada"]
             import random
             random.shuffle(premios)
-            j=0
+            j=0         # Contador para usar como índice en premios dentro del "for"
             for i in puertas:
                 puertas[i]=premios[j]
                 if premios[j]=="Coche":
                     puerta_premiada=i
-                j+=1
+                j+=1    # Aumento contador para pasar al siguiente índice
         # El jugador elige una puerta al azar
             opciones=["puerta 1","puerta 2","puerta 3"]
             eleccion_inicial=random.choice(opciones)
-        # El presentador abre una de las puertas no elegidas que no contiene el premio
+        # El presentador abre al azar una de las puertas no elegidas que no contiene el premio
             while len(opciones)>2:
                 x=random.randint(0,2)
                 if opciones[x]!=puerta_premiada and opciones[x]!=eleccion_inicial:
                     opciones.remove(opciones[x])
-        # El jugador decide si cambiar de puerta
+        # El jugador elige una nueva puerta, cambia o no cambia
             eleccion_2=random.choice(opciones)
             if eleccion_2==eleccion_inicial:
                 cambio=False
@@ -48,7 +49,8 @@ class Concurso:
             else:
                 cambio=True
                 self.cambiadas+=1
-        # Se abren todas las puertas y el concurso termina!
+        # Se abren todas las puertas y el concurso termina.
+        # Se revisan y anotan resultados
             if eleccion_2==puerta_premiada:
                 if cambio==True:
                     self.cambia_gana+=1
@@ -59,7 +61,7 @@ class Concurso:
                     self.cambia_pierde+=1
                 else:
                     self.nocambia_pierde+=1
-        # Para la presentación de los datos se pasan los resultados a porcentajes
+        # Para la presentación de los datos se pasan los resultados acumulados a porcentajes
         self.cambia_gana=round((self.cambia_gana/self.cambiadas)*100,3)
         self.cambia_pierde=round((self.cambia_pierde/self.cambiadas)*100,3)
         self.nocambia_gana=round((self.nocambia_gana/self.mantenidas)*100,3)
