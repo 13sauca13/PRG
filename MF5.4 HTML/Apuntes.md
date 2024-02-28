@@ -66,6 +66,24 @@ Para introducir imágenes se utiliza la etiqueta:
 <img src="ruta_imagen"/>
 ```
 
+### Tablas
+Para crear una tabla se usa la etiqueta ```<table>```:
+```html
+<table>
+  <tr>
+    <th>Cabecera_columna1<th>
+    <th>Cabecera_columna2<th>
+    ...
+  </tr>
+  <tr>
+    <td>Contenido</td>
+    <td>Contenido</td>
+    ...
+  </tr>
+  ...
+</table>
+```
+
 ## 2.CSS
 El CSS se usa para controlar el estilo de las páginas sin tener que usarlo en el propio HTML. CSS se puede usar de tres formas:
 ### En linea
