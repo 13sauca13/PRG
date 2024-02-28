@@ -83,6 +83,9 @@ Para crear una tabla se usa la etiqueta ```<table>```:
   ...
 </table>
 ```
+Cada ```<tr>``` tendrá una fila de la tabla (*Table Row*), la primera tendrá dentro ```th```, cabeceras (*Table Header*) y las siguientes ```td``` (*Table Data*).
+
+Para combinar celdas se usa dentro de la etiqueta de la primera celda el atributo ```colspan=x``` siendp x el número de celdas en adelante que se combinarán o ```rowspan``` para combinar filas.
 
 ## 2.CSS
 El CSS se usa para controlar el estilo de las páginas sin tener que usarlo en el propio HTML. CSS se puede usar de tres formas:
