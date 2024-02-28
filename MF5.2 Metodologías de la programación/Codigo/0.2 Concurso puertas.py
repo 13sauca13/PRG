@@ -66,4 +66,5 @@ class Concurso:
         return(f"El jugador cambiando la elección ha ganado el {self.cambia_gana}% y perdido el {self.cambia_pierde}% de las veces. Manteniendo la elección ha ganado el {self.nocambia_gana}% y perdido el {self.nocambia_pierde}% de las veces.")
 
 concurso1=Concurso()
-print(concurso1.concursar(17))
+iteraciones=int(input("Cuántas ediciones del concurso jugará el jugador? "))
+print(concurso1.concursar(iteraciones))
