@@ -14,11 +14,11 @@ class Concurso:
         self.nocambia_pierde=0
         self.cambiadas=0
         self.mantenidas=0
-        
-    def concursar(self,ediciones):
-        self.ediciones=ediciones
-        while self.ediciones>0:
-            self.ediciones-=1
+
+    def concursar(self,rondas:str) -> str:
+        self.rondas=rondas
+        while self.rondas>0:
+            self.rondas-=1
         # El estado inicial serán tres puertas vacías:
             puertas={"puerta 1":"","puerta 2":"","puerta 3":""}
         # El presentador desordena aleatoriamente los tres premios y los mete en las puertas
@@ -59,12 +59,20 @@ class Concurso:
                     self.cambia_pierde+=1
                 else:
                     self.nocambia_pierde+=1
+        # Para la presentación de los datos se pasan los resultados a porcentajes
         self.cambia_gana=round((self.cambia_gana/self.cambiadas)*100,3)
         self.cambia_pierde=round((self.cambia_pierde/self.cambiadas)*100,3)
         self.nocambia_gana=round((self.nocambia_gana/self.mantenidas)*100,3)
         self.nocambia_pierde=round((self.nocambia_pierde/self.mantenidas)*100,3)
-        return(f"El jugador cambiando la elección ha ganado el {self.cambia_gana}% y perdido el {self.cambia_pierde}% de las veces. Manteniendo la elección ha ganado el {self.nocambia_gana}% y perdido el {self.nocambia_pierde}% de las veces.")
+        return(f"\nEl jugador ha tenido las siguientes estadísticas:\n    - Cambiando la elección ha ganado el {self.cambia_gana}% y perdido el {self.cambia_pierde}% de las veces.\n    - Manteniendo la elección ha ganado el {self.nocambia_gana}% y perdido el {self.nocambia_pierde}% de las veces.")
 
-concurso1=Concurso()
-iteraciones=int(input("Cuántas ediciones del concurso jugará el jugador? "))
-print(concurso1.concursar(iteraciones))
+# A continuación se pedirá el número de rondas que el jugador jugará para llevarse el premio
+concurso=Concurso()
+iteraciones=int(input(f"Cuántas rondas del concurso jugará? "))
+# Inciamos un temporizador para ver cuanto le lleva al programa ejecutarse
+import time
+inicio=time.perf_counter()
+# Imprimimos resultados del concurso y del tiempo de ejecución
+print(concurso.concursar(iteraciones))
+fin=time.perf_counter()
+print(f"\nLa ejecucuión de las {iteraciones} rondas ha tardado {fin-inicio} segundos")
