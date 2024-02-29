@@ -305,3 +305,8 @@ No modifican ni la clase ni la instancia
 def nombre_metodo():
   código
 ```
+## 7.Librerías
+Para la instalación de una librería externa se utiliza ```pip```, pero este instala la librería en el intérprete Python del sistema, si hay más de uno se debe poner antes la ruta:
+```bash
+ruta_python.exe -m pip install nombre_libreria
+```
