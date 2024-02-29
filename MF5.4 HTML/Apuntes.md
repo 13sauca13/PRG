@@ -130,3 +130,7 @@ Desde un archivo externo con la extensión .css. De esta manera podríamos tener
     <link href="nombre_archivo.css" rel="stylesheet"/>
 </head>
 ```
+## 3.Frameworks CSS
+Un framework es una plantilla para desarrollar software.
+
+Usaremos [**Bootstrap**](https://getbootstrap.com/)
