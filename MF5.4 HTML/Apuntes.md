@@ -86,7 +86,12 @@ Para crear una tabla se usa la etiqueta ```<table>```:
 Cada ```<tr>``` tendrá una fila de la tabla (*Table Row*), la primera tendrá dentro ```th```, cabeceras (*Table Header*) y las siguientes ```td``` (*Table Data*).
 
 Para combinar celdas se usa dentro de la etiqueta de la primera celda el atributo ```colspan=x``` siendp x el número de celdas en adelante que se combinarán o ```rowspan``` para combinar filas.
+### ```<hr/>```
+*Horizontal Rule*, introduce una raya horizontal
+### ```<pre>```
+Lo que esté dentro de la eqtiqueta ```<pre>``` se considera que viene preformateado y HTML no le hará nada.
 
+Se utiliza para introducir bloques de código.
 ## 2.CSS
 El CSS se usa para controlar el estilo de las páginas sin tener que usarlo en el propio HTML. CSS se puede usar de tres formas:
 ### En linea
