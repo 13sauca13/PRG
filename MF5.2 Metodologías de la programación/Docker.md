@@ -75,11 +75,12 @@ Cada capa es un conjunto de cambios que se aplican a la imagen base, y estas cap
   + ```--rm```: Borra el contenedor en cuanto se detenga
   + ```--name <nombre>```: Asigna al contenedor el nombre indicado
   + ```-d```: Ejecuta el contenedor en modo daemon, lo envía a segundo plano para liberar la shell
-  + 
 + IMAGE es el nombre de la imagen de Docker a partir de la cual se creará el contenedor.
 + COMMAND y ARG... son los comandos y argumentos que se ejecutarán dentro del contenedor en cuanto se haya montado.
 
 ### achivo docker-cmpose.yml
 :link:[Awesome-compose GitHub](https://github.com/docker/awesome-compose)
 
-```docker-compose up --build -d``` (-d lo ejecuta en segundo plano para liberar la linea de comandos)
+Docker Compose es una herramienta que permite simplificar el uso de Docker. ***A partir de archivos YAML*** es mas sencillo crear contendores, conectarlos, habilitar puertos, volumenes, etc.
+
+```docker-compose up --build```
