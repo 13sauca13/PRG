@@ -6,4 +6,5 @@ Existen dos tipos de virtualización:
 + Hospedada (Hosted): Se ejecuta en un sistema operativo anfitrión y utiliza una capa de software adicional para crear y administrar las máquinas virtuales.
 
 <hr/>
+
 ```docker-compose up --build ld``` (-d lo ejecuta en segundo plano para liberar la linea de comandos)
