@@ -54,7 +54,19 @@ Cada capa es un conjunto de cambios que se aplican a la imagen base, y estas cap
 | ```docker --help``` | Muestra  una lista de comandos de Docker y sus opciones. |
 | ```docker <comando> --help``` | Muestra información detallada sobre cómo usar un comando específico de Docker y sus opciones.|
 | ```docker info``` |  Información detallada del sistema Docker que se está ejecutando en tu máquina. |
-| ```docker run <options> <image> <command>``` | utiliza para crear y ejecutar un contenedor Docker a partir de una imagen de Docker existente.+ OPTIONS son las opciones que se pueden utilizar para configurar el contenedor Docker, como el puerto de exposición, las variables de entorno y la asignación de volúmenes. + IMAGE es el nombre de la imagen de Docker a partir de la cual se creará el contenedor.
-+ COMMAND y ARG... son los comandos y argumentos que se ejecutarán dentro del 
-contenedor.|
+| ```docker run <options> <image> <command>``` | utiliza para crear y ejecutar un contenedor Docker a partir de una imagen de Docker existente. |
+| ```docker ps``` | Muestra una lista de los contenedores en ejecución (con la opción ```-a``` muestra también los detenidos, con ```-l``` muestra info detallada) |
+| ```docker images``` | Para mostrar una lista de imágenes de Docker en tu sistema y para gestionar y eliminar imágenes |
+| ```docker rm``` | Para eliminar contenedores de Docker (```-f``` es para forzar) |
+| ```docker stop``` | Detener contenedores de Docker de manera ordenada y puede ayudar a evitar la pérdida de datos y a garantizar la integridad del sistema. (se puede especificar un tiempo con ```-t``` |
+| ```docker volume``` | |
+| ```docker inspect``` | |
+| ```docker cp``` | |
+| ```docker stats``` | |
+| ```docker logs``` | |
+| ```docker history``` | |
+
+### ```docker run```
+
+### achivo docker-cmpose.yml
 ```docker-compose up --build -d``` (-d lo ejecuta en segundo plano para liberar la linea de comandos)
