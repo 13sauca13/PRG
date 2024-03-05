@@ -85,29 +85,21 @@ Docker Compose es una herramienta que permite simplificar el uso de Docker. ***A
 ```yaml
 services:
   frontend:
-    image: example/webapp
+    image: nombre_imagen
     ports:
-      - "443:8043"
-    networks:
-      - front-tier
-      - back-tier
+      - puerto_host:puerto_contenedor
+    volumes:
+      - ruta_host:ruta_contenedor
     configs:
       - httpd-config
-    secrets:
-      - server-certificate
 
   backend:
-    image: example/database
+    image: nombre_imagen
     volumes:
       - db-data:/etc/data
-    networks:
-      - back-tier
 
 volumes:
   db-data:
-    driver: flocker
-    driver_opts:
-      size: "10GiB"
 ```
 
 Teniendo el archivo "docker-compose.yml":
