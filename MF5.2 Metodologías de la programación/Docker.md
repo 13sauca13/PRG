@@ -83,4 +83,7 @@ Cada capa es un conjunto de cambios que se aplican a la imagen base, y estas cap
 
 Docker Compose es una herramienta que permite simplificar el uso de Docker. ***A partir de archivos YAML*** es mas sencillo crear contendores, conectarlos, habilitar puertos, volumenes, etc.
 
-```docker-compose up --build```
+Teniendo el archivo "docker-compose.yml":
+```
+docker-compose up --build
+```
