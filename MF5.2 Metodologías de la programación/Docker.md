@@ -40,10 +40,19 @@ Las imágenes de Docker se crean mediante un archivo Dockerfile. Se pueden usar 
 | ```VOLUME``` | |
 
 ***************Completar
+
 Cada capa es un conjunto de cambios que se aplican a la imagen base, y estas capas se apilan unas sobre otras para formar la imagen completa.
 + **Bootfs**
 + **Rootfs**
 + **Capas adicionales**
+
 <hr/>
 
+## Comandos Docker
+| Comando | Explicación |
+| --- | --- |
+| ```docker --help``` | Muestra  una lista de comandos de Docker y sus opciones. |
+| ```docker <comando> --help``` | Muestra información detallada sobre cómo usar un comando específico de Docker y sus opciones.|
+| ```docker info``` |  Información detallada del sistema Docker que se está ejecutando en tu máquina. |
+| ```docker run <options> <image> <command>``` | utiliza para crear y ejecutar un contenedor Docker a partir de una imagen de Docker existente. |
 ```docker-compose up --build -d``` (-d lo ejecuta en segundo plano para liberar la linea de comandos)
