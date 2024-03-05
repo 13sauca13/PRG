@@ -7,4 +7,4 @@ Existen dos tipos de virtualización:
 
 <hr/>
 
-```docker-compose up --build ld``` (-d lo ejecuta en segundo plano para liberar la linea de comandos)
+```docker-compose up --build -d``` (-d lo ejecuta en segundo plano para liberar la linea de comandos)
