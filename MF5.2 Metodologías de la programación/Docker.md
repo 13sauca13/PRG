@@ -82,6 +82,33 @@ Cada capa es un conjunto de cambios que se aplican a la imagen base, y estas cap
 :link:[Awesome-compose GitHub](https://github.com/docker/awesome-compose)
 
 Docker Compose es una herramienta que permite simplificar el uso de Docker. ***A partir de archivos YAML*** es mas sencillo crear contendores, conectarlos, habilitar puertos, volumenes, etc.
+```yaml
+services:
+  frontend:
+    image: example/webapp
+    ports:
+      - "443:8043"
+    networks:
+      - front-tier
+      - back-tier
+    configs:
+      - httpd-config
+    secrets:
+      - server-certificate
+
+  backend:
+    image: example/database
+    volumes:
+      - db-data:/etc/data
+    networks:
+      - back-tier
+
+volumes:
+  db-data:
+    driver: flocker
+    driver_opts:
+      size: "10GiB"
+```
 
 Teniendo el archivo "docker-compose.yml":
 ```
