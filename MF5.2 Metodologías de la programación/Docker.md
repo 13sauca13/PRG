@@ -58,7 +58,7 @@ Cada capa es un conjunto de cambios que se aplican a la imagen base, y estas cap
 | ```docker ps``` | Muestra una lista de los contenedores en ejecución (con la opción ```-a``` muestra también los detenidos, con ```-l``` muestra info detallada) |
 | ```docker images``` | Para mostrar una lista de imágenes de Docker en tu sistema y para gestionar y eliminar imágenes |
 | ```docker rm``` | Para eliminar contenedores de Docker (```-f``` es para forzar) |
-| ```docker stop``` | Detener contenedores de Docker de manera ordenada y puede ayudar a evitar la pérdida de datos y a garantizar la integridad del sistema. (se puede especificar un tiempo con ```-t``` |
+| ```docker stop``` | Detener contenedores de Docker de manera ordenada y puede ayudar a evitar la pérdida de datos y a garantizar la integridad del sistema. (se puede especificar un tiempo con ```-t```) |
 | ```docker volume``` | |
 | ```docker inspect``` | |
 | ```docker cp``` | |
@@ -67,6 +67,19 @@ Cada capa es un conjunto de cambios que se aplican a la imagen base, y estas cap
 | ```docker history``` | |
 
 ### ```docker run```
+```docker run <options> <image> <command>```
+
++ OPTIONS son las opciones que se pueden utilizar para configurar el contenedor Docker, como el puerto de exposición, las variables de entorno y la asignación de volúmenes.
+  + ```-p local:contenedor```: Expone el puerto "contenedor" del contenedor en el puerto "local" del host
+  + ```-it```: Interactivo, abre la consola con la máquina en cuanto el contenedor esté montado
+  + ```--rm```: Borra el contenedor en cuanto se detenga
+  + ```--name <nombre>```: Asigna al contenedor el nombre indicado
+  + ```-d```: Ejecuta el contenedor en modo daemon, lo envía a segundo plano para liberar la shell
+  + 
++ IMAGE es el nombre de la imagen de Docker a partir de la cual se creará el contenedor.
++ COMMAND y ARG... son los comandos y argumentos que se ejecutarán dentro del contenedor en cuanto se haya montado.
 
 ### achivo docker-cmpose.yml
+:link:[Awesome-compose GitHub](https://github.com/docker/awesome-compose)
+
 ```docker-compose up --build -d``` (-d lo ejecuta en segundo plano para liberar la linea de comandos)
