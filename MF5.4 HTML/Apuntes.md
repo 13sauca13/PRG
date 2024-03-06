@@ -92,6 +92,9 @@ Para combinar celdas se usa dentro de la etiqueta de la primera celda el atribut
 Lo que esté dentro de la eqtiqueta ```<pre>``` se considera que viene preformateado y HTML no le hará nada.
 
 Se utiliza para introducir bloques de código.
+
+###```<div>```
+
 ## 2.CSS
 El CSS se usa para controlar el estilo de las páginas sin tener que usarlo en el propio HTML. CSS se puede usar de tres formas:
 ### En linea
