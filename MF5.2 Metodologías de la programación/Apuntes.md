@@ -257,6 +257,9 @@ Sirve para generar numeros aleatorios (o elecciones).
 
 [Métodos de ```random```](https://www.w3schools.com/python/module_random.asp)
 
+### ```turtle```
+Es una librería para generar gráficos.
+
 ## 6.POO
 Un ***objeto*** es un conjunto de ***atributos*** (variables o datos) y ***métodos*** o funciones relacionados entre sí.
 
