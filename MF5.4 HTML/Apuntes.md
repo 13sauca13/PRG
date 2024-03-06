@@ -140,6 +140,7 @@ Desde un archivo externo con la extensión .css. De esta manera podríamos tener
 ```
 
 ### Usos
+:link:[Regla ```!important```](https://www.w3schools.com/Css/css_important.asp)
 :link:[Media queries](https://www.w3schools.com/Css/css3_mediaqueries_ex.asp)
 
 ## 3.Frameworks CSS
