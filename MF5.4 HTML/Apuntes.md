@@ -29,7 +29,7 @@ HTML es un lenguaje de marcado para páginas web. La estructura básica de un fi
     + ```<title>``` Especifica el título de la página (se verá en la pestaña del navegador)
   + ```<body>``` Define el cuerpo del documento, contiene todos los elementos visibles como cabeceras, párrafos, imágenes, enlaces, tablas, listas...
 
-Cada etiqueta se abre y posteriormente se cierra con ```</etiqueta>``` (***Excepto ```<br/>``` y ```<img ... />'''** y alguna más)
+Cada etiqueta se abre y posteriormente se cierra con ```</etiqueta>``` (***Excepto ```<br/>``` y ```<img ... />```** y alguna más)
 
 Para introducir comentarios en el código se utiliza:
 ```html
@@ -93,7 +93,7 @@ Lo que esté dentro de la eqtiqueta ```<pre>``` se considera que viene preformat
 
 Se utiliza para introducir bloques de código.
 
-###```<div>```
+### ```<div>```
 
 ## 2.CSS
 El CSS se usa para controlar el estilo de las páginas sin tener que usarlo en el propio HTML. CSS se puede usar de tres formas:
