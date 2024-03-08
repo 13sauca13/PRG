@@ -4,12 +4,13 @@ class Calculadora:
         oct_2=oct_1[2].partition(".")
         oct_3=oct_2[2].partition(".")
         oct_4=oct_3[2]
-        self.ip=[(oct_1[0]),(oct_2[0]),(oct_3[0]),(oct_4[0])]
+        self.ip=[(oct_1[0]),(oct_2[0]),(oct_3[0]),(oct_4)]
         oct_1=mascara.partition(".")
         oct_2=oct_1[2].partition(".")
         oct_3=oct_2[2].partition(".")
         oct_4=oct_3[2]
-        self.mascara=[(oct_1[0]),(oct_2[0]),(oct_3[0]),(oct_4[0])]
+        self.mascara=[(oct_1[0]),(oct_2[0]),(oct_3[0]),(oct_4)]
+        self.host=1
 
     def ip_red(self):
         red=[]
@@ -22,6 +23,13 @@ class Calculadora:
         for i in range(4):
             broadcast.append(str(int(self.ip[i])|~int(self.mascara[i])&255))
         return(".".join(broadcast))
+    
+    def hosts(self):
+        for i in range(4):
+            if ~int(self.mascara[i])&255!=0:
+                self.host*=2**((str(bin(~int(self.mascara[i])&255))).count("1"))
+        self.host-=2
+        return(self.host)
 
     @staticmethod
     def prefijo_a_mask(prefijo):
@@ -48,7 +56,7 @@ class Calculadora:
 
 
 ip=input("Introduzca la la dirección IP: ")
-mascara=input("Introduzca la máscara de subred (enprefijo u octetos decimales): ")
+mascara=input("Introduzca la máscara de subred (en prefijo u octetos decimales): ")
 
 if len(mascara)>7:
     red1=Calculadora(ip,mascara)
@@ -58,8 +66,8 @@ else:
     print("No es posible crear su red, compruebe los datos")
 
 if ip==red1.ip_red():
-    print(f"\nLa IP {ip} que ha introducido, con máscara {mascara} se corresponde con una dirección de red")
+    print(f"\nLa IP {ip} que ha introducido, con máscara {mascara} se corresponde con una dirección de red\n")
 elif ip==red1.broadcast():
-    print(f"\nLa IP {ip} que ha introducido, con máscara {mascara} se corresponde con la dirección de broadcast para la red {red1.ip_red()}")
+    print(f"\nLa IP {ip} que ha introducido, con máscara {mascara} se corresponde con la dirección de broadcast para la red {red1.ip_red()}\n")
 else:
-   print(f"\nLa IP {ip} que ha introducido, con máscara {mascara} se corresponde con una dirección de host.\nLa dirección de red con esos datos es {red1.ip_red()} con broadcast {red1.broadcast()}")
+   print(f"\nLa IP {ip} que ha introducido, con máscara {mascara} se corresponde con una dirección de host:\n -La dirección de red con esos datos es {red1.ip_red()}\n -La dirección de broadcast es {red1.broadcast()}\n -La red puede albergar un máximo de {red1.hosts()} hosts.\n")
