@@ -308,6 +308,13 @@ No modifican ni la clase ni la instancia
 def nombre_metodo():
   código
 ```
+### Métodos espaciales
+Existen diversos métodos especiales que, si están definidos en nuestra clase, Python los llamará por nosotros cuando se utilice una instancia en situaciones particulares.
+
+Estos métodos tienen un significado particular para el intérprete de Python. Sus nombres empiezan y terminan en __ (doble guión bajo).
+
+:link:[Metodos especiales](https://www.pythontutorial.net/python-oop/)
+
 ## 7.Librerías
 Para la instalación de una librería externa se utiliza ```pip```, pero este instala la librería en el intérprete Python del sistema, si hay más de uno se debe poner antes la ruta:
 ```bash
