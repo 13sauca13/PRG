@@ -37,7 +37,7 @@ Existen 8 tipos de datos primitivos: (cualquier dato diferente a estos es una cl
   +  ```int``` (4 bytes)
   +  ```long``` (8 bytes): los long necesitan el sufijo ```L```
 + Decimales:
-  + ```float``` (4 bytes): màximo 6 o 7 decimales
+  + ```float``` (4 bytes): máximo 6 o 7 decimales
   + ```double``` (8 bytes): máximo 15 decimales. los double necesitan el sufijo ```f```
 +  ```boolean```
 +  ```char```: caracteres, ***NO*** es string! (string es una clase en Java) Los ```char``` van entre comillas simples ```' '``` (los strings entre comillas dobles ```" "```)
