@@ -21,3 +21,7 @@ public class nombre_clase:{
 + ```public```
 + ```private```
 + ```protected```
+
+Para ejecutar el programa primero hay que compilarlo con ***javac***: ```javac nombrearchivo.java```
+
+A continuación se ejecuta: ```java nombre_clase```
