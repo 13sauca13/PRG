@@ -11,7 +11,7 @@ El Java al ser multiplataforma tiene que ser compilado (del código fuente se co
 Lo primero es crear una clase (para Java TODO son objetos). Por ejemplo:
 
 ```java
-public class nombre_clase:{
+public class Nombre_clase:{
   public static void main(String args []){
     System.out.println("hola mundo");
   }
@@ -22,9 +22,11 @@ public class nombre_clase:{
 + ```private```
 + ```protected```
 
+Los nombres de las clases siempre tienen que empezar por mayúscula.
+
 Para ejecutar el programa primero hay que compilarlo con ***javac***: ```javac nombrearchivo.java```. Esto creará un archivo .class (el bytecode) que se podrá ejecutar.
 
-A continuación se ejecuta: ```java nombre_clase```
+A continuación se ejecuta: ```java Nombre_clase```
 
 Sólo se va a llamar a la clase principal (aunque haya muchas más). El archivo .java tiene que llamarse igual que esa clase main.
 
