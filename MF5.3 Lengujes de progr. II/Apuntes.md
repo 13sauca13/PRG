@@ -22,6 +22,20 @@ public class nombre_clase:{
 + ```private```
 + ```protected```
 
-Para ejecutar el programa primero hay que compilarlo con ***javac***: ```javac nombrearchivo.java```
+Para ejecutar el programa primero hay que compilarlo con ***javac***: ```javac nombrearchivo.java```. Esto creará un archivo .class (el bytecode) que se podrá ejecutar.
 
 A continuación se ejecuta: ```java nombre_clase```
+
+Sólo se va a llamar a la clase principal (aunque haya muchas más). El archivo .java tiene que llamarse igual que esa clase main.
+
+Existen 8 tipos de datos primitivos:
++ Enteros
+  +  ```byte``` (1 byte): de -128 a 127
+  +  ```short``` (2 bytes): -32768 a 32767
+  +  ```int``` (4 bytes)
+  +  ```long``` (8 bytes): los long necesitan el sufijo ```L```
++ Decimales:
+  + float (4 bytes): màximo 6 o 7 decimales
+  + double (8 bytes): máximo 15 decimales. los double necesitan el sufijo ```f```
++  boolean
++  char: caracteres, ***NO*** es string! (string es una clase en Java)
