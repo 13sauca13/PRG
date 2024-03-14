@@ -32,7 +32,7 @@ A continuación se ejecuta: ```java Nombre_clase```
 
 Sólo se va a llamar a la clase principal (aunque haya muchas más). El archivo .java tiene que llamarse igual que esa clase main.
 
->![TIP]
+>[!TIP]
 >Cuando trabajamos con Java, por defecto usamos el paquete java.lang, por lo que podemos acceder a sus clases sin más.
 >
 >Si vamos a usar clases de otro paquete habría que especificarlo.
