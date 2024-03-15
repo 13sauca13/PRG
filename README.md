@@ -20,6 +20,8 @@
 > :flags: [HTML](https://github.com/13sauca13/PRG/blob/master/MF5.4%20HTML/Apuntes.md)
 
 ### Enlaces y recursos
+:book:[Libro de Javascript EEAE](https://github.com/13sauca13/PRG/blob/master/Recursos/Javascript.pdf)
+
 :whale: [Apuntes Docker clase](https://github.com/13sauca13/PRG/blob/master/MF5.2%20Metodolog%C3%ADas%20de%20la%20programaci%C3%B3n/Docker.md)
 
 :link: [Bootstrap](https://getbootstrap.com/) - Biblioteca de herramientas de código para diseño de sitios y aplicciones
