@@ -78,7 +78,7 @@ Cada capa es un conjunto de cambios que se aplican a la imagen base, y estas cap
 + IMAGE es el nombre de la imagen de Docker a partir de la cual se creará el contenedor.
 + COMMAND y ARG... son los comandos y argumentos que se ejecutarán dentro del contenedor en cuanto se haya montado.
 
-### achivo docker-cmpose.yml
+### achivo docker-compose.yml
 :link:[Awesome-compose GitHub](https://github.com/docker/awesome-compose)
 
 Docker Compose es una herramienta que permite simplificar el uso de Docker. ***A partir de archivos YAML*** es mas sencillo crear contendores, conectarlos, habilitar puertos, volumenes, etc.
@@ -105,4 +105,50 @@ volumes:
 Teniendo el archivo "docker-compose.yml":
 ```
 docker-compose up --build
+```
+
+## Ej. docker-compose para wordpress
+```yaml
+services:
+  db:
+    image: mysql:8.0.27
+    command: '--default-authentication-plugin=mysql_native_password'
+    volumes:
+      - db_data:/var/lib/mysql #Al final del archivo se crea "db_data"
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=xx
+      - MYSQL_DATABASE=xx
+      - MYSQL_USER=xx
+      - MYSQL_PASSWORD=xx
+    expose:
+      - 3306  #El puerto no está mapeado a ninguno de la máquina física por lo que no será accesible desde fuera.
+
+  wordpress:
+    depends_on:
+     - db
+    image: wordpress:latest
+    ports:
+      - 8080:80
+    restart: always
+    environment:
+      - WORDPRESS_DB_HOST=db
+      - WORDPRESS_DB_USER=xx
+      - WORDPRESS_DB_PASSWORD=xx
+      - WORDPRESS_DB_NAME=xx
+    volumes:
+      - wp-content:/var/www/html/wp-content
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 6969:80
+    environment:
+      - PMA_HOST=db
+
+
+volumes:
+  db_data:
+  wp-content:
 ```
