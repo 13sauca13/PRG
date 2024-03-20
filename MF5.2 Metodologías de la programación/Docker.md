@@ -152,3 +152,16 @@ volumes:
   db_data:
   wp-content:
 ```
+## Ej. docker-compose para MongoDB
+```yaml
+services:
+  mongo1:
+    container_name: "mongo1"
+    restart: always
+    image: mongo:4.4.18
+    ports:
+      - 27017:27017
+    environment:
+      - "MONGO_INITDB_ROOT_USERNAME=root"
+      - "MONGO_INITDB_ROOT_PASSWORD=example"
+```
