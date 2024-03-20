@@ -165,3 +165,8 @@ services:
       - "MONGO_INITDB_ROOT_USERNAME=root"
       - "MONGO_INITDB_ROOT_PASSWORD=example"
 ```
+
+La herramienta ```mongorestore``` sirve para restaurar bases de datos:
+```
+mongorestore --host localhost --port 27017 --db netflix -u root -p example --dir /data/samples/mflix --authenticationDatabase=admin
+```
