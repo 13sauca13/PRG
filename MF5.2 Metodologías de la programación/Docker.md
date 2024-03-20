@@ -171,3 +171,21 @@ La herramienta ```mongorestore``` sirve para restaurar bases de datos:
 mongorestore --host localhost --port 27017 --db netflix -u root -p example --dir /data/samples/mflix --authenticationDatabase=admin
 ```
 El ```-u``` es el usuario, y el ```-p``` es la contraseña.
+## Ej. docker-compose para neo4j
+```yaml
+services:
+    neo4j:
+      container_name: neo4j
+      image: neo4j:latest
+      ports:
+        - 7474:7474
+        - 7687:7687
+      volumes:
+        - ./conf:/conf
+        - ./data:/data
+        - ./import:/import
+        - ../tmp/neo4j/logs:/logs
+        - ./plugins:/plugins
+      environment:
+        - NEO4J_AUTH=none
+```
