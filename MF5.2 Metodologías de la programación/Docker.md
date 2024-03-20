@@ -96,7 +96,7 @@ services:
   backend:
     image: nombre_imagen
     volumes:
-      - db-data:/etc/data
+      - ruta_origen:ruta_contenedor
 
 volumes:
   db-data:
