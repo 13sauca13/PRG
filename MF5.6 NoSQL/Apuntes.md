@@ -23,3 +23,16 @@ Hay distintos tipos:
 | Orientada a objetos | ZODB | DB optimizada para almacenar objetos en memoria |
 | Tabular | Hbase | |
 | Arrays | Rasdaman DB | Trabajan con datos multidimensionares en diferentes ejes |
+
+## MongoDB
+Las bases de datos de MongoDB son diccionarios clave:valor, de manera que las búsquedas y consultas se harán de esa manera: **clave:valor**
+
+| Query | Uso |
+| --- | --- |
+| ```db.collection.find ( <query>, <projection>, <options> )``` | Selección o búsqueda de datos |
+| ```db.collection.findOne ( <query>, <projection>, <options> )``` | Devuelve un único resultado |
+| ```db.collection.find ( <query>, <projection>, <options> ).limit( <valor> )``` | Devuelve un número determinado de registros |
+| ```db.collection.deleteOne ( <filter> )``` | Borra el primer valor que aparezca |
+| ```db.collection.deleteMany ( <filter> )``` | Borra todos los valores |
+| ```db.collection.insertOne ( <valores> )``` | Inserta un valor |
+| ```db.collection,insertMany ( {<valores>}, {<valores>}, ...)``` | Inserta varios valores |
