@@ -73,7 +73,7 @@ Para introducir datos por parte del usuario existen dos clases:
 + ```JOptionPane```
 
 ### Comandos
-#### Switch
+#### ```switch```
 ```java
 switch variable {
   case condicion:
@@ -83,5 +83,11 @@ switch variable {
   ...
   default:
     codigo
+}
+```
+#### Bucle ```for```
+```java
+for (inicio;fin;salto){
+  codigo
 }
 ```
