@@ -75,7 +75,7 @@ Para introducir datos por parte del usuario existen dos clases:
 ### Comandos
 #### Switch
 ```java
-switch (condicon)
+switch variable {
   case condicion:
     codigo
   case condicion:
@@ -83,4 +83,5 @@ switch (condicon)
   ...
   default:
     codigo
+}
 ```
