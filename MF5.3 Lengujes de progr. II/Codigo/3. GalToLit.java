@@ -31,3 +31,17 @@ El resulktado final igual que en la primera parte */
 		System.out.printf("%1.0f galones equivale a %1.4f litros",gals,litros);
 	}
 }
+
+/* Sabiendo que el deposito de combustible del vshículo es de 56 litro y que consume 2 galones cada 62.13 millas,
+Cuántos kilómetros puede recorer el vehículo.
+El resultado será una frase con la distancia a 2 decimales */
+		Double deposito = (double) 56;
+		Double depositoGal = deposito/3.7854;
+		Double consumo = (double) 2;
+		Double distancia = (double) 62.13*1.609;
+		Double autonomia = (double) (depositoGal/consumo)*distancia;
+		
+		System.out.printf("El vehículo con capacidad de depósito %1.0f litros puede recorrer %1.2f kilómetros", deposito,autonomia);
+		
+	}
+}
