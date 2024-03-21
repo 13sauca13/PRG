@@ -68,3 +68,19 @@ Existen 8 tipos de datos primitivos: (cualquier dato diferente a estos es una cl
 +  ```boolean```
 +  ```char```: caracteres, ***NO*** es string! (string es una clase en Java) Los ```char``` van entre comillas simples ```' '``` (los strings entre comillas dobles ```" "```)
 
+Para introducir datos por parte del usuario existen dos clases:
++ ```scanner```
++ ```JOptionPane```
+
+### Comandos
+#### Switch
+```java
+switch (condicon)
+  case condicion:
+    codigo
+  case condicion:
+    codigo
+  ...
+  default:
+    codigo
+```
