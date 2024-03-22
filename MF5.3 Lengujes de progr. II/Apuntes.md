@@ -40,6 +40,17 @@ A continuación se ejecuta: ```java Nombre_clase```
 
 Sólo se va a llamar a la clase principal (aunque haya muchas más). El archivo .java tiene que llamarse igual que esa clase main.
 
+Los datos pueden meterse en arrays:
+
+```tipo_dato nombre_array [] = new tipo_dato [long_array]```
+
+Para introducir datos se utiliza el índice o se rellena entero:
+
+```nombre_array[indice] = valor```
+
+```tipo_dato nombre_array[] = {valor,valor2...}```
+
+
 >[!TIP]
 >Cuando trabajamos con Java, por defecto usamos el paquete java.lang, por lo que podemos acceder a sus clases sin más.
 >
