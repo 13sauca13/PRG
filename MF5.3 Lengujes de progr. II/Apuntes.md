@@ -5,7 +5,7 @@
 >[!IMPORTANT]
 >:link:[Java W3 Schools](https://www.w3schools.com/java/java_ref_keywords.asp)
 >
->:link:[Java Docs]([https://docs.oracle.com/javase/8/docs/api/](https://docs.oracle.com/en/java/javase/22/docs/api/index.html))
+>:link:[Java Docs]([https://docs.oracle.com/javase/8/docs/api/](https://docs.oracle.com/en/java/javase/22/docs/api/index.html)
 
 
 
