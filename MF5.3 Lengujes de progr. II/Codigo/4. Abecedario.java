@@ -2,7 +2,7 @@
 
 package e2t;
 
-public class Facilito {
+public class Abecedario {
 
 	public static void main(String[] args) {
 		char letra = 'a';
