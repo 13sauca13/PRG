@@ -2,12 +2,14 @@
 ## Apuntes
 :coffee:[Lenguajes de programación II](https://github.com/13sauca13/PRG/blob/master/MF5.3%20Lengujes%20de%20progr.%20II/Apuntes.md)
 
-:card_file_box:[NoSQL](https://github.com/13sauca13/PRG/blob/master/MF5.6%20NoSQL/Apuntes.md)
+:printer:[Arquitectura del harware](https://github.com/13sauca13/PRG/blob/master/MF2.1%20Arq.%20Hardware/Apuntes.md)
 
 > #### Acabadas
 > :card_file_box: [Bases de datos](https://github.com/13sauca13/PRG/blob/master/MF6.1%20BBDD/Apuntes.md)
 >
 > :page_facing_up: [SQL](https://github.com/13sauca13/PRG/blob/master/MF6.2%20SQL/Apuntes.md)
+>
+> :card_file_box:[NoSQL](https://github.com/13sauca13/PRG/blob/master/MF5.6%20NoSQL/Apuntes.md)
 >
 > :bar_chart: [Ingeniería del software](https://github.com/13sauca13/PRG/blob/master/MF5.1%20Ingenieria%20software/Apuntes.md)
 >
