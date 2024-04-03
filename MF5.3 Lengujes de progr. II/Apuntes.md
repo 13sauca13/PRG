@@ -55,6 +55,10 @@ Si la variable va a ser una constante (no podrá modificarse)
 final tipo_dato nombre_constante;
 ```
 
+Para introducir datos por parte del usuario existen dos clases:
++ ```scanner```
++ ```JOptionPane```
+  
 Existen 2 tipos de datos en Java: Primitivos y Referenciados.
 
 #### Tipos primitivos
@@ -82,11 +86,6 @@ Son:
 Para introducir datos se utiliza el índice o se rellena entero:
 + ```nombre_array[indice] = valor```
 + ```tipo_dato nombre_array[] = {valor,valor2...}```
-
-
-Para introducir datos por parte del usuario existen dos clases:
-+ ```scanner```
-+ ```JOptionPane```
 
 ### Comandos
 #### ```switch```
