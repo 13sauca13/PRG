@@ -77,15 +77,11 @@ Son:
 + Interfaces
 + Arreglos (*arrays*)
 ##### Arrays
-Los datos pueden meterse en arrays:
-
 ```tipo_dato nombre_array [] = new tipo_dato [long_array]```
 
 Para introducir datos se utiliza el índice o se rellena entero:
-
-```nombre_array[indice] = valor```
-
-```tipo_dato nombre_array[] = {valor,valor2...}```
++ ```nombre_array[indice] = valor```
++ ```tipo_dato nombre_array[] = {valor,valor2...}```
 
 
 Para introducir datos por parte del usuario existen dos clases:
