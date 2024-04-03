@@ -88,9 +88,24 @@ Para introducir datos se utiliza el índice o se rellena entero:
 + ```tipo_dato nombre_array[] = {valor,valor2...}```
 
 ### Comandos
-#### ```switch```
+#### Condicionales (```if``` y ```else```)
 ```java
-switch variable {
+if ( condicion ) {
+  //Sentencia a ejecutar si es verdadero ;
+}
+else if ( condicion ) {
+  //Sentencia...
+}
+...
+else {
+  //Sentencia a ejecitar si es falso ;
+}
+```
+Los corchetes se pueden omitir si hay una única sentencia a ejecutar
+#### ```switch```
+En lugar de escribir varios if-else, se puede utilizar ```switch```
+```java
+switch (expresion) {
   case condicion:
     codigo
   case condicion:
@@ -100,6 +115,13 @@ switch variable {
     codigo
 }
 ```
+#### Bucle ```while```
+```java
+while ( condicion ) {
+  //Sentencia
+}
+```
+Los corchetes se pueden omitir si hay una única sentencia a ejecutar
 #### Bucle ```for```
 ```java
 for (inicio;fin;salto){
