@@ -6,6 +6,8 @@
 >:link:[Java W3 Schools](https://www.w3schools.com/java/java_ref_keywords.asp)
 >
 >:link:[Java API](https://docs.oracle.com/en/java/javase/22/docs/api/index.html)
+>
+>:book:[Libro "Java para novatos"](https://github.com/13sauca13/PRG/blob/master/MF5.3%20Lengujes%20de%20progr.%20II/Java%20para%20novatos.pdf)
 
 
 
