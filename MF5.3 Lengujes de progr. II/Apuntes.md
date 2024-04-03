@@ -89,7 +89,7 @@ Para introducir datos se utiliza el índice o se rellena entero:
 + ```nombre_array[indice] = valor```
 + ```tipo_dato nombre_array[] = {valor,valor2...}```
 
-### Comandos
+### Expresiones
 #### Condicionales (```if``` y ```else```)
 ```java
 if ( condicion ) {
@@ -135,4 +135,23 @@ for (inicio;fin;salto){
 do {
   codigo
 } while (condicion)
+```
+
+## Clases y objetos en Java
+Las ***clases*** son una plantilla que posee atributos y métodos.
+
+Los ***objetos*** possen un nombre y sin una instancia de una clase
+
+**Forma general de una clase en Java:**
+```java
+class NombreDeLaClase {
+  tipoDato variableDeInstancia1;
+  tipoDato vablaDeInstancia2;
+  ...
+
+  tipoDato nombreMetodo1 (argumentos){
+    //Cuerpo del metodo
+  }
+  ...
+}
 ```
