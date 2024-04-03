@@ -76,7 +76,7 @@ Son:
   + ```string``` (la comparación de strings se hace con ```equals```)
 + Interfaces
 + Arreglos (*arrays*)
-#### Arrays
+##### Arrays
 Los datos pueden meterse en arrays:
 
 ```tipo_dato nombre_array [] = new tipo_dato [long_array]```
