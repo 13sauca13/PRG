@@ -26,6 +26,8 @@
 ## Enlaces y recursos
 :book:[Libro de Javascript EEAE](https://github.com/13sauca13/PRG/blob/master/Recursos/Javascript.pdf)
 
+:book:[Libro Java Para Novatos](https://github.com/13sauca13/PRG/blob/master/MF5.3%20Lengujes%20de%20progr.%20II/Java%20para%20novatos.pdf)
+
 :whale: [Apuntes Docker clase](https://github.com/13sauca13/PRG/blob/master/MF5.2%20Metodolog%C3%ADas%20de%20la%20programaci%C3%B3n/Docker.md)
 
 :link: [Bootstrap](https://getbootstrap.com/) - Biblioteca de herramientas de código para diseño de sitios y aplicciones
