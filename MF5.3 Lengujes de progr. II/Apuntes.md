@@ -43,16 +43,6 @@ Sólo se va a llamar a la clase principal (aunque haya muchas más). El archivo 
 >Cuando trabajamos con Java, por defecto usamos el paquete java.lang, por lo que podemos acceder a sus clases sin más.
 >
 >Si vamos a usar clases de otro paquete habría que especificarlo.
-### Arrays
-Los datos pueden meterse en arrays:
-
-```tipo_dato nombre_array [] = new tipo_dato [long_array]```
-
-Para introducir datos se utiliza el índice o se rellena entero:
-
-```nombre_array[indice] = valor```
-
-```tipo_dato nombre_array[] = {valor,valor2...}```
 
 ### Variables
 Para declarar una variable:
@@ -65,17 +55,38 @@ Si la variable va a ser una constante (no podrá modificarse)
 final tipo_dato nombre_constante;
 ```
 
+Existen 2 tipos de datos en Java: Primitivos y Referenciados.
+
+#### Tipos primitivos
 Existen 8 tipos de datos primitivos: (cualquier dato diferente a estos es una clase)
 + Enteros
   +  ```byte``` (1 byte): de -128 a 127
   +  ```short``` (2 bytes): -32768 a 32767
   +  ```int``` (4 bytes)
   +  ```long``` (8 bytes): los long necesitan el sufijo ```L```
-+ Decimales:
+  +  ```char``` (2 bytes): caracteres, ***NO*** es string! Es un único caracter (string es una clase en Java) Los ```char``` van entre comillas simples ```' '``` (los strings entre comillas dobles ```" "```). Son tipo entero porque aun siendo caracteres no se trata de letras si no de números de posición en la tabla UNICODE
++ Flotantes:
   + ```float``` (4 bytes): máximo 6 o 7 decimales
   + ```double``` (8 bytes): máximo 15 decimales. los double necesitan el sufijo ```f```
 +  ```boolean```
-+  ```char```: caracteres, ***NO*** es string! (string es una clase en Java) Los ```char``` van entre comillas simples ```' '``` (los strings entre comillas dobles ```" "```)
+
+#### Tipos referenciados (tipo object)
+Son:
++ Clases
+  + ```string``` (la comparación de strings se hace con ```equals```)
++ Interfaces
++ Arreglos (*arrays*)
+#### Arrays
+Los datos pueden meterse en arrays:
+
+```tipo_dato nombre_array [] = new tipo_dato [long_array]```
+
+Para introducir datos se utiliza el índice o se rellena entero:
+
+```nombre_array[indice] = valor```
+
+```tipo_dato nombre_array[] = {valor,valor2...}```
+
 
 Para introducir datos por parte del usuario existen dos clases:
 + ```scanner```
