@@ -52,6 +52,11 @@ Para declarar una variable:
 tipo_dato nombre_variable;
 ```
 
+El alcance de una variable hace referencia a las áreas del programa donde funcionan ciertos datos
++ **Variables de clase**: Pueden usarse en cualquier método de la clase y se inicializan con valores por default
++ **Variables locales**: Sóplo pueden usarse en el método en el que se definen y deben inicializarse
++ **Variables estáticas**: Se crean con la clase y son estáticas (se definen con ```static```) pero pueden modificarse
+
 Si la variable va a ser una constante (no podrá modificarse)
 ```java
 final tipo_dato nombre_constante;
@@ -155,3 +160,6 @@ class NombreDeLaClase {
   ...
 }
 ```
+El ```tipoDato``` será el tipo de dato que devuelve el método pero si no devolviese ningún dato se pondría ```void```.
+
+El operador ```this``` es una palabra reservada que hace referencia al propio objeto que se está ejecutando en el código. Se puede utilizar para acceder a los atributos y a los métodos del propio objeto.
