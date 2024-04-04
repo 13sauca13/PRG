@@ -30,15 +30,15 @@ class Caja1{
         //Primero creamos el objeto de la clase Scanner
         Scanner obj1= new Scanner(System.in);
         //Enviamos el prompt al usuario
-	System.out.println("Introduzca el alto");
+	System.out.print("Introduzca el alto: ");
         //Capturamos lo que el usuario escribe como entrada
         int alt=obj1.nextInt();
         
         Scanner obj2= new Scanner(System.in);
-        System.out.println("Introduzca el ancho");
+        System.out.print("Introduzca el ancho: ");
         int anch=obj2.nextInt();
         Scanner obj3= new Scanner(System.in);
-        System.out.println("Introduzca la profundidad");
+        System.out.print("Introduzca la profundidad: ");
         int prof=obj3.nextInt();
         
         Caja1.setMedidas(alt, anch, prof);
