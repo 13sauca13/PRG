@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Películas de {{chumino}} </title>
+    <link href="main.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1 style="color:crimson;">Peliculas de {{chumino}}</h1>
+    <ul>
+        {% for uno in (busqueda) %}
+            <li><a href="/pelicula/{{uno['_id']}}">{{uno["title"]}}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

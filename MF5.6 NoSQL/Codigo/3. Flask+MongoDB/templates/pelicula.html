@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Película {{peliculilla}} </title>
+    <link href="main.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1 style="color:crimson;">Pelicula {{peliculilla}}</h1>
+        {% for uno in (busqueda) %}
+        <ul>
+            <li><strong>Titulo: </strong>{{uno['title']}}</li>
+            <li><strong>Género(s): </strong> {{uno["genres"]}}</li>
+            <li><strong>Sinopsis: </strong>{{uno['fullplot']}}</li>
+        </ul>
+        {% endfor %}
+</body>
+</html>

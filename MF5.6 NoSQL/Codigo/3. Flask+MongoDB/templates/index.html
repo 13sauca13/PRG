@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Indice de Generos</title>
+    <link href="main.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1 style="color:crimson;">Indice de Generos</h1>
+    <ul>
+        {% for uno in (busqueda) %}
+            <li><a href="pelis/{{uno}}">{{uno}}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
