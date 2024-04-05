@@ -61,10 +61,16 @@ Si la variable va a ser una constante (no podrá modificarse)
 ```java
 final tipo_dato nombre_constante;
 ```
-
+#### Modificar valores de las variables
 Para introducir datos por parte del usuario existen dos clases:
 + ```scanner```
 + ```JOptionPane```
+
+Existen dos formas de pasar los valores:
++ Paso por valor: Se asigna directamente el valor de la variable
++ Paso por referencia: Se asigna el valor del espacio de memoria de otra variable u objeto
+
+Si existen dos variables refereciadas, para poder borrar una sin eliminar los datos del espacio de memoria y perdiendo también los datos en la segunda habría que asignar a la variable que queremos borrar el valor ```null``` de manera que dejamos de referenciar ese espacio de memoria y ya podría ser borrada sin eliminar los datos de la segunda,
   
 Existen 2 tipos de datos en Java: Primitivos y Referenciados.
 
@@ -93,6 +99,8 @@ Son:
 Para introducir datos se utiliza el índice o se rellena entero:
 + ```nombre_array[indice] = valor```
 + ```tipo_dato nombre_array[] = {valor,valor2...}```
+
+
 
 ### Expresiones
 #### Condicionales (```if``` y ```else```)
