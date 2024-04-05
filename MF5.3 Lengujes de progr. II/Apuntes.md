@@ -172,3 +172,14 @@ class NombreDeLaClase {
 El ```tipoDato``` será el tipo de dato que devuelve el método pero si no devolviese ningún dato se pondría ```void```.
 
 El operador ```this``` es una palabra reservada que hace referencia al propio objeto que se está ejecutando en el código. Se puede utilizar para acceder a los atributos y a los métodos del propio objeto.
+
+## Encapsulamiento
+El estado de un obketo está generalmente oculto y se conoce como encapsulamiento.
+
+Java utiliza modificadores de acceso para definir estas características.
+```java
+modificador_acceso otros modificadores nombreMetodo( listaArgumentos )
+```
+Modificadores de acceso (son 4 pero hablaremos de 2):
++ ```public```: permite acceder sólo desde la misma clase al método o atributo marcado con este modificador
++ ```private```: permite acceder desde cualquier clase a cualquier método o atributo definido con este modificador
