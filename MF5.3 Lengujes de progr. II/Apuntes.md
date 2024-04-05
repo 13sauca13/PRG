@@ -72,9 +72,10 @@ Existen dos formas de pasar los valores:
 
 Si existen dos variables refereciadas, para poder borrar una sin eliminar los datos del espacio de memoria y perdiendo también los datos en la segunda habría que asignar a la variable que queremos borrar el valor ```null``` de manera que dejamos de referenciar ese espacio de memoria y ya podría ser borrada sin eliminar los datos de la segunda,
   
+#### Tipos de variables
 Existen 2 tipos de datos en Java: Primitivos y Referenciados.
 
-#### Tipos primitivos
+##### Tipos primitivos
 Existen 8 tipos de datos primitivos: (cualquier dato diferente a estos es una clase)
 + Enteros
   +  ```byte``` (1 byte): de -128 a 127
@@ -87,13 +88,13 @@ Existen 8 tipos de datos primitivos: (cualquier dato diferente a estos es una cl
   + ```double``` (8 bytes): máximo 15 decimales. los double necesitan el sufijo ```f```
 +  ```boolean```
 
-#### Tipos referenciados (tipo object)
+##### Tipos referenciados (tipo object)
 Son:
 + Clases
   + ```string``` (la comparación de strings se hace con ```equals```)
 + Interfaces
 + Arreglos (*arrays*)
-##### Arrays
+###### Arrays
 ```tipo_dato nombre_array [] = new tipo_dato [long_array]```
 
 Para introducir datos se utiliza el índice o se rellena entero:
