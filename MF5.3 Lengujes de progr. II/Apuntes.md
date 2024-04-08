@@ -183,3 +183,12 @@ modificador_acceso otros modificadores nombreMetodo( listaArgumentos )
 Modificadores de acceso (son 4 pero hablaremos de 2):
 + ```public```: permite acceder sólo desde la misma clase al método o atributo marcado con este modificador
 + ```private```: permite acceder desde cualquier clase a cualquier método o atributo definido con este modificador
+
+## Herencia en Java
+La herencia permite representar comportamientos comunes de varias clases, evita la dubplicación de código.
+
+La sintaxis para crear subclases es con la palabra ```extends```.
+
+Todas las clases que no especifican de manera explícita un ```extends``` heredan de la clase Object.
+
+La manera de llamar a los atributos y métodos de la clase de la cual heredamos es con ```super```
