@@ -91,7 +91,7 @@ Existen 8 tipos de datos primitivos: (cualquier dato diferente a estos es una cl
 ##### Tipos referenciados (tipo object)
 Son:
 + Clases
-  + ```string``` (la comparación de strings se hace con ```equals```)
+  + ```String``` (la comparación de strings se hace con ```equals```)
 + Interfaces
 + Arreglos (*arrays*)
 ###### Arrays
