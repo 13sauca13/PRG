@@ -108,6 +108,8 @@ tipo_dato [] nombre_arreglo = {valor1, valor2 ...}
 
 Se pueden crear arreglos con datos primitivos y con objetos.
 
+Para crear una matriz hacemos un arreglo con dos longitudes (numero de filas y de columnas): ```nombre_arreglo = new tipo_dato [filas] [columnas]```
+
 >[!TIP]
 >Para introducir datos se utiliza el índice o se rellena entero:
 >+ ```nombre_array[indice] = valor```
