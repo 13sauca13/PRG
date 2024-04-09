@@ -94,12 +94,24 @@ Son:
   + ```String``` (la comparación de strings se hace con ```equals```)
 + Interfaces
 + Arreglos (*arrays*)
-###### Arrays
-```tipo_dato nombre_array [] = new tipo_dato [long_array]```
+###### Arreglos
+Para crear un arreglo se hace de la siguiente manera (los nombres se recomiendan en plural): ```tipo_dato nombre_arreglo []``` o ```tipo_dato [] nombre_arreglo```
 
-Para introducir datos se utiliza el índice o se rellena entero:
-+ ```nombre_array[indice] = valor```
-+ ```tipo_dato nombre_array[] = {valor,valor2...}```
+Una vez creado hay que instanciarlo: ```nombre_arreglo = new tipo_dato [longitud_arreglo]```
+
+Para inicializar los datos: nombre_arreglo[indice] = valor```
+
+También pueden declararse de manera rápida dando directamente los datos:
+```java
+tipo_dato [] nombre_arreglo = {valor1, valor2 ...}
+```
+
+Se pueden crear arreglos con datos primitivos y con objetos.
+
+>[!TIP]
+>Para introducir datos se utiliza el índice o se rellena entero:
+>+ ```nombre_array[indice] = valor```
+>+ ```tipo_dato nombre_array[] = {valor,valor2...}```
 
 
 
