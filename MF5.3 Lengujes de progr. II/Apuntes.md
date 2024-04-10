@@ -206,3 +206,27 @@ La sintaxis para crear subclases es con la palabra ```extends```.
 Todas las clases que no especifican de manera explícita un ```extends``` heredan de la clase Object.
 
 La manera de llamar a los atributos y métodos de la clase de la cual heredamos es con ```super```
+
+## JDBC
+La API JDBC (Java Database Conectivity) es una API que permite la ejecución de de operaciones sobre bases de datos desde el lenguaje de programación Java.
+
+Para utilizar JDBC es necesario:
+1. Descargar el driver de la base de datos que utilizaremos
+2. Agregar el driver a la classpath de la aplicación
+3. Crear una clase Java:
+  1. Registrar el driver JDBC
+  2. Crear una conexion a la DB
+  3. Crear un objeto ```statement``` (la sentencia)
+  4. Ejecutar la secuencia SQL y procesarla
+  5. Cerrar los objetos creados (```statement``` y la conexion)
+
+Para poder conectarse al MySQL es necesario descargar dependencias. El proyecto de Java debe ser Maven y en "Project Files", el archivo "pom.xml" debe incluir:
+```xml
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
+        </dependency>
+    </dependencies>
+```
