@@ -30,6 +30,18 @@ La DLT, Tecnología de Registro Distribuido es una combinación de:
 >
 >Agrupa el registro en bloques y cada bloque se cierra con una firma criptografica llamada hash, este hash será también la apertura del siguiente bloque
 
+### Token
+Un token es un activo digital, es decir, “algo” que tiene un valor en un contexto determinado y que sólo es válido en ese universo. Representa cualquier activo negociable y fungible.
+
+Existen diversos tipos de token:
++ Security Token: Estos son similares a cualquier otro token conocido, pero vinculados a los security (valores) tradicionales y sus características.
++ Utility Token: Son «fichas» de aplicación. Permiten el acceso futuro a los productos o servicios ofrecidos por una empresa. Por lo tanto, no se crean para ser una inversión.
++ Equity Token: Representan la propiedad de algún activo o empresa de terceros. Además, su valor está asociado al éxito o fracaso de dicha propiedad.
+
+También hay diversos estándares para los token:
++ ERC-20: se trata del estándar más popular. Son tokens fungibles (es decir que se pueden intercambiar entre ellos) e implementan una API para su desarrollo a través de smart contracts.
++ ERC-721: es el estándar más utilizado para la creación de NFT. Este estándar permite implementar características únicas a cada unidad, haciendo que sean únicos y no se puedan cambiar por otro.
++ ERC-1155: Se trata de un tipo de token que puede mezclar las características de los tokens ERC-20 y de los ERC-721.
 
 ## Computación cuántica
 
