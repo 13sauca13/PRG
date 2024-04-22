@@ -25,9 +25,12 @@ La DLT, Tecnología de Registro Distribuido es una combinación de:
 
  Al registrarse todas las transacciones de manera secuencial e inmutable se pueden rastrear y verificar las transacciones historicas de manera eficiente.
 
- **Blockchain es una DLT con una particularidad:**
- 
- **Agrupa el registro en bloques y cada bloque se cierra con una firma criptografica llamada hash y este hash será también la apertura del siguiente bloque**
+>[!TIP]
+>Blockchain es una DLT con una particularidad:
+>
+>Agrupa el registro en bloques y cada bloque se cierra con una firma criptografica llamada hash y este hash será también la apertura del siguiente bloque
+
+
 ## Computación cuántica
 
 ## Estrategia Cloud
