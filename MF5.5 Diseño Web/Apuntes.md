@@ -21,4 +21,9 @@ Si ejecutamos nuestra aplicación veremos:
 
 ![Output Spring](https://github.com/13sauca13/PRG/blob/master/Recursos/Output%20Spring.png)
 
+Podemos ver en ese log:
++ El puerto en el que está nuestra aplicación (```Tomcat initialized with port 8080 (http)```)
++ La ruta de la aplicación (```Tomcat started on port 8080 (http) with context path```)
++ Confirmar que la aplicación está corriendo (```Started HolaSpringApplication in 2.086 seconds (process running for 2.469)```)
+
 
