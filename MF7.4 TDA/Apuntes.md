@@ -1,5 +1,7 @@
 # Transformación Digital de la Armada
 
+:mag:[Codigo de las prácticas](https://github.com/13sauca13/PRG/tree/master/MF7.4%20TDA/Codigo)
+
 ## Blockchain
 Bitcoin utiliza la tecnología blockchain, que a su vez en un tipo de DLT (Distributed Ledger Technology).
 
