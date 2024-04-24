@@ -68,8 +68,8 @@ Con toddo esto, en lugar de trabajar con voltajes eléctricos se trabaja a nivel
 + cantidad mínima de energía que es susceptible de transmisión a través de una longitud de onda.
 + Un qubit puede representar un 0, un 1 o ambos al mismo tiempo (superposición)
 
-Mientras mayor sea el número de qubits utilizados, el número de Universos posibles para hacer una operación en cada uno también aumenta:
-$Universos=2L$ (donde L es el número de qubits)
+Mientras mayor sea el número de qubits utilizados, el número de Universos posibles para hacer una operación en cada uno también aumenta:  (siendo L es el número de qubits)
+$Universos=2L$
 
 
 
