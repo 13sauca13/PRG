@@ -46,6 +46,32 @@ También hay diversos estándares para los token:
 + ERC-1155: Se trata de un tipo de token que puede mezclar las características de los tokens ERC-20 y de los ERC-721.
 
 ## Computación cuántica
+La computacion cuantica es un nuevo paradigma de programacion que se basa en los principios de la mecanica cuantica.
+
+Tendrá alto impacto en el sector científico, industrial y militar:
++ Velocidad de proceso
++ Criptoanálisis
++ Criptografía
++ Comunicacion
++ Generacion de numeros aleatorios
++ Simulacion de procesos cuanticos
+
+**Buscar 10 elementos de impacto en la industria militar de la computacion cuantica**
+
+### Antecedentes
++ El átomo de Bohr: Un electrón emite o absorbe energía discreta en forma de cuantos (fotón) COMPLETAR!!!!!*******************************
++ Superposición cuántica: *************************************
++ Entrelazamiento cuántico: Existencia de partículas que están conectadas entre si.
++ Dualidad onda-partícula: Se pensaba que las ondas y las partículas eran cosas distintas, después se descubrió que la luz se comporta como onda en ocasiones y como partículas en otra.
+
+Con toddo esto, en lugar de trabajar con voltajes eléctricos se trabaja a nivel de **cuanto**:
++ cantidad mínima de energía que es susceptible de transmisión a través de una longitud de onda.
++ Un qubit puede representar un 0, un 1 o ambos al mismo tiempo (superposición)
+
+Mientras mayor sea el número de qubits utilizados, el número de Universos posibles para hacer una operación en cada uno también aumenta:
+$Universos=2L$ (donde L es el número de qubits)
+
+
 
 ## Estrategia Cloud
 
