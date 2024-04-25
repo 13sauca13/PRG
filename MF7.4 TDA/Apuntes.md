@@ -64,6 +64,7 @@ Tendrá alto impacto en el sector científico, industrial y militar:
 + Entrelazamiento cuántico: Existencia de partículas que están conectadas entre si.
 + Dualidad onda-partícula: Se pensaba que las ondas y las partículas eran cosas distintas, después se descubrió que la luz se comporta como onda en ocasiones y como partículas en otra.
 
+### QuBits
 Con toddo esto, en lugar de trabajar con voltajes eléctricos se trabaja a nivel de **cuanto**:
 + cantidad mínima de energía que es susceptible de transmisión a través de una longitud de onda.
 + Un qubit puede representar un 0, un 1 o ambos al mismo tiempo (superposición)
@@ -72,7 +73,23 @@ Mientras mayor sea el número de qubits utilizados, el número de Universos posi
 
 $Universos=2L$
 
+Cuando se captura un átomo se aprovecha el spin del lso electrones y según apunte hacia arriba o abajo representará un 0 o 1 (aunque hay valores infinitos entre cada uno). De esta manera si generásemos nuevas dimensiones con cada qubit superpuesto y cada una de estas dimensiones guardara un valor. Un equipo con X qubits tendrá X dimensiones, pero en nuestro mundo de 3 dimensiones lo veremos superpuesto.
 
+#### Entrelazamiento
+Se produce entre un grupo de electrones y les permite sincronizar su orientación de Spin (estado). Cuando cambiamos el Spin de una de ellas de forma aleatoria, la otra cambia automáticamente esté donde esté y sin que haya ningún canal de información de por medio.
+
+Esto resulta útil para mediciones precisas y envío seguro de información. 
+
+#### Puertas lógicas cuánticas
+Son representadas mediante matrices unitarias y operan en espacios de uno o dos qubits.
+
+Mientras en un ordenador clásico una operación toma un valor binario de entrada y genera un resultado, en un computador cuántico, todas las posibles combinaciones se hacen a la vez, en paralelo.
+
+#### Algoritmos y protocolos
++ Algoritmo de Grover: enrutamiento y búsquedas en bases de datos no indexadas.
++ Algoritmo de Shor: factoriza números enteros. Peligroso para criptografías de clave pública, puede descomponer la clave en 2 números primos(RSA)
++ Protocolo BB84: protocolo de criptografía.
++ Protocolo de teletransporte cuántico: protocolo de transmisión de información cuántica de una posición a otra sucientemente alejada, incluso sin canal
 
 ## Estrategia Cloud
 
