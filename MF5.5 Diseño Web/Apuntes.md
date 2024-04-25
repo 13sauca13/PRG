@@ -15,7 +15,7 @@ Es necesario descargar el plugin de NetBeans para Spring ([NB Springboot](https:
 
 Una vez creado el proyecto de "Java with Maven/Spring Boot Initializr project" es necesario hacer un "Clean and Build"  para descargar los modulos y refrescar las dependencias.
 
-El proyecto creado tendra una clase NombreProyectoApplication.java, esta clase también se crea de forma automática y contiene un método MAIN y el metodo run. Contiene la anotacion de @SpringBootApplication y os permitirá ejecutar nuestras aplicaciones de spring.
+El proyecto creado tendra una clase NombreProyectoApplication.java, esta clase también se crea de forma automática y contiene un método MAIN y el metodo run. Contiene la anotacion de @SpringBootApplication y nos permitirá ejecutar nuestras aplicaciones de spring.
 
 Si ejecutamos nuestra aplicación veremos:
 
@@ -27,3 +27,10 @@ Podemos ver en ese log:
 + Confirmar que la aplicación está corriendo (```Started HolaSpringApplication in 2.086 seconds (process running for 2.469)```)
 
 
+### Estructura de los paquetes
+La estructura de paquetes del programa será la siguiente:
++ com.eeae.HolaSpring
++ com.eeae.HolaSpring.dao
++ com.eeae.HolaSpring.domain
++ com.eeae.HolaSpring.servicio
++ com.eeae.HolaSpring.web
