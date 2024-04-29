@@ -182,3 +182,5 @@ Existen diferentes tipos de contenedores:
 
 
 ## 5G
+El 5G es la quinta generación de tecnologías móviles de comunicaciones.
+
