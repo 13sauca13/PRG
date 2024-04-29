@@ -101,9 +101,19 @@ Existen diferentes modelos de implementación en la nube:
   + Nubes exclusivas: Una nube dentro de otra nube
 +  Nube híbrida: Combina nubes públicas y nubes privadas (el cliente suele alojar aplicaciones críticas en sus servidores y secundarias en un proveedor de nube)
 +  Multicloud: Compuesto por al menos dos servicios de nube que proporcionan al menos dos proveedores de nube pública o privada
-+  Software-as-a-service
-+  Platform-as-a-service
-+  Infraestructure-as-a-service
+
+Modelos de servicios en la nube
++  Software-as-a-service: Software por suscripción
++  Platform-as-a-service: Para desplegar y desarrollar aplicaciones
++  Infraestructure-as-a-service: Los proveedores
+
+La conexión a la nube se puede realizar mediante:
++ API: Interfaces de programación de aplicaciones para conectar los datos, las aplicaciones y los dispositivos.
++ Puerta de enlace de API: filtra y distribuye el tráfico entrante entre el cliente y los servicios.
++ VPN
+
+### Opciones de migración a la nube (Las 6R según Gartner)
+![Las 6R](https://github.com/13sauca13/PRG/blob/master/Recursos/Las%206R.PNG)
 ## Computación en la nube
 
 ## Virtualización ligera
