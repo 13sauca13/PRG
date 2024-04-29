@@ -114,6 +114,41 @@ La conexión a la nube se puede realizar mediante:
 
 ### Opciones de migración a la nube (Las 6R según Gartner)
 ![Las 6R](https://github.com/13sauca13/PRG/blob/master/Recursos/Las%206R.PNG)
+#### Realojar (lift-and-shift)
+Migrar sistemas tal y como están a la nube
+1. Seleccionar un proveedor IaaS
+2. Reproducir la arquitectura en esa infraestructura
+#### Refactorizar
+Reescribir el código y los marcos de trabajo ya existentes para aprovechar la nube.
+
+Ejecutarán sus aplicaciones en la plataforma de un proveedor de PaaS (Plataforma como servicio).
+#### Re-purchase
+Pago por uso. Se compran aquellas licencias (SaaS) que se usan en función de la finalidad que se le dará.
+
+Ahorro en infraestructura.
+#### Replatform
+Rediseñar la plataforma que se está usando.
+
+Requiere un análisis de negocio previo.
+#### Retener
+Mantener aplicaciones en su estado actual, sin nube.
+#### Retirar
+Eliminar aplicaciones obsoletas.
+
+### Beneficios y dificultades
+Beneficios:
++ Rendimiento: agilidad y eficiencia en la gestión de recursos informáticos.
++ Escalabilidad: ampliación para soportar picos de trabajo.
++ Flexibilidad: Acceso a la nube desde cualquier lugar.
++ Coste: Menos infraestructura física y gastos operativos.
++ Seguridad: recuperación ante desastres y medidas de seguridad avanzadas.
+
+Dificultades:
++ Migrar grandes bases de datos: alto coste de tiempo y complejidad. Integridad de los datos.
++ Operatividad continuada: disponibilidad durante el paso a la nube.
++ Capacitación y formación: la capacitación de los usuarios finales es crucial. Falta de trabajadores sector cloud.
++ Privacidad de los datos y amenazas online
+
 ## Computación en la nube
 
 ## Virtualización ligera
