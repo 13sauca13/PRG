@@ -152,5 +152,33 @@ Dificultades:
 ## Computación en la nube
 
 ## Virtualización ligera
+La virtualización es la tecnología que permite utilizar un programa (software) para imitar las características físicas (hardware) de otra computadora o de un conjunto de computadoras, lo que da lugar a un sistema informático virtual.
+
+Existen diferentes tipos de virtualización:
++ Virtualización del sistema operativo
++ Virtualización del servidor
++ Virtualización de almacenamiento
++ Virtualización de red
++ Virtualización gráfica
++ Virtualización de aplicaciones
++ Virtualización de perfil
++ Virtualización de escritorios
+
+### Virtualización de contenedores
+La virtualización a nivel de sistema operativo, también llamada virtualización basada en contenedores.
+
+Sobre el núcleo del sistema operativo de la máquina anfitriona se ejecuta una capa de virtualización que permite que existan múltiples instancias aisladas de espacios de usuario (contenedor)
+
+Un contenedor es un conjunto de procesos aislados, que se ejecutan en un servidor:
++ acceden a un sistema de ficheros propio.
++ tienen una configuración de red propia.
++ accede a los recursos del host (memoria y CPU)
+
+Existen diferentes tipos de contenedores:
++ Contenedores de Aplicaciones: Se suelen utilizar para despliegue de aplicaciones web (Docker, Podman...)
+  + Aplicaciones web desplegadas en contenedores: Se usa un esquma multicapa (cada servicio se despliega en un contenedor) Lo que mejor se adapta son los microservicios
++ Contenedor de Sistemas: El uso que se hace de ellos es muy similar al que hacemos sobre una máquina virtual: se accede a ellos (por ssh), se instalan servicios, se actualizan, ejecutan un conjunto de procesos
+
+
 
 ## 5G
