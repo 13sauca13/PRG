@@ -92,7 +92,18 @@ Mientras en un ordenador clásico una operación toma un valor binario de entrad
 + Protocolo de teletransporte cuántico: protocolo de transmisión de información cuántica de una posición a otra sucientemente alejada, incluso sin canal
 
 ## Estrategia Cloud
+La nube son servidores, software y bases de datos diseñados para entregar recursos como procesamiento, almacenamiento, red, escalabilidad y aplicaciones.
 
+Existen diferentes modelos de implementación en la nube:
++ Nube pública o compartida: Entorno de nube que parte de una infraestructura de TI ajena al usuario final. Es compartida por múltiples clientes.
++ Nube privada: La infraestructura se destina a un único cliente con acceso completamente aislado. Existen dos subtipos:
+  + Nubes privadas gestionadas: los clientes solo crean y usan la nube
+  + Nubes exclusivas: Una nube dentro de otra nube
++  Nube híbrida: Combina nubes públicas y nubes privadas (el cliente suele alojar aplicaciones críticas en sus servidores y secundarias en un proveedor de nube)
++  Multicloud: Compuesto por al menos dos servicios de nube que proporcionan al menos dos proveedores de nube pública o privada
++  Software-as-a-service
++  Platform-as-a-service
++  Infraestructure-as-a-service
 ## Computación en la nube
 
 ## Virtualización ligera
