@@ -1,6 +1,6 @@
 # Técnicas de apoyo CIS/TIC
 ## Apuntes
-::[BPMN](https://github.com/13sauca13/PRG/blob/master/MF7.1%20BPMN/Apuntes.md)
+:necktie: [BPMN](https://github.com/13sauca13/PRG/blob/master/MF7.1%20BPMN/Apuntes.md)
 
 > #### Acabadas
 > :card_file_box: [Bases de datos](https://github.com/13sauca13/PRG/blob/master/MF6.1%20BBDD/Apuntes.md)
