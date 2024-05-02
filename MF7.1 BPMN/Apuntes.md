@@ -4,6 +4,10 @@ A partir de la década de los 80, a raíz del modelo japonés (Sistema de produc
 
 Se trata de una metodología empresarial cuyo objetivo es mejorar el desempeño (eficiencia y eficacia) y la optimización de los procesos de una organización.
 
+El objetivo principal del BPMN es proveer una notación gráfica para el modelado de procesos que sea fácilmente entendible por todos los usuarios de negocio (NO el usuario del producto o el cliente).
+
+Un diagrama BPMN es un tipo de diagrama de flujo que utiliza iconos estandarizados para representar los diferentes elementos y el flujo de un proceso de negocio. 
+
 ### Proceso de negocio
 Los procesos de negocio son fluijos de trabajo concretos de material, información y conocimientos: conjuntos de actividades que permiten elaborar un producto o servicio valioso.
 
@@ -33,6 +37,8 @@ El modelo de una organización es un conjunto de conceptos que permiten construi
 En resumen, la visión por procesos se enfoca en la identificación y mejora de los procesos clave que son críticos para la entrega de productos o servicios a los clientes.
 Mientras que la visión funcional se enfoca en la organización de la empresa en departamentos funcionales y en la eficiencia de estos departamentos.
 
+### BPMN vs UML
+La principal diferencia entre BPMN y UML es su finalidad: UML se utiliza para modelar software mientras que BPMN describe procesos empresariales
 
 ## Notacion basica de BPMN 2.0
 ## Conceptos basicos de BPMN 2.0
