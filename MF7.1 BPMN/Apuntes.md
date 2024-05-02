@@ -30,6 +30,9 @@ El modelo de una organización es un conjunto de conceptos que permiten construi
 
 ![Vision funcional vs procesos](https://github.com/13sauca13/PRG/blob/master/Recursos/Vision%20funcional%20vs%20procesos.PNG)
 
+En resumen, la visión por procesos se enfoca en la identificación y mejora de los procesos clave que son críticos para la entrega de productos o servicios a los clientes.
+Mientras que la visión funcional se enfoca en la organización de la empresa en departamentos funcionales y en la eficiencia de estos departamentos.
+
 
 ## Notacion basica de BPMN 2.0
 ## Conceptos basicos de BPMN 2.0
