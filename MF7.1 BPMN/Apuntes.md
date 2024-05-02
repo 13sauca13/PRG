@@ -23,6 +23,13 @@ Existen diferentes puntos de vista para el modelado:
 
 ![Vistas modelado](https://github.com/13sauca13/PRG/blob/master/Recursos/Vistas%20modelado%20procesos.PNG)
 
+### Modelo en las organizaciones
+El modelo de una organización es un conjunto de conceptos que permiten construir una representación organizacional de la empresa. Existen dos enfoques:
++ Funcional (tradicional): Una función seidentifica con un verbo y es algo continuo (comprar, vender...)
++ Proceso: Se identifica con verbo+sustantivo y tiene inicio y fin, no es continuo (ensamblar pieza, solicitar material...)
+
+![Vision funcional vs procesos](https://github.com/13sauca13/PRG/blob/master/Recursos/Vision%20funcional%20vs%20procesos.PNG)
+
 
 ## Notacion basica de BPMN 2.0
 ## Conceptos basicos de BPMN 2.0
