@@ -14,6 +14,15 @@ Es la subdivisión del proceso de negocio en sus elementos básicos con el prop�
 
 Nos ayuda a identificar el problema que el sistema de información deberá resolver y la manera en como deberá resolverlo.
 
+Existen diferentes puntos de vista para el modelado:
++ Datos
++ Funciones
++ Organización
++ Procesos
++ Productos/Servicios
+
+![Vistas modelado](https://github.com/13sauca13/PRG/blob/master/Recursos/Vistas%20modelado%20procesos.PNG)
+
 
 ## Notacion basica de BPMN 2.0
 ## Conceptos basicos de BPMN 2.0
