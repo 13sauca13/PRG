@@ -71,10 +71,22 @@ Loa símbolos de BPMN se dividen en 4 categorías básicas
 
 ### Eventos básicos
 Un evento representa algo que ocurre (o puede ocurrir) durante un proceso, se nombra con ```NOMBRE+PARTICIPO```, existen tres tipos:
-+ Elemento de inicio: Desencadena el flujo de secuencia del proceso
-+ Elemento intermedio: Interrumpe temporalmente el flujo del proceso
-+ Elemento final: Finaliza el flujo
++ Eventos de inicio: Desencadena el flujo de secuencia del proceso
++ Eventos intermedio: Interrumpe temporalmente el flujo del proceso
++ Eventos final: Finaliza el flujo
 
+Dentro de estos tres tipos de eventos hay muchas variantes:
++ Temporizador
++ Condicional
++ Señal
++ Escalada
++ Compensación
++ Múltiple
++ Paralelo
++ Enlace
++ Cancelación
+
+![Eventos BPMN](https://github.com/13sauca13/PRG/blob/master/Recursos/Eventos%20BPMN.PNG)
 
 ## Conceptos basicos de BPMN 2.0
 ## Aplicaciones para la automatizacion de procesos
