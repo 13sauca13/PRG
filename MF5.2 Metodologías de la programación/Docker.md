@@ -78,6 +78,14 @@ Cada capa es un conjunto de cambios que se aplican a la imagen base, y estas cap
 + IMAGE es el nombre de la imagen de Docker a partir de la cual se creará el contenedor.
 + COMMAND y ARG... son los comandos y argumentos que se ejecutarán dentro del contenedor en cuanto se haya montado.
 
+### ```docker exec```
+Para ejecutar un comando en un contenedor se usa ```docker exec```
+
+Abrir una consola de comandos con el contenedor se haría de la siguiente manera:
+```sh
+sudo docker exec -it ID_contenedor /bin/sh
+```
+
 ### achivo docker-compose.yml
 :link:[Awesome-compose GitHub](https://github.com/docker/awesome-compose)
 
