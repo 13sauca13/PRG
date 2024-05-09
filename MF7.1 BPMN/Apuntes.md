@@ -88,5 +88,42 @@ Dentro de estos tres tipos de eventos hay muchas variantes:
 
 ![Eventos BPMN](https://github.com/13sauca13/PRG/blob/master/Recursos/Eventos%20BPMN.PNG)
 
+### Actividades
+Las actividades representan acciones, existen dos tipos básicos:
++ Actividades simples (atómicas)
++ Actividades compuestas (subprocesos)
+
+Se nombran como: ```VERBO + NOMBRE```
+
+Tipos de actividades por contenido:
++ Actividad de usuario
++ Actividad de servicio
++ Actividad manual
++ Actividad de recepcion
++ Actividad de envio
++ Actividad script
++ Actividad de regla de negocio
+
+Las tareas que son realizadas por un mismo usuario en un mismo instante de tiempo y que tienen un mismo objetivo se agrupan en una sola.
+
+No se diagraman las tareas de remitir información de un puesto de trabajo a otro. Flechas o comentarios.
+
+Actividades según su ejecución:
++ En bucle Se ejecuta secuencialmente (*while*)
++ De instancias múltiples: En bucle o e n paralelo. Al inicio se conoce el número de ejecuciones
++ De compensación: Solo sucede si otra ocurre previamente
++ De compensacion en bucle: Compensacion recurrente
+
+Los tipos anteriores valen para actividades atómicas y subprocesos, solo varía en que añaden el símbolo (+)
+#### Tipos de subprocesos
++ Modo colapsado (+)
++ Modo expandido (-)
+
+Un subproceso oculta detalles de un proceso y ofrece una abstracción para el proceso principal. Dentro del subproceso debe existir un iniciador (sólo 1) y un finalizador(mínimo), y una secuencia de tareas y puertas de enlace.
+
++ Actividad de llamada: Tarea global utilizada solo con fines documentales
++ Tarea Ad-Hoc: subproceso cuyas actividades no se realizan de manera secuencial. Existen únicamente para manejar un caso específico.
++ Subproceso transaccional: Define un conjunto de tareas para evitar una situacion de error
++ Subproceso de evento: Se inicia a consecuencia de un evento (reutilizable y puede ocurrir una o varias veces)
 ## Conceptos basicos de BPMN 2.0
 ## Aplicaciones para la automatizacion de procesos
