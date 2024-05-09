@@ -77,14 +77,14 @@ Un evento representa algo que ocurre (o puede ocurrir) durante un proceso, se no
 
 Dentro de estos tres tipos de eventos hay muchas variantes:
 + Temporizador
-+ Condicional
-+ Señal
-+ Escalada
-+ Compensación
-+ Múltiple
-+ Paralelo
-+ Enlace
-+ Cancelación
++ Condicional: tiene asociada una restricción.
++ Señal: recibe una señal “catch”, lanza una señal “throw”
++ Escalada: inicia subproceso al recibir mensaje de escalada, envía un mensaje escalable.
++ Compensación: deshacer acciones, finaliza e inicia el rebobinado de las acciones del proceso.
++ Múltiple: varias formas/reglas de inicio con una ya se inicia, el evento se dispara con que se cumpla una regla.
++ Paralelo: varias reglas se tienen que cumplir todas, el evento se dispara si se cumplen todas.
++ Enlace: flujo de secuencia virtual. Van en pares como un throw-catch.
++ Cancelación: Finaliza el proceso cerrando todos los «tokens» activos. Este elemento es importante si existen caminos paralelos en su proceso.
 
 ![Eventos BPMN](https://github.com/13sauca13/PRG/blob/master/Recursos/Eventos%20BPMN.PNG)
 
