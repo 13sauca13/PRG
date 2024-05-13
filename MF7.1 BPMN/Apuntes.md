@@ -136,7 +136,7 @@ Las bifurcaciones pueden ser:
 **Canvención de nombres:** Divergentes exclusivos se nombran con una pregunta, los convergentes no se nombran (si no es obvio se usa anotación de texto)
 
 #### Decisores basados en datos
-+ Decisores exclusivos: Divide un proceso en una o más rutas (OR). Las condiciones para cada ruta son excluyentes.
++ Decisores exclusivos: Divide un proceso en una o más rutas (XOR). Las condiciones para cada ruta son excluyentes.
 + Decisores inclusivos:
   + Como bifurcación, uno o más de los flujos de salida son activados.
   + Como mecanismo de unión, se activa sólo si todos los flujos activos llegan a su entrada.
