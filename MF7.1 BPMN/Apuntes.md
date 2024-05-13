@@ -145,14 +145,13 @@ Las bifurcaciones pueden ser:
   + Como unión, deben activarse todos los flujos de entrada para poder continuar (sincronización).
 + Decisor complejo: Los flujos a la salida se activan dependiendo de la expresion compleja definida
 
-### Objetos de conexión
-![Objetos de conexion](https://github.com/13sauca13/PRG/blob/master/Recursos/Objetos%20de%20conexion%20BPMN.PNG)
-
 #### Decisores basados en eventos
 + Exclusivo: Sólo uno de los eventos conectados con sus salidas es activado (No puede usarse como mecanismo de unión)
 + Exclusivo de inicio: Cualquiera de los eventos asociados podrá instanciar el proceso si se dispara (No puede ser usado como unión)
 + Paralelo de inicio: Deberán dispararse todos los eventos asociados a sus salidas para instanciar el proceso (No puede se usado como unión)
-+ 
+
+### Objetos de conexión
+![Objetos de conexion](https://github.com/13sauca13/PRG/blob/master/Recursos/Objetos%20de%20conexion%20BPMN.PNG)
 
 ## Conceptos basicos de BPMN 2.0
 ## Aplicaciones para la automatizacion de procesos
