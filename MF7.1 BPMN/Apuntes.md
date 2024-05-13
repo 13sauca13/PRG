@@ -125,5 +125,34 @@ Un subproceso oculta detalles de un proceso y ofrece una abstracción para el pr
 + Tarea Ad-Hoc: subproceso cuyas actividades no se realizan de manera secuencial. Existen únicamente para manejar un caso específico.
 + Subproceso transaccional: Define un conjunto de tareas para evitar una situacion de error
 + Subproceso de evento: Se inicia a consecuencia de un evento (reutilizable y puede ocurrir una o varias veces)
+
+### Decisores
+Mecanismos para controlar la bifurcación o unión de flujos en procesos.
+
+Las bifurcaciones pueden ser:
++ Basada en datos: Por condiciones en el proceso
++ Basada en eventos: Por eventos que ocurren
+
+**Canvención de nombres:** Divergentes exclusivos se nombran con una pregunta, los convergentes no se nombran (si no es obvio se usa anotación de texto)
+
+#### Decisores basados en datos
++ Decisores exclusivos: Divide un proceso en una o más rutas (OR). Las condiciones para cada ruta son excluyentes.
++ Decisores inclusivos:
+  + Como bifurcación, uno o más de los flujos de salida son activados.
+  + Como mecanismo de unión, se activa sólo si todos los flujos activos llegan a su entrada.
++ Decisor paralelo:
+  + Como bifurcación, todos los flujos de salida se activan al mismo tiempo.
+  + Como unión, deben activarse todos los flujos de entrada para poder continuar (sincronización).
++ Decisor complejo: Los flujos a la salida se activan dependiendo de la expresion compleja definida
+
+### Objetos de conexión
+![Objetos de conexion](https://github.com/13sauca13/PRG/blob/master/Recursos/Objetos%20de%20conexion%20BPMN.PNG)
+
+#### Decisores basados en eventos
++ Exclusivo: Sólo uno de los eventos conectados con sus salidas es activado (No puede usarse como mecanismo de unión)
++ Exclusivo de inicio: Cualquiera de los eventos asociados podrá instanciar el proceso si se dispara (No puede ser usado como unión)
++ Paralelo de inicio: Deberán dispararse todos los eventos asociados a sus salidas para instanciar el proceso (No puede se usado como unión)
++ 
+
 ## Conceptos basicos de BPMN 2.0
 ## Aplicaciones para la automatizacion de procesos
