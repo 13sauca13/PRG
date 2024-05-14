@@ -154,4 +154,21 @@ Las bifurcaciones pueden ser:
 ![Objetos de conexion](https://github.com/13sauca13/PRG/blob/master/Recursos/Objetos%20de%20conexion%20BPMN.PNG)
 
 ## Conceptos basicos de BPMN 2.0
+### Instancia
+Una instancia es la ejecución de un proceso.
+
+El diagrama es un molde y cada vez que lo ejecutas estas creando una instancia de proceso nueva.
+
+Al ejecutarse tareas multi-instancia se separa el proceso en tantas instancias como se configuró la tarea.Cada instancia mantendrá la información del proceso al que pertenece, pero pudiendo comportarse distinto de er necesario. Cada instancia guarda un ID que permite identificarla.
+
+### Token
+Concepto teórico que se utiliza como ayuda para definir el comportamiento de un proceso en ejecución. 
++ Un token se crea al iniciar un proceso. Cuando se activa un Evento de Inicio.
++ El token sigue el flujo de secuencia y atraviesa los elementos del proceso (decisores y tareas).
+
 ## Aplicaciones para la automatizacion de procesos
+La automatización de procesos es un subconjunto de la disciplina BPMN, se trata de Reemplazo automatizado de la asignación y ejecución manual de actividades con software especializado.
+
+Las tecnologías clave en la automatización empresarial son:
++ Digital Process Automation (DPA): automatiza un proceso completo. (Visión holística que facilita la identificación de áreas a mejorar y realizar cambios ágiles.)
++ Robotic Process Automation (RPA): automatiza tareas específicas. (Utiliza bots que imitan el comportamiento humano para llevar a cabo tareas de administración repetitivas y de alto volumen.)
