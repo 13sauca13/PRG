@@ -8,7 +8,7 @@ Los routers son ordenadores, y como tal necesitan:
 + Memoria
 + Sistema operativo
 
-Los routers tienen 4 tipos de memoria:
+Con respecto a las memorias, los routers tienen 4 memorias:
 + RAM
 + NVRAM
 + Flash
