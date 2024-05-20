@@ -1,6 +1,8 @@
 # Routing & Switching
 
 ## Routers
+![Conexiones del router](https://github.com/13sauca13/PRG/blob/master/Recursos/Conexiones%20del%20router.PNG)
+
 Los routers son ordenadores, y como tal necesitan:
 + CPU
 + Memoria
