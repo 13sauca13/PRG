@@ -30,6 +30,17 @@ Independientemente del método de acceso es necesario un programa de emulación 
 Los comandos una vez hayamos accedido tienen una estructura jerárquica:
 1. Modo exec del usuario:
 ```
-  + ROUTER>
+ROUTER>
 ```
-3. Modo exec con privilegios: ```ROUTER> en 
+2. Modo exec con privilegios:
+```
+ROUTER> enable
+ROUTER#
+```
+3. Modo configuración global: Desde este modo se puede acceder a la configuración específica de cada linea o interfaz
+```
+ROUTER# configurae terminal
+ROUTER(config)#
+```
+
+![Estructura comandos IOS](https://github.com/13sauca13/PRG/blob/master/Recursos/Estructura%20comandos%20IOS.PNG)
