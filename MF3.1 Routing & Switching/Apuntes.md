@@ -16,3 +16,5 @@ Con respecto a las memorias, los routers tienen 4 memorias:
 
 ![Memorias router](https://github.com/13sauca13/PRG/blob/master/Recursos/Memorias%20Router.PNG)
 
+### Proceso de arranque del router
+![Arranque router](https://github.com/13sauca13/PRG/blob/master/Recursos/Arranque%20router.PNG)
