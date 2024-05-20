@@ -39,7 +39,7 @@ ROUTER#
 ```
 3. Modo configuración global: Desde este modo se puede acceder a la configuración específica de cada linea o interfaz
 ```
-ROUTER# configurae terminal
+ROUTER# configure terminal
 ROUTER(config)#
 ```
 
