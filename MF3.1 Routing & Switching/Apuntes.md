@@ -44,3 +44,39 @@ ROUTER(config)#
 ```
 
 ![Estructura comandos IOS](https://github.com/13sauca13/PRG/blob/master/Recursos/Estructura%20comandos%20IOS.PNG)
+
+## Configuración básica de dispositivos
+El primer paso cuando se configura un dispositivo es asignarle un nombre de host. Estos nombres aparecen el las peticiones de entrada de la CLI y se usan en los diagramas de la topología.
+```
+ROUTER> enable
+ROUTER# configure terminal
+ROUTER (config)# hostname Router-1
+Router-1 (config)#
+```
+
+Es necesario limitar el acceso físico a los dispositivos y usar contraseñas seguras.
+
+Para proteger el acceso exec con privilegios se utilizan los siguientes comandos:
+```
+Router-1(config)# enable password <CONTRASEÑA> //esta contraseña está en claro
+Router-1(config)# enable secret <CONTRASEÑA> //esta contraseña está cifrada
+```
+Para configurar una línea con contraseña se usan los siguientes comandos:
+```
+Router-1(config)# line <linea> //puede se console, vty (de la 0 a la 15)...
+Router-1(config-line)# password <CONTRASEÑA>
+Router-1(config-line)# login
+```
+
+Los archivos **startup-config** y **running-config** muestran la mayor parte de las contraseñas en texto plano. Esto es un problema de seguridad.
+
+Para cifrar todas las contraseñas usaremos:
+```
+service password-encryption
+```
+
+Para borrar todas las configuraciones de un router:
+```
+Router-1# erase startup-config
+Router-1# reload
+```
