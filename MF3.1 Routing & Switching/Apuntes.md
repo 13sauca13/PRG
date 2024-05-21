@@ -80,3 +80,10 @@ Para borrar todas las configuraciones de un router:
 Router-1# erase startup-config
 Router-1# reload
 ```
+
+En el caso de los switches es necesario usar el interfaz virtual del switch (SVI) para poder conectarse de manera remota. Es recomendable crear una VLAN de administracion y no usar la VLAN1.
+
+El SVI debe configurarse con lo siguiente:
++ Direccion IP
++ Mascara de subred
++ Estado habilitada
