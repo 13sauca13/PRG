@@ -36,7 +36,7 @@ Con la acumulación de datos la minería busca información concreta, sin embarg
 >Riesgos en el análisis de datos
 >Uno de los riesgos que presenta la búsqueda de información en el Big Data es el descubrimiento de patrones no significativos. Estos patrones se conocen como *principios de Bonferroni*.
 
-## Anñalisis de la información
+### Analisis de la información
 El Data Mining emplea técnicas interdisciplinares en entornos de procesamiento distribuido:
 + Redes de neuronas artificiales (ANN/DL)
 + Árboles de decisión
@@ -45,3 +45,22 @@ El Data Mining emplea técnicas interdisciplinares en entornos de procesamiento 
 + Support Vector Machines
 
 Los modelos predictivos evalúan que probabilidad tiene un individuo de mostrar un comportamiento específico en el futuro buscando patrones discriminadores en los datos para responder al comportamiento y realizan cálculos en tiempo real para evaluar un determinado riesgo u oportunidad a fin de orientar una decisión adecuada.
+
+## El dato como activo de valor
+COMPLETAR
+
+## Convertir datos en conocimiento
+Aprender es:
++ Adquirir conocimiento
++ Desarrollar habilidades a través de instrucción y práctica
++ Organización del conocimiento
++ Descubrimiento de hechos...
+
+De la misma forma el **MACHINE LEARNING** estudia y modela computacionalmente los procesos de aprendizaje en sus diversas manifestaciones
+
+### Aprendizaje computacional
++ **Aprendizaje genético:** Aplica algoritmos inspirados en la teoría de la evolución para encontrar descripciones generales a conjuntos de ejemplos.
++ **Aprendizaje conexionista:**  Busca descripciones generales mediante el uso de la capacidad de adaptación de redes de neuronas artificiales
++ **Aprendizaje por analogía:** : intenta emular la capacidad humana de recordar la solución de problemas previos ante la aparición de problemas parecidos
++ **Aprendizaje multiestrategia:** o combinación de diferentes tipos de estrategias y/o diferentes tipos de aprendizaje.
+
