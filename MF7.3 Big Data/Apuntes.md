@@ -64,3 +64,33 @@ De la misma forma el **MACHINE LEARNING** estudia y modela computacionalmente lo
 + **Aprendizaje por analogía:** : intenta emular la capacidad humana de recordar la solución de problemas previos ante la aparición de problemas parecidos
 + **Aprendizaje multiestrategia:** o combinación de diferentes tipos de estrategias y/o diferentes tipos de aprendizaje.
 
+Otro criterio puede ser basar la clasificación en el objetivo o propósito principal del proceso de aprendizaje:
++ Aprendizaje sintético: el objetivo es adquirir nuevo conocimiento e ir más allá del conocimiento poseído (inducción y analogía)
++ Aprendizaje analítico: en el que poseemos un conocimiento general y lo particularizamos para hacerlo más efectivo (deducción)
++ Aprendizaje supervisado, donde se va dirigiendo al sistema en el proceso de entrenamiento.
++ Aprendizaje no supervisado, donde no se corrige al sistema en su proceso de entrenamiento.
++ Aprendizaje por refuerzo, en el que no se le dice la salida, sólo si ha clasificado bien o no.
+
+#### Aprendizaje inductivo
+ El aprendizaje inductivo puede verse como el proceso de aprender una función. 
+
+ ##### Inductivo supervisado
+ Los métodos más utilizados en aplicaciones provienen del aprendizaje inductivo supervisado (Inducción: Pasamos de lo específico a lo general, Supervisión: Conocemos el concepto al que pertenece cada ejemplo)
+
+A partir de un conjunto de ejemplos etiquetados obtenemos un modelo:
+1. El modelo generaliza los ejemplos, representando los conceptos que definen las etiquetas
+2. Obtenemos lo que es común entre los ejemplos de un concepto que les diferencia de los otros
+
+Tipos de métodos de aprendizaje inductivo supervisado:
++ Modelos de caja blanca (podemos inspeccionar el modelo)
+  + Árboles de decisión/reglas de inducción
+  + Modelos probabilísticos
++ Modelos caja negra
+  + Redes de neuronas artificiales
+  + Máquinas de soporte vectorial
+
+##### Workflow basico
+![Workflow basico](https://github.com/13sauca13/PRG/blob/master/Recursos/Workflow%20basico%20IA.PNG)
+
+##### Workflow cientifico
+![Workflow cientifico](https://github.com/13sauca13/PRG/blob/master/Recursos/Workflow%20cientifico%20IA.PNG)
