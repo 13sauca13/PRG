@@ -1,6 +1,6 @@
 # Big Data
 
-:monocle_face: [Preguntas tipo test: *adriancarballal@gmail.com*](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Preguntas.md)
+:monocle_face: [Preguntas tipo test](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Preguntas.md) - *adriancarballal@gmail.com*
 
 :book:[PDF apuntes BigData](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Big%20Data%20E2T.pdf)
 
