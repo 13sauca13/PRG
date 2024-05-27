@@ -8,7 +8,7 @@ B) Variedad
 
 C) Velocidad
 
-*D) Veracidad*
+*D) Volatilidad*
 
 **2. ¿Cuál es el objetivo principal de la minería de datos en el Big Data?**
 
