@@ -121,3 +121,13 @@ A la hora de securizar los datos de un SI, según la norma ISO 27000 tenemos que
 + Ataques: Cualquier acción que comprometa la seguridad de la información. Se trata de un asalto a la seguridad del sistema derivado de una amenaza (Zero-day Attack: Es un ataque que explota una vulnerabilidad no conocida hasta el momento)
   + Ataques pasivos: intenta conocer o hacer uso sin afectar a los recursos (difíciles de detectar pero fáciles de prevenir)
   + Ataques activos: Intenta alterar los recursos del sistema o afectar a su funcionamiento (fáciles de detectar pero difíciles de prevenir)
+
+Nuestro objetivo es proteger el envío de información. Más en detalle debemos perseguir que el SI sea capaz de proporcionar la mayor parte de los siguientes servicios de seguridad:
++ Confidencialidad
++ Autenticidad
++ Integridad
++ Control de acceso
++ No repudio
++ Disponibilidad
+
+El empleo del cifrado (criptografía) nos ayudará a conseguir la mayor parte de ellos.
