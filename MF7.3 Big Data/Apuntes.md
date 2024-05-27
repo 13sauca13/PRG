@@ -101,7 +101,7 @@ Tipos de métodos de aprendizaje inductivo supervisado:
 
 ---
 
-:monocle_face: Preguntas test a mgestal@udc.es
+:monocle_face: Preguntas test a ```mgestal@udc.es```
 
 # Fundamentos de Big Data
 ## Introducción y conceptos previos
