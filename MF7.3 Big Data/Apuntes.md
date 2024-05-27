@@ -101,4 +101,23 @@ Tipos de métodos de aprendizaje inductivo supervisado:
 
 ---
 
+:monocle_face: Preguntas test a mgestal@udc.es
+
 # Fundamentos de Big Data
+## Introducción y conceptos previos
+Un **Sistema de Información** es un conjunto de elementos (personas, dispositivos, tecnologías, procesos, aplicaciones, software, etc.) que tiene a su disposición una organización con el objetivo de capturar, almacenar, procesar y dar visibilidad a la información.
+
+A la hora de securizar los datos de un SI, según la norma ISO 27000 tenemos que diferenciar tres conceptos:
++ Vulnerabilidad: Debilidad de un activo que puede ser explotado por una amenaza. Es la posibilidad de que una amenaza se materialice (Es la vía de ataque potencial)
+ + Vulnerabilidades físicas
+ + Vulnerabilidades naturales
+ + Vulnerabilidades hardware
+ + Vulnerabilidades software
+ + Vulnerabilidad humana
++ Amenaza: Posible causa de un incidente no deseado que puede resultar en daños a un sistema u organización., es decir, es un peligro posible que podría hacer uso de una vulnerabilidad.
+ + Disclosure: Revelación (amenaza a la Confidencialidad)
+ + Destruction: Destrucción (amenaza a la Integridad)
+ + Denial: Denegación (amenaza a la Disponibilidad)
++ Ataques: Cualquier acción que comprometa la seguridad de la información. Se trata de un asalto a la seguridad del sistema derivado de una amenaza (Zero-day Attack: Es un ataque que explota una vulnerabilidad no conocida hasta el momento)
+ + Ataques pasivos: intenta conocer o hacer uso sin afectar a los recursos (difíciles de detectar pero fáciles de prevenir)
+ + Ataques activos: Intenta alterar los recursos del sistema o afectar a su funcionamiento (fáciles de detectar pero difíciles de prevenir)
