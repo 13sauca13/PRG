@@ -96,3 +96,7 @@ Tipos de métodos de aprendizaje inductivo supervisado:
 
 ##### Workflow cientifico
 ![Workflow cientifico](https://github.com/13sauca13/PRG/blob/master/Recursos/Workflow%20cientifico%20IA.PNG)
+
+---
+
+# Fundamentos de Big Data
