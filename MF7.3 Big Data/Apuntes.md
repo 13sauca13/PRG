@@ -131,3 +131,24 @@ Nuestro objetivo es proteger el envío de información. Más en detalle debemos 
 + Disponibilidad
 
 El empleo del cifrado (criptografía) nos ayudará a conseguir la mayor parte de ellos.
+
+## Criptografía
+A la hora de hablar de los sistemas de cifrado (criptosistemas), se ha de diferenciar entre:
++ Sistemas INCONDICIONALMENTE seguros: Aquellos para los que se puede demostrar que sin el conocimiento de la clave no se puede obtener el texto claro correspondiente.
++ Sistemas COMPUTACIONALMENTE seguros: Aquellos que cumplen uno de los siguientes criterios:
+  + Coste de rotura de cifrado > Coste de la info
+  + Tiempo de rotura de cifrado > Vida útil de la info
+### Posibles ataques criptográficos
++ Furza bruta: Probar todas las combinaciones de la clave hasta dar con la adecuada (el tiempo necesario suele ser excesivo)
++ Criptoanálisis:
+  + A partir de texto cifrado: Simplifica mediante estudios estadísticos, análisis de vulnerabilidades de algoritmos...
+  + Texto claro conocido: Aprovecha el conocimiento de parte de los datos cifrados para reducir considerablemente el tiempo de rotura
++ Elección del mensaje: Para cualquier documento se conoce su equivalente cifrado
+### Tipos de sistemas de cifrado
+#### Simétrico
+Emplea la misma clave para cifrar y descifrar. El algoritmo de cifrado suele ser público, por lo que la seguridad del cifrado reside en como de segura sea la clave.
+
+Operaciones de cifado:
++ Transposición: consiste en alterar el orden de las unidades constituyentes del documento original
++ Sustitución: Las unidades constituyentes del documento original son sustituidas con texto cifrado (la sustitución monoalfabética es débil al criptoanálisis de frecuencias, para ello surgen los polialfabéticos)
++ Producto: Aplicación consecutiva de transposición y sustitución.
