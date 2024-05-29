@@ -87,3 +87,18 @@ El SVI debe configurarse con lo siguiente:
 + Direccion IP
 + Mascara de subred
 + Estado habilitada
+
+## Configuración de VLANs
+Las redes VLAN permiten que el administrador segmente redes, sin tener en cuenta la ubicación física del usuario o del dispositivo.
+
+***Las redes VLAN se aíslan mutuamente, y sólo a través de un router se pueden comunicar entre ellas.***
+
+Para ver las vlan de un switch se usa el comando:
+```
+S1# show vlan brief
+```
+
+Un enlace troncal de vlan es un enlace punto a punto que transporta datos de más de una red vlan. Generalmente, se establece entre switches para que los dispositivos de una misma red vlan se puedan comunicar, incluso si están conectados físicamente a switches diferentes.
+
+Un enlace troncal de vlan no está asociado a ninguna red vlan.
+
