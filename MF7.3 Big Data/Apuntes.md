@@ -151,4 +151,8 @@ Emplea la misma clave para cifrar y descifrar. El algoritmo de cifrado suele ser
 Operaciones de cifado:
 + Transposición: consiste en alterar el orden de las unidades constituyentes del documento original
 + Sustitución: Las unidades constituyentes del documento original son sustituidas con texto cifrado (la sustitución monoalfabética es débil al criptoanálisis de frecuencias, para ello surgen los polialfabéticos)
-+ Producto: Aplicación consecutiva de transposición y sustitución.
++ Producto: Aplicación consecutiva de transposición y sustitución. (Incrementa seguridad y permite usar operaciones más sencillas)
+
+En cuanto al cifrado producto se crea la estructura Feistel, propuesta por Horst Feistel en 1970, que facilita la ejecución de n etapas o ciclos de un cifrado producto y es la base de los algoritmos de cifrado en bloque. Esta estructura también permite el cifrado y descifrado con el mismo sistema.
+
+El cifrado producto por excelencia es ***DES (Data Encryption Standard)***, cuya principal característica es el efecto avalancha: pequeños cambios en el mensaje original y/o clave ariginan grandes cambios en el mensaje cifrado. (El cambio de un bit genera el cambio de la mitad del mensaje cifrado)
