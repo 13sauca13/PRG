@@ -156,3 +156,7 @@ Operaciones de cifado:
 En cuanto al cifrado producto se crea la estructura Feistel, propuesta por Horst Feistel en 1970, que facilita la ejecución de n etapas o ciclos de un cifrado producto y es la base de los algoritmos de cifrado en bloque. Esta estructura también permite el cifrado y descifrado con el mismo sistema.
 
 El cifrado producto por excelencia es ***DES (Data Encryption Standard)***, cuya principal característica es el efecto avalancha: pequeños cambios en el mensaje original y/o clave ariginan grandes cambios en el mensaje cifrado. (El cambio de un bit genera el cambio de la mitad del mensaje cifrado)
+
+Los principales problemas del cifrado simétrico son:
++ Generación de claves: En un grupo de N participantes, cada uno necesita N-1 claves diferentes para para poder comunicarse con todos los participantes
++ Distribución de claves
