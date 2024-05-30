@@ -136,7 +136,7 @@ Podemos igual que con telnet utilizar usuario y contraseña del router o crear u
 R1(config)# ip domain-name <lo_que_sea> !Es necesario definir un nombre de dominio
 R1(config)# line vty 0 4
 R1(config-line)# transport input ssh
-R1(config-line)# login ! Si vamos a usar user y pass será login local, si creamos password para vty será sólo login
+R1(config-line)# login !Si vamos a usar user y pass será login local, si creamos password para vty será sólo login (ver la parte de telnet)
 ```
 Una vez configurada la línea hay que crear las claves que van a cifrar la conexión:
 ```
