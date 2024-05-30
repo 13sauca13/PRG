@@ -141,7 +141,7 @@ R1(config-line)# login !Si vamos a usar user y pass será login local, si creamo
 Una vez configurada la línea hay que crear las claves que van a cifrar la conexión:
 ```
 R1(config)# crypto key generate rsa
-! Sale el siguiente aviso para introducir la longitud de las claves (si pulsamos enter aplica el valor entre corchetes)
+!Sale el siguiente aviso para introducir la longitud de las claves (si pulsamos enter aplica el valor entre corchetes, si no introducimos la longitud deseada)
 How many bits in the modulus [512]:
 ```
 
