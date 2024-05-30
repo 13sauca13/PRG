@@ -164,3 +164,43 @@ El cifrado producto por excelencia es ***DES (Data Encryption Standard)***, cuya
 Los principales problemas del cifrado simétrico son:
 + Generación de claves: En un grupo de N participantes, cada uno necesita N-1 claves diferentes para para poder comunicarse con todos los participantes
 + Distribución de claves
+
+Para solucionar los problemas de cifrado simetrico también existen diferentes soluciones:
++ KDC (Centro de Distribución de Claves): Genera claves compartidas para las comunicaciones entre usuarios
++ Cifrado asimétrico
+
+#### Asimétrico
+El cifrado asimétrico se desarrolla para tratar dos problemas:
++ La distribución de claves
++ La firma digital
+
+Implica el uso de dos claves:
++ **KUa**: Clave pública conocida por todo el mundo. Se usará para cifrar los mensajes y verificar la firma de un mensaje
++ **KRa**: Conocida únicamente por el usuario. Se usa para descifrar mensaje y para firmarlos.
+
+Dado esto tenemos 4 posibles escenarios:
+##### Cifrado con clave pública de origen (KUorigen)
+Sólo podrá descifrarse con la clave privada de origen (KRorigen)
+
+Sólo el propietario de la clave (el origen) podrá acceder al contenido que se haya cifrado previamente
+
+Es una especie de auto-cifrado, o cifrado para uso personal. No suele hacerse de esta manera, pues para esto es más eficiente el cifrado simétrico.
+##### Cifrado con clave pública de destino (KUdestino)
+Deberá descifrarse con la clave privada del destino (KRdestino)
+
+Proporciona confidencialidad porque sólo el destinatario podrá acceder al contenido cifrado
+
+Proporciona integridad porque si el mensaje es alterado no sé podrá descifrar, con lo que se detectará la modificación.
+
+No proporciona autenticidad de emisor puesto que cualquiera puede enviar el mensaje cifrado, puesto que la clave con la que se cifra es pública (KUdestino). Por esta misma razón, el supuesto emisor puede negar haber enviado el mensaje (no existen pruebas de quien lo envió)
+##### Cifrado con clave privada de origen (KRorigen)
+Si el emisor usa su propia clave para cifrar, cualquier usuario que conozca su clave pública (KUorigen) podrá leer el mensaje, por lo tanto, ya que cualquiera puede leer el mensaje, no proporciona confidencialidad, sin embargo, sí proporciona integridad, puesto que si el mensaje se modifica no podrá ser descifrado
+
+Autenticidad de emisor, puesto que si el mensaje se puede descifrar correctamente aplicando la clave pública del emisor (KUorigen) es porque obligatoriamente el mensaje se ha tenido que cifrar con la clave privada del emisor (KRorigen) , que sólo él posee.
+
+Por la mismo que lo anterior, el emisor no puede negar ser quién generó el mensaje, proporcionándose así No Repudio de emisor
+
+Es el mecanismo que hace posible la **Firma Digital**
+
+##### Cifrado con clave privada de destino (KRdestino)
+No es factible. No podemos cifrar con la clave privada de la persona con la que nos queremos comunicar, pues sólo ella posee esa clave (y la ha de mantener en secreto)
