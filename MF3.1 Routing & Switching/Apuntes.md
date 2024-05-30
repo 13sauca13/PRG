@@ -102,26 +102,50 @@ Un enlace troncal de vlan es un enlace punto a punto que transporta datos de má
 
 Un enlace troncal de vlan no está asociado a ninguna red vlan.
 
-## Configuracion SSH
+## Configuracion VTY
+Las líneas VTY se tratan de un conjunto de puertos virtuales utilizados para la conexión vía telnet, SSH, http o https al dispositivo para realizar administración en línea.
+La mayoría de los dispositivos tienen al menos 5 puertos virtuales identificados como VTY 0 a 4. Sin embargo, en la medida en que resulte necesario, se pueden general más puertos virtuales hasta completar un total de 21 líneas vty.
+
+>[!WARNING]
+>Telnet no es seguro porque todo el tráfico viaja en claro (incluída la contraseña al abrir la conexión)
+>
+>NO USEIS TELNET!! El niño Jesús se pone triste
+
+### Telnet
+Para configurar telnet basta con "habilitar" las líneas VTY y darles suario y contraseña. En este caso creamos usuario y contraseña para el router en si y luego le decimos a las líneas VTY que utilicen el login del router:
 ```
-ip domain-name ??????
-username admin privilege 15 secret admin
-line vty 0 15
-transport input ssh
-login local
-exit
-crypto key generate rsa
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!borrar key
-!! crypto key zeroize rsa
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-**despues de INTRO**
+R1(config)# username <nombre_usuario> privilege <privilegios_del_1_al_15> password <contraseña> !OJO: Esta copntraseña está en claro... (secret... service password encryption...)
+R1(config)# line vty 0 4
+R1(config-line)# login local
+R1(config)#
+```
+Para hacerlo con una contraseña específica para la conexión en lugar de usuario y contraseña:
+```
+R1(config)# line vty 0 4
+R1(config-line)# password <contraseña>
+R1(config-line)# login
+R1(config)#
+```
 
-1024
+### SSH
+La conexión por SSH cifra los datos. Es como telnet pero seguro.
 
-ip ssh version 2 !!habilitar la version 2
+Podemos igual que con telnet utilizar usuario y contraseña del router o crear una contraseña específica para esa conexión. (El ```hostname``` no puede ser el por defecto!!)
 
-ip ssh time-out 75 (cierra sesion 75 sg de inacividad)
-ip ssh authentication-retries 2 (permite 2 intentos)
-ip ssh version 2 (cambio a la version segura de ssh 2)
+```
+R1(config)# ip domain-name <lo_que_sea> !Es necesario definir un nombre de dominio
+R1(config)# line vty 0 4
+R1(config-line)# transport input ssh
+R1(config-line)# login ! Si vamos a usar user y pass será login local, si creamos password para vty será sólo login
+```
+Una vez configurada la línea hay que crear las claves que van a cifrar la conexión:
+```
+R1(config)# crypto key generate rsa
+! Sale el siguiente aviso para introducir la longitud de las claves (si pulsamos enter aplica el valor entre corchetes)
+How many bits in the modulus [512]:
+```
+
+Para deshabilitar el ssh hay que borrar las claves y quitar el ```transport input ssh``` de las vty:
+```
+R1(config)# crypto key zeroize rsa
 ```
