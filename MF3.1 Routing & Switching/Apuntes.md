@@ -149,3 +149,10 @@ Para deshabilitar el ssh hay que borrar las claves y quitar el ```transport inpu
 ```
 R1(config)# crypto key zeroize rsa
 ```
+
+>[!TIP]
+>Conviene usar la versión 2 de ssh por ser más segura, pero necesitamos que la clave RSA que generamos sea de al menos 768
+>Se haría al terminar de configurar SSH y añadiendo:
+>```
+>R1(config)# ip ssh version 2
+>```
