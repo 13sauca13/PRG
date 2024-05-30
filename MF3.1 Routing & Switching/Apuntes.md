@@ -102,3 +102,26 @@ Un enlace troncal de vlan es un enlace punto a punto que transporta datos de má
 
 Un enlace troncal de vlan no está asociado a ninguna red vlan.
 
+## Configuracion SSH
+```
+ip domain-name ??????
+username admin privilege 15 secret admin
+line vty 0 15
+transport input ssh
+login local
+exit
+crypto key generate rsa
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!borrar key
+!! crypto key zeroize rsa
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+**despues de INTRO**
+
+1024
+
+ip ssh version 2 !!habilitar la version 2
+
+ip ssh time-out 75 (cierra sesion 75 sg de inacividad)
+ip ssh authentication-retries 2 (permite 2 intentos)
+ip ssh version 2 (cambio a la version segura de ssh 2)
+```
