@@ -2,7 +2,7 @@
 
 :monocle_face: [Preguntas tipo test](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Preguntas.md) - ```adriancarballal@gmail.com```
 
-:book:[PDF apuntes BigData](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Big%20Data%20E2T.pdf)
+:book:[Presentacion Adrian Carballal](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Big%20Data%20E2T.pdf)
 
 ## Qué es el big data?
 El Big Data son volúmenes de datos masivos que no pueden ser tratados mediante técnicas convencionales:
@@ -102,6 +102,8 @@ Tipos de métodos de aprendizaje inductivo supervisado:
 ---
 
 :monocle_face: Preguntas test a ```mgestal@udc.es```
+
+:book:[Presentaciones Marcos Gestal](https://github.com/13sauca13/PRG/tree/master/MF7.3%20Big%20Data/PDFs%20Marcos)
 
 # Fundamentos de Big Data
 ## Introducción y conceptos previos
