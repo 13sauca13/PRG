@@ -104,11 +104,10 @@ Tipos de métodos de aprendizaje inductivo supervisado:
 
 ---
 
+# Fundamentos de Big Data
 :monocle_face: Preguntas test a ```mgestal@udc.es```
 
 :book:[Presentaciones Marcos Gestal](https://github.com/13sauca13/PRG/tree/master/MF7.3%20Big%20Data/PDFs%20Marcos)
-
-# Fundamentos de Big Data
 ## Introducción y conceptos previos
 Un **Sistema de Información** es un conjunto de elementos (personas, dispositivos, tecnologías, procesos, aplicaciones, software, etc.) que tiene a su disposición una organización con el objetivo de capturar, almacenar, procesar y dar visibilidad a la información.
 
