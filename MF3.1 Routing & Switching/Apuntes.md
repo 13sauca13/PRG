@@ -160,4 +160,14 @@ R1(config)# crypto key zeroize rsa
 #### SSH en switches
 En el caso de un switch también podemos usar SSH pero será necesario crear un SVI (Switch Virtual Interface), que es una interfaz virtual (Porque los switches trabajan en capa 2) para conectar y enrutar tráfico en una VLAN. En este caso el SVI tambié nos vale para poder hacer la conexión.
 
-Configuraríamos 
+Configuraríamos todo igual que en el router y además:
+```
+S1(config)# interface vlan <nº_vlan>
+S1(config)# ip address <ip> <mascara>
+```
+Así podríamos hacer SSH desde cualquier PC de la VLAN X usando la IP que acabamos de configurar.
+
+Si a mayortes queremos hacer la conexión desde otra VLAN haría falta un router (como para cualquier tipo de tráfico entre VLANs) tendríamos que darle al switch una puerta de enlace para responder a la subinterfaz del router correspondiente a la VLAN del SVI (si no el tráfico llega a la SVI pero el switch no sabe a quien responderle):
+```
+S1(config)# ip default-gateway <ip_subinterfaz_router> <mascara>
+```
