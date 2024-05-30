@@ -156,3 +156,8 @@ R1(config)# crypto key zeroize rsa
 >```
 >R1(config)# ip ssh version 2
 >```
+
+#### SSH en switches
+En el caso de un switch también podemos usar SSH pero será necesario crear un SVI (Switch Virtual Interface), que es una interfaz virtual (Porque los switches trabajan en capa 2) para conectar y enrutar tráfico en una VLAN. En este caso el SVI tambié nos vale para poder hacer la conexión.
+
+Configuraríamos 
