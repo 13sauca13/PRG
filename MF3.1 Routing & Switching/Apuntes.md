@@ -171,3 +171,13 @@ Si a mayortes queremos hacer la conexión desde otra VLAN haría falta un router
 ```
 S1(config)# ip default-gateway <ip_subinterfaz_router> <mascara>
 ```
+
+## Configuración DHCP
+El protocolo DHCP (Protocolo de configuración dinámica de host) o también conocido como «Dynamic Host Configuration Protocol«, es un protocolo de red que utiliza una arquitectura cliente-servidor. Este protocolo se encarga de asignar de manera dinámica y automática una dirección IP, la puerta de enlace y el servidor DNS.
+```
+R1(config)# ip dhcp excluded-address <direccion o rango excluidas>
+R1(config)# ip dhcp pool <nombre>
+R1(dhcp-config)# network <ip> <mascara>
+R1(dhcp-config)# default-router <puerta de enlace>
+R1(dhcp-config)# dns-server <servidor DNS>
+```
