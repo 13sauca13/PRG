@@ -114,7 +114,8 @@ La mayoría de los dispositivos tienen al menos 5 puertos virtuales identificado
 ### Telnet
 Para configurar telnet basta con "habilitar" las líneas VTY y darles suario y contraseña. En este caso creamos usuario y contraseña para el router en si y luego le decimos a las líneas VTY que utilicen el login del router:
 ```
-R1(config)# username <nombre_usuario> privilege <privilegios_del_1_al_15> password <contraseña> !OJO: Esta copntraseña está en claro... (secret... service password encryption...)
+R1(config)# username <nombre_usuario> privilege <privilegios_del_1_al_15> password <contraseña>
+!OJO: Esta contraseña está en claro... (secret... service password encryption...)
 R1(config)# line vty 0 4
 R1(config-line)# login local
 R1(config)#
@@ -136,7 +137,8 @@ Podemos igual que con telnet utilizar usuario y contraseña del router o crear u
 R1(config)# ip domain-name <lo_que_sea> !Es necesario definir un nombre de dominio
 R1(config)# line vty 0 4
 R1(config-line)# transport input ssh
-R1(config-line)# login !Si vamos a usar user y pass será login local, si creamos password para vty será sólo login (ver la parte de telnet)
+R1(config-line)# login
+!Si vamos a usar user y pass será login local, si creamos password para vty será sólo login (ver la parte de telnet)
 ```
 Una vez configurada la línea hay que crear las claves que van a cifrar la conexión:
 ```
