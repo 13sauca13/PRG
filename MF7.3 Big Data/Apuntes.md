@@ -1,6 +1,9 @@
 :link: [1ª Parte - Adrian](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Apuntes.md#big-data)
 
 :link:[2ª Parte - Marcos](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Apuntes.md#fundamentos-de-big-data)
+
+:link:[3ª Parte - Virginia](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Apuntes.md#tipolog%C3%ADa-captura-y-preparaci%C3%B3n-de-los-datos)
+
 # Big Data
 
 :monocle_face: [Preguntas tipo test](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Preguntas.md) - ```adriancarballal@gmail.com```
