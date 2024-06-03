@@ -231,5 +231,5 @@ En base a la estructura de los datos tenemos:
 >+ Sintaxis: ```<etiqueta>valor</etiqueta>```
 >
 >**JSON**
->+ Sintaxis: ```"etiqueta":valor```
->+ En realidad son pares desordenados de clave:valor
+>+ Sintaxis: ```{"etiqueta":valor}```
+>+ En realidad son arrays de pares desordenados ```clave:valor```
