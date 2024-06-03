@@ -217,3 +217,12 @@ No es factible. No podemos cifrar con la clave privada de la persona con la que 
 **KDD Knowledge Data Discovery = Ciencia de Datos**
 
 ![Que es la ciencia de datos?](https://github.com/13sauca13/PRG/blob/master/Recursos/Que%20es%20la%20ciencia%20de%20datos.PNG)
+
+Para sacar beneficio a la cantidad de información disponible es necesario comprender cuáles son las categorías de datos y las fuentes de origen de los mismos.
+
+En base a la estructura de los datos tenemos:
++ **Datos estructurados**: Son los datos típicos de la mayoría de bases de datos relacionales y tienen un esquema determinado que define las tablas en las que se almacenan, qué tipo de campos tienen y cómo se relacionan entre ellas (Se gestionan mediante lenguaje SQL)
++ **Datos no estructurados**: Datos en bruto y no organizados, sin estructura interna identificable. Se presentan en muchos formatos con diversos grados de complejidad de fuentes heterogéneas y generados por humanos o máquinas.
++ **Datos semiestructurados**: Se encuentran a medio camino entre unos y otros, tienen cierto nivel de estructura aunque carecen de un esquema fijo. Se organizan mediante etiquetas semánticas que permiten agruparlos y crear jerarquías: Metadatos (XML, JSON, HTML...) Se refiere a cualquier información que utilice esquema de *autodescripción*.
+
+
