@@ -213,3 +213,7 @@ No es factible. No podemos cifrar con la clave privada de la persona con la que 
 # Tipología, captura y preparación de los datos
 
 :book:[PDF Virginia](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Tipologia_Captura_Preparacion_Datos.pdf)
+
+**KDD Knowledge Data Discovery = Ciencia de Datos**
+
+![Que es la ciencia de datos?](https://github.com/13sauca13/PRG/blob/master/Recursos/Que%20es%20la%20ciencia%20de%20datos.PNG)
