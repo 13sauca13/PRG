@@ -205,3 +205,8 @@ Es el mecanismo que hace posible la **Firma Digital**
 ##### Cifrado con clave privada de destino (KRdestino)
 No es factible. No podemos cifrar con la clave privada de la persona con la que nos queremos comunicar, pues sólo ella posee esa clave (y la ha de mantener en secreto)
 
+---
+
+# Tipología, captura y preparación de los datos
+
+:book:[PDF Virginia](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Tipologia_Captura_Preparacion_Datos.pdf)
