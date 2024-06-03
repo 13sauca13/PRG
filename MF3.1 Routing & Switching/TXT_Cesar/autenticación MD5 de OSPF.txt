@@ -1,0 +1,27 @@
+EN FORMA GLOBAL
+
+R1(config)#router ospf 10
+R1(config-router)#area 0 authentication message-digest
+R1(config-router)#exit
+R1(config)#interface g0/0
+R1(config-if)#ip ospf message-digest key 1 md5 CISCO-123
+R1(config-if)#exit
+
+EN LAS INTERFACES (en las 2 que estan unidas)
+
+R1(config)#interface g0/0
+R1(config-if)#ip ospf message-digest key 1 md5 CISCO-123
+R1(config-if)#ip ospf authentication message-digest
+R1(config-if)#no shutdown
+R1(config-if)#exit
+
+R2(config)#interface g0/1
+R2(config-if)#ip ospf message-digest key 1 md5 CISCO-123
+R2(config-if)#ip ospf authentication message-digest
+R1(config-if)#no shutdown
+R2(config-if)#exit
+
+
+show ip ospf interface
+
+show ip ospf database

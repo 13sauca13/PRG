@@ -1,0 +1,82 @@
+!!!!!!!!!!!!!!  ESTATICO
+ip nat inside source static IP_PRIVADA IP_PUBLICA
+
+interface g0/0
+ip nat inside 
+interface s0/0/0
+ip nat outside
+
+show ip nat statics
+clear ip nat statics
+
+!!!!!!!!!!!!!  DINAMICO
+
+!!CONJUNTO DE DIRECCIONES PUBLICAS PARA TRADUCIR
+ip nat pool MI-POOL 209.165.200.225 209.165.200.226 netmask 255.255.255.252
+
+!!!ACL PARA PERMITIR IP´S
+access-list 1 permit 192.168.0.0 0.0.255.255
+
+!!CONECTAR EL POOL CON LA ACL
+ip nat inside source list 1 pool MI-POOL
+
+!!INTERFACE INTERNA
+interface s0/0/0
+ip nat inside 
+
+!!INTERFACE EXTERNA
+interface s0/1/0
+ip nat outside
+
+show ip nat traslations
+show ip nat traslations verbose !!!!MAS INFORMACION
+clear ip nat traslations !!!BORRA LAS ENTRADAS DINAMICAS
+clear ip nat traslations * !!!BORRA TODO
+
+
+!!!!!!!!!!!!  PAT con conjunto de direcciones
+
+!!CONJUNTO DE DIRECCIONES PUBLICAS PARA TRADUCIR
+ip nat pool MI-POOL 209.165.200.225 209.165.200.226 netmask 255.255.255.252
+
+!!!ACL PARA PERMITIR IP´S
+access list 1 permit 192.168.0.0 0.0.255.255
+
+!!CONECTAR EL POOL CON LA ACL
+ip nat inside source list 1 pool MI-POOL overload
+
+!!INTERFACE INTERNA
+interface s0/0/0
+ip nat inside 
+
+!!INTERFACE EXTERNA
+interface s0/1/0
+ip nat outside
+
+!!!!!!!!!!!!  PAT 1 IP PUBLICA
+
+!!!ACL PARA PERMITIR IP´S
+access-list 1 permit 10.10.4.0 0.0.0.255 
+
+!!! PARA IDENTIFICAR LA IP EXTERNA
+ip nat inside source list 1 interface s0/0/1 overload
+
+!!INTERFACE INTERNA
+interface s0/0/1
+ip nat inside 
+
+!!INTERFACE EXTERNA
+interface g0/0
+ip nat outside
+
+
+!!!!!!!!!!!! CONFIGURAR REENVIO DE PUERTOS
+ip nat inside source static tcp 192.168.10.254 80 209.165.200.225 8080 
+
+!!INTERFACE INTERNA
+interface s0/0/1
+ip nat inside 
+
+!!INTERFACE EXTERNA
+interface g0/0
+ip nat outside

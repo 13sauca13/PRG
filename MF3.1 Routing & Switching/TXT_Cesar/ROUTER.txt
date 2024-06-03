@@ -1,0 +1,24 @@
+enable
+configure terminal
+hostname R1
+no ip domain-lookup
+
+enable secret class
+service password-encryption
+Line Con 0
+password cisco
+
+exec-timeout 5 0
+
+login
+loggin synchronous
+exit
+line vty 0 15
+password cisco
+loggin synchronous
+login
+exit
+banner motd #SOLO PERSONAL AUTORIZADO#
+ip default-gateway 192.168.99.1
+
+security passwords min-length 10

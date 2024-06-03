@@ -1,0 +1,5 @@
+ip access-list 1 remark MI-LISTA-ACL
+
+ip access-list extended 101
+deny icmp 192.168.1.0 0.0.0.127 10.70.78.33 0.0.0.0 echo
+permit ip any any 

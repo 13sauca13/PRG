@@ -1,0 +1,30 @@
+R1(config)#ipv6 unicast-routing
+
+!!!!!!!! OJO PONER COMANDO "IPV6"
+
+
+R1(config)#ipv6 router eigrp 1
+R1(config-rtr)#eigrp router-id 1.1.1.1
+R1(config-rtr)#no shutdown
+R1(config-rtr)#passive-interface g0/1
+
+
+!!!!!! RUTA PREDETERMINADA
+R1(config)#ipv6 route ::/0 s0/0/0
+R1(config)#ipv6 router eigrp 1
+R1(config-rtr)#redistribute static
+
+!!!!!! PUBLICAR INTERFACE (RED)
+
+R1(config)#interface g0/0
+R1(config-if)#ipv6 eigrp 1
+R1(config-if)#ipv6 summary-address eigrp 1 2001:db8:acad:::/48
+
+!! ANCHO DE BANDA PARA EL PROTOCOLO EIGRP
+R1(config)#int s0/0/0
+R1(config-if)#ipv6 bandwidth-percent eigrp 1 40
+
+
+show ipv6 eigrp neighbors
+show ipv6 route
+show ipv6 protocols

@@ -1,0 +1,86 @@
+
+R1(config)#router eigrp 1
+R1(config-router)#eigrp router-id 1.1.1.1
+R1(config-router)#network RED-CON CLASE
+R1(config-router)#network RED-DIRECTAMENTE-CONECTADA wildcard
+R1(config-router)#passive-interface default (todas)
+R1(config-router)#passive-interface f0/1
+
+
+
+!!! REDES SUMARIZADAS (deshabilitada por defecto)
+	 DEBEN QUE SER CONTIGUAS
+R1(config-router)#no auto-summary
+
+
+
+!!! REDES SUMARIZADAS MANUAL
+R1(config)#int s0/0/0
+R1(config)#ip summary-address eigrp 1 192.168.0.0 255.255.252.0
+
+
+
+!!! configurar ancho de banda
+R1(config)#int s0/0/0
+R1(config-if)#description CONEXION A R2
+R1(config-if)#bandwidth 64
+R1(config-if)#no bandwidth (se restaura al por defecto)
+R1(config-if)#no shutdown
+
+
+
+
+!!!!publicar ruta predeterminada a todos routers  del area!!!!!!!!!!!!!!
+
+!!!! crear la ruta
+R1(config)#ip route 0.0.0.0 0.0.0.0 s0/1/0
+!! entrar en el protocolo y redistribuir
+R1(config)#router eigrp 1
+R1(config-router)#redistribute static !!se redistribuye estaticas y quad zero
+
+
+
+!!!! AUTENTICACION
+R1(config)#int s0/0/0
+R1(config-if)#ip authentication
+
+!! SALUDOS Y TIEMPO
+
+R1(config)#int s0/0/0
+R1(config-if)#description CONEXION A R2
+R1(config-if)#ip hello-interval eigrp 1 50
+R1(config-if)#ip hold-time eigrp 1 150
+R1(config-if)#no shutdown
+
+
+!! ANCHO DE BANDA PARA EL PROTOCOLO EIGRP
+R1(config)#int s0/1/0
+R1(config-if)#ipv6 bandwidth-percent eigrp 1 40
+
+!!! METRICA
+
+R1(config-router)#metric weights 
+redistribute
+
+!! PARA ELIMINAR TODA LA CONFIGURACION DE EIGRP SOLO BASTA
+
+NO router eigrp 1
+
+R1#show ip route eigrp (D--> EIGRP)
+R1#show ip eigrp neighbors 
+R1#show ip eigrp interfaces
+R1#show ip protocols
+R1#debug eigrp fsm (activa depuracion para ver notificaciones de FSM DUAL)
+R1#show ip eigrp topololy
+R1#show ip eigrp topololy all-links (todos los enlaces cumplan o no la FC)
+R1#show log-neighbor-changes
+
+show interface--> 
+	BW: ANCHO BANDA
+	DLY: RETRASO
+	RELIABILITY: CONFIABILIDAD 100% (255/255)
+	TXLOAD: CARGA TRANSMITIDA 0% SATURADA (1/255)
+	RXLOAD: CARGA RECIBIDA 0% SATURADA (1/255
+
+
+direccion multidifusion-->224.0.0.10 y ff02::a

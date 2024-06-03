@@ -1,0 +1,17 @@
+interface f0/1
+switchport port-security (habilita seguridad del puerto)
+switchport port-security mac-address xx.xx.xx.xx
+switchport port-security mac-address sticky (mac de forma dinamica)
+switchport port-security maximum 1
+switchport port-security violation restrict
+
+show port-security 
+show port-security address
+
+Protect: sólo se permite tráfico de las MAC permitidas en la configuración
+	descartando el tráfico del resto, no se notifica sobre la intrusión.
+
+•Restrict: se envía una notificación SNMP al administrador y el tráfico del
+	puerto se permite únicamente a las MAC especificadas, del resto se descarta.
+
+•Shutdown: el puerto se deshabilita.

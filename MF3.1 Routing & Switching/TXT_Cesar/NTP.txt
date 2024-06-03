@@ -1,0 +1,8 @@
+!!!!router ntp
+
+ntp master 1
+
+!!!! rouetr para recibir hora del NTP
+
+ntp server ip-Router-NTP
+ntp update-calendar

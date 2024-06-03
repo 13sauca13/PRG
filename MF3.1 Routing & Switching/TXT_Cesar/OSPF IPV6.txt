@@ -1,0 +1,38 @@
+
+
+R1(config)#ipv6 unicast-routing
+
+R1(config)#ipv6 router ospf 10
+R1(config-rtr)#router-id 1.1.1.1
+R1(config-rtr)#auto-cost reference-bandwidth 1000
+R1(config-rtr)#area 1 range 2001:db8:acad::/62 
+	(SUMARIZACION DE.....	2001:db8:acad:0000::1/64
+				2001:db8:acad:0001::1/64
+				2001:db8:acad:0002::1/64
+				2001:db8:acad:0003::1/64)
+
+
+R1(config)#interface lo0
+R1(config)#ipv6 ospf network point-to-point
+R1(config)#ipv6 ospf 1 area 1 (EN MULTIAREA)
+
+R1(config)#interface g0/0
+R1(config-if)#ipv6 address 2001:BD8:ACAD:1:1/64
+R1(config-if)#ipv6 address fe80::2 link-local
+R1(config-if)#bandwidth 1000000
+R1(config-if)#ipv6 ospf 10 area 0
+
+
+R1#show ipv6 ospf neighbor
+	(comando para verificar que el router formó
+	una adyacencia con los routers vecino)
+R1#show ipv6 protocols
+	(este comando proporciona una manera rápida
+	de verificar información fundamental de configuración
+	de OSPFv3)
+R1#show ipv6 route ospf
+	(este comando proporciona datos específicos sobre rutas
+	OSPFv3 en la tabla de routing)
+R1#show ipv6 ospf interface brief
+	(comando útil para mostrar un resumen y el estado de las
+	interfaces con OSPFv3 habilitado)

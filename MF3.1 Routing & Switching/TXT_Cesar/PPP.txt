@@ -1,0 +1,52 @@
+configure terminal
+
+interface s0/0/0
+encapsulation ppp
+
+compress !! predictor o stac
+
+!!! CALIDAD DEL ENLACE (LQM)
+ppp quality !!! 1-100, si no cumple el % el enlace queda inactivo
+
+
+
+!!!  MULTILINK
+
+interface multilink 1
+ip address 10.0.1.1 255.255.255.252
+ipv6 address 2001:db8:cafe:1::2/64
+ppp multilink
+ppp  multilink group 1
+
+!!AUTHENTICATION
+
+int s0/0/0
+ppp authentication pap
+ppp pap sent-username nombre_del_router password supersecret
+exit
+
+!! en CONFIG TER
+username nombre_otro_router password supersecret
+
+ppp authentication chap
+ppp pap sent-username nombre_del_router password supersecret
+exit
+!! en CONFIG TER
+username nombre_otro_router password supersecret
+
+
+
+
+debug ppp negotiation
+debug ppp authenticaton
+
+
+show interfaces serial 
+	-muestra el estado de HDLC
+	-muestra el estado de PPP y de NCP, IPCP y IPV6CP
+
+show ppp multilink (verificar que ppp esta habilitado)
+
+
+LCP (maneja los parametros de conexion de enlace de datos)
+NCP (establece y configura distintos protocolos de red)

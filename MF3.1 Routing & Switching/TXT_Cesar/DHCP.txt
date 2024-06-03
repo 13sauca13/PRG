@@ -1,0 +1,19 @@
+desde ROUTER(config)#
+
+ip dhcp excluded-address 192.168.1.1 192.168.1.9
+ip dhcp pool Students
+network 192.168.1.0 255.255.255.128
+default-router 192.168.1.1
+dns-server 209.165.201.14
+
+ip dhcp excluded-address 172.17.20.1 172.17.20.20
+ip dhcp pool VLAN20
+network 172.17.20.1 255.255.255.0
+default-router 172.17.20.1
+
+ip dhcp excluded-address 172.17.88.1 172.17.88.10
+ip dhcp pool VLAN88
+network 172.17.88.1 255.255.255.0
+default-router 172.17.88.1
+
+dns-server 10.70.78.34

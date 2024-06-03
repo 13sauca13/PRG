@@ -1,0 +1,13 @@
+
+1- apago el ruter y lo enciendo
+2- Ctrl-Pausa (-60 sg)
+3- rommon1 > confreg 0x2142
+   rommon2 > reset
+4- ¿pregunta? NO
+5- copy startup-config running-config
+6- conf ter
+7- enable secret class
+8- config-register 0x2102
+9- copy running-config startup-config
+10- reload
+

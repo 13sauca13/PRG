@@ -1,0 +1,170 @@
+PLANTILLA PARA CONFIGURAR UN SWITCH
+Entrar en modo configuracion 
+!!!!!!!!!!!!!!!!!!!!EMPEZAMOS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+config t
+!
+service timestamps log datetime msec
+service timestamps debug datetime msec
+!
+hostname SwFerrol
+!
+service password-encryption
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!clock timezone CET 1 
+!!clock summer-time CET recurring last Sunday March 2:00 last Sunday October 2:00 
+!!clock set 10:33:30 03 FEB 2009 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+logging buffered 16000  
+!
+!
+enable secret classcisco
+!
+username admin privilege 15 secret admincisco
+!
+!
+line con 0
+	exec-timeout 5 0 
+	password admincisco
+	login
+	loggin synchronous 
+	exit
+!	
+line vty 0 4
+	login authentication local_auth
+	exec-timeout 5 0
+	loggin synchronous 
+	transport input ssh 
+	transport input telnet
+	exit
+!	
+!
+no ip domain-lookup
+ip domain name ccna-lab.com
+!
+ip default-gateway 192.168.1.1  ! CONFIGURA EL GATEWAY PREDETERMINADO
+!
+!
+banner motd #
+**************************************************************************
+**************************************************************************
+ATENCION !!!
+************
+
+Este equipo de comunicaciones solo puede accederse con la debida autorizacion
+de los responsables de su control de la configuracion. Cualquier actividad
+registrada no autorizada por los responsables del equipo al que esta accediendo
+conllevara responsabilidades a quien las realice.
+
+**************************************************************************
+**************************************************************************
+#
+!
+!
+crypto key generate rsa
+1024
+ip ssh version 2
+!
+!
+exit 
+!  Guardamos la configuración
+wr
+!
+!!!!!!!!!!!!!!!!!!!!FIN DE LA PRIMERA PARTE!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+!!!!!!!!!!!!!!!!!SEGUNDA PARTE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+!!!!!!!!ELIMINAMOS CUALQUIER VLAN CREADA ANTERIORMENTE !!!!
+delete vlan.dat
+!
+config t
+!
+!creacion de una vlan
+Vlan 2
+ name Administracion
+ exit
+!
+Vlan 99
+ name native
+ exit
+!
+interface Vlan 2
+ ip address 10.42.240.66 255.255.255.192
+ no shutdown
+ exit
+!
+interface Vlan99
+ description vlan native
+ ip address 192.168.1.226 255.255.255.224
+ no shutdown
+ exit
+!
+!  Puerto configurado con seguridad
+interface FastEthernet0/1
+ switchport access vlan 2
+ switchport mode access
+ switchport port-security  mac-address sticky 
+ switchport port-security maximum 1
+ switchport port-security violation restrict
+ no shutdown
+ exit
+!
+interface range FastEthernet0/1-12
+ description ENLACE BUQUES
+ switchport access vlan 2
+ switchport mode access
+ switchport trunk native vlan 99
+ no shutdown
+ exit
+!
+!!!! Establecer un switch de capa 3 !!!!!!!!!!!!!!!!!!!!!!!!!
+ip routing
+!
+!
+interface GigabitEthernet0/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk allowed vlan 20,30,40,99
+ no shutdown
+ exit
+!
+!
+
+!!ruta por defecto
+ip route 0.0.0.0 0.0.0.0 <ip del router colateral WAN>
+!
+!
+router ospf 1
+ log-adjacency-changes
+ area 0 authentication
+ redistribute rip metric 120 subnets 
+ redistribute eigrp 2 metric 90 subnets 
+ passive-interface default
+ no passive-interface Vlan2
+ network 10.42.64.0 0.0.3.255 area 0
+ network 10.42.240.64 0.0.0.63 area 0
+ exit
+!
+!
+router rip
+ version 2
+ redistribute eigrp 2 metric 1 
+ redistribute ospf 1 metric 2 
+ passive-interface default
+ no passive-interface Vlan3
+ network 10.0.0.0
+ no auto-summary
+ exit
+ !
+ !
+ router eigrp 2
+ passive-interface default
+ no passive-interface Vlan2
+ network 10.42.240.64 0.0.0.63
+ no auto-summary
+ exit
+
+!
+!

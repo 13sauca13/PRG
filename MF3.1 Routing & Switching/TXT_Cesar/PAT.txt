@@ -1,0 +1,7 @@
+access-list (1-99) permit (dir-ip-origen) (wildcard) 
+ip nat inside source list (nº-ACL) interface (id-interfaz) overload
+interface (id-interfaz-interna)
+ip nat inside
+exit
+interface (id-interfaz-externa)
+ip nat outside

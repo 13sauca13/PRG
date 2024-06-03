@@ -1,0 +1,25 @@
+!!!!!!!!!!!!!!!!   PPPoE
+
+!!!!!en R1
+
+int g0/1
+pppoe enable
+pppoe-client dial-pool-number 1
+exit
+
+int dialer 1
+mtu 1942
+ip address negotiated
+encapsulation ppp
+dialer pool 1
+ppp authentication chap callin
+ppp chap hostname R1 !!!(nombre del router)
+ppp chap password ciscopppoe
+exit
+
+!!! ruta estatica predeterminada que apunte a la interfaz del marcador
+
+ip route 0.0.0.0 0.0.0.0 dialer 1
+
+debug ppp authentication
+debug pppoe events

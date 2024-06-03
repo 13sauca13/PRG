@@ -1,0 +1,74 @@
+CONFIGURAR ID DE PUENTE
+
+############# METODO 1
+
+s1(config)#spanning-tree VLAN 1 root primary
+s1(config)#spanning-tree VLAN 1,10,20 root primary
+
+s1(config)#spanning-tree VLAN 1 root secundary
+s1(config)#spanning-tree VLAN 1,10,20 root secundary
+
+
+
+
+############# METODO 2 desde 0 a 61440 (de 4096 en 4096)
+
+s1(config)#spanning-tree VLAN 1 priority 24576
+!!! A LA ID SE LE SUMA EL Nº DE LA VLAN
+
+
+
+
+### COSTO DE LOS PUERTOS
+
+!! ETHERNET 10 GB/S --> 2
+!! ETHERNET 1 GB/S --> 4
+!! ETHERNET 100 MB/S --> 19
+!! ETHERNET 10 MB/S --> 100
+
+s1(config)#interface f0/1
+s1(config)#spanning-tree cost XXX (valor--> entre 1 y 200.000.000) 
+s1(config)#no spanning-tree cost -->VOLVER A VALOR PREDETERMINADO
+
+???????????????????? show spanning-tree
+???????????????????? show spanning-tree vlan 30 (informacion STP de esa vlan)
+???????????????????? show spanning-tree ACTIVE
+
+!! PUERTO RAIZ --> mas cerca al PUENTE RAIZ
+!! PUERTO DESIGNADO --> todos los que no son RAIZ
+!! PUERTO ALTERNATIVO O DE RESPALDO --> ESTADO DE BLOQUEO
+!! PUERTO DESHABILITADO --> es un puerto DESACTIVADO
+
+!!puerto en estado de REENVIO --> FWD
+!!puerto en estado de BLOQUEADO --> BLK
+!!puerto en estado de APRENDIZAJE --> LRN
+!!puerto en estado de ESCUCHA --> LTN
+!!puerto en estado de DESHABILITADO -->
+
+CONFIGURAR PORTFAST
+
+s1(config)#interface f0/1
+s1(config-if)#spanning-tree portfast
+s1(config)#spanning-tree portfast default
+	(habilita PortFast en todas las interfaces no troncales)
+
+s1(config)#spanning-tree bpduguard enable
+	(configurar la protección BPDU en un puerto de acceso de capa 2)
+
+???????????????????? show running-config
+	(Para verificar que se hayan habilitado PortFast y la protección BPDU)
+
+CONFIGURAR PVST+RAPIDO
+
+s1(config)#spanning-tree mode rapid-pvst
+s1(config)#interface f0/1
+s1(config-if)#spanning-tree link-type point-to-point
+s1(config-if)#spanning-tree vlan 5,15,20,25 port-priority 112
+s1(config-if)#end
+s1#clear spanning-tree detected-protocols
+
+
+???????????????????? show standby
+	(para verificar el estado de HSRP)
+???????????????????? s1#clear spanning-tree detected-protocols
+	(borrar todos los STP detectados) 

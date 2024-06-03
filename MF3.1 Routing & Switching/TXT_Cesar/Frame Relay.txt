@@ -1,0 +1,87 @@
+interface s0/0/0
+ip address 10.1.1.1 255.255.255.0
+encapsulation frame-relay 
+	
+	cisco (conexion entre routers cisco)
+	ietf  (conexion entre router no cisco)
+bandwidth 64
+
+no frame-relay inverse-arp
+ 
+frame-relay map ip 10.1.1.2 102 broadcast cisco
+no shutdown
+
+	
+	broadcast --> 	permite trafico de difusion y
+			multidifusion
+	ietf	  -->		
+
+
+frame-relay lim type
+		
+		cisco -->extension original de LMI
+		ansi  -->correspondiente al estandar
+		q933a -->correspondiente al estandar ITU Q933
+
+
+
+
+!!!!!! SUBINTERFACES PUNTO A PUNTO
+
+interface s0/0/0
+!!!! ELINIMAR SI TIENE UNA IP
+encapsulation frame-relay
+no shutdown
+interface serial 0/0/0.103 point-to-point
+ip address 10.1.1.1 255.255.255.252
+bandwidth 64
+frame-relay interface-dlci 103
+exit
+
+
+
+show interfaces serial
+	verifica la configuración, incluida la encapsulación
+	de capa 2 de Frame Relay y el tipo de LMI predeterminado
+	cisco
+show frame-relay map
+show frame relay lmi
+
+show ipv6 interface
+show ipv6 interface brief
+
+no encapsulation frame-relay 
+	elimina la encapsulación de Frame Relay en la interfaz
+	y devuelve la interfaz a la encapsulación HDLC predeterminada
+
+
+************************router que hace de SWITHC en FRAME-RELAY, es la NUBE**************
+
+frame-relay switching
+int s0/0/0
+
+
+!!!!!!!! SE CONFIGURAN TODAS LAS SERIAL QUE ESTAN COMO FRAME-RELAY, DESDE AQUI...
+
+
+
+encapsulation frame-relay
+frame-relay intf-type DCE
+clock rate 56000
+
+!!!! se hace con todas las dlci que estan por esa interface
+
+frame-relay route 201 (dlci) int s0/0/0 (int salida) 101 
+
+
+
+!!!!!!!!!!!!!!!!!!!!!! ..... HASTA AQUI.
+
+
+
+
+
+
+
+
+

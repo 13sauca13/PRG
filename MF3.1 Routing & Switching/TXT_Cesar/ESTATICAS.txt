@@ -1,0 +1,2 @@
+ip route *IP donde quieres ir* *interface salida del dispositivo o IP del siguiente salto*
+ipv6 route ::/0 s0/0/0

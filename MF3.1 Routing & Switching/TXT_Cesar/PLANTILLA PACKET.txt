@@ -1,0 +1,370 @@
+//Router Site 1
+
+enable
+configure terminal
+hostname Site-1
+no ip domain-lookup
+enable secret class
+service password-encryption
+line console 0
+logging synchronous
+password cisco
+login
+line vty 0 15
+password cisco
+login
+exit
+banner motd #message-of-the-day#
+exit
+
+//configuracion de interfaces
+
+configure terminal
+interface Serial0/0/0
+bandwidth 128
+ip address 192.168.10.105 255.255.255.252
+description Router Site 1 y HQ
+clock rate 128000
+no shutdown
+exit
+
+//Ruta estatica
+configure terminal
+ip route 0.0.0.0 0.0.0.0 s0/0/0
+exit
+
+//Configurar Router-on-a-Stick inter-Vlan 
+
+configure terminal
+interface f0/1
+no shutdown
+exit
+interface f0/0.30
+encapsulation dot1Q 30
+ip address 172.16.40.1 255.255.255.0
+exit
+interface f0/0.35
+encapsulation dot1Q 35
+ip address 172.16.35.1 255.255.255.192
+exit
+interface f0/0.40
+encapsulation dot1Q 40
+ip address 172.16.40.249 255.255.255.248
+exit
+interface f0/0.45
+encapsulation dot1Q 45
+ip address 172.16.45.1 255.255.255.248
+exit
+
+//Configuracion OSPFv2
+
+configure terminal
+router ospf 10
+router-id 1.1.1.1
+network 192.168.10.104 0.0.0.3 area 0
+network 192.168.45.0 0.0.0.255 area 0
+network 192.168.47.0 0.0.0.255 area 0
+network 192.168.101.0 0.0.0.255 area 0
+passive-interface g0/0.45
+passive-interface g0/0.47
+passive-interface g0/0.101
+exit
+interface s0/0/0
+bandwidth 128
+ip ospf cost 7500
+exit
+
+//Configuracion DHCP
+ip dhcp excluded-address 192.168.45.1 192.168.45.20
+ip dhcp excluded-address 192.168.47.1 192.168.47.20
+
+ip dhcp pool VLAN45
+network 192.168.45.0 255.255.255.0
+default-router 192.168.45.1
+dns-server 192.168.18.100
+exit
+
+ip dhcp pool VLAN47
+network 192.168.47.0 255.255.255.0
+default-router 192.168.47.1
+dns-server 192.168.18.100
+exit
+
+
+//Router HQ
+
+enable
+configure terminal
+hostname HQ
+no ip domain-lookup
+enable secret class
+service password-encryption
+line console 0
+logging synchronous
+password cisco
+login
+line vty 0 15
+password cisco
+login
+exit
+banner motd #message-of-the-day#
+
+//Configuracion de interfaces
+
+configure terminal
+interface serial0/0/0
+bandwidth 128
+ip address 192.168.10.106 255.255.255.252
+no shutdown
+exit
+
+interface serial0/0/1
+bandwidth 128
+ip address 192.168.10.114 255.255.255.252
+clock rate 128000
+no shutdown
+exit
+
+interface g0/0
+ip address 192.168.18.41 255.255.255.248
+no shutdown
+exit
+
+interface serial0/1/0
+ip address 198.51.100.1 255.255.255.240
+no shutdown
+exit
+
+//Ruta estatica
+configure terminal
+ip route 0.0.0.0 0.0.0.0 s0/1/0
+ip route 192.168.200.0 255.255.252.0 s0/0/1
+exit
+
+//Configuracion OSPFv2
+
+configure terminal
+router ospf 10
+router-id 2.2.2.2
+network 192.168.10.104 0.0.0.3 area 0
+network 192.168.10.112 0.0.0.3 area 0
+network 192.168.18.40 0.0.0.7 area 0
+passive-interface g0/0
+exit
+interface s0/0/0
+bandwidth 128
+ip ospf cost 7500
+exit
+interface s0/0/1
+bandwidth 128
+exit
+
+//Confurar NAT y cliente DHCP
+ip nat inside source static 192.168.18.46 198.51.100.14
+interface g0/0
+ip nat inside
+exit
+interface s0/1/0
+ip nat outside
+exit
+
+ip nat pool INTERNET 198.51.100.3 198.51.100.13 netmask 255.255.255.240
+ip nat inside source list 1 pool INTERNET
+ip nat inside source static 192.168.18.46 198.51.100.14
+ip access-list standard 1
+permit 192.168.45.0 0.0.0.255
+permit 192.168.47.0 0.0.0.255
+permit 192.168.200.0 0.0.3.255
+exit
+interface Serial0/1/0
+ip access-group 101 in
+exit
+
+access-list 1 permit 192.168.45.0 0.0.0.255
+access-list 1 permit 192.168.47.0 0.0.0.255
+access-list 1 permit 192.168.200.0 0.0.3.255
+ip access-list standard MANAGE
+permit host 203.0.113.18
+exit
+access-list 101 permit ip host 203.0.113.18 any
+access-list 101 permit tcp any host 198.51.100.14 eq www
+access-list 101 permit tcp any any established
+access-list 101 deny ip any any
+line vty 0 15
+access-class MANAGE in
+password cisco
+login
+exiten
+
+//Router Site 2
+
+enable
+configure terminal
+hostname Site-2
+no ip domain-lookup
+enable secret class
+service password-encryption
+line console 0
+logging synchronous
+password cisco
+login
+line vty 0 15
+password cisco
+login
+exit
+banner motd #message-of-the-day#
+
+//Configuracion de interfaces
+
+configure terminal
+interface Serial0/0/1
+bandwidth 128
+ip address 192.168.10.113 255.255.255.252
+description Router Site 2 y HQ
+no shutdown
+exit
+
+//Ruta estatica
+configure terminal
+ip route 0.0.0.0 0.0.0.0 s0/0/1
+ip route 192.168.200.0 255.255.252.0 s0/0/0
+exit
+
+//Configuracion OSPFv2
+
+configure terminal
+router ospf 10
+router-id 3.3.3.3
+network 192.168.10.112 0.0.0.3 area 0
+interface s0/0/1
+bandwidth 128
+exit
+
+interface s0/0/0
+no shutdown
+exit
+
+
+//Switch1 Site1-SW1
+
+enable
+configure terminal
+hostname Site1-SW1
+no ip domain-lookup
+enable secret class
+service password-encryption
+line console 0
+logging synchronous
+password cisco
+login
+line vty 0 15
+password cisco
+login
+exit
+banner motd #message-of-the-day#
+exit
+
+//Configuracion de VLAN
+configure terminal
+vlan 45
+name finance
+vlan 47
+name sales
+vlan 101
+name netadmin
+exit
+
+configure terminal
+interface gi1/1
+switchport mode trunk
+no shutdown
+exit
+interface gi1/2
+switchport mode trunk
+no shutdown
+exit
+
+interface fa0/10
+switchport mode access
+switchport access vlan 45
+no shutdown
+exit
+interface fa0/15
+switchport mode access
+switchport access vlan 47
+no shutdown
+exit
+
+//Asignacion de Gateway e IP address
+
+ip default-gateway 192.168.101.1
+interface vlan 101
+ip address 192.168.101.2 255.255.255.0
+exit
+
+
+//Apagar interfaces que no se usaran
+int range fa0/1-9, fa0/11-14, fa0/16-24
+switchport mode access 
+shutdown
+exit
+
+
+//Switch2 Site1-SW2
+ 
+enable
+configure terminal
+hostname Site1-SW2
+no ip domain-lookup
+enable secret class
+service password-encryption
+line console 0
+logging synchronous
+password cisco
+login
+line vty 0 15
+password cisco
+login
+exit
+banner motd #message-of-the-day#
+exit
+
+//Configuracion de VLAN
+configure terminal
+vlan 45
+name finance
+exit
+vlan 47
+name sales
+exit
+vlan 101
+name netadmin
+exit
+
+
+interface gi1/1
+switchport mode trunk
+no shutdown
+exit
+interface fa0/3
+switchport mode access
+switchport access vlan 45
+no shutdown
+exit
+interface fa0/21
+switchport mode access
+switchport access vlan 47
+no shutdown
+exit
+
+//Asignacion de Gateway e IP address
+ip default-gateway 192.168.101.1
+interface vlan 101
+ip address 192.168.101.3 255.255.255.0
+exit
+
+//Apagar las interfaces que no se usaran
+int range fa0/1-2, fa0/4-20, fa0/22-24
+switchport mode access 
+shutdown
+exit

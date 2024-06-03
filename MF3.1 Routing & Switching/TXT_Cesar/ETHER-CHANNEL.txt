@@ -1,0 +1,54 @@
+CONFIGURAR ETHERCHANNEL CON LACP
+
+S1(config)# interface range f0/1-2
+S1(config-if-range)# switchport mode trunk
+S1(config-if-range)# switchport trunk native vlan 99
+S1(config-if-range)# channel-group 2 mode active
+S1(config-if-range)# no shutdown
+
+
+
+???????????????????? show interface port-channel
+	(estado general de la interfaz de canal
+	de puertos)
+???????????????????? show etherchannel summary
+	(PARA VARIAS INTERFACES)
+???????????????????? show etherchannel port-channel
+	(para mostrar la información sobre una
+	interfaz de canal de puertos específica)
+???????????????????? show interfces f0/1 etherchannel
+	(informacion sobre la funcion de la interface
+	en el EtherChannel)
+
+CAMBIAR EL MODO DE UN CHANNEL-GROUP
+!!!!! ELIMINAR Y CREAR DE NUEVO
+
+no interface port-channel 1
+interface range g0/1-2
+channel-group 1 mode active
+
+
+
+
+
+
+
+CONFIGURAR ETHERCHANNEL CON LAgP
+
+S1(config)# interface range f0/3-4
+S1(config-if-range)# channel-group 1 mode desirable
+S1(config-if-range)# no shutdown
+
+
+!!!!!! VERIFICAR CONFIGURACION
+
+???????????????????? S1# show run interface f0/3
+???????????????????? S1# show interfaces f0/3 switchport
+???????????????????? S1# show etherchannel summary
+
+
+!!!!!!!! Configurar los puertos de enlace troncal
+
+S1(config)# interface port-channel 1
+S1(config-if)# switchport mode trunk
+S1(config-if)# switchport trunk native vlan 99

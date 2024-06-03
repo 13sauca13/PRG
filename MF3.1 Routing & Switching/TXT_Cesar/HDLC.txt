@@ -1,0 +1,8 @@
+ena
+conf t
+
+int s0/0/0
+encapsulation hdlc
+
+!!!!!!! ver si tenemos conectado el DCE o el DTE
+show controllers

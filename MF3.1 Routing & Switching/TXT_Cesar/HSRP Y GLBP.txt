@@ -1,0 +1,22 @@
+!!!!!!!!!!!!!!!!!!!! CONFIGURACION HSRP (PROTOCOLO
+	REDUNDANCIA PRIMER SALTO)
+
+R1(config)# interface g0/1
+R1(config-if)# standby 1 ip 192.168.1.254 !!(IP-VIRTUAL)
+R1(config-if)# standby 1 priority 150
+R1(config-if)# standby 1 preempt
+
+R1# show standby
+R1# show standby brief
+
+
+!!!!!!!!!!!!!!!!!!! CONFIGURACION GLBP (PROTOCOLO
+	BALANCEO CARGA GATEWAY)
+
+R1(config)# interface g0/1
+R1(config-if)# glbp 1 ip 192.168.1.254
+R1(config-if)# glbp 1 preempt
+R1(config-if)# glbp 1 priority 150
+R1(config-if)# glbp 1 load-balancing round-robin
+
+R1# show glbp brief

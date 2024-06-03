@@ -1,0 +1,43 @@
+en el ROUTER-RIP-EIGRP
+
+router rip
+redistribute eigrp 1 metric 1
+exit
+router eigrp 1
+redistribute rip metric 10000 1 255 1 1500
+exit
+redistribute ospf 1 metric 1
+
+
+
+
+
+RIP
+
+   Router(config)#router rip
+
+.Redistribuir rutas de OSPF:
+   Router(config-router)#redistribute ospf [ID] metric 2 (2)
+
+.Redistribuir rutas de EIGRP:
+   Router(config-router)#redistribute eigrp [AS] metric 2 (2)
+
+EIGRP
+
+   Router(config)#router EIGRP [AS]
+
+.Redistrubuir rutas de RIP:
+   Router(config-router)#redistribute rip metric 10000 10 255 1 1500
+
+.Redistribuir rutas de OSPF:
+   Router(config-router)#redistribute ospf [ID] metric 10000 100 255 1 1500 (1)
+
+OSPF
+
+   Router(config)#router OSPF [ID]
+
+.Redistrubuir rutas de EIGRP:
+   Router(config-router)#redistribute eigrp [AS] subnets 
+
+.Redistribuir rutas de RIP:
+   Router(config-router)#redistribute rip subnets

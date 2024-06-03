@@ -1,0 +1,69 @@
+router ospf 1
+router-id 1.1.1.1
+network 209.168.22.0 0.0.0.3 area 1
+network 209.168.22.8 0.0.0.3 area 1
+network 209.168.22.10 0.0.0.255 area 1
+network 209.168.22.20 0.0.0.255 area 1
+network 209.168.22.99 0.0.0.255 area 1
+
+
+passive-interface g0/1
+
+auto-cost reference-bandwidth 10000
+
+default-information originate !!!REDISTRIBUYE LA QUAD ZERO
+redistribute static !! REDISTRIBUYE RUTAS ESTATICAS
+
+
+
+!!! SUMARIZAR REDES
+router ospf 1
+area 1 range 10.1.0.0 255.255.255.252
+
+ 
+
+!!MODIFICAR LA PRIORIDAD OSPF--EN LA INTERFACE
+interface g0/0 
+ip ospf priority nº (1-por defecto 0-no incluido en la eleccion
+			de 1 a 255)
+
+
+
+interface s0/0/0
+bandwidth 128 (ademas de modificar el ancho de banda, cambia el costo)
+ip ospf cost 1565 (cambia el costo a un valor especifico)
+
+
+en network declarar redes con wildcard y area
+
+show ip ospf protocols
+show ip ospf neighbor
+show ip ospf route
+show ip ospf database  
+
+clear ip route
+
+
+
+!!!!!!!!!! AUTENTICAR OSPF
+
+EN FORMA GLOBAL
+
+R1(config)#router ospf 1
+R1(config-router)#area 0 authentication message-digest
+R1(config-router)#exit
+R1(config)#interface g0/0
+R1(config-if)#ip ospf message-digest key 1 md5 cisco
+R1(config-if)#exit
+
+EN LAS INTERFACES (en las 2 que estan unidas)
+
+R1(config)#interface g0/0
+R1(config-if)#ip ospf message-digest key 1 md5 CISCO-123
+R1(config-if)#ip ospf authentication message-digest
+R1(config-if)#exit
+
+R2(config)#interface g0/1
+R2(config-if)#ip ospf message-digest key 1 md5 CISCO-123
+R2(config-if)#ip ospf authentication message-digest
+R2(config-if)#exit

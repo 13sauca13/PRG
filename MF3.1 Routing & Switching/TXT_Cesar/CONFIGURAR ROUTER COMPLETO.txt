@@ -1,0 +1,305 @@
+PLANTILLA PARA CONFIGURAR UN ROUTER
+Entrar en modo configuracion 
+!!!!!!!!!!!!!!!!!!!!EMPEZAMOS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+config t
+!
+hostname R4
+!
+service timestamps debug datetime msec
+service timestamp log datetime msec
+service password-encryption
+no service dhcp
+!
+!!!!!!!SI TENEMOS QUE PONER EN FECHA/HORA EL ROUTER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!clock timezone CET 1 
+!clock summer-time CET recurring last Sunday March 2:00 last Sunday October 2:00 
+!clock set 10:33:30 03 FEB 2009 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+aaa new-model
+!
+aaa authentication login default local enable
+aaa authorization exec default local
+!
+login block-for 30 attempts 3 within 120
+!
+logging on 
+logging buffered 16000  
+login on-failure log
+login on-success log
+!
+!
+secure boot-image
+secure boot-config 
+!
+enable password cisco !!!sin encriptar
+enable secret cisco !!!encriptado
+!
+username admin privilege 15 secret admincisco
+!
+!
+security passwords min-length 10
+!
+line con 0
+	exec-timeout 5 0 
+	password cisco
+	login
+	loggin synchronous 
+	exit
+!	
+line aux 0 
+	login authentication local_auth 
+	exec-timeout 0 1 
+	no exec
+	exit
+!
+line vty 0 4
+	login authentication local_auth
+	exec-timeout 0 1
+	loggin synchronous 
+	transport input ssh 
+	transport input telnet
+	no exec
+	exit
+!	
+!
+no ip domain-lookup
+
+
+ip domain name CCNASkills.com
+username admin privilege 15 secret adminonly
+line vty 0 4
+transport input ssh
+login local
+exit
+crypto key generate rsa
+1024
+ip ssh version 2
+!
+!
+banner motd #
+**************************************************************************
+**************************************************************************
+ATENCION !!!
+************
+
+SOLO SE PERMITE EL ACCESO A PERSONAL AUTORIZADO.
+
+**************************************************************************
+**************************************************************************
+#
+!
+!
+banner login #
+**************************************************************************
+**************************************************************************
+ATENCION !!!
+************
+
+Este equipo de comunicaciones solo puede accederse con la debida autorizacion
+de los responsables de su control de la configuracion. Cualquier actividad
+registrada no autorizada por los responsables del equipo al que esta accediendo
+conllevara responsabilidades a quien las realice.
+
+**************************************************************************
+**************************************************************************
+#
+
+!
+!
+interface loopback0
+	description PARA UTILIZAR EN OSPF
+	ip address 192.168.100.2 255.255.255.255 
+	exit
+!
+exit 
+!!!!!! Guardamos la configuración !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+wr
+!
+!!!!!!!!!!!!!!!!!!!!FIN DE LA PRIMERA PARTE!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+interface serial0/0/1
+	description ENLACE ISP
+	ip address 80.0.0.1 255.255.255.252
+	! en el DCE establecer el clock rate
+	clock rate 128000
+	no shutdown
+	ipv6 address FE80::4 Link-local
+	ipv6 address 2001:DB8:A:103::2/64
+	
+	exit
+!
+!
+!!!!!!!!!!!CREAR SUBINTERFACES  EN UN ROUTER !!!!!!!!!!!!!!!!!!!!!
+
+!!!!!! LEVANTAR LA INTERFACE
+interface g0/0
+no shutdown
+interface g0/0.15
+ encapsulation dot1Q 15
+ ip address 10.10.10.161 255.255.255.224
+ ! para reencaminar el trafico DHCP hacia el servidor DHCP
+ ! ip helper-address 192.168.1.100
+ no shutdown
+ exit
+!
+interface g0/0.30
+ encapsulation dot1Q 30
+ ip address 10.10.10.193 255.255.255.192
+ ! para reencaminar el trafico DHCP hacia el servidor DHCP
+ ! ip helper-address 192.168.1.100
+ no shutdown
+ exit
+!
+interface g0/0.45
+ encapsulation dot1Q 45
+ ip address 10.10.10.129 255.255.255.240
+ ! para reencaminar el trafico DHCP hacia el servidor DHCP
+ ! ip helper-address 192.168.1.100
+ no shutdown
+ exit
+!
+interface g0/0.60
+ encapsulation dot1Q 60
+ ip address 10.10.10.145 255.255.255.240
+ ! para reencaminar el trafico DHCP hacia el servidor DHCP
+ ! ip helper-address 192.168.1.100
+ no shutdown
+ exit
+!
+interface FastEthernet0/0.99
+ encapsulation dot1Q 99
+ ip address 192.168.1.229 255.255.255.224
+ ! para reencaminar el trafico DHCP hacia el servidor DHCP
+ ip helper-address 192.168.1.100
+ no shutdown
+ exit
+!
+!
+!!ruta por defecto
+ip route 0.0.0.0 0.0.0.0 <ip del router colateral WAN>
+!
+!
+router ospf 1
+ log-adjacency-changes
+ redistribute rip metric 120 subnets 
+ redistribute eigrp 2 metric 90 subnets 
+ passive-interface default
+ no passive-interface Vlan2
+ network 10.42.64.0 0.0.3.255 area 0
+ network 10.42.240.64 0.0.0.63 area 0
+ !!!!publicar ruta estatica a todos routers  del area!!!!!!!!!!!!!!
+ default-information originate 
+ !!!!publicar ruta estatica a todos routers  del area!!!!!!!!!!!!!!
+ !redistribute static   
+ exit 
+!
+!
+router rip
+ version 2
+ redistribute eigrp 2 metric 1 
+ redistribute ospf 1 metric 2 
+ passive-interface default
+ no passive-interface Vlan3
+ network 10.0.0.0
+ no auto-summary
+ !establecer una ruta por defecto!!!!!!!!!!!!!!!!!
+ !default-information originate   
+ exit
+!
+!
+router eigrp 2
+ network 10.42.168.0 0.0.0.127
+ network 10.42.240.64 0.0.0.63
+ no auto-summary
+!!!!publicar ruta estatica a todos routers  del area!!!!!!!!!!!!!!
+ !redistribute static
+ exit
+!
+!
+!!!!!CREAR UN RANGO DE EXCLUSION PARA EL DHCP !!!!!!!!!!!!!
+ip dhcp excluded-address 192.168.1.1 192.168.1.5
+ip dhcp excluded-address 192.168.1.33 192.168.1.40
+ip dhcp excluded-address 192.168.1.65 192.168.1.70
+ip dhcp excluded-address 192.168.1.97 192.168.1.100
+!
+!!!!!CREAMOS LOS RANGOS PARA EL DHCP !!!!!!!!!!!!!!!!!!!!!!
+!
+ip dhcp pool VLAN-MM1
+ network 192.168.1.0 255.255.255.224
+ default-router 192.168.1.1
+ dns-server 10.70.78.40
+ exit
+ip dhcp pool VLAN-MM2
+ network 192.168.1.32 255.255.255.224
+ default-router 192.168.1.33
+ dns-server 10.70.78.40
+ exit
+ip dhcp pool VLAN-MM3
+ network 192.168.1.64 255.255.255.224
+ default-router 192.168.1.65
+ dns-server 10.70.78.40
+ exit
+ip dhcp pool VLAN40-ADMIN
+ network 192.168.1.96 255.255.255.224
+ default-router 192.168.1.97
+ dns-server 10.70.78.40
+ exit
+!
+!
+!!!!!Creamos una access list para utilizar en line aux 0 !!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!para utilizarla hay que poner access-class 13 in !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+access-list 13 deny any 
+! 
+line aux 0 
+	access-class 13 in
+	exit
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!ACL´S
+!!!LAS ACL´S STANDARD SE COLOCAN LO MAS CERCA DEL DESTINO !!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!LAS ACL´S EXTENDIDAD SE COLOCAN LO MAS CERCA DEL ORIGEN !!!!!!!!!!!!!!!!!!!!!!!!!
+!
+access-list 1 permit 10.10.10.0 0.0.0.255
+access-list 110 permit tcp any any eq 80
+access-list 110 deny  ip any any
+!
+!!!! ip access-group "cuando se aplique en una interfaz"   !!!!!!!!!!!!!!!!!!!!!!!!!
+!
+interface FastEthernet0/0
+ ip access-group 110 out
+ exit
+!
+!
+access-list 107 deny  ip 10.0.0.0 0.0.0.255 any log
+access-list 107 permit ospf <ip del router colateral Madrid> any 
+!
+interface FastEthernet0/0
+ ip access-group 107 in
+ exit
+!
+ip access-list extended sl_def_acl
+ deny tcp any any eq telnet
+ deny tcp any any eq www
+ deny tcp any any eq 22
+ permit tcp any any eq 22
+!
+!!!EL COMANDO SHOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+R#show startup-config            (ver configuracion de NVRAM)
+R#show running-config            (ver configuracion RAM)
+R#show interfaces                (ver configuracion general interfaz) 
+R#show ip interface brief        (ver un resumen de las  interfaces)
+R#show controllers  serial 0/0/0 (ver cable conectado al interfaz)
+R#show ip protocols              (muestra los parámetros de rip,ospf,…)
+R#show ip route                  (ver toda la tabla de enrutamiento)
+R#show version                   (ver version de la IOS)
+R#show ip route connected        (rutas directamente conectadas)
+R#show ip route static           (ver tabla de rutas estaticas)
+R#show ip rip database           (ver tabla de la base datos privada de rip)
+R#show debug ip rip              (ver actualizacio enrutamiento rip)
+R#show cdp neighbors             (muestra informacion de los vecinos de cisco)
+R#show cdp neighbors detail      (muestra informacion  detallada de los vecinos de cisco)
+R#show cdp entry  R2             (muestra informacion de un vecino en particular de cisco)

@@ -1,0 +1,17 @@
+Reiniciar el router y pulsar CTROL+PAUSE durante el reinicio
+confreg 0x2142
+
+.... en la siguiente peticion
+reset
+.... en el dialogo dicir
+no
+
+enable
+copy startup-config running-config
+enable secert cisco
+
+.... en modo configuracion
+config-register 0x2102
+copy running-config startup-config 
+
+show version ....ver parametros del registro de configuracion
