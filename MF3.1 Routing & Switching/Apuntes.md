@@ -1,5 +1,8 @@
 # Routing & Switching
 
+>[!TIP]
+>:spiral_notepad:[Archivos de configuración César](https://github.com/13sauca13/PRG/tree/master/MF3.1%20Routing%20%26%20Switching/TXT_Cesar)
+
 ## Routers
 ![Conexiones del router](https://github.com/13sauca13/PRG/blob/master/Recursos/Conexiones%20del%20router.PNG)
 
