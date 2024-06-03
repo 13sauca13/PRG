@@ -225,4 +225,11 @@ En base a la estructura de los datos tenemos:
 + **Datos no estructurados**: Datos en bruto y no organizados, sin estructura interna identificable. Se presentan en muchos formatos con diversos grados de complejidad de fuentes heterogéneas y generados por humanos o máquinas.
 + **Datos semiestructurados**: Se encuentran a medio camino entre unos y otros, tienen cierto nivel de estructura aunque carecen de un esquema fijo. Se organizan mediante etiquetas semánticas que permiten agruparlos y crear jerarquías: Metadatos (XML, JSON, HTML...) Se refiere a cualquier información que utilice esquema de *autodescripción*.
 
-
+>[!NOTE]
+>**XML**
+>+ Declaración: ```<?xml version="1.0" encoding="UTF-8"?>```
+>+ Sintaxis: ```<etiqueta>valor</etiqueta>```
+>
+>**JSON**
+>+ Sintaxis: ```"etiqueta":valor```
+>+ En realidad son pares desordenados de clave:valor
