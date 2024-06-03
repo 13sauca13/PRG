@@ -187,3 +187,10 @@ R1(dhcp-config)# network <ip> <mascara>
 R1(dhcp-config)# default-router <puerta de enlace>
 R1(dhcp-config)# dns-server <servidor DNS>
 ```
+
+## Enrutamiento estático
+Un router puede descubrir redes remotas de dos manera:
++ Manuelmente: Se introducen de forma manual por medio de rutas estáticas
++ Automáticamente: La rutas se descubren de forma dinámica mediante protocolos de routing dinámico
+
+Las rutas estáticas no se anuncian en la red aumentando la seguridad, consumen menos ancho de banda que el routing dinámico porque no se calculan ni comunican las rutas.
