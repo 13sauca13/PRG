@@ -4,12 +4,11 @@
 
 :link:[3ª Parte - Virginia](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Apuntes.md#tipolog%C3%ADa-captura-y-preparaci%C3%B3n-de-los-datos)
 
-# Big Data
-
 + :monocle_face: [Preguntas tipo test](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Preguntas.md)
   + :link:[Preguntas 1ª Parte](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Preguntas.md#preguntas-adrian) - ```adriancarballal@gmail.com```
   + :link:[Preguntas 2ª Parte](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Preguntas.md#preguntas-marcos) - ```mgestal@udc.es```
 
+# Big Data
 :book:[Presentacion Adrian Carballal](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Big%20Data%20E2T.pdf)
 
 ## Qué es el big data?
