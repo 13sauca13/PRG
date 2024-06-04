@@ -4,6 +4,9 @@
 
 :link:[3ª Parte - Virginia](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Apuntes.md#tipolog%C3%ADa-captura-y-preparaci%C3%B3n-de-los-datos)
 
+>[!NOTE]
+>:spiral_notepad:[Ejercicios clase Virginia](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Ejercicios_datos_semiestructurados.docx)
+
 ---
 
 + :monocle_face: [Preguntas tipo test](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Preguntas.md)
