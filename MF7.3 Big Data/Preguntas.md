@@ -1,5 +1,5 @@
 # Preguntas tipo test de Big Data
-## Preguntas Adrián
+## Preguntas Adrian
 
 **1. ¿Qué característica NO se considera parte de las 5 V del Big Data?**
 
