@@ -6,7 +6,9 @@
 
 # Big Data
 
-:monocle_face: [Preguntas tipo test](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Preguntas.md) - ```adriancarballal@gmail.com```
++ :monocle_face: [Preguntas tipo test](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Preguntas.md)
+  + :link:[Preguntas 1ª Parte](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Preguntas.md#preguntas-adrian) - ```adriancarballal@gmail.com```
+  + :link:[Preguntas 2ª Parte](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Preguntas.md#preguntas-marcos) - ```mgestal@udc.es```
 
 :book:[Presentacion Adrian Carballal](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Big%20Data%20E2T.pdf)
 
@@ -108,9 +110,9 @@ Tipos de métodos de aprendizaje inductivo supervisado:
 ---
 
 # Fundamentos de Big Data
-:monocle_face: Preguntas test a ```mgestal@udc.es```
 
 :book:[Presentaciones Marcos Gestal](https://github.com/13sauca13/PRG/tree/master/MF7.3%20Big%20Data/PDFs%20Marcos)
+
 ## Introducción y conceptos previos
 Un **Sistema de Información** es un conjunto de elementos (personas, dispositivos, tecnologías, procesos, aplicaciones, software, etc.) que tiene a su disposición una organización con el objetivo de capturar, almacenar, procesar y dar visibilidad a la información.
 
