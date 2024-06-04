@@ -9,7 +9,7 @@
 + :monocle_face: [Preguntas tipo test](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Preguntas.md)
   + :link:[Preguntas 1ª Parte](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Preguntas.md#preguntas-adrian) - ```adriancarballal@gmail.com```
   + :link:[Preguntas 2ª Parte](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Preguntas.md#preguntas-marcos) - ```mgestal@udc.es```
-  + Preguntas 3ª Parte - ```virginia.mato@udc.es```
+  + :x:Preguntas 3ª Parte - ```virginia.mato@udc.es```
 
 ---
 
