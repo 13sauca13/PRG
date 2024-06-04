@@ -10,6 +10,8 @@
   + :link:[Preguntas 1ª Parte](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Preguntas.md#preguntas-adrian) - ```adriancarballal@gmail.com```
   + :link:[Preguntas 2ª Parte](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Preguntas.md#preguntas-marcos) - ```mgestal@udc.es```
 
+---
+
 # Big Data
 :book:[Presentacion Adrian Carballal](https://github.com/13sauca13/PRG/blob/master/MF7.3%20Big%20Data/Big%20Data%20E2T.pdf)
 
