@@ -239,3 +239,12 @@ En base a la estructura de los datos tenemos:
 >**JSON**
 >+ Sintaxis: ```{"etiqueta":valor}```
 >+ En realidad son arrays de pares desordenados ```clave:valor```
+
+En algunas ocasiones, datos no estructurados pueden considerarse semiestructurados porque tienen algun atributo que permita su clasificación (p.ej. los correos electrónicos)
+
+Para almacenar los distintos tipos de datos tenemos diferentes sistemas de almacenamiento:
++ Estructurados :arrow_forward: DB SQL
++ No estructurados :arrow_forward: DB NoSQL
+  + Clave-valor
+  + Documental
+  + Grafos
