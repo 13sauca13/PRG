@@ -194,3 +194,13 @@ Un router puede descubrir redes remotas de dos manera:
 + Automáticamente: La rutas se descubren de forma dinámica mediante protocolos de routing dinámico
 
 Las rutas estáticas no se anuncian en la red aumentando la seguridad, consumen menos ancho de banda que el routing dinámico porque no se calculan ni comunican las rutas.
+```
+R1(config)# ip route <red_destino> <mascara_destino> <ip_siguiente_salto>
+```
+En lugar de usar la ```ip_siguiente_salto``` puede utilizarse tambien el interfaz de salida (p.ej Fe0/1...)
+
+Para enrutar TODO hacia algún lugar se puede utilizar la ruta ***Quad Zero*** o ruta sumarizada:
+```
+R1(config)# ip route 0.0.0.0 0.0.0.0 <ip_siguiente_salto>
+```
+Esto enviará todo el tráfico vaya a donde vaya (salvo que sea a otra ruta estática ya configurada) hacia donde se indique (ip o interfaz).
