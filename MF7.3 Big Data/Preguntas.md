@@ -1,4 +1,5 @@
 # Preguntas tipo test de Big Data
+## Preguntas Adrián
 
 **1. ¿Qué característica NO se considera parte de las 5 V del Big Data?**
 
@@ -61,6 +62,7 @@ B) Aprendizaje analítico
 D) Aprendizaje no supervisado
 
 ---
+## Preguntas Marcos
 
 **1. ¿Cuál de las siguientes NO es una característica de un Sistema de Información?**
 
