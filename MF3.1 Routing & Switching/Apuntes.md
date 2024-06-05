@@ -204,3 +204,6 @@ Para enrutar TODO hacia algún lugar se puede utilizar la ruta ***Quad Zero*** o
 R1(config)# ip route 0.0.0.0 0.0.0.0 <ip_siguiente_salto>
 ```
 Esto enviará todo el tráfico vaya a donde vaya (salvo que sea a otra ruta estática ya configurada) hacia donde se indique (ip o interfaz).
+
+## Enrutamiento dinámico
+Son protocolos de mensajes y algoritmos que se usan para intercambiar información, compartir y completar las tablas de enrutamiento automáticamente para descibrimiento y elección de los mejores caminos.
