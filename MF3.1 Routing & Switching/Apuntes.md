@@ -207,3 +207,20 @@ Esto enviará todo el tráfico vaya a donde vaya (salvo que sea a otra ruta est�
 
 ## Enrutamiento dinámico
 Son protocolos de mensajes y algoritmos que se usan para intercambiar información, compartir y completar las tablas de enrutamiento automáticamente para descibrimiento y elección de los mejores caminos.
+
+Para configurar los enrutamientos dinámicos tenemos que "publicar" las redes desde el router **empezando por la que une a los routers entre ellos para que se hagan "vecinos"**
+### RIPv2
+```
+R1(config)# router rip
+R1(config-router)# network <direccion_red>
+```
+### OSPF
+```
+R1(config)# router ospf <numero>
+R1(config-router)# network <direccion_red> <wildcard> area <num_area>
+```
+La interfaz pasiva se haría:
+```
+R1(config)# router ospf <numero>
+R1(config-router)# passive-interface <interfaz>
+```
