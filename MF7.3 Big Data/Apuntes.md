@@ -251,3 +251,27 @@ Para almacenar los distintos tipos de datos tenemos diferentes sistemas de almac
   + Clave-valor
   + Documental
   + Grafos
+
+## Calidad de los datos
+El principal riesgo de la ciencia de datos es la mala calidad de los datos. Esto implica malas decisiones, mala gestión, ineficiencia, pérdida de imagen...
+
+En Big Data resulta todavía más complicado lidiar con la calidad ya que los datos se suelen originar fuera del proyecto y tienen una vida independiente más allá de éste. El éxito depende principalmente de los datos de entrada.
+
+***Big Data VS Smart Data***: Los datos en sí mismos no generan ventajas competitivas, hay que extraer su valor a partir de su procesamiento y análisis. ***Smart Data*** son datos de calidad, listos para ser utilizados en la extracción de conocimiento y toma de decisiones.
+
+### Procesamiento de datos
+El objetivo del procesamiento de datos es obtener un conjunto de datos final que sea de calidad y útil para la fase de extracción de conocimiento.
+
+Los pasos son:
+#### Limpieza de los datos
++ Valores ausentes o nulos:
+  + Interpolación: Datos temporales, interpolar teniendo en cuenta los valores próximos
+  + Rellenar con un valor fijo: Media, moda o valor 0
+  + Rellenar utilizando regresión: Predecir el valor usando el resto de variables del conjunto
+  + Considerar el vacío como una categoría
+  + Eliminar el registro completo
++ Inconsistencia de datos: Errores en el formato o tipo de datos
++ Valores duplicados: Eliminar para evitar sesgos
++ Datos anómalos o atípicos (*Outliers*): Distorsión de los datos
+#### Transformación de los datos
+#### Reducción de la dimensionalidad
