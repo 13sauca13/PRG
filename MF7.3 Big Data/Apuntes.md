@@ -263,7 +263,7 @@ En Big Data resulta todavía más complicado lidiar con la calidad ya que los da
 El objetivo del procesamiento de datos es obtener un conjunto de datos final que sea de calidad y útil para la fase de extracción de conocimiento.
 
 Los pasos son:
-#### Limpieza de los datos
+#### 1. Limpieza de los datos
 + Valores ausentes o nulos:
   + Interpolación: Datos temporales, interpolar teniendo en cuenta los valores próximos
   + Rellenar con un valor fijo: Media, moda o valor 0
@@ -273,5 +273,12 @@ Los pasos son:
 + Inconsistencia de datos: Errores en el formato o tipo de datos
 + Valores duplicados: Eliminar para evitar sesgos
 + Datos anómalos o atípicos (*Outliers*): Distorsión de los datos
-#### Transformación de los datos
-#### Reducción de la dimensionalidad
+
+Alrededor del 90% de los potenciales errores de calidad de datos se resuelven con:
+1. Análisis de nulos y atípicos
+2. Estadísticos básicos
+3. Análisis longitudinal
+4. Coherencia entre variables
+#### 2. Transformación de los datos
+
+#### 3. Reducción de la dimensionalidad
