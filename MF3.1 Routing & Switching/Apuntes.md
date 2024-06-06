@@ -212,6 +212,7 @@ Para configurar los enrutamientos dinámicos tenemos que "publicar" las redes de
 ### RIPv2
 ```
 R1(config)# router rip
+R1(config-router)# version 2
 R1(config-router)# network <direccion_red>
 ```
 ### OSPF
