@@ -280,5 +280,8 @@ Alrededor del 90% de los potenciales errores de calidad de datos se resuelven co
 3. Análisis longitudinal
 4. Coherencia entre variables
 #### 2. Transformación de los datos
-
++ Normalizar: Escalar las variables a un intervalo
++ Discretizar: Convertir valores continuos en intervalos
++ Variables sintéticas o derivadas
++ Formatear los datos para facilitar el análisis
 #### 3. Reducción de la dimensionalidad
