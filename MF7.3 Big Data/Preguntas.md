@@ -86,21 +86,21 @@ D) Interception
 
 **3. ¿Cuál es la principal diferencia entre un ataque pasivo y un ataque activo?**
 
-A) Los ataques pasivos no afectan al funcionamiento del sistema, mientras que los ataques activos sí.
+*A) Los ataques pasivos no afectan al funcionamiento del sistema, mientras que los ataques activos sí.*
 
-B) Los ataques pasivos son más difíciles de detectar que los ataques activos.
+B) Los ataques activos son más difíciles de detectar que los ataques pasivos.
 
-C) Los ataques pasivos requieren un mayor nivel de acceso al sistema que los ataques activos.
+C) Los ataques activos requieren un mayor nivel de acceso al sistema que los ataques pasivos.
 
-*D) Los ataques pasivos no son tan comunes como los ataques activos.*
+D) Los ataques pasivos no son tan comunes como los ataques activos.
 
 **4. ¿Qué servicio de seguridad de la información garantiza que solo las personas autorizadas puedan acceder a los recursos del sistema?**
 
-A) Confidencialidad
+*A) Confidencialidad*
 
 B) Autenticidad
 
-*C) Integridad*
+C) Integridad
 
 D) Control de acceso
 
