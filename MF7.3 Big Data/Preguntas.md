@@ -96,13 +96,13 @@ D) Los ataques pasivos no son tan comunes como los ataques activos.
 
 **4. ¿Qué servicio de seguridad de la información garantiza que solo las personas autorizadas puedan acceder a los recursos del sistema?**
 
-*A) Confidencialidad*
+A) Confidencialidad
 
 B) Autenticidad
 
 C) Integridad
 
-D) Control de acceso
+*D) Control de acceso*
 
 **5. ¿En qué tipo de sistema de cifrado se utiliza la misma clave para cifrar y descifrar?**
 
@@ -186,43 +186,3 @@ B) Discretización
 C) Normalización
 
 D) Formateo de datos
-
-**7. ¿Qué técnica de preprocesamiento de datos se utiliza para convertir valores continuos en intervalos?**
-
-A) Interpolación
-
-*B) Discretización*
-
-C) Normalización
-
-D) Formateo de datos
-
-**8. ¿Qué es el Dilema 80/20 de la ciencia de datos?**
-
-A) El 80% del tiempo se dedica a la recolección y limpieza de datos, y el 20% al análisis y modelado.
-
-*B) El 80% del tiempo se dedica a la limpieza y optimización de datos, y el 20% a la construcción y entrenamiento de modelos.*
-
-C) El 80% del tiempo se dedica al análisis y modelado de datos, y el 20% a la recolección y limpieza de datos.
-
-D) El 80% del tiempo se dedica a la construcción y entrenamiento de modelos, y el 20% a la limpieza y optimización de datos.
-
-**9. ¿Qué es la ciencia de datos?**
-
-*A) La ciencia de datos es un campo interdisciplinario que utiliza métodos estadísticos y computacionales para extraer conocimiento de los datos.*
-
-B) La ciencia de datos es un conjunto de herramientas y técnicas para almacenar y procesar grandes volúmenes de datos.
-
-C) La ciencia de datos es una forma de visualizar datos para que sean más fáciles de entender.
-
-D) La ciencia de datos es un tipo de inteligencia artificial que puede aprender de los datos y tomar decisiones por sí misma.
-
-**10. ¿Cuáles son los principales desafíos de la ciencia de datos?**
-
-A) Volumen, variedad, velocidad y veracidad de los datos.
-
-B) Calidad de los datos, privacidad y seguridad de la información.
-
-C) Limpieza y optimización de los datos, dilema 80/20.
-
-*D) Todas las anteriores.*
