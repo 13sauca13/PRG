@@ -1,7 +1,7 @@
 # Configuración desde cero
 
 **Índice:**
-+ Routers: config básica y securización
++ [Routers: config básica y securización](#routers)
   + Lineas VTY
       + Telnet
       + SSH
