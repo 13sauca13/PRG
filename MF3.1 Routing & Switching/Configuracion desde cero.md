@@ -2,10 +2,22 @@
 
 **Índice:**
 1. Routers: config básica y securización
-  2.  Lineas VTY
+  + Lineas VTY
       + Telnet
       + SSH
-       
+  + DHCP
+  + Enrutamiento estático
+  + Enrutamiento dinámico
+    + RIPv2
+    + OSPF
+    + EIGRP
+2. Switches
+  + SSH en switches
+  + Securizar interfaces
+  + VLANs
+    + Enrutar entre VLANs     
+
+---
 
 # Routers
 El primer paso cuando se configura un dispositivo es asignarle un nombre de host. Estos nombres aparecen el las peticiones de entrada de la CLI y se usan en los diagramas de la topología (también aplica a switches)
