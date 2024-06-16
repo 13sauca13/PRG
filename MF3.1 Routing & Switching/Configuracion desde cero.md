@@ -1,7 +1,7 @@
 # Configuración desde cero
 
 **Índice:**
-1. Routers: config básica y securización
++ Routers: config básica y securización
   + Lineas VTY
       + Telnet
       + SSH
@@ -11,7 +11,7 @@
     + RIPv2
     + OSPF
     + EIGRP
-2. Switches
++ Switches
   + SSH en switches
   + Securizar interfaces
   + VLANs
