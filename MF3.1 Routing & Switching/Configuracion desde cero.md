@@ -2,20 +2,20 @@
 
 **Índice:**
 + [Routers: config básica y securización](#routers)
-  + Lineas VTY
-      + Telnet
-      + SSH
-  + DHCP
-  + Enrutamiento estático
-  + Enrutamiento dinámico
-    + RIPv2
-    + OSPF
-    + EIGRP
-+ Switches
-  + SSH en switches
-  + Securizar interfaces
-  + VLANs
-    + Enrutar entre VLANs     
+  + [Lineas VTY](#configuracion-vty)
+      + [Telnet](#telnet)
+      + [SSH](#ssh)
+  + [DHCP](#configuración-dhcp)
+  + [Enrutamiento estático](#enrutamiento-estático)
+  + [Enrutamiento dinámico](#enrutamiento-dinámico)
+    + [RIPv2](#ripv2)
+    + [OSPF](#ospf)
+    + [EIGRP](#eigrp)
++ [Switches](#switches)
+  + [SSH en switches](#ssh-en-switches)
+  + [Securizar interfaces](#securizar-interfaces-switch)
+  + [VLANs](#configuración-de-vlans)
+    + [Enrutar entre VLANs](#enrutar-entre-vlans)
 
 ---
 
