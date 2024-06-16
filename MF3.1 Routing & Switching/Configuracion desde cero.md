@@ -1,6 +1,6 @@
 # Configuración desde cero
 
-**Índice:**
+**Índice:** *(Pulsar para ir a la sección)*
 + [Routers: config básica y securización](#routers)
   + [Lineas VTY](#configuracion-vty)
       + [Telnet](#telnet)
